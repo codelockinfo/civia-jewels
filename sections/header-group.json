@@ -217,7 +217,7 @@
           "type": "wishlist",
           "settings": {
             "color": "#232323",
-            "show_wishlist_number": false,
+            "show_wishlist_number": true,
             "wishlist_color_item": "#ffffff",
             "wishlist_bg_item": "#232323"
           }

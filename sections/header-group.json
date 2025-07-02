@@ -180,11 +180,27 @@
             "show_banner_3": false,
             "banner_url_3": ""
           }
+        },
+        "megamenu_style_2_BqaHqg": {
+          "type": "megamenu_style_2",
+          "settings": {
+            "layout_block": "custom_width",
+            "header_custom_width_size": 1200,
+            "item": "wedding brands",
+            "column": 5,
+            "show_banner_1": false,
+            "banner_url_1": "",
+            "show_banner_2": false,
+            "banner_url_2": "",
+            "show_banner_3": false,
+            "banner_url_3": ""
+          }
         }
       },
       "block_order": [
         "main_menu_fAdpyF",
-        "megamenu_style_2_At8VHE"
+        "megamenu_style_2_At8VHE",
+        "megamenu_style_2_BqaHqg"
       ],
       "name": "t:sections.header.settings.navigation.name_4",
       "settings": {

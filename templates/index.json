@@ -580,7 +580,7 @@
         "spotlight_block_swipe_on_mobile": "scroll",
         "column": "4",
         "column_mb": "2",
-        "center_mode": true,
+        "center_mode": false,
         "item_distance": 15,
         "item_radius": 0,
         "enable_arrows": true,

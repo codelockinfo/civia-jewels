@@ -931,28 +931,39 @@
         "video_CA8eLL": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/AQOnz7T-lfOgCxcVscm8f-mkDdqJ_6mHv00LvFjkeYjJPkZvTJSZT0eWh9sdco3rkzDarMu8uTwzkF3BylBkKKXqs_O--_pQuHTo44k.mp4",
             "featured_product": ""
           }
         },
         "video_K6V9Eb": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/AQMLWEQ0pPaCRS_4lYrTLO1UF2zSCWPf6V_9wFLwvBJ_gnJ9dBxQysrREHMwjfsi3oMFSdABUN6ksWIoc-hwwng30x5ai2utjCJQD8c.mp4",
             "featured_product": ""
           }
         },
         "video_qxLcxb": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/AQMYCCSSe8CMepELl3Duc2EoPPZFN87vaTcxp_TI7u45qblQlIJR7yrnfKdLD6otqyMl3kdesd6BbtRmkWv2sOKt2DBbu3VbafwpTbw.mp4",
             "featured_product": ""
           }
         },
         "video_hLiWdm": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/AQNaoxk_D7pH3npdbJ2vI_ze0_wA5WV5d_j0o3ETtjPJof9d6s7qF3hes4zgFyfiQYsMsUMx8ewake6_fMCFGjUSjX7Noy22eXzeh6U.mp4",
             "featured_product": ""
           }
         },
         "video_nJHQpj": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/AQOcgiFSeUISgacsBgJvIv3BEvJALZVjwI6ZjzkXpOxq8C52cgvCPPPZpDKZX6Q4igdMKWkOgdFz6xhqL8a2YUS3Ce5mmk3-ndk1YyM.mp4",
+            "featured_product": ""
+          }
+        },
+        "video_3prdcH": {
           "type": "video",
           "settings": {
             "featured_product": ""
@@ -978,6 +989,7 @@
         "video_qxLcxb",
         "video_hLiWdm",
         "video_nJHQpj",
+        "video_3prdcH",
         "video_pWrACq",
         "video_4QyC7J"
       ],
@@ -989,10 +1001,10 @@
         "grid_gap": 0,
         "enable_autoplay": false,
         "autoplay_speed": "3000",
-        "product_dots": true,
-        "product_dots_mb": true,
+        "product_dots": false,
+        "product_dots_mb": false,
         "product_arrows": false,
-        "product_arrows_mb": true,
+        "product_arrows_mb": false,
         "title": "",
         "enable_border_title": false,
         "color_title": "#202020",
@@ -1003,9 +1015,9 @@
         "fontsize_des": 16,
         "title_alignment": "center",
         "header_spacing_bottom": 25,
-        "mg_top_desktop": 0,
-        "mg_top_tablet": 0,
-        "mg_top_mobile": 0,
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50

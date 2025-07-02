@@ -772,7 +772,7 @@
             "template-type": "template-g",
             "title-font-size": 40,
             "title-font-size-portrait": 24,
-            "landscape-padding": 40,
+            "landscape-padding": 150,
             "top-bottom-padding": 20,
             "scroll-video-tile-size": 80,
             "scroll-video-tile-size-portrait": 80,

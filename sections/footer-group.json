@@ -83,7 +83,7 @@
             "mg_top_des": 0,
             "mg_bottom_des": 21,
             "spacing_input": 10,
-            "newsletter_form_width": 610,
+            "newsletter_form_width": 500,
             "input_text": "Email Address",
             "input_color": "#727272",
             "input_color_bg": "#f8f8f8",

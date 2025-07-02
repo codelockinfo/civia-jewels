@@ -829,6 +829,94 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
+    },
+    "rich_text_bqMiFq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fTXMzD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Design Your Dream Diamond Ring",
+            "heading_size": 50,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#fffcfc"
+          }
+        },
+        "text_gqfqxB": {
+          "type": "text",
+          "settings": {
+            "text": "Have a vision in mind? Make no compromise as every special moment counts. Share your diamond ring ideas with our experts, and we’ll make it a reality.",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_font_weight": "400",
+            "text_line_height": 1,
+            "margin_top_text": 34,
+            "text_color": "#ffffff",
+            "text_width": "800px"
+          }
+        },
+        "button_8WP3VL": {
+          "type": "button",
+          "settings": {
+            "button_style": "button_1",
+            "button_label": "Request Custom Ring",
+            "button_link": "",
+            "margin_top_button": 30,
+            "enable_underline_button": false,
+            "button_color": "#ffffff",
+            "button_border_color": "#ffffff",
+            "button_bg_color": "#000",
+            "button_bg_gradient": "",
+            "button_color_hover": "#000",
+            "button_border_color_hover": "#000",
+            "button_bg_color_hover": "#fff",
+            "button_bg_gradient_hover": "",
+            "button_width": "270px"
+          }
+        },
+        "social_media_jpRPG7": {
+          "type": "social_media",
+          "disabled": true,
+          "settings": {
+            "social_spacing_top": 0,
+            "social_spacing_bottom": 0,
+            "social_icon_color": "",
+            "social_icon_background_color": "",
+            "social_icon_background_gradient": "",
+            "social_icon_hover_color": "",
+            "social_icon_background_hover_color": "",
+            "social_icon_background_hover_gradient": "",
+            "social_icon_ring_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_fTXMzD",
+        "text_gqfqxB",
+        "button_8WP3VL",
+        "social_media_jpRPG7"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#000000",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
     }
   },
   "order": [
@@ -836,6 +924,7 @@
     "brand_slider_xCF7Yc",
     "spotlight_block_Lt8xr9",
     "custom_press_banner_eeAqPP",
-    "product_block_9ctyYD"
+    "product_block_9ctyYD",
+    "rich_text_bqMiFq"
   ]
 }

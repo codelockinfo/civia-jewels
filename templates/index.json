@@ -705,6 +705,43 @@
         "mg_bottom_mobile": 50
       }
     },
+    "announcement_bar_cMmPe7": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_x9tgLn": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Welcome to our store</p>",
+            "btn_color": "#f84248",
+            "btn_border_color": "#ffffff",
+            "btn_bg_color": "#ffffff",
+            "btn_bg_color_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_x9tgLn"
+      ],
+      "name": "t:sections.announcement-bar.name",
+      "settings": {
+        "layout": "slider",
+        "enable_close": true,
+        "color_text": "#FFFFFF",
+        "bg_color_text": "#ffffff",
+        "bg_color_text_gradient": "",
+        "font_size_text": 12,
+        "font_style_text": "normal",
+        "font_weight_text": "500",
+        "arrow_active": false,
+        "content_max_width": 38,
+        "padding_top": 0,
+        "padding_top_tablet": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 0,
+        "padding_bottom_tablet": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
     "custom_press_banner_Vc3tNy": {
       "type": "custom-press-banner",
       "name": "t:sections.custom_press_banner.presets.name",
@@ -1007,6 +1044,7 @@
     "brand_slider_xCF7Yc",
     "spotlight_block_Lt8xr9",
     "custom_press_banner_eeAqPP",
+    "announcement_bar_cMmPe7",
     "custom_press_banner_Vc3tNy",
     "17514581159fafe6d0",
     "product_block_9ctyYD",

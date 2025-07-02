@@ -17,7 +17,7 @@
         "text_4VYmm7": {
           "type": "text",
           "settings": {
-            "custom_width": "25",
+            "custom_width": "30",
             "heading": "Renaissance Jewel",
             "logo_margin_bottom": 28,
             "subtext": "<p>Ethical, lab-grown diamonds crafted with care for timeless beauty and sustainability.</p><p>24x7 support available through phone, chat, and email.</p>",
@@ -57,7 +57,7 @@
         "592a8373-a70d-47d3-a311-321a645e1f14": {
           "type": "link_list",
           "settings": {
-            "custom_width": "15",
+            "custom_width": "20",
             "heading": "Useful Links",
             "menu": "useful-links",
             "mg_bottom": 11
@@ -75,7 +75,7 @@
         "newsletter_with_social_exFrU9": {
           "type": "newsletter_with_social",
           "settings": {
-            "custom_width": "40",
+            "custom_width": "30",
             "show_newsletter": true,
             "hidden_input_field": false,
             "heading": "Let’s Keep In Touch",

@@ -166,24 +166,32 @@
             "hot_label_bg_gradient": ""
           }
         },
-        "megamenu_style_1_dDMVK4": {
-          "type": "megamenu_style_1",
+        "megamenu_style_3_4JAgEr": {
+          "type": "megamenu_style_3",
           "settings": {
             "layout_block": "custom_width",
             "header_custom_width_size": 1200,
-            "item": "",
-            "column": 3,
+            "mega_tyle": "style1",
+            "item": "ENGAGEMENT RINGS",
+            "column": 5,
             "show_banner_1": false,
             "banner_url_1": "",
-            "show_product": false,
-            "product_title": "Featured Products",
-            "product_collection": ""
+            "show_banner_2": false,
+            "banner_url_2": "",
+            "show_banner_3": false,
+            "banner_url_3": "",
+            "show_banner_4": false,
+            "banner_url_4": "",
+            "show_banner_5": false,
+            "banner_url_5": "",
+            "show_banner_6": false,
+            "banner_url_6": ""
           }
         }
       },
       "block_order": [
         "main_menu_fAdpyF",
-        "megamenu_style_1_dDMVK4"
+        "megamenu_style_3_4JAgEr"
       ],
       "name": "t:sections.header.settings.navigation.name_4",
       "settings": {

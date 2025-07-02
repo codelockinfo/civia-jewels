@@ -829,120 +829,6 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
-    },
-    "policies_block_aAK6pB": {
-      "type": "policies-block",
-      "blocks": {
-        "text_9aWJ9H": {
-          "type": "Text",
-          "settings": {
-            "image": "shopify://shop_images/download_e6dcc660-1b6d-47d4-9e18-ea5fb08e6aed.webp",
-            "icon_type": "text",
-            "icon": "",
-            "icon_width": 30,
-            "icon_height": 30,
-            "icon_mg_right": 20,
-            "text": "Eco-Friendly Diamonds",
-            "font_size_text": 16,
-            "font_size_text_mb": 16,
-            "mg_bottom_text": 0,
-            "font_weight_text": "500",
-            "font_style_text": "normal",
-            "description": "",
-            "font_size_des": 14,
-            "font_size_des_mb": 14,
-            "margin_bottom_description": 0,
-            "button": "",
-            "button_font_size": 14,
-            "button_font_size_mb": 12,
-            "link": ""
-          }
-        },
-        "text_KzV3M8": {
-          "type": "Text",
-          "settings": {
-            "icon_type": "text",
-            "icon": "",
-            "icon_width": 30,
-            "icon_height": 30,
-            "icon_mg_right": 20,
-            "text": "Free Shipping on all orders *",
-            "font_size_text": 16,
-            "font_size_text_mb": 16,
-            "mg_bottom_text": 0,
-            "font_weight_text": "500",
-            "font_style_text": "normal",
-            "description": "",
-            "font_size_des": 14,
-            "font_size_des_mb": 14,
-            "margin_bottom_description": 0,
-            "button": "",
-            "button_font_size": 14,
-            "button_font_size_mb": 12,
-            "link": ""
-          }
-        },
-        "text_KGzky9": {
-          "type": "Text",
-          "settings": {
-            "icon_type": "text",
-            "icon": "",
-            "icon_width": 30,
-            "icon_height": 30,
-            "icon_mg_right": 20,
-            "text": "Free Shipping on all orders *",
-            "font_size_text": 16,
-            "font_size_text_mb": 16,
-            "mg_bottom_text": 0,
-            "font_weight_text": "500",
-            "font_style_text": "normal",
-            "description": "",
-            "font_size_des": 14,
-            "font_size_des_mb": 14,
-            "margin_bottom_description": 0,
-            "button": "",
-            "button_font_size": 14,
-            "button_font_size_mb": 12,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_9aWJ9H",
-        "text_KzV3M8",
-        "text_KGzky9"
-      ],
-      "name": "t:sections.policies_block.name",
-      "settings": {
-        "container": "container",
-        "padding_full_width": 0,
-        "policies_block_swipe_on_mobile": "slider",
-        "spacing_tablet": 15,
-        "spacing_mobile": 10,
-        "policies_bg": "#232323",
-        "policies_bg_gradient": "",
-        "border": "none",
-        "border_color": "#000000",
-        "border_item": "none",
-        "item_color_border": "#000",
-        "align_items": "center",
-        "text_align_items": "center",
-        "enable_item_distance": true,
-        "item_padding_top": 13,
-        "item_padding_bottom": 13,
-        "item_padding_left_right": 20,
-        "item_radius": 4,
-        "bg_color_block": "#f8f8f8",
-        "border_block": "#f8f8f8",
-        "color_block": "#232323",
-        "color_icon": "#3c3c3c",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
-      }
     }
   },
   "order": [
@@ -950,7 +836,6 @@
     "brand_slider_xCF7Yc",
     "spotlight_block_Lt8xr9",
     "custom_press_banner_eeAqPP",
-    "product_block_9ctyYD",
-    "policies_block_aAK6pB"
+    "product_block_9ctyYD"
   ]
 }

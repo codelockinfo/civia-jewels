@@ -861,7 +861,7 @@
           "settings": {
             "button_style": "button_1",
             "button_label": "Request Custom Ring",
-            "button_link": "",
+            "button_link": "shopify://collections",
             "margin_top_button": 30,
             "enable_underline_button": false,
             "button_color": "#ffffff",

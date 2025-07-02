@@ -57,7 +57,7 @@
         "592a8373-a70d-47d3-a311-321a645e1f14": {
           "type": "link_list",
           "settings": {
-            "custom_width": "20",
+            "custom_width": "15",
             "heading": "Useful Links",
             "menu": "useful-links",
             "mg_bottom": 11
@@ -66,7 +66,7 @@
         "a6e74cd6-bd47-4ada-98b5-15e28b94aef6": {
           "type": "link_list",
           "settings": {
-            "custom_width": "20",
+            "custom_width": "15",
             "heading": "Information",
             "menu": "information",
             "mg_bottom": 10
@@ -75,7 +75,7 @@
         "newsletter_with_social_exFrU9": {
           "type": "newsletter_with_social",
           "settings": {
-            "custom_width": "30",
+            "custom_width": "40",
             "show_newsletter": true,
             "hidden_input_field": false,
             "heading": "Let’s Keep In Touch",

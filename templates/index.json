@@ -976,7 +976,7 @@
       "settings": {
         "container": "fullwidth",
         "padding_full_width": 0,
-        "videos_per_row": "4",
+        "videos_per_row": "5",
         "grid_gap": 0,
         "enable_autoplay": false,
         "autoplay_speed": "3000",

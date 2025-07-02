@@ -962,24 +962,6 @@
             "video": "shopify://files/videos/AQOcgiFSeUISgacsBgJvIv3BEvJALZVjwI6ZjzkXpOxq8C52cgvCPPPZpDKZX6Q4igdMKWkOgdFz6xhqL8a2YUS3Ce5mmk3-ndk1YyM.mp4",
             "featured_product": ""
           }
-        },
-        "video_3prdcH": {
-          "type": "video",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "video_pWrACq": {
-          "type": "video",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "video_4QyC7J": {
-          "type": "video",
-          "settings": {
-            "featured_product": ""
-          }
         }
       },
       "block_order": [
@@ -988,10 +970,7 @@
         "video_K6V9Eb",
         "video_qxLcxb",
         "video_hLiWdm",
-        "video_nJHQpj",
-        "video_3prdcH",
-        "video_pWrACq",
-        "video_4QyC7J"
+        "video_nJHQpj"
       ],
       "name": "t:sections.video-carousel.presets.name",
       "settings": {

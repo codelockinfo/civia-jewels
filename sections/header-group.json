@@ -165,10 +165,25 @@
             "hot_label_bg": "#fff993",
             "hot_label_bg_gradient": ""
           }
+        },
+        "megamenu_style_1_dDMVK4": {
+          "type": "megamenu_style_1",
+          "settings": {
+            "layout_block": "custom_width",
+            "header_custom_width_size": 1200,
+            "item": "",
+            "column": 3,
+            "show_banner_1": false,
+            "banner_url_1": "",
+            "show_product": false,
+            "product_title": "Featured Products",
+            "product_collection": ""
+          }
         }
       },
       "block_order": [
-        "main_menu_fAdpyF"
+        "main_menu_fAdpyF",
+        "megamenu_style_1_dDMVK4"
       ],
       "name": "t:sections.header.settings.navigation.name_4",
       "settings": {

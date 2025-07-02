@@ -838,6 +838,34 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "1232542678405107163": {
+        "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
+        "disabled": false,
+        "settings": {}
+      },
+      "16510219240223340300": {
+        "type": "shopify://apps/whatmore-shoppable-videos/blocks/app-embed/20db8a72-315a-4364-8885-64219ee48303",
+        "disabled": false,
+        "settings": {
+          "minimized_video_position": "right",
+          "horizontal-padding": 5,
+          "vertical-padding": 150,
+          "app-size": 50,
+          "minimized_video_position_landscape": "right",
+          "horizontal-padding-landscape": 5,
+          "vertical-padding-landscape": 150,
+          "app-size-landscape": 50,
+          "video-title": "",
+          "use-variant": "false"
+        }
+      },
+      "6097499278999377719": {
+        "type": "shopify://apps/globo-mega-menu/blocks/app-embed/7a00835e-fe40-45a5-a615-2eb4ab697b58",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   }
 }

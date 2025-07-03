@@ -36,10 +36,10 @@
           "default": "#000000"
         },
         {
-          "type": "text",
+          "type": "textarea",
           "id": "label",
           "label": "Icon Label",
-          "default": "Eco-Friendly Diamonds"
+          "default": "ECO-FRIENDLY\nDIAMONDS"
         }
       ]
     }
@@ -68,7 +68,7 @@
             <img src="{{ block.settings.icon | image_url: width: 100 }}" alt="icon">
           </div>
         {% endif %}
-        <p class="icon-label">{{ block.settings.label }}</p>
+        <div class="icon-label">{{ block.settings.label | newline_to_br }}</div>
       </div>
     {% endfor %}
   </div>

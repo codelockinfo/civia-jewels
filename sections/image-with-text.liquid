@@ -47,55 +47,62 @@
       <div class="desc">{{ section.settings.description }}</div>
     </div>
     <div class="image" style="flex: 1;">
-          <a href="{{ section.settings.image_link }}">
-            <img
-              src="{{ section.settings.image | image_url }}"
-              alt="Image"
-            >
-          </a>
+      <a href="{{ section.settings.image_link }}">
+        <img
+          src="{{ section.settings.image | image_url }}"
+          alt="Image"
+        >
+      </a>
     </div>
   </div>
 </div>
 
 <style>
-  .container{
-    max-width:1400px;
+    .container{
+      max-width:1400px;
+    }
+
+      .image-text-section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 0;
+    }
+
+    .image-text-section .text {
+      flex: 1;
+    }
+
+    .image-text-section .image {
+      flex: 1;
+    }
+
+    .image-text-section img {
+      max-width: 100%;
+      /* border-radius: 8px; */
+    }
+    .subheading{
+      font-size:26px;
+      margin-bottom: 30px;
+      color: #000000;
+    }
+
+    .heading{
+      font-family: Kaisei Decol, serif;
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .desc{
+      font-size: 24px;
+      line-height: 1.1;
+    }
+    .zoom-out-hover img {
+    transition: transform 0.3s ease;
   }
 
-    .image-text-section {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 0;
-  }
-
-  .image-text-section .text {
-    flex: 1;
-  }
-
-  .image-text-section .image {
-    flex: 1;
-  }
-
-  .image-text-section img {
-    max-width: 100%;
-    /* border-radius: 8px; */
-  }
-  .subheading{
-    font-size:26px;
-    margin-bottom: 30px;
-    color: #000000;
-  }
-
-  .heading{
-    font-family: Kaisei Decol, serif;
-    font-size: 60px;
-    line-height: 1;
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-  .desc{
-    font-size: 24px;
-    line-height: 1.1;
+  .zoom-out-hover:hover img {
+    transform: scale(0.95); /* Zoom out slightly */
   }
 </style>

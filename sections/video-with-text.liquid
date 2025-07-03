@@ -43,16 +43,17 @@
 {% endschema %}
 
 <div class="custom-video-text">
-  <a href="{{ section.settings.button_link }}" >
   <div class="custom-video">
     {% if section.settings.video_url != blank %}
-      <video autoplay muted loop playsinline>
-        <source src="{{ section.settings.video_url.sources[0].url }}" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <a href="{{ section.settings.button_link }}">
+        <video autoplay muted loop playsinline>
+          <source src="{{ section.settings.video_url.sources[0].url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
     {% endif %}
   </div>
-  </a>
+
   <div class="custom-text">
     <div class="container-text">
       <div class="video-heading">{{ section.settings.heading }}</div>

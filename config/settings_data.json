@@ -11,6 +11,7 @@
   "current": {
     "layout_body": "default",
     "mobile_menu": "default",
+    "collection_layout": "full_width",
     "product_page_layout": "default",
     "type_font_1": "shopify_fonts",
     "type_font_1_name": "Poppins",
@@ -860,11 +861,6 @@
           "video-title": "",
           "use-variant": "false"
         }
-      },
-      "6097499278999377719": {
-        "type": "shopify://apps/globo-mega-menu/blocks/app-embed/7a00835e-fe40-45a5-a615-2eb4ab697b58",
-        "disabled": false,
-        "settings": {}
       }
     }
   }

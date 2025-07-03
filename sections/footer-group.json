@@ -18,7 +18,7 @@
           "type": "text",
           "settings": {
             "custom_width": "30",
-            "heading": "Civia Jewel",
+            "heading": "Civia Jewels",
             "logo_margin_bottom": 28,
             "subtext": "<p>Ethical, lab-grown diamonds crafted with care for timeless beauty and sustainability.</p><p>24x7 support available through phone, chat, and email.</p>",
             "address_icon": "point_icon",
@@ -153,7 +153,7 @@
             "show_shop_name": false,
             "enable_layout_grid": false,
             "text_fontsize": 16,
-            "copyright_content": "<p>© Copyright 2025, civia Jewel All Rights Reserved.</p>",
+            "copyright_content": "<p>© Copyright 2025, civia Jewels All Rights Reserved.</p>",
             "copyright_content_color": "",
             "shop_name": "",
             "show_payment": true,

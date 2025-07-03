@@ -46,13 +46,15 @@
       <div class="heading">{{ section.settings.heading }}</div>
       <div class="desc">{{ section.settings.description }}</div>
     </div>
-      <div class="image " style="flex: 1;">
-      <a href="{{ section.settings.image_link }}">
-        <img class=" zoom-in-hover" 
-          src="{{ section.settings.image | image_url }}"
-          alt="Image"
-        >
-      </a>
+    <div class="image " style="flex: 1;">
+      <div class=" zoom-in-hover">
+        <a href="{{ section.settings.image_link }}">
+          <img
+            src="{{ section.settings.image | image_url }}"
+            alt="Image"
+          >
+        </a>
+      </div>
     </div>
   </div>
 </div>

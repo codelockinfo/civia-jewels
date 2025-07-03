@@ -1,4 +1,4 @@
-a{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -109,7 +109,7 @@ a{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {% schema %}
 {
-  "name": "Image with Text",
+  "name": "t:sections.image-with-text.name",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -118,7 +118,7 @@ a{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
     {
       "type": "image_picker",
       "id": "image",
-      "label": "select image"
+      "label": "t:sections.image-with-text.settings.image.label"
     },
     {
       "type": "select",
@@ -126,23 +126,23 @@ a{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
       "options": [
         {
           "value": "adapt",
-          "label": "Adapt"
+          "label": "t:sections.image-with-text.settings.height.options__1.label"
         },
         {
           "value": "small",
-          "label": "Small"
+          "label": "t:sections.image-with-text.settings.height.options__2.label"
         },
         {
           "value": "medium",
-          "label": "medium"
+          "label": "t:sections.image-with-text.settings.height.options__3.label"
         },
         {
           "value": "large",
-          "label": "large"
+          "label": "t:sections.image-with-text.settings.height.options__4.label"
         }
       ],
       "default": "adapt",
-      "label": "Height"
+      "label": "t:sections.image-with-text.settings.height.label"
     },
     {
       "type": "select",
@@ -150,19 +150,19 @@ a{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
       "options": [
         {
           "value": "small",
-          "label": "small"
+          "label": "t:sections.image-with-text.settings.desktop_image_width.options__1.label"
         },
         {
           "value": "medium",
-          "label": "medium"
+          "label": "t:sections.image-with-text.settings.desktop_image_width.options__2.label"
         },
         {
           "value": "large",
-          "label": "large"
+          "label": "t:sections.image-with-text.settings.desktop_image_width.options__3.label"
         }
       ],
       "default": "medium",
-      "label": "Width"
+      "label": "t:sections.image-with-text.settings.desktop_image_width.label"
     },
     {
       "type": "select",
@@ -170,15 +170,15 @@ a{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
       "options": [
         {
           "value": "image_first",
-          "label": "Image first"
+          "label": "t:sections.image-with-text.settings.layout.options__1.label"
         },
         {
           "value": "text_first",
-          "label": "Text First"
+          "label": "t:sections.image-with-text.settings.layout.options__2.label"
         }
       ],
       "default": "image_first",
-      "label": "Placement"
+      "label": "t:sections.image-with-text.settings.layout.label"
     },
     {
       "type": "select",
@@ -469,7 +469,7 @@ a{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
   ],
   "presets": [
     {
-      "name": "Image with Text",
+      "name": "t:sections.image-with-text.presets.name",
       "blocks": [
         {
           "type": "heading"

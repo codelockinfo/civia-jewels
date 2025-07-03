@@ -711,7 +711,7 @@
         "product_block_layout": "grid",
         "product_bg": "#ffffff",
         "product_bg_gradient": "",
-        "product_block_collection": "",
+        "product_block_collection": "rose-gold",
         "product_block_limit": 4,
         "grid_gap": 30,
         "pb_style": "style1",

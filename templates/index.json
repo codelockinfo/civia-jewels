@@ -648,14 +648,14 @@
         "mg_bottom_mobile": 50
       }
     },
-    "video_with_text_NB8tqh": {
+    "video_with_text_pweMJA": {
       "type": "video-with-text",
-      "name": "Video With Text Block",
+      "name": "Video With Text",
       "settings": {
         "video_url": "shopify://files/videos/0dd3f5acbde944329b04d20899b6c722.SD-480p-1.5Mbps-49339678 (2).mp4",
         "heading": "Customize Your Perfect Diamond Ring & More With Us",
         "text": "Shop your ideal diamond ring with Renaissance Jewel’s expert craftsmen. Collaborate with our experts to create a piece of custom diamond jewelry that's truly unique to you.",
-        "button_text": "Contact Us",
+        "button_text": "CONTACT US",
         "button_link": "shopify://pages/contact"
       }
     },
@@ -914,7 +914,7 @@
     "image_banner_9a3qMq",
     "brand_slider_xCF7Yc",
     "spotlight_block_Lt8xr9",
-    "video_with_text_NB8tqh",
+    "video_with_text_pweMJA",
     "image_with_text_kpmkXA",
     "17514581159fafe6d0",
     "product_block_9ctyYD",

@@ -1,6 +1,6 @@
 {% schema %}
 {
-  "name": "Video With Text Block",
+  "name": "Video With Text ",
   "settings": [
     {
       "type": "video",
@@ -35,7 +35,7 @@
   ],
   "presets": [
     {
-      "name": "Video With Text Block",
+      "name": "Video With Text",
       "category": "Custom"
     }
   ]
@@ -55,8 +55,8 @@
   </div>
 
   <div class="custom-text">
-    <h2>{{ section.settings.heading }}</h2>
-    <p>{{ section.settings.text }}</p>
+    <div class="heading">{{ section.settings.heading }}</div>
+    <div class="desc">{{ section.settings.text }}</div>
     {% if section.settings.button_link != blank and section.settings.button_text != blank %}
       <a href="{{ section.settings.button_link }}" class="custom-button">{{ section.settings.button_text }}</a>
     {% endif %}

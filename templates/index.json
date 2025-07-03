@@ -785,8 +785,8 @@
         "spacing_bottom": 0,
         "spacing_right": 0,
         "product_block_show": "5",
-        "button_text_slider": "",
-        "button_link_slider": "",
+        "button_text_slider": "shop now",
+        "button_link_slider": "shopify://collections/rose-gold",
         "button_width": 280,
         "btn_spacing_top": 49,
         "product_block_per_view": "4",
@@ -806,7 +806,7 @@
         "collection_bg_color_gradient": "",
         "text_list": "View all categories",
         "url_list": "",
-        "enable_layout_special": false,
+        "enable_layout_special": true,
         "bg_card": "#ffffff",
         "padding_card": 15,
         "border_radius_card": 5,
@@ -818,7 +818,7 @@
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 20,
         "mg_bottom_tablet": 20,
-        "mg_bottom_mobile": 50
+        "mg_bottom_mobile": 20
       }
     },
     "policy_icon_cd9BWX": {

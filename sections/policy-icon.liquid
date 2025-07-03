@@ -1,6 +1,6 @@
 {% schema %}
 {
-  "name": "Policy Icons",
+  "name": "Commitment Icons",
   "max_blocks": 5,
   "settings": [
     {
@@ -21,6 +21,12 @@
           "label": "Icon Image"
         },
         {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Circle Background Color",
+          "default": "#000000"
+        },
+        {
           "type": "text",
           "id": "label",
           "label": "Icon Label",
@@ -31,23 +37,18 @@
   ],
   "presets": [
     {
-      "name": "Policy Icons",
+      "name": "Commitment Icons",
       "category": "Custom",
       "blocks": [
-        {
-          "type": "icon_block"
-        },
-        {
-          "type": "icon_block"
-        },
-        {
-          "type": "icon_block"
-        }
+        { "type": "icon_block" },
+        { "type": "icon_block" },
+        { "type": "icon_block" }
       ]
     }
   ]
 }
 {% endschema %}
+
 
 <div class="commitment-wrapper">
   <h2 class="commitment-heading">{{ section.settings.heading }}</h2>
@@ -55,7 +56,7 @@
     {% for block in section.blocks %}
       <div class="commitment-item">
         {% if block.settings.icon != blank %}
-          <div class="icon-circle">
+          <div class="icon-circle" style="background-color: {{ block.settings.bg_color }};">
             <img src="{{ block.settings.icon | image_url: width: 100 }}" alt="icon">
           </div>
         {% endif %}
@@ -65,8 +66,8 @@
   </div>
 </div>
 
-<style>
-  .commitment-wrapper {
+
+<style>.commitment-wrapper {
   text-align: center;
   padding: 60px 20px;
 }
@@ -84,14 +85,14 @@
 }
 
 .commitment-item {
-  width: 120px;
+  width: 140px;
+  text-align: center;
 }
 
 .icon-circle {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto 15px;
-  background-color: black;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -101,11 +102,11 @@
 .icon-circle img {
   width: 50%;
   height: auto;
+  object-fit: contain;
 }
 
 .icon-label {
   font-size: 14px;
   text-transform: uppercase;
 }
-
 </style>

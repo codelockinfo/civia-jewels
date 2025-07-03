@@ -821,6 +821,52 @@
         "mg_bottom_mobile": 50
       }
     },
+    "policy_icon_cd9BWX": {
+      "type": "policy-icon",
+      "blocks": {
+        "icon_block_VQx8CP": {
+          "type": "icon_block",
+          "settings": {
+            "label": "Eco-Friendly Diamonds"
+          }
+        },
+        "icon_block_JME4VB": {
+          "type": "icon_block",
+          "settings": {
+            "label": "Eco-Friendly Diamonds"
+          }
+        },
+        "icon_block_ADkXHK": {
+          "type": "icon_block",
+          "settings": {
+            "label": "Eco-Friendly Diamonds"
+          }
+        },
+        "icon_block_TPEBhf": {
+          "type": "icon_block",
+          "settings": {
+            "label": "Eco-Friendly Diamonds"
+          }
+        },
+        "icon_block_fPzxaX": {
+          "type": "icon_block",
+          "settings": {
+            "label": "Eco-Friendly Diamonds"
+          }
+        }
+      },
+      "block_order": [
+        "icon_block_VQx8CP",
+        "icon_block_JME4VB",
+        "icon_block_ADkXHK",
+        "icon_block_TPEBhf",
+        "icon_block_fPzxaX"
+      ],
+      "name": "Policy Icons",
+      "settings": {
+        "heading": "The Renaissance Commitment"
+      }
+    },
     "rich_text_bqMiFq": {
       "type": "rich-text",
       "blocks": {
@@ -918,6 +964,7 @@
     "image_with_text_kpmkXA",
     "17514581159fafe6d0",
     "product_block_9ctyYD",
+    "policy_icon_cd9BWX",
     "rich_text_bqMiFq"
   ]
 }

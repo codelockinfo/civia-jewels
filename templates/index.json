@@ -761,24 +761,24 @@
         "mg_bottom_mobile": 50
       }
     },
-    "image_with_text_eKrtXd": {
+    "image_with_text_ppFTyz": {
       "type": "image-with-text",
       "blocks": {
-        "heading_LKeGEt": {
+        "heading_kidC3c": {
           "type": "heading",
           "settings": {
             "heading": "missing translation: \"t:sections.image-with-text.blocks.heading.settings.heading.default\"",
             "heading_size": "h1"
           }
         },
-        "text_khfhdH": {
+        "text_fnBdHf": {
           "type": "text",
           "settings": {
             "text": "<p>missing translation: \"t:sections.image-with-text.blocks.text.settings.text.default\"</p>",
             "text_style": "body"
           }
         },
-        "button_A4xjEt": {
+        "button_YREePb": {
           "type": "button",
           "settings": {
             "button_label": "missing translation: \"t:sections.image-with-text.blocks.button.settings.button_label.default\"",
@@ -788,17 +788,16 @@
         }
       },
       "block_order": [
-        "heading_LKeGEt",
-        "text_khfhdH",
-        "button_A4xjEt"
+        "heading_kidC3c",
+        "text_fnBdHf",
+        "button_YREePb"
       ],
-      "name": "Image with Text",
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/EMP02375_3_940x_1d2fae7c-8c93-4c21-a8f7-2197790cd65a.webp",
-        "height": "medium",
+        "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "zoom-in",
+        "layout": "image_first",
+        "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
@@ -1055,7 +1054,7 @@
     "spotlight_block_Lt8xr9",
     "custom_press_banner_eeAqPP",
     "custom_press_banner_Vc3tNy",
-    "image_with_text_eKrtXd",
+    "image_with_text_ppFTyz",
     "17514581159fafe6d0",
     "product_block_9ctyYD",
     "rich_text_bqMiFq"

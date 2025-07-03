@@ -162,4 +162,42 @@
     justify-self: center;
   }
 }
+  @media (min-width: 768px) and (max-width: 1023px) {
+  .commitment-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .commitment-item {
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .icon-circle img {
+    width: 50%;
+  }
+
+  .commitment-heading {
+    font-size: 32px;
+    padding-bottom: 50px;
+  }
+
+  .icon-label {
+    font-size: 16px;
+  }
+
+  /* Center last item if odd count (like 5 items) */
+  .commitment-icons .commitment-item:nth-child(5):last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
 </style>

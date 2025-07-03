@@ -794,8 +794,8 @@
       ],
       "name": "Image with Text",
       "settings": {
-        "image": "shopify://shop_images/download_740aabac-18da-418a-9547-15b22bf3a48c.webp",
-        "height": "small",
+        "image": "shopify://shop_images/EMP02375_3_940x_1d2fae7c-8c93-4c21-a8f7-2197790cd65a.webp",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "zoom-in",

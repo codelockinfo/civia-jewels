@@ -46,9 +46,9 @@
       <div class="heading">{{ section.settings.heading }}</div>
       <div class="desc">{{ section.settings.description }}</div>
     </div>
-      <div class="image zoom-out-hover" style="flex: 1;">
+      <div class="image " style="flex: 1;">
       <a href="{{ section.settings.image_link }}">
-        <img
+        <img class=" zoom-in-hover" 
           src="{{ section.settings.image | image_url }}"
           alt="Image"
         >
@@ -98,12 +98,12 @@
       font-size: 24px;
       line-height: 1.1;
     }
-    .zoom-out-hover img {
+    .zoom-in-hover img {
      transition: transform 0.3s ease;
      transform: scale(1);
   }
 
-  .zoom-out-hover:hover img {
+  .zoom-in-hover:hover img {
     transform: scale(1.05); /* Zoom in on hover */
   }
 </style>

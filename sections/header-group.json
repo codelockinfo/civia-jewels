@@ -87,21 +87,21 @@
           "settings": {
             "show_search": true,
             "show_search_left_to_right": false,
-            "search_color": "#3c3c3c",
+            "search_color": "#000000",
             "bg_search_color": "",
-            "search_border_color": "#7b7b7b",
-            "search_icon_color": "#232323",
+            "search_border_color": "#000000",
+            "search_icon_color": "#000000",
             "show_customer": true,
-            "customer_color": "#232323",
+            "customer_color": "#000000",
             "show_wishlist": true,
-            "wishlist_color": "#232323",
+            "wishlist_color": "#000000",
             "show_wishlist_number": false,
             "wishlist_color_item": "#ffffff",
-            "wishlist_bg_item": "#232323",
+            "wishlist_bg_item": "#000000",
             "show_cart": true,
-            "cart_color": "#232323",
+            "cart_color": "#000000",
             "cart_color_item": "#ffffff",
-            "cart_bg_item": "#232323"
+            "cart_bg_item": "#000000"
           }
         }
       },

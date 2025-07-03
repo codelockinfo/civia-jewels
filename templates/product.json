@@ -37,21 +37,10 @@
             "spacing_bottom": 10
           }
         },
-        "0e4ea696-4820-4c98-aaa6-806d41782a3d": {
-          "type": "meta",
-          "settings": {
-            "show_sold_in": true,
-            "sold_in_number": "3,5,6,7,8,10,12,15",
-            "sold_in_hours": "10,15,16,17,18,20,25,35",
-            "color_text_sold_in": "#e95144",
-            "spacing_top": 0,
-            "spacing_bottom": 14
-          }
-        },
         "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c": {
           "type": "short_description",
           "settings": {
-            "show_short_description": true,
+            "show_short_description": false,
             "word_number": "17",
             "fontsize_text": 12,
             "color_text": "#3c3c3c",
@@ -63,10 +52,10 @@
           "type": "info",
           "settings": {
             "show_vendor": false,
-            "show_sku": true,
+            "show_sku": false,
             "show_barcode": false,
-            "show_availability": true,
-            "show_product_type": true,
+            "show_availability": false,
+            "show_product_type": false,
             "stock_level_display": "none",
             "enable_border_top": false,
             "enable_border_bottom": false,
@@ -312,7 +301,6 @@
       "block_order": [
         "2e8c7c14-a0ad-4930-a1d8-3def05310426",
         "b0ea69b7-8a54-4a3c-9abd-0fcceeabaaa0",
-        "0e4ea696-4820-4c98-aaa6-806d41782a3d",
         "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c",
         "4e59f24a-8859-4579-a80a-d70e6f1bf66b",
         "4f95b592-8369-4ab0-b30d-24e463fb6890",

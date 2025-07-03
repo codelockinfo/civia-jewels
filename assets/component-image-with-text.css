@@ -4,17 +4,6 @@
 
 .image-with-text .grid__item {
   position: relative;
-  
-}
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    padding: 0;
-    list-style: none;
-    column-gap: var(--grid-mobile-horizontal-spacing);
-    row-gap: var (--grid-mobile-vertical-spacing);
-
 }
 
 @media screen and (min-width: 750px) {

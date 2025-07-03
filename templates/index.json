@@ -827,31 +827,41 @@
         "icon_block_VQx8CP": {
           "type": "icon_block",
           "settings": {
+            "icon": "shopify://shop_images/download_e6dcc660-1b6d-47d4-9e18-ea5fb08e6aed.webp",
+            "bg_color": "#000000",
             "label": "Eco-Friendly Diamonds"
           }
         },
         "icon_block_JME4VB": {
           "type": "icon_block",
           "settings": {
-            "label": "Eco-Friendly Diamonds"
+            "icon": "shopify://shop_images/Group_7.webp",
+            "bg_color": "#000000",
+            "label": "100% Conflict-Free"
           }
         },
         "icon_block_ADkXHK": {
           "type": "icon_block",
           "settings": {
-            "label": "Eco-Friendly Diamonds"
+            "icon": "shopify://shop_images/Group_1031.png",
+            "bg_color": "#000000",
+            "label": "Lifetime Warranty"
           }
         },
         "icon_block_TPEBhf": {
           "type": "icon_block",
           "settings": {
-            "label": "Eco-Friendly Diamonds"
+            "icon": "shopify://shop_images/shield_2.webp",
+            "bg_color": "#000000",
+            "label": "24/7 Expert Support"
           }
         },
         "icon_block_fPzxaX": {
           "type": "icon_block",
           "settings": {
-            "label": "Eco-Friendly Diamonds"
+            "icon": "shopify://shop_images/returns_1.webp",
+            "bg_color": "#000000",
+            "label": "Lifetime Buy Back Guarantee"
           }
         }
       },

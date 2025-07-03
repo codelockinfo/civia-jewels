@@ -761,46 +761,56 @@
         "mg_bottom_mobile": 50
       }
     },
-    "image_with_text_ppFTyz": {
+    "image_with_text_kpmkXA": {
       "type": "image-with-text",
       "blocks": {
-        "heading_kidC3c": {
+        "caption_fPYW6E": {
+          "type": "caption",
+          "settings": {
+            "caption": "Latest Collections",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading_3HJYfx": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Timeless Elegance With                       Modern Luxury",
             "heading_size": "h1"
           }
         },
-        "text_fnBdHf": {
+        "text_7CfxMk": {
           "type": "text",
           "settings": {
-            "text": "<p>missing translation: \"t:sections.image-with-text.blocks.text.settings.text.default\"</p>",
+            "text": "<p>Experience the Renaissance reborn in each brilliant diamond. Browse our curated collections that blend modern elegance with timeless beauty<br/><br/></p>",
             "text_style": "body"
           }
         },
-        "button_YREePb": {
+        "button_ymTBDN": {
           "type": "button",
+          "disabled": true,
           "settings": {
-            "button_label": "missing translation: \"t:sections.image-with-text.blocks.button.settings.button_label.default\"",
+            "button_label": "button label",
             "button_link": "",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading_kidC3c",
-        "text_fnBdHf",
-        "button_YREePb"
+        "caption_fPYW6E",
+        "heading_3HJYfx",
+        "text_7CfxMk",
+        "button_ymTBDN"
       ],
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "Image with text",
       "settings": {
         "image": "shopify://shop_images/EMP02375_3_940x_1d2fae7c-8c93-4c21-a8f7-2197790cd65a.webp",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
+        "content_layout": "overlap",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
@@ -1055,7 +1065,7 @@
     "spotlight_block_Lt8xr9",
     "custom_press_banner_eeAqPP",
     "custom_press_banner_Vc3tNy",
-    "image_with_text_ppFTyz",
+    "image_with_text_kpmkXA",
     "17514581159fafe6d0",
     "product_block_9ctyYD",
     "rich_text_bqMiFq"

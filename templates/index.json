@@ -767,7 +767,7 @@
         "heading_kidC3c": {
           "type": "heading",
           "settings": {
-            "heading": "missing translation: \"t:sections.image-with-text.blocks.heading.settings.heading.default\"",
+            "heading": "",
             "heading_size": "h1"
           }
         },

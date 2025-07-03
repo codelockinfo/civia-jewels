@@ -307,108 +307,12 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "faqs_feTxeG": {
-      "type": "faqs",
-      "blocks": {
-        "paragraph_HHtFL9": {
-          "type": "paragraph",
-          "settings": {
-            "title": "Presale",
-            "question_1": "Question",
-            "answer_1": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_2": "Question",
-            "answer_2": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_3": "Question",
-            "answer_3": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_4": "Question",
-            "answer_4": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_5": "Question",
-            "answer_5": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_6": "Question",
-            "answer_6": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_7": "Question",
-            "answer_7": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_8": "Question",
-            "answer_8": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_9": "Question",
-            "answer_9": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_10": "Question",
-            "answer_10": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>"
-          }
-        },
-        "paragraph_yUAkhF": {
-          "type": "paragraph",
-          "settings": {
-            "title": "Presale",
-            "question_1": "Question",
-            "answer_1": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_2": "Question",
-            "answer_2": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_3": "Question",
-            "answer_3": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_4": "Question",
-            "answer_4": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_5": "Question",
-            "answer_5": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_6": "Question",
-            "answer_6": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_7": "Question",
-            "answer_7": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_8": "Question",
-            "answer_8": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_9": "Question",
-            "answer_9": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
-            "question_10": "Question",
-            "answer_10": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "paragraph_HHtFL9",
-        "paragraph_yUAkhF"
-      ],
-      "name": "t:sections.faqs.presets.name",
-      "settings": {
-        "container": "container",
-        "padding_full_width": 0,
-        "title": "FAQs",
-        "color_title": "#232323",
-        "fontsize_title": 16,
-        "fontsize_title_mb": 16,
-        "mg_bottom_title": 12,
-        "mg_bottom_title_mb": 12,
-        "enable_border_title": false,
-        "border_color_title": "#051c42",
-        "description": "Below FAQ are some common concerns of our clients before purchasing the theme, if you have other questions, please just send it to example@domain.com.",
-        "color_des": "#202020",
-        "fontsize_des": 16,
-        "contact_text": "Contact Support",
-        "contact_link": "",
-        "contact_color": "#ffffff",
-        "contact_color_border": "#ef6454",
-        "contact_color_bg": "#ef6454",
-        "contact_color_bg_gradient": "",
-        "contact_color_hover": "#ffffff",
-        "contact_color_border_hover": "#ef6454",
-        "contact_color_bg_hover": "#ef6454",
-        "contact_color_bg_gradient_hover": "",
-        "title_alignment": "left",
-        "show_faqs_filter": true,
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
-      }
     }
   },
   "order": [
     "announcement-bar",
     "header_basic_T6xUEr",
     "header_navigation_utility_g9ymLB",
-    "header-mobile",
-    "faqs_feTxeG"
+    "header-mobile"
   ]
 }

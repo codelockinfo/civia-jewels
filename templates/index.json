@@ -802,7 +802,7 @@
         "display_list_collection": true,
         "collection_color": "#000000",
         "collection_color_hover": "#000000",
-        "collection_bg_color": "#ffffff",
+        "collection_bg_color": "#ffffffff",
         "collection_bg_color_gradient": "",
         "text_list": "Shop now",
         "url_list": "shopify://collections/rose-gold",

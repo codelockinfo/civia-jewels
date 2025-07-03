@@ -796,7 +796,7 @@
       "settings": {
         "image": "shopify://shop_images/download_740aabac-18da-418a-9547-15b22bf3a48c.webp",
         "height": "small",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "zoom-in",
         "content_layout": "no-overlap",

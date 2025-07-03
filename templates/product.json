@@ -278,64 +278,64 @@
             "spacing_bottom": 12
           }
         },
-        "a86220cf-8641-4e06-87d3-b5ffa195501b": {
+        "custom_information_VEJrzr": {
           "type": "custom_information",
           "settings": {
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fal\" data-icon=\"shipping-fast\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 640 512\"><path fill=\"currentColor\" d=\"M280 192c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240zm352 192h-24V275.9c0-16.8-6.8-33.3-18.8-45.2l-83.9-83.9c-11.8-12-28.3-18.8-45.2-18.8H416V78.6c0-25.7-22.2-46.6-49.4-46.6H113.4C86.2 32 64 52.9 64 78.6V96H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H96V78.6c0-8.1 7.8-14.6 17.4-14.6h253.2c9.6 0 17.4 6.5 17.4 14.6V384H207.6C193 364.7 170 352 144 352c-18.1 0-34.6 6.2-48 16.4V288H64v144c0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16h195.2c-1.1 5.2-1.6 10.5-1.6 16 0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16H632c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm-488 96c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm272-320h44.1c8.4 0 16.7 3.4 22.6 9.4l83.9 83.9c.8.8 1.1 1.9 1.8 2.8H416V160zm80 320c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-96h-16.4C545 364.7 522 352 496 352s-49 12.7-63.6 32H416v-96h160v96zM256 248v-16c0-4.4-3.6-8-8-8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240c4.4 0 8-3.6 8-8z\"></path></svg>",
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"29\" height=\"36\" viewBox=\"0 0 29 36\">\n                    <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAkCAYAAAB15jFqAAAAAXNSR0IArs4c6QAABV9JREFUWEfNln9olWUUx7/ned739W42ael+ZEvdnKm7d6ssRFeUWiqkJilCoiu0rqaSYsnmSknItl0FJSj8kZVZFIL9YUSEhIThHyqkoZtatjkylW2aOrfd977vc07c6V2i092bhj1w/7jcc76f53zPeZ7nEu7CorvAxP8Xmjd6adrp1tw3QBLozhnHpqgSHM60zd4/9791rif3kqpUl9RMMaK+6UlMQdq0zyu9o5XrbxWbFNQpriqPQUeQRDeIwTZis2O1K766GTgpqC5Zu9WIvNxTpYnfNXi3Obz8mduCUiiyV4hKEyLEHuB7NxZOBCgbWula/3BF6PagxZEmAWV1QdvOQIx7E02Cys1t4ldnjEJ4WEN3QT3a+8DIqr6n261moWsa2noKEL9bKEFApaNA456uz+/wik4sHnLD7nqEWkWrn/S189M/1jLk8h8ApHuo40DNfRncLxNp4o5snzf0wPWBPUIDD0fKooxtXQ00MaDtdPfWkkA/UQoz5qlOWzSbif78gl0pQ61QpMonquxK9NqAjuYboCQAFQchU58DSHX6cI8gdHnewNqUobo4stMAzycqpegFwGuFxHunCEhPhxr4IBAqAhcO7tSPA7Vwo5mXn99dH25t76pVSn2dfpCBksRurdIgeETRla9EkPgnvoE4KX5kri6bUBF7deCalKf3vpJI3l+CXwWUlihBvfgsJKfvTSY3UaU5nOl1lDYvCl5OGWoFI2MN0W65xg+1cDrEsq7TijcUYhk0KIWNGeejG1sqhrX+q8vBDlYv9JT+sOu4ZPQGzZkUN/OKu8LIsL0JDvRJLXzh7JzCFlCn0bdct+ypVVy9zodemlBQeTmQaWO6BBVMswkXZPcESWl6rWDke1+pifG9CwkoVAga9xhYBEQEBd5jwvlP31GoXVz9GAsGXBG1oGeOe8XLzpp0ZVwEFrDFCw8K31Ho9WL25t/3+qSvvjaEAEx5R7hg7X8KDWxpLLOEBmgNsEB80p93zH0gfhGntHq8e1NSSzKY4k/XpZiezGzAUC67dNA9XnE8yfzOsPs//n1WTCnbsGH2+fil+Q/t6y6/8Ivf8i5G1QTSoZpJhtS3StAgQF+A+2jfG+sfW/ljMuBBnzbkNvo4Q1DnSCAC9LOF3nDnD7jhz1n6x/WLoqzWkxWqrjSkqhxqHcacMdIj2qZ9nukYv9617ccDHh9wYfJs5R/04Iwwhg7ht8r69KGR/i6ZUdas8b6Xm73TEX/2veBDTWQf0WI2ZdDl1a2qz2QFOU2eblMSO+/b9lIRGkF2KLLNA8oskRqj6AUSFMB3V4kVWA3wDxAeLsrKszx/DGu9FcC+RwP3lv3cfuG4Im6wl8zY7mpnk2Xkc1HIZmBiL/bKXdKVmqxGEV8x6ZAl5i1WaioY50kXR/awYCSBjijIGbix98WxqwzLMRytfEkHq6cz0Y40Y/pHlR0WwutaZINRWCZRJ+S8OXWBp61lWnEdMZ0FzHYoBNmnyUMz24e3XOTMFupzxoaZakR9QsBnpEvWNLGRfVJbMaXrugutOSHgugDr91zNS8A0kWvL+/UKVg+OkY6/OrB9d7F3bMUH1uaT34HkET+c3z+Rb3/UsNWAxvfSehp7sWkxZZVnWe6EFt/ZFSC8QipY/Ytm3uwdfbvrYreH17zka3pHQZrAfBaK2syRytk5Oct6N2VlnyLm7Vy3/LU4xNl8cgcR17vhgvIE1NlQF2Kr95fxJ57A+wA1JA3egjayPuktHXNTOqdqeM27otUcibaMwok1p5KZ7u5ikobmjV6X1tLulpFnDnXUrdj/b4HxvKShtwNJ6Wm7k6Brte5KpX8D5qI52pcSnbYAAAAASUVORK5CYII=\" x=\"0\" y=\"0\" width=\"29\" height=\"36\"/>\n                  </svg>",
             "color_icon": "#232323",
-            "text": "Free Shipping",
-            "color_title": "#232323",
-            "text_description": "<p>Free standard shipping on orders over $99</p>\n<p>Estimated to be delivered on 12/01/2022 - 15/10/2022.</p>",
-            "color_des": "#4d4d4d",
-            "fontsize_text": 14,
-            "content_popup": "<div class=\"halo-text-format\">\n<p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.</p>\n<p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.</p>\n<p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.</p>\t\t\t\t\t\t</div>",
-            "spacing_top": 0,
-            "spacing_bottom": 12
-          }
-        },
-        "custom_information_BKDhPT": {
-          "type": "custom_information",
-          "settings": {
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fal\" data-icon=\"shipping-fast\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 640 512\"><path fill=\"currentColor\" d=\"M280 192c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H40c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240zm352 192h-24V275.9c0-16.8-6.8-33.3-18.8-45.2l-83.9-83.9c-11.8-12-28.3-18.8-45.2-18.8H416V78.6c0-25.7-22.2-46.6-49.4-46.6H113.4C86.2 32 64 52.9 64 78.6V96H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H96V78.6c0-8.1 7.8-14.6 17.4-14.6h253.2c9.6 0 17.4 6.5 17.4 14.6V384H207.6C193 364.7 170 352 144 352c-18.1 0-34.6 6.2-48 16.4V288H64v144c0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16h195.2c-1.1 5.2-1.6 10.5-1.6 16 0 44.2 35.8 80 80 80s80-35.8 80-80c0-5.5-.6-10.8-1.6-16H632c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm-488 96c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm272-320h44.1c8.4 0 16.7 3.4 22.6 9.4l83.9 83.9c.8.8 1.1 1.9 1.8 2.8H416V160zm80 320c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-96h-16.4C545 364.7 522 352 496 352s-49 12.7-63.6 32H416v-96h160v96zM256 248v-16c0-4.4-3.6-8-8-8H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h240c4.4 0 8-3.6 8-8z\"></path></svg>",
-            "color_icon": "#232323",
-            "text": "Free Shipping",
-            "color_title": "#232323",
-            "text_description": "<p>Free standard shipping on orders over $99</p>\n<p>Estimated to be delivered on 12/01/2022 - 15/10/2022.</p>",
-            "color_des": "#4d4d4d",
-            "fontsize_text": 12,
-            "content_popup": "<div class=\"halo-text-format\">\n<p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.</p>\n<p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.</p>\n<p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.</p>\t\t\t\t\t\t</div>",
-            "spacing_top": 0,
-            "spacing_bottom": 12
-          }
-        },
-        "058d88b7-6cce-4aae-a5c4-b8193bbdfa7f": {
-          "type": "custom_information",
-          "settings": {
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fal\" data-icon=\"shield-alt\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 512 512\">\n    <path fill=\"currentColor\" d=\"M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM262.2 478.8c-4 1.6-8.4 1.6-12.3 0C152 440 48 304 48 128c0-6.5 3.9-12.3 9.8-14.8l192-80c3.9-1.6 8.4-1.6 12.3 0l192 80c6 2.5 9.9 8.3 9.8 14.8.1 176-103.9 312-201.7 350.8zM256 411V100l-142.7 59.5c10.1 120.1 77.1 215 142.7 251.5zm-32-66.8c-36.4-39.9-65.8-97.8-76.1-164.5L224 148z\"></path>\n</svg>",
-            "color_icon": "#232323",
-            "text": "Free Returns",
-            "color_title": "#232323",
-            "text_description": "Learn More.",
-            "color_des": "#4d4d4d",
-            "fontsize_text": 12,
-            "content_popup": "<div class=\"halo-text-format\">\n\t\t\t\t\t\t\n<p>You may return most new, unopened items within 30 days of delivery for a full refund. We'll also pay the return shipping costs if the return is a result of our error (you received an incorrect or defective item, etc.).</p>\n<p>You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).</p>\n<p>If you need to return an item, simply login to your account, view the order using the \"Complete Orders\" link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.</p>\n\t\t\t\t\t\t\t</div>",
-            "spacing_top": 0,
-            "spacing_bottom": 14
-          }
-        },
-        "36addb13-cd73-4713-a15c-7d846c4724e7": {
-          "type": "custom_information",
-          "settings": {
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fal\" data-icon=\"exclamation-triangle\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 576 512\"><path fill=\"currentColor\" d=\"M270.2 160h35.5c3.4 0 6.1 2.8 6 6.2l-7.5 196c-.1 3.2-2.8 5.8-6 5.8h-20.5c-3.2 0-5.9-2.5-6-5.8l-7.5-196c-.1-3.4 2.6-6.2 6-6.2zM288 388c-15.5 0-28 12.5-28 28s12.5 28 28 28 28-12.5 28-28-12.5-28-28-28zm281.5 52L329.6 24c-18.4-32-64.7-32-83.2 0L6.5 440c-18.4 31.9 4.6 72 41.6 72H528c36.8 0 60-40 41.5-72zM528 480H48c-12.3 0-20-13.3-13.9-24l240-416c6.1-10.6 21.6-10.7 27.7 0l240 416c6.2 10.6-1.5 24-13.8 24z\"></path></svg>",
-            "color_icon": "#232323",
-            "text": "Covid-19 Shipping Delay Notice",
+            "text": "100% secured payment",
             "color_title": "#232323",
             "text_description": "",
             "color_des": "#999999",
-            "fontsize_text": 12,
-            "content_popup": "<div class=\"halo-text-format\">\n\t\t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\t\t\t\t\t\t\t</div>",
+            "fontsize_text": 14,
+            "content_popup": "fhgfhfgjgfjj",
             "spacing_top": 0,
-            "spacing_bottom": 0
+            "spacing_bottom": 12
+          }
+        },
+        "custom_information_m9cPxA": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"25\" height=\"22\" viewBox=\"0 0 25 22\">\n                    <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAAAXNSR0IArs4c6QAAA6xJREFUSEutlV1Mm2UUx3+dzgQuDJBMgjHs5cILSUi84EMv+JRBzDqFTEti5EMiOLoLCB8tRYESh+0IQTTB0lkoMDDYm2GJNaEmVJgXZMMYY2+cxgoLVqgBuXImBnvetKbWdpBlT/Kmb/o8z/mf8/+f/3k1/H89D3xSV1enpKSkJNhO/NfBwQFLS0sB4GXgu9hTmrgr3YqijDidTk1ZWRm3bt3G7//+RECVlZX8trvLKxcvEggEzMBQ9GIUJA2wl5aW6mZmZlAUhfHxcTweD5OTkxwdHbG/v58QLCcnB6/Xi91ux+l0qmdaW9/C6125AXQCAQF5Frhh6utT3hseZm9vj/r6eqqqqujs7GRiYoKdnR1KSkoTglitln+DNzU1UV1djclkYmhoCLPZLPTVCIgBuNrV1cXo6Cjl5eVkZmayuLhIR0cHkml7e3tSykKhEAaDkV5TL0+cOaMmt7KyQjAYpLi4mFAoZInSNRiOYq6pqeXK8BW058/T2NhIVlYWGxsbfOxw8MipUwmBfL6v2L67TUVFBQ319UxNTREK/c65c5WEm0HVJlb4d4B38/LysNlsNDQ0UFtbS1FREXNz15mbmyU9Pf0/QC6XKxxDQ2FhAW1temy2j1hfX6elpZV79/7sAyxyIb67mgGHoiiaT10u2i5dIjc3F73+MgajgYX5ebKzs1UgETo/P5+0tDR6enqYnp7G4XDI+9/Am8BMfHfFZigKLymKkvaZ243VauXHO3fU6rq7u1WRfT4fBQUF/BoMsuxeZmTkKhaLRcQ+AF4FvryfT6J7uYAnIyPj7NramhrY7V7m2jW72trybG5u4vf7GRgYwGjsFaAdoAT4KV68eLpi9xVg9fTpxxS7fZKtrS3EQ6urqywsLKDRaNDr9WoHzs7OSquWiycSdcf9QOS8CiS/Y2NjHB4eqlX09/fT3NyM9sIFvr5582egIhlAIuETJfKkmDVMX+Hg4CA6nY7U1FS0Wq3Q9Q3wAiBaJF3HVRK9+DhwHXhJOs3j+Vzm0xfAa8cBnLSS2AytgBGwAfoTTc4EPkl07yzwS8zGh+GKhCZZIrQv7K2nwt64mwz0OLpej3D+RiSAjO+BGADpKFlC3TMPAiIVSKbi3MvAi8DtSKB8MT2wHdHkufCQTfqFO84n0p4CEqVDKnoU+ADQAX+Fxf8BeCggTRGwKG1S0DzwPjD6MEBkXMvzrcy0GD3k/Y+IWaXSpx9EE3F7C/A2cBQTIH6ESDvL92g3Gcg/nEg92/D3DmUAAAAASUVORK5CYII=\" x=\"0\" y=\"0\" width=\"25\" height=\"22\"/>\n                  </svg>",
+            "color_icon": "#232323",
+            "text": "IGI-certified for guaranteed quality",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "fontsize_text": 14,
+            "content_popup": "fhgfhfgjgfjj",
+            "spacing_top": 0,
+            "spacing_bottom": 12
+          }
+        },
+        "custom_information_HaQcKn": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"31\" height=\"33\" viewBox=\"0 0 31 33\">\n                    <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAAAAXNSR0IArs4c6QAAA+5JREFUWEftlk1Io2cQx/9v3jeJMe5mFRMaCloXWSuEREFE7UWpIrEExVBKlVoQbXUVw4oGPJQqLILUgwhFDy1SadfSDzQiKtqDBxXcrfiBaOOaVjHGkNRuIhZj3nyU5wGDboyR7speMpdAZpjfzH9mnoQJBoNBvCFjYvA3oXxM9jDV+/v7cdf7AtPzTy/5Tjw8dGVafN7y6JUndaXsExMT2DQNoUQZxG92BncEXghZFv/wLEreAp5YOVTUGVBQUPBKBYTBbTYbWj6rRbZcCP19EZ46fPggRUwhzxw80mQsTH95YWXuof+b4dcLb3vUAvXpc/wLMVJkHOICXjhP/bgnZiEUAB7RHVjsL8ByHAKqElRXV18qICkp6cYFhXVuNDzE+9w+ZGIOHMsAwSB4fxAMA3ACBmCF4HkvzC4fAjmVGBkZoTCfz4fc3Fz09PT8f/jy8jJ6H38JVbwHzIP38KFwC9+tHUEhZZGl0eDHdSfe4Q/wJ6eETv8RFhYW4PF4sLS0hPz8fHR0dFA4wzCIpkKo876+PrAsi8TERCgUCvzy7dd4O84PdYoc7wrdUEg4jDskcNht+N3N4fFXfcjIyKAgp9NJ5SfdkxzE/H4/0tPT0dzcDLVafaUaIXhxcTF4nqdBcrkc5eXlWJn4Affvsvj4gRR/e/z49Q83zKdiNBq/QF5eXighgVdVVUEqlYZA5LudnR2IRCL09vYiMzMzrIAQfG9vDycnJzRgd3cXU1NTyMnJwfPZn/BJRhwWbGdYcwmg/fQhtFrtpUTn8NLSUrS1tYV8JpMJg4ODyM7ORnd3d2T4ysoKWltbqWxEvqOjI4yOjuLnJ9/j2LIGRhSH9PwS1NbWhiWJBCeBREGi6OTkZGS4xWIBmXtCQgKOj4+xurpKi9Hr9VhfX0cgEEBWVtaVs7sO3tnZCbPZHLqKiwkunRrZ9MXFRQonlZ7Do93OdXCilNVqxczMTOTOiaeurg5bW1uhuzUajbTzaPZa4Nvb26GF6+rqCnU+OzuL/f19pKWloaio6NqZE//8/DxSU1NRVlaGhoaGm3V+npXMqL6+HjqdDgKBAOPj4/STzL2iooI+JhfN7XbTbSZ3b7fbcXh4SB8Z8sNDJCdjjCr7RXhjYyO8Xi9cLheUSiW91fb2dvqavWykKBIbHx+Ps7Mzel4DAwN00cj5isViqsbLFvGfzNzcHI0dGxsDWUSZTAaHw0Efl8rKyivXYGNjg6pEXsmDgwN6OQaDARKJBIWFhTeHn0eSex8aGsLm5iZUKhVqamqQnJwccQeHh4cxPT1NwU1NTdBoNBFjY//hop3yrfhjst+KrNGSxmSPptCt+P8D6RYxvNMVVrkAAAAASUVORK5CYII=\" x=\"0\" y=\"0\" width=\"40\" height=\"40\"/>\n                  </svg>",
+            "color_icon": "#232323",
+            "text": "Free Shipping, Free 30-Day Return",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "fontsize_text": 14,
+            "content_popup": "fhgfhfgjgfjj",
+            "spacing_top": 0,
+            "spacing_bottom": 12
+          }
+        },
+        "custom_information_UyNtU3": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"38\" height=\"45\" viewBox=\"0 0 38 45\">\n                    <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAtCAYAAADC+hltAAAAAXNSR0IArs4c6QAAAjxJREFUWEftl7uuMVEUx/9uIW5BFJQSlVJzXkAiQoIa0VB4BIVKoRKFgoRGFEoKicQbKHgBpYIOibhfTtZORjifc8Y+fMkp9momxprZv/ntNXvWVlwulwv+YCgEGOesCGOcwiCMCWO8Bnjzf1Vjq9UKs9kMBoMBTqfz4ZhSDv3pcDhgNBq52LjB4vE4JpMJzucz9vs9QqEQcrnc3aD1eh2tVuuaYzab0ev1/h9Yt9tFsVjEcrmEyWRiR61Wi8FgcDfox8cHdrsds7TdbllOuVyG1+t9Gu4pY9PpFMPhkE1ftVqFSqVipvr9PtRqNWKxGJsuCsqp1Wo4nU4Ih8Ogh9HpdPD5fAgGg0/DyYKNRiNkMhno9Xo28Hw+ZwbS6TQajQY7R3C3cTwe2c9kMskgyZ7VamXn1us1KpWKLKAsWD6fR7vdxuFwuI5NkBLYYrF4OD0Wi+UKRjBS2Gw2JBIJpFKpH6dVFiybzbLCpamRwm63w+VyYTwe4zswAvB4PCDjt2BUBoFAAIVC4f1gCoUCSqWSvXXftXNSDo1++1BvB6O38NXYbDbsYfx+//uMSQX/Chy9CFSrbwf7ul7xQtL6JsB4rAljPLYoVxgTxh4ZkL6Vj/ouYUzOWKfT4ZV0lx+JRN638pdKJTSbTWg0mpegpIvpkxSNRv/ZJ3y9uWw/Rm01bUCov39HUNtDmxdqzX8KWTC6WNqK0fHVcLvdT23lngJ7FeY31wswXmvCmDDGa4A3X9SYMMZrgDf/z9bYJ2yiEpjENv8uAAAAAElFTkSuQmCC\" x=\"0\" y=\"0\" width=\"50\" height=\"60\"/>\n                  </svg>",
+            "color_icon": "#232323",
+            "text": "Order now and your order ships between July 13, 2025 and July 18, 2025",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "fontsize_text": 14,
+            "content_popup": "fhgfhfgjgfjj",
+            "spacing_top": 0,
+            "spacing_bottom": 12
           }
         },
         "9630b233-8164-4dad-ab64-8830bedf328a": {
@@ -377,10 +377,10 @@
         "19ab1d9f-74b2-4c76-bf2e-1bc749e5c2a3",
         "custom_information_z7ixNf",
         "custom_information_D9LEnL",
-        "a86220cf-8641-4e06-87d3-b5ffa195501b",
-        "custom_information_BKDhPT",
-        "058d88b7-6cce-4aae-a5c4-b8193bbdfa7f",
-        "36addb13-cd73-4713-a15c-7d846c4724e7",
+        "custom_information_VEJrzr",
+        "custom_information_m9cPxA",
+        "custom_information_HaQcKn",
+        "custom_information_UyNtU3",
         "9630b233-8164-4dad-ab64-8830bedf328a"
       ],
       "settings": {

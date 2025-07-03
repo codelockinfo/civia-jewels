@@ -341,7 +341,7 @@
         "padding_full_width": 0,
         "show_sticky_info": true,
         "media_fit": "cover",
-        "product_image_ratio": "portrait",
+        "product_image_ratio": "adapt",
         "portrait_aspect_ratio": 148,
         "video_layout": "popup",
         "zoomed_image": true,

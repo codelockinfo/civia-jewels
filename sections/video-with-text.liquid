@@ -53,11 +53,13 @@
   </div>
 
   <div class="custom-text">
-    <div class="video-heading">{{ section.settings.heading }}</div>
-    <div class="video-desc">{{ section.settings.text }}</div>
-    {% if section.settings.button_link != blank and section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_link }}" class="custom-button">{{ section.settings.button_text }}</a>
-    {% endif %}
+    <div class="container-text">
+      <div class="video-heading">{{ section.settings.heading }}</div>
+      <div class="video-desc">{{ section.settings.text }}</div>
+      {% if section.settings.button_link != blank and section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_link }}" class="custom-button">{{ section.settings.button_text }}</a>
+      {% endif %}
+    </div>
   </div>
 </div>
 
@@ -86,7 +88,9 @@
     flex: 1;
     min-width: 300px;
   }
-
+  .container-text{
+    
+  }
   .video-heading{
     padding-bottom: 15px;
     font-size: 32px;

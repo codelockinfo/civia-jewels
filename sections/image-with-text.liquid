@@ -24,6 +24,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "image_link",
+      "label": "Select collection"
     }
   ],
   "presets": [
@@ -43,10 +48,21 @@
     </div>
     <div class="image" style="flex: 1;">
       {% if section.settings.image %}
-        <img
-          src="{{ section.settings.image | image_url: width: 800 }}"
-          alt="Image"
-        >
+        {% if section.settings.image_link != blank %}
+          <a href="{{ section.settings.image_link }}">
+            <img
+              src="{{ section.settings.image | image_url }}"
+              alt="Image"
+              style="max-width: 100%; border-radius: 8px;"
+            >
+          </a>
+        {% else %}
+          <img
+            src="{{ section.settings.image | image_url }}"
+            alt="Image"
+            style="max-width: 100%; border-radius: 8px;"
+          >
+        {% endif %}
       {% endif %}
     </div>
   </div>

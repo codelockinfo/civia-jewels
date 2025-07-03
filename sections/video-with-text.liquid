@@ -4,8 +4,9 @@
   "settings": [
     {
       "type": "video",
-      "id": "video_file",
-      "label": "Upload Video File"
+      "id": "video_url",
+      "label": "Upload Video",
+
     },
     {
       "type": "text",
@@ -29,6 +30,7 @@
       "type": "url",
       "id": "button_link",
       "label": "Button Link",
+
     }
   ],
   "presets": [
@@ -40,12 +42,13 @@
 }
 {% endschema %}
 
-
 <div class="custom-video-text">
   <div class="custom-video">
-    {% if section.settings.video_file != blank %}
-      <video autoplay muted loop playsinline>
-        <source src="{{ section.settings.video_file | file_url }}" type="video/mp4">
+    {% if section.settings.video_url contains 'youtube' %}
+      <iframe src="{{ section.settings.video_url }}" allowfullscreen></iframe>
+    {% else %}
+      <video autoplay muted loop>
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     {% endif %}
@@ -59,3 +62,58 @@
     {% endif %}
   </div>
 </div>
+
+<style>
+    .custom-video-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+    background-color: #000;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+
+  .custom-video {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .custom-video iframe,
+  .custom-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .custom-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .custom-text h2 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+  }
+
+  .custom-text p {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .custom-button {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+  }
+
+  .custom-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+</style>

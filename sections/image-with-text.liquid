@@ -47,16 +47,12 @@
       <div class="desc">{{ section.settings.description }}</div>
     </div>
     <div class="image" style="flex: 1;">
-      {% if section.settings.image %}
-        {% if section.settings.image_link != blank %}
           <a href="{{ section.settings.image_link }}">
             <img
               src="{{ section.settings.image | image_url }}"
               alt="Image"
             >
           </a>
-        {% endif %}
-      {% endif %}
     </div>
   </div>
 </div>

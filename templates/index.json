@@ -705,118 +705,14 @@
         "mg_bottom_mobile": 50
       }
     },
-    "custom_press_banner_Vc3tNy": {
-      "type": "custom-press-banner",
-      "name": "t:sections.custom_press_banner.presets.name",
-      "settings": {
-        "container": "container",
-        "padding_full_width": 0,
-        "press_bg": "#fafafa",
-        "press_gradient": "",
-        "align_items": "center",
-        "press_image": "shopify://shop_images/download_740aabac-18da-418a-9547-15b22bf3a48c.webp",
-        "press_image_width": 450,
-        "press_image_width_ratio": 51,
-        "sub_title": "Latest Collections",
-        "letter_spacing_sub_title": "",
-        "font_size_sub_title": 18,
-        "font_size_sub_title_mb": 14,
-        "margin_bottom_sub_title": 14,
-        "font_weight_sub_title": "500",
-        "sub_title_position": "sub_title_above",
-        "color_sub_title": "#232323",
-        "title": "Timeless Elegance With Modern Luxury",
-        "title_font_size": 39,
-        "title_font_size_mb": 20,
-        "title_font_weight": "700",
-        "mg_bottom_title": 15,
-        "title_color": "#000000",
-        "des": "Experience the Renaissance reborn in each brilliant diamond. Browse our curated collections that blend modern elegance with timeless beauty.",
-        "des_font_size": 16,
-        "des_font_size_mb": 12,
-        "des_font_weight": "400",
-        "mg_bottom_des": 15,
-        "des_color": "#000000",
-        "item_spacing": 120,
-        "content_max_width": 260,
-        "button_text": "",
-        "button_link": "",
-        "fontsize_btn": 16,
-        "button_width": 190,
-        "color_button": "#ffffff",
-        "border_color_button": "#232323",
-        "bg_color_button": "#232323",
-        "bg_gradient_color_button": "",
-        "color_button_hover": "#ffffff",
-        "border_color_button_hover": "#232323",
-        "bg_color_button_hover": "#232323",
-        "bg_gradient_color_button_hover": "",
-        "btn_text_transform": "uppercase",
-        "image_behavior": "none",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
-      }
-    },
     "image_with_text_kpmkXA": {
       "type": "image-with-text",
-      "blocks": {
-        "caption_fPYW6E": {
-          "type": "caption",
-          "settings": {
-            "caption": "Latest Collections",
-            "text_style": "subtitle",
-            "text_size": "large"
-          }
-        },
-        "heading_3HJYfx": {
-          "type": "heading",
-          "settings": {
-            "heading": "Timeless Elegance With                       Modern Luxury",
-            "heading_size": "h1"
-          }
-        },
-        "text_7CfxMk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Experience the Renaissance reborn in each brilliant diamond. Browse our curated collections that blend modern elegance with timeless beauty<br/><br/></p>",
-            "text_style": "body"
-          }
-        },
-        "button_ymTBDN": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "caption_fPYW6E",
-        "heading_3HJYfx",
-        "text_7CfxMk",
-        "button_ymTBDN"
-      ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/EMP02375_3_940x_1d2fae7c-8c93-4c21-a8f7-2197790cd65a.webp",
-        "height": "large",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "subheading": "Latest Collections",
+        "heading": "Timeless Elegance With Modern Luxury",
+        "description": "Experience the Renaissance reborn in each brilliant diamond. Browse our curated collections that blend modern elegance with timeless beauty.",
+        "image": "shopify://shop_images/EMP02375_3_940x_1d2fae7c-8c93-4c21-a8f7-2197790cd65a.webp"
       }
     },
     "17514581159fafe6d0": {
@@ -1064,7 +960,6 @@
     "brand_slider_xCF7Yc",
     "spotlight_block_Lt8xr9",
     "custom_press_banner_eeAqPP",
-    "custom_press_banner_Vc3tNy",
     "image_with_text_kpmkXA",
     "17514581159fafe6d0",
     "product_block_9ctyYD",

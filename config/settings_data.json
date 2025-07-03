@@ -11,8 +11,9 @@
   "current": {
     "layout_body": "default",
     "mobile_menu": "default",
-    "collection_layout": "full_width",
-    "product_page_layout": "default",
+    "collection_layout": "banner_adv",
+    "list_collections_layout": "collections_01_grid",
+    "product_page_layout": "right_thumbs",
     "type_font_1": "shopify_fonts",
     "type_font_1_name": "Poppins",
     "type_font_1_font": "sans-serif",

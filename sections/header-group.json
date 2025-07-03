@@ -47,15 +47,15 @@
         "bg_color_text_gradient": "",
         "font_size_text": 15,
         "font_style_text": "normal",
-        "font_weight_text": "500",
+        "font_weight_text": "600",
         "arrow_active": false,
         "content_max_width": 38,
-        "padding_top": 0,
-        "padding_top_tablet": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom": 0,
-        "padding_bottom_tablet": 0,
-        "padding_bottom_mobile": 0
+        "padding_top": 5,
+        "padding_top_tablet": 5,
+        "padding_top_mobile": 5,
+        "padding_bottom": 5,
+        "padding_bottom_tablet": 5,
+        "padding_bottom_mobile": 5
       }
     },
     "header_basic_T6xUEr": {
@@ -66,14 +66,14 @@
           "settings": {
             "show_language_currency": false,
             "language_currency_color": "#3c3c3c",
-            "customer_service_text": "<p><a href=\"tel:+1 888-998-6099\">+1 888-998-6099</a></p>",
-            "text_color": "#3c3c3c"
+            "customer_service_text": "<h4><a href=\"tel:+1 888-998-6099\">+1 888-998-6099</a></h4>",
+            "text_color": "#000000"
           }
         },
         "logo_yjfkwB": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Artboard_3_2.webp",
+            "logo": "shopify://shop_images/Civia_Crop.png",
             "logo_width": 180,
             "logo_text": "",
             "logo_font_size": 30,
@@ -87,21 +87,21 @@
           "settings": {
             "show_search": true,
             "show_search_left_to_right": false,
-            "search_color": "#3c3c3c",
+            "search_color": "#000000",
             "bg_search_color": "",
-            "search_border_color": "#7b7b7b",
-            "search_icon_color": "#232323",
+            "search_border_color": "#000000",
+            "search_icon_color": "#000000",
             "show_customer": true,
-            "customer_color": "#232323",
+            "customer_color": "#000000",
             "show_wishlist": true,
-            "wishlist_color": "#232323",
+            "wishlist_color": "#000000",
             "show_wishlist_number": false,
             "wishlist_color_item": "#ffffff",
-            "wishlist_bg_item": "#232323",
+            "wishlist_bg_item": "#000000",
             "show_cart": true,
-            "cart_color": "#232323",
+            "cart_color": "#000000",
             "cart_color_item": "#ffffff",
-            "cart_bg_item": "#232323"
+            "cart_bg_item": "#000000"
           }
         }
       },
@@ -117,7 +117,7 @@
         "background": "#ffffff",
         "gradient": "",
         "enable_transparent": false,
-        "padding_top": 20,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -132,7 +132,7 @@
             "menu_bottom_spacing": 10,
             "grid_gap_menu_item": 20,
             "alignment": "center",
-            "bg_mega_menu": "#fff",
+            "bg_mega_menu": "#ffffff",
             "bg_mega_menu_gradient": "",
             "lv_1_color": "#232323",
             "lv_1_color_hover": "#232323",
@@ -143,32 +143,80 @@
             "sale_item_1": "",
             "sale_item_2": "",
             "sale_item_3": "",
-            "sale_item_color": "#D12442",
+            "sale_item_color": "#d12442",
             "label_position": "main_menu",
             "show_label_blink": false,
             "new_label_1": "",
             "new_label_2": "",
             "new_label_3": "",
-            "new_label_color": "#FFFFFF",
-            "new_label_bg": "#BAE4ED",
+            "new_label_color": "#ffffff",
+            "new_label_bg": "#bae4ed",
             "new_label_bg_gradient": "",
             "sale_label_1": "",
             "sale_label_2": "",
             "sale_label_3": "",
-            "sale_label_color": "#FFFFFF",
-            "sale_label_bg": "#D12442",
+            "sale_label_color": "#ffffff",
+            "sale_label_bg": "#d12442",
             "sale_label_bg_gradient": "",
             "hot_label_1": "",
             "hot_label_2": "",
             "hot_label_3": "",
-            "hot_label_color": "#FFFFFF",
-            "hot_label_bg": "#FFF993",
+            "hot_label_color": "#ffffff",
+            "hot_label_bg": "#fff993",
             "hot_label_bg_gradient": ""
+          }
+        },
+        "megamenu_style_2_At8VHE": {
+          "type": "megamenu_style_2",
+          "settings": {
+            "layout_block": "custom_width",
+            "header_custom_width_size": 1200,
+            "item": "ENGAGEMENT RINGS",
+            "column": 3,
+            "show_banner_1": false,
+            "banner_url_1": "",
+            "show_banner_2": false,
+            "banner_url_2": "",
+            "show_banner_3": false,
+            "banner_url_3": ""
+          }
+        },
+        "megamenu_style_2_BqaHqg": {
+          "type": "megamenu_style_2",
+          "settings": {
+            "layout_block": "custom_width",
+            "header_custom_width_size": 1200,
+            "item": "wedding brands",
+            "column": 5,
+            "show_banner_1": false,
+            "banner_url_1": "",
+            "show_banner_2": false,
+            "banner_url_2": "",
+            "show_banner_3": false,
+            "banner_url_3": ""
+          }
+        },
+        "megamenu_style_2_QRD4UK": {
+          "type": "megamenu_style_2",
+          "settings": {
+            "layout_block": "custom_width",
+            "header_custom_width_size": 1200,
+            "item": "earrings",
+            "column": 5,
+            "show_banner_1": false,
+            "banner_url_1": "",
+            "show_banner_2": false,
+            "banner_url_2": "",
+            "show_banner_3": false,
+            "banner_url_3": ""
           }
         }
       },
       "block_order": [
-        "main_menu_fAdpyF"
+        "main_menu_fAdpyF",
+        "megamenu_style_2_At8VHE",
+        "megamenu_style_2_BqaHqg",
+        "megamenu_style_2_QRD4UK"
       ],
       "name": "t:sections.header.settings.navigation.name_4",
       "settings": {
@@ -203,7 +251,7 @@
         "550fbd21-75fb-4051-9dee-77d91b5239f0": {
           "type": "logo",
           "settings": {
-            "logo_mobile": "shopify://shop_images/Artboard_3_2.webp",
+            "logo_mobile": "shopify://shop_images/Civia_Crop.png",
             "logo_width_mobile": 110,
             "logo_text": "",
             "logo_font_size": 20,

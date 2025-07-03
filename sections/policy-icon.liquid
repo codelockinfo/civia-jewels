@@ -1,0 +1,230 @@
+{% schema %}
+{
+  "name": "Commitment Icons",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Renaissance Commitment"
+    },
+    {
+    "type": "range",
+    "id": "block_gap",
+    "label": "Gap Between Icons (px)",
+    "min": 10,
+    "max": 100,
+    "step": 5,
+    "default": 30
+  }
+  ],
+  "blocks": [
+    {
+      "type": "icon_block",
+      "name": "Icon Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Circle Background Color",
+          "default": "#000000"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Icon Label",
+          "default": "Eco-Friendly Diamonds"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Commitment Icons",
+      "category": "Custom",
+      "blocks": [
+        { "type": "icon_block" },
+        { "type": "icon_block" },
+        { "type": "icon_block" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<div class="commitment-wrapper">
+  <div class="commitment-heading">{{ section.settings.heading }}</div>
+  <div class="commitment-icons" style="gap: {{ section.settings.block_gap | default: 30 }}px;">
+    {% for block in section.blocks %}
+      <div class="commitment-item">
+        {% if block.settings.icon != blank %}
+          <div class="icon-circle" style="background-color: {{ block.settings.bg_color }};">
+            <img src="{{ block.settings.icon | image_url: width: 100 }}" alt="icon">
+          </div>
+        {% endif %}
+        <p class="icon-label">{{ block.settings.label }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+    .commitment-wrapper {
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .commitment-heading {
+    font-size: 38px;
+    font-family: sans-serif;
+    padding-bottom: 60px;
+  }
+
+  .commitment-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+  .commitment-item {
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .icon-circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-circle img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .icon-label {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    max-width: 200px;
+    margin: 10px auto 0;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  @media (max-width: 768px) {
+  .commitment-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px !important;
+    justify-items: center;
+  }
+
+  .commitment-item {
+    width: 100%;
+    max-width: 160px;
+    text-align: center;
+  }
+
+  .icon-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon-circle img {
+    width: 45%;
+  }
+
+  .commitment-heading {
+    font-size: 24px;
+    color: #000000;
+    padding-bottom: 40px;
+  }
+
+  .icon-label {
+    font-size: 14px;
+  }
+  .commitment-icons .commitment-item:nth-child(5):last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+  @media (min-width: 768px) & (max-width: 1023px) {
+  .commitment-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .commitment-item {
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .icon-circle img {
+    width: 50%;
+  }
+
+  .commitment-heading {
+    font-size: 32px;
+    padding-bottom: 50px;
+  }
+
+  .icon-label {
+    font-size: 16px;
+  }
+
+  /* Center last item if odd count (like 5 items) */
+  .commitment-icons .commitment-item:nth-child(5):last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+  @media (min-width: 1024px) {
+  .commitment-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .commitment-item {
+    max-width: 160px;
+    text-align: center;
+  }
+
+  .icon-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .icon-circle img {
+    width: 50%;
+  }
+
+  .icon-label {
+    font-size: 16px;
+  }
+}
+
+</style>

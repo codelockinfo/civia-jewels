@@ -8,7 +8,16 @@
       "id": "heading",
       "label": "Heading",
       "default": "The Renaissance Commitment"
-    }
+    },
+    {
+    "type": "range",
+    "id": "block_gap",
+    "label": "Gap Between Icons (px)",
+    "min": 10,
+    "max": 100,
+    "step": 5,
+    "default": 30
+  }
   ],
   "blocks": [
     {
@@ -51,7 +60,7 @@
 
 <div class="commitment-wrapper">
   <div class="commitment-heading">{{ section.settings.heading }}</div>
-  <div class="commitment-icons">
+  <div class="commitment-icons" style="gap: {{ section.settings.block_gap | default: 30 }}px;">
     {% for block in section.blocks %}
       <div class="commitment-item">
         {% if block.settings.icon != blank %}

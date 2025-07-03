@@ -273,7 +273,7 @@
             "text_description": "",
             "color_des": "#999999",
             "fontsize_text": 14,
-            "content_popup": "<a href=\"https://civia-jewels.myshopify.com/pages/contact\">Contact Us</a>",
+            "content_popup": "<a href=\"https://civia-jewels.myshopify.com/pages/contact\"></a>",
             "spacing_top": 0,
             "spacing_bottom": 12
           }
@@ -288,7 +288,7 @@
             "text_description": "",
             "color_des": "#999999",
             "fontsize_text": 14,
-            "content_popup": "fhgfhfgjgfjj",
+            "content_popup": "",
             "spacing_top": 0,
             "spacing_bottom": 12
           }
@@ -303,7 +303,7 @@
             "text_description": "",
             "color_des": "#999999",
             "fontsize_text": 14,
-            "content_popup": "fhgfhfgjgfjj",
+            "content_popup": "",
             "spacing_top": 0,
             "spacing_bottom": 12
           }
@@ -318,7 +318,7 @@
             "text_description": "",
             "color_des": "#999999",
             "fontsize_text": 14,
-            "content_popup": "fhgfhfgjgfjj",
+            "content_popup": "",
             "spacing_top": 0,
             "spacing_bottom": 12
           }
@@ -333,7 +333,7 @@
             "text_description": "",
             "color_des": "#999999",
             "fontsize_text": 14,
-            "content_popup": "fhgfhfgjgfjj",
+            "content_popup": "",
             "spacing_top": 0,
             "spacing_bottom": 12
           }

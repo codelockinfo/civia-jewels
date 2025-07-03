@@ -43,6 +43,7 @@
 {% endschema %}
 
 <div class="custom-video-text">
+  <a href="{{ section.settings.button_link }}" >
   <div class="custom-video">
     {% if section.settings.video_url != blank %}
       <video autoplay muted loop playsinline>
@@ -51,7 +52,7 @@
       </video>
     {% endif %}
   </div>
-
+  </a>
   <div class="custom-text">
     <div class="container-text">
       <div class="video-heading">{{ section.settings.heading }}</div>

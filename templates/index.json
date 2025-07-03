@@ -874,7 +874,8 @@
       ],
       "name": "Policy Icons",
       "settings": {
-        "heading": "The Renaissance Commitment"
+        "heading": "The Renaissance Commitment",
+        "block_gap": 100
       }
     },
     "rich_text_bqMiFq": {

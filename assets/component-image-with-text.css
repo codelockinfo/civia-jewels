@@ -1,5 +1,7 @@
 .image-with-text .grid {
   margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .image-with-text .grid__item {

@@ -108,4 +108,38 @@
   .zoom-in-hover:hover img {
     transform: scale(1.05); /* Zoom in on hover */
   }
+
+  @media (max-width: 768px) {
+  .image-text-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .subheading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .desc {
+    font-size: 18px;
+  }
+
+  .image-text-section .text,
+  .image-text-section .image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .zoom-in-hover img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 </style>

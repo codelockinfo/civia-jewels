@@ -109,7 +109,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.image-with-text.name",
+  "name": "Image with text",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -118,7 +118,7 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "t:sections.image-with-text.settings.image.label"
+      "label": "Select Image"
     },
     {
       "type": "select",
@@ -126,23 +126,23 @@
       "options": [
         {
           "value": "adapt",
-          "label": "t:sections.image-with-text.settings.height.options__1.label"
+          "label": "adapt"
         },
         {
           "value": "small",
-          "label": "t:sections.image-with-text.settings.height.options__2.label"
+          "label": "small"
         },
         {
           "value": "medium",
-          "label": "t:sections.image-with-text.settings.height.options__3.label"
+          "label": "medium"
         },
         {
           "value": "large",
-          "label": "t:sections.image-with-text.settings.height.options__4.label"
+          "label": "large"
         }
       ],
       "default": "adapt",
-      "label": "t:sections.image-with-text.settings.height.label"
+      "label": "Height"
     },
     {
       "type": "select",
@@ -150,19 +150,19 @@
       "options": [
         {
           "value": "small",
-          "label": "t:sections.image-with-text.settings.desktop_image_width.options__1.label"
+          "label": "small"
         },
         {
           "value": "medium",
-          "label": "t:sections.image-with-text.settings.desktop_image_width.options__2.label"
+          "label": "medium"
         },
         {
           "value": "large",
-          "label": "t:sections.image-with-text.settings.desktop_image_width.options__3.label"
+          "label": "large"
         }
       ],
       "default": "medium",
-      "label": "t:sections.image-with-text.settings.desktop_image_width.label"
+      "label": "Width"
     },
     {
       "type": "select",
@@ -170,15 +170,15 @@
       "options": [
         {
           "value": "image_first",
-          "label": "t:sections.image-with-text.settings.layout.options__1.label"
+          "label": "image first"
         },
         {
           "value": "text_first",
-          "label": "t:sections.image-with-text.settings.layout.options__2.label"
+          "label": "text first"
         }
       ],
-      "default": "image_first",
-      "label": "t:sections.image-with-text.settings.layout.label"
+      "default": "text_first",
+      "label": "Layout"
     },
     {
       "type": "select",
@@ -186,23 +186,23 @@
       "options": [
         {
           "value": "none",
-          "label": "t:sections.all.animation.image_behavior.options__1.label"
+          "label": "none"
         },
         {
           "value": "ambient",
-          "label": "t:sections.all.animation.image_behavior.options__2.label"
+          "label": "ambient"
         },
         {
           "value": "zoom-in",
-          "label": "t:sections.all.animation.image_behavior.options__4.label"
+          "label": "zoom-in"
         }
       ],
       "default": "none",
-      "label": "t:sections.all.animation.image_behavior.label"
+      "label": "Image behavior"
     },
     {
       "type": "header",
-      "content": "t:sections.image-with-text.settings.header.content"
+      "content": "content"
     }, 
     {
       "type": "select",
@@ -210,15 +210,15 @@
       "options": [
         {
           "value": "no-overlap",
-          "label": "t:sections.image-with-text.settings.content_layout.options__1.label"
+          "label": "no-overlap"
         },
         {
           "value": "overlap",
-          "label": "t:sections.image-with-text.settings.content_layout.options__2.label"
+          "label": "overlap"
         }
       ],
       "default": "no-overlap",
-      "label": "t:sections.image-with-text.settings.content_layout.label"
+      "label": "Conten Layout"
     },       
     {
       "type": "select",
@@ -226,19 +226,19 @@
       "options": [
         {
           "value": "top",
-          "label": "t:sections.image-with-text.settings.desktop_content_position.options__1.label"
+          "label": "top"
         },
         {
           "value": "middle",
-          "label": "t:sections.image-with-text.settings.desktop_content_position.options__2.label"
+          "label": "middle"
         },
         {
           "value": "bottom",
-          "label": "t:sections.image-with-text.settings.desktop_content_position.options__3.label"
+          "label": "bottom"
         }
       ],
       "default": "top",
-      "label": "t:sections.image-with-text.settings.desktop_content_position.label"
+      "label": "desktop content position"
     },
     {
       "type": "select",
@@ -246,19 +246,19 @@
       "options": [
         {
           "value": "left",
-          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
+          "label": "left"
         },
         {
           "value": "center",
-          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
+          "label": "center"
         },
         {
           "value": "right",
-          "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
+          "label": "right"
         }
       ],
       "default": "left",
-      "label": "t:sections.image-with-text.settings.desktop_content_alignment.label"
+      "label": "desktop content alignment"
     },
     {
       "type": "select",
@@ -266,28 +266,28 @@
       "options": [
         {
           "value": "left",
-          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__1.label"
+          "label": "left"
         },
         {
           "value": "center",
-          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__2.label"
+          "label": "center"
         },
         {
           "value": "right",
-          "label": "t:sections.image-with-text.settings.mobile_content_alignment.options__3.label"
+          "label": "right"
         }
       ],
       "default": "left",
-      "label": "t:sections.image-with-text.settings.mobile_content_alignment.label"
+      "label": "mobile content alignment"
     },
     {
       "type": "header",
-      "content": "t:sections.image-with-text.settings.header_colors.content"
+      "content": "Header color"
     },        
     {
       "type": "color_scheme",
       "id": "section_color_scheme",
-      "label": "t:sections.all.colors.label",
+      "label": "color",
       "default": "scheme-1"
     },
     {

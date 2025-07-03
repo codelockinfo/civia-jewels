@@ -795,10 +795,10 @@
       "name": "Image with Text",
       "settings": {
         "image": "shopify://shop_images/download_740aabac-18da-418a-9547-15b22bf3a48c.webp",
-        "height": "small",
-        "desktop_image_width": "medium",
+        "height": "adapt",
+        "desktop_image_width": "small",
         "layout": "text_first",
-        "image_behavior": "none",
+        "image_behavior": "zoom-in",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",

@@ -50,7 +50,7 @@
 {% endschema %}
 
 <div class="commitment-wrapper">
-  <h2 class="commitment-heading">{{ section.settings.heading }}</h2>
+  <div class="commitment-heading">{{ section.settings.heading }}</div>
   <div class="commitment-icons">
     {% for block in section.blocks %}
       <div class="commitment-item">
@@ -67,7 +67,6 @@
 
 <style>
     .commitment-wrapper {
-    max-width:1400px;
     text-align: center;
     padding: 60px 20px;
   }

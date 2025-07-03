@@ -794,9 +794,10 @@
       ],
       "name": "Image with Text",
       "settings": {
-        "height": "adapt",
+        "image": "shopify://shop_images/download_740aabac-18da-418a-9547-15b22bf3a48c.webp",
+        "height": "large",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",

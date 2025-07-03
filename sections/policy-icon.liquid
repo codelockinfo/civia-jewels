@@ -36,10 +36,10 @@
           "default": "#000000"
         },
         {
-          "type": "textarea",
+          "type": "text",
           "id": "label",
           "label": "Icon Label",
-          "default": "ECO-FRIENDLY\nDIAMONDS"
+          "default": "Eco-Friendly Diamonds"
         }
       ]
     }
@@ -68,7 +68,7 @@
             <img src="{{ block.settings.icon | image_url: width: 100 }}" alt="icon">
           </div>
         {% endif %}
-        <div class="icon-label">{{ block.settings.label | newline_to_br }}</div>
+        <p class="icon-label">{{ block.settings.label }}</p>
       </div>
     {% endfor %}
   </div>
@@ -115,11 +115,12 @@
 
   .icon-label {
     font-size: 18px;
-    text-align: center;
-    line-height: 1.4;
     text-transform: uppercase;
-    max-width: 120px;
-    margin: 12px auto 0;
-    word-break: break-word;
+    line-height: 1.4;
+    width: 120px;
+    margin: 10px auto 0;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
   }
 </style>

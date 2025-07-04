@@ -137,9 +137,11 @@
         },
         "04ea8843-f461-4f1d-8ea4-43f62fdfb21e": {
           "type": "perks",
+          "disabled": true,
           "settings": {
             "show_size_chart": true,
             "size_chart_type": "custom_image",
+            "size_chart_image": "shopify://shop_images/EMP02375_3_940x_1d2fae7c-8c93-4c21-a8f7-2197790cd65a.webp",
             "size_chart_page": "",
             "size_chart_image_type": "jpg",
             "show_compare_color": true,
@@ -251,6 +253,51 @@
             "share_layout": "2",
             "spacing_top": 0,
             "spacing_bottom": 0
+          }
+        },
+        "custom_information_FNDxRW": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"21\" height=\"20\" viewBox=\"0 0 21 20\">\n                    <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAAXNSR0IArs4c6QAAAV5JREFUOE+9lLFLw0AUxr90qba0k1nMns05i0Qy+A/EqZCAg3Tr4JSgs10DZnMSktXsThmc8hcImROoIAhi2wiVyjuIpPHS9kD7wQ25e/z43vfuIhVFscQfS9opdPn+is8kwlf+jFZPxt7p8OebGuuY15D6B9weG53OH8YM2CQCds89MejHrb0xaYLy3K44TZIErusy2PhYxpHcbgS/zBa4eJxAURSYpslWqRWoruts3/M8HPba6D7doTV944KnJ0Nkiw4GgwE7T9OUDzUMA6PRCL7vIwxDBp5FN6ChVbV/doUJ+qD6IAhg2/Z6aBzHiKKoEVwCHcdhBjRNg6qqm6Hkqg6e3l+CB6TaraFUTDEQvIyCJm1Z1q/BCEGrYGqTbge1XJ20sNNyOHmeM2AdVp4LO934ArbJlPKjCy2itU7pNWVZJsIDRUMmyAz3RdEmFYmq3tlu/6eibqv1/+L0G6BU/SH+e1YuAAAAAElFTkSuQmCC\" x=\"0\" y=\"0\" width=\"21\" height=\"20\"/>\n                  </svg>",
+            "color_icon": "#232323",
+            "text": "Drop Hint",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "fontsize_text": 14,
+            "content_popup": "",
+            "spacing_top": 55,
+            "spacing_bottom": 0
+          }
+        },
+        "custom_information_PtrrQn": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"21\" height=\"20\" viewBox=\"0 0 21 20\">\n                    <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAAXNSR0IArs4c6QAAAONJREFUOE/tlbEJhTAQhs85FMusYCe4QsDOjGCfEewdIaldwTorWOsONvIef0DBR0zMw9JAsPDy3X//XTRZ1/VDD6/khR6eDsNAUkpK0/S2y9u2UV3X1LbtcebkaVmWlOe5DSiKIgg2xlgRy7LQNE1uaFVVpLWmpmmo6zovGEAhBCml7NMLHcfRZgYYCVxW4D0EAIiKGGNhKOq4Av8CEXsbiuDds12xCxgNxQFMBHaWZTaJy+sopXs7oXCe58vG/QUNzVYQetVxH9gL7fve+oZyYxYuC+fcPfwxIF/s++l7/nfyBbST2CEFaBC/AAAAAElFTkSuQmCC\" x=\"0\" y=\"0\" width=\"21\" height=\"20\"/>\n                  </svg>",
+            "color_icon": "#232323",
+            "text": "Email",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "fontsize_text": 14,
+            "content_popup": "",
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        },
+        "custom_information_TMEtTE": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\">\n                    <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAQ1JREFUOE+9lLENhDAMRX1zsAfUrEANI9AzAtSMADUrUMMcsAPdnV4kSzklkBxCZwkREuXlO9/mdRzHWx6M11+Ay7JI3/ey77skSSJd15l3TDgKgVVVJW3bGgjgLMukrusYnjjAsiy/AHrAPM9RKr3AoiiERyPPc6MYpaEIAh9ViCmoG4YhSh3qHYXqLina41Cquu4AUYUx4ziKlg/j22XDSU3TGAClQsoYdLtsANpG8K2lxDwZpGl6Wuynrcf9AaBLtm2TdV2NakqHNeZ8HXTZy1fpssY12PXqddl2Uw3ybbTv2d4T/NtM02RStH8SzAH0tWMQqKcD4E4JlJ8VezRQQZhx1dM/AWO65XHgB7296iEYMY4RAAAAAElFTkSuQmCC\" x=\"0\" y=\"0\" width=\"20\" height=\"20\"/>\n                  </svg>",
+            "color_icon": "#232323",
+            "text": "+1 888-998-6099",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "fontsize_text": 14,
+            "content_popup": "",
+            "spacing_top": 0,
+            "spacing_bottom": 55
           }
         },
         "custom_information_z7ixNf": {
@@ -380,6 +427,9 @@
         "3d9ea84d-5527-4bce-abe6-5debef3ec955",
         "b9d6eb19-10f4-41f8-bfdc-ea10e8b3182a",
         "19ab1d9f-74b2-4c76-bf2e-1bc749e5c2a3",
+        "custom_information_FNDxRW",
+        "custom_information_PtrrQn",
+        "custom_information_TMEtTE",
         "custom_information_z7ixNf",
         "custom_information_D9LEnL",
         "custom_information_VEJrzr",

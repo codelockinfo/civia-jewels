@@ -14,7 +14,7 @@
     {%- else -%}
         {%- assign propertySize = product.metafields.c_f.property.value | size -%}
         {%- if propertySize > 0 -%}
-            <div class="productView-info productView-propertyInfo" id="product-property-{{ product.id }}">
+            <!-- <div class="productView-info productView-propertyInfo" id="product-property-{{ product.id }}">
                 <h2 class="productView-info-title">{{ 'products.product.measurements' | t }}</h2>
                 {%- for property in product.metafields.c_f.property.value -%}
                     <div class="productView-info-item">
@@ -22,7 +22,7 @@
                         <span class="productView-info-value">{{ property.last | capitalize }}</span>
                     </div>
                 {%- endfor -%}
-            </div>
+            </div> -->
         {%- endif -%}
     {%- endif -%}
 {%- else -%}

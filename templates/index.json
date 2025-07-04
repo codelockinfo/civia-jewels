@@ -811,7 +811,7 @@
         "padding_card": 15,
         "border_radius_card": 5,
         "border_layout_card": "full",
-        "border_width_card": 5,
+        "border_width_card": 2,
         "border_color_card": "#f0f1f4",
         "mg_top_desktop": 50,
         "mg_top_tablet": 50,

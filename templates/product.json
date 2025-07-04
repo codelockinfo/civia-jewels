@@ -505,7 +505,7 @@
       ],
       "name": "t:sections.faqs.presets.name",
       "settings": {
-        "container": "container",
+        "container": "1170",
         "padding_full_width": 0,
         "title": "FAQs",
         "color_title": "#000000",

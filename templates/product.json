@@ -494,39 +494,14 @@
             "question_9": "Are the delivery dates guaranteed?",
             "answer_9": "We do our best to estimate and fulfill delivery dates as accurately as possible. However, unforeseen events (like shipping carrier delays or severe weather) may affect timelines. If you have a specific delivery requirement, please contact us so we can work toward meeting your needs.",
             "question_10": "Do you do customization?",
-            "answer_10": "Yes! We love creating custom pieces to help bring your vision to life. Simply reach out with your ideas, and our design team will guide you through the process—from selecting the perfect diamond shape to choosing the ideal setting."
-          }
-        },
-        "paragraph_VLgzYR": {
-          "type": "paragraph",
-          "settings": {
-            "title": "",
-            "question_1": "Is there any warranty on the jewelry?",
-            "answer_1": "Yes! We stand behind the quality of our craftsmanship. All our pieces come with a lifetime warranty against manufacturing defects. If you encounter any issues, simply contact our support team, and we’ll make it right.",
-            "question_2": "",
-            "answer_2": "",
-            "question_3": "",
-            "answer_3": "",
-            "question_4": "",
-            "answer_4": "",
-            "question_5": "",
-            "answer_5": "",
-            "question_6": "",
-            "answer_6": "",
-            "question_7": "",
-            "answer_7": "",
-            "question_8": "",
-            "answer_8": "",
-            "question_9": "",
-            "answer_9": "",
-            "question_10": "",
-            "answer_10": ""
+            "answer_10": "Yes! We love creating custom pieces to help bring your vision to life. Simply reach out with your ideas, and our design team will guide you through the process—from selecting the perfect diamond shape to choosing the ideal setting.",
+            "question_11": "QuestionIs there any warranty on the jewelry?",
+            "answer_11": "Yes! We stand behind the quality of our craftsmanship. All our pieces come with a lifetime warranty against manufacturing defects. If you encounter any issues, simply contact our support team, and we’ll make it right."
           }
         }
       },
       "block_order": [
-        "paragraph_VTCyNX",
-        "paragraph_VLgzYR"
+        "paragraph_VTCyNX"
       ],
       "name": "t:sections.faqs.presets.name",
       "settings": {

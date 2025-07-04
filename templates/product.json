@@ -468,6 +468,95 @@
         "mg_bottom_mobile": 0
       }
     },
+    "rich_text_qmyNc8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4kTckB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Dream Design, Crafted with Elegance",
+            "heading_size": 33,
+            "heading_size_mb": 30,
+            "heading_line_height": 1.9,
+            "heading_color": "#000"
+          }
+        },
+        "text_fwPT3G": {
+          "type": "text",
+          "settings": {
+            "text": "Give Life To Your Vision",
+            "text_size": 22,
+            "text_size_mb": 12,
+            "text_font_weight": "400",
+            "text_line_height": 1,
+            "margin_top_text": 30,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        },
+        "button_TaGnyK": {
+          "type": "button",
+          "settings": {
+            "button_style": "button_1",
+            "button_label": "Request Custom Design",
+            "button_link": "shopify://pages/contact",
+            "margin_top_button": 30,
+            "enable_underline_button": false,
+            "button_color": "#fff",
+            "button_border_color": "#000",
+            "button_bg_color": "#232525",
+            "button_bg_gradient": "",
+            "button_color_hover": "#000",
+            "button_border_color_hover": "#000",
+            "button_bg_color_hover": "#fff",
+            "button_bg_gradient_hover": "",
+            "button_width": "270px"
+          }
+        },
+        "social_media_KneFPK": {
+          "type": "social_media",
+          "disabled": true,
+          "settings": {
+            "social_spacing_top": 0,
+            "social_spacing_bottom": 0,
+            "social_icon_color": "",
+            "social_icon_background_color": "",
+            "social_icon_background_gradient": "",
+            "social_icon_hover_color": "",
+            "social_icon_background_hover_color": "",
+            "social_icon_background_hover_gradient": "",
+            "social_icon_ring_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_4kTckB",
+        "text_fwPT3G",
+        "button_TaGnyK",
+        "social_media_KneFPK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "rich_text_bg_image": "shopify://shop_images/82058.set_0_29a85588-7946-4652-abce-6c93493e32df.jpg",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    },
     "faqs_AiMJWx": {
       "type": "faqs",
       "blocks": {
@@ -648,6 +737,7 @@
   },
   "order": [
     "main",
+    "rich_text_qmyNc8",
     "faqs_AiMJWx",
     "product-recommendations",
     "product-recently-viewed"

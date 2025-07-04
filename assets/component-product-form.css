@@ -68,6 +68,8 @@
     color: var(--variant-color);
     background-color: var(--variant-bg);
     border: 2px solid var(--swatch-border);
+    border-radius: 19px;
+    padding: 0 30px;
     text-align: center;
     transition: var(--anchor-transition);
 }

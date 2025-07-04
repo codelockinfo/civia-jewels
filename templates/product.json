@@ -91,6 +91,13 @@
             "spacing_bottom": 17
           }
         },
+        "customization_property_V8DL9N": {
+          "type": "customization_property",
+          "settings": {
+            "spacing_top": 0,
+            "spacing_bottom": 20
+          }
+        },
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34": {
           "type": "buy_buttons",
           "settings": {
@@ -296,6 +303,7 @@
         "d97e417a-941b-4a5d-bef3-a651adb918d8",
         "variant_step_by_step_aNtie7",
         "4f95b592-8369-4ab0-b30d-24e463fb6890",
+        "customization_property_V8DL9N",
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34",
         "10093fcf-2053-47e9-bedb-841bb0d046fa",
         "87197f5f-be0e-4b89-9270-62bf6917ebe7",
@@ -312,7 +320,7 @@
         "9630b233-8164-4dad-ab64-8830bedf328a"
       ],
       "custom_css": [
-        ".product-form__label .text {border-radius: 19px; padding: 0 30px; }"
+        ".product-form__label .text {border-radius: 19px; padding: 0 30px;}"
       ],
       "settings": {
         "container": "default",

@@ -786,7 +786,7 @@
         "spacing_right": 0,
         "product_block_show": "5",
         "button_text_slider": "",
-        "button_link_slider": "shopify://collections/rose-gold",
+        "button_link_slider": "shopify://collections/trending-pic",
         "button_width": 280,
         "btn_spacing_top": 49,
         "product_block_per_view": "4",
@@ -804,7 +804,11 @@
         "collection_color_hover": "#000000",
         "collection_bg_color": "#ffffff",
         "collection_bg_color_gradient": "",
+<<<<<<< HEAD
         "text_list": "SHOP NOW",
+=======
+        "text_list": "Shop now",
+>>>>>>> 643eb9e38a88bee12034d29cb2832e1c4040dcc8
         "url_list": "shopify://collections/trending-pic",
         "enable_layout_special": true,
         "bg_card": "#ffffff",
@@ -966,6 +970,7 @@
         "mg_bottom_mobile": 50
       }
     },
+<<<<<<< HEAD
     "1751617655e7d952c5": {
       "type": "apps",
       "blocks": {
@@ -981,6 +986,21 @@
       ],
       "settings": {
         "include_margins": true
+=======
+    "175162224754616bc0": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_medals_fr9fif": {
+          "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_medals_fr9fif"
+      ],
+      "settings": {
+        "include_margins": false
+>>>>>>> 643eb9e38a88bee12034d29cb2832e1c4040dcc8
       }
     }
   },
@@ -994,6 +1014,10 @@
     "product_block_9ctyYD",
     "policy_icon_cd9BWX",
     "rich_text_bqMiFq",
+<<<<<<< HEAD
     "1751617655e7d952c5"
+=======
+    "175162224754616bc0"
+>>>>>>> 643eb9e38a88bee12034d29cb2832e1c4040dcc8
   ]
 }

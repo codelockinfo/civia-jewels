@@ -182,7 +182,7 @@
         "sidebar_collapse": "collapse",
         "enable_sticky": false,
         "sidebar_layout": "layout_1",
-        "sidebar_collapse_default": "expand",
+        "sidebar_collapse_default": "close",
         "sidebar_type": "vertical",
         "sidebar_position": "left",
         "sidebar_heading_font": "font_1",

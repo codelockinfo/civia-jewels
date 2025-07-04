@@ -390,7 +390,7 @@
         "media_fit": "contain",
         "product_image_ratio": "square",
         "portrait_aspect_ratio": 148,
-        "video_layout": "popup",
+        "video_layout": "thumbnail",
         "zoomed_image": true,
         "product_image_popup": "fancybox",
         "main_image_show_custom_cursor": true,

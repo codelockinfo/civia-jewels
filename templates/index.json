@@ -965,6 +965,28 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
+    },
+    "1751617655e7d952c5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_U7pmfg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "rose-gold-modern-tension-set-round-solitaire-wide-band-ring"
+          }
+        },
+        "judge_me_reviews_medals_HHp7Vc": {
+          "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_U7pmfg",
+        "judge_me_reviews_medals_HHp7Vc"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -976,6 +998,7 @@
     "17514581159fafe6d0",
     "product_block_9ctyYD",
     "policy_icon_cd9BWX",
-    "rich_text_bqMiFq"
+    "rich_text_bqMiFq",
+    "1751617655e7d952c5"
   ]
 }

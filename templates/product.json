@@ -48,40 +48,6 @@
             "spacing_bottom": 12
           }
         },
-        "4e59f24a-8859-4579-a80a-d70e6f1bf66b": {
-          "type": "info",
-          "disabled": true,
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_barcode": false,
-            "show_availability": false,
-            "show_product_type": false,
-            "stock_level_display": "none",
-            "enable_border_top": false,
-            "enable_border_bottom": false,
-            "color_border": "#e6e6e6",
-            "spacing_top": 0,
-            "spacing_bottom": 18
-          }
-        },
-        "5d8b9ff9-6a1c-4850-a6c2-e6cdbb8b7f7c": {
-          "type": "hot_stock",
-          "disabled": true,
-          "settings": {
-            "hot_stock_style": "2",
-            "spacing_top": 0,
-            "spacing_bottom": 8
-          }
-        },
-        "bd3a641e-98d0-4da1-ab57-d5e4b0391995": {
-          "type": "countdown",
-          "disabled": true,
-          "settings": {
-            "spacing_top": 0,
-            "spacing_bottom": 20
-          }
-        },
         "d98e243b-3682-495a-965a-1c7f7d460880": {
           "type": "variant_picker",
           "settings": {
@@ -117,38 +83,12 @@
             "spacing_bottom": 22
           }
         },
-        "faa2b3e6-c0a1-4269-baa6-d2605efe4c05": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-            "qty_style": "1",
-            "qty_layout": "1",
-            "spacing_top": 0,
-            "spacing_bottom": 15
-          }
-        },
         "4f95b592-8369-4ab0-b30d-24e463fb6890": {
           "type": "price",
           "settings": {
             "fontsize_text": 18,
             "spacing_top": 0,
             "spacing_bottom": 17
-          }
-        },
-        "04ea8843-f461-4f1d-8ea4-43f62fdfb21e": {
-          "type": "perks",
-          "disabled": true,
-          "settings": {
-            "show_size_chart": true,
-            "size_chart_type": "custom_image",
-            "size_chart_image": "shopify://shop_images/EMP02375_3_940x_1d2fae7c-8c93-4c21-a8f7-2197790cd65a.webp",
-            "size_chart_page": "",
-            "size_chart_image_type": "jpg",
-            "show_compare_color": true,
-            "show_compare_color_drop_drap": true,
-            "compare_layout": "1",
-            "spacing_top": 0,
-            "spacing_bottom": 22
           }
         },
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34": {
@@ -175,25 +115,6 @@
             "bin_bg_color_hover_gradient": "",
             "spacing_top": 0,
             "spacing_bottom": 15
-          }
-        },
-        "683f2b15-db3b-4f63-8d0f-e688cc678581": {
-          "type": "customer_viewing",
-          "disabled": true,
-          "settings": {
-            "customer_viewing_number": "283, 100, 59, 11, 14, 185, 193, 165, 50, 38, 99, 112, 46, 10, 125, 200, 250, 18",
-            "customer_viewing_time": 5,
-            "spacing_top": 0,
-            "spacing_bottom": 22
-          }
-        },
-        "19de9abb-17c8-4d67-941d-b32706ed06fd": {
-          "type": "pickup_availability",
-          "disabled": true,
-          "settings": {
-            "show_pickup_availability": true,
-            "spacing_top": 0,
-            "spacing_bottom": 27
           }
         },
         "10093fcf-2053-47e9-bedb-841bb0d046fa": {
@@ -371,18 +292,11 @@
         "2e8c7c14-a0ad-4930-a1d8-3def05310426",
         "b0ea69b7-8a54-4a3c-9abd-0fcceeabaaa0",
         "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c",
-        "4e59f24a-8859-4579-a80a-d70e6f1bf66b",
-        "5d8b9ff9-6a1c-4850-a6c2-e6cdbb8b7f7c",
-        "bd3a641e-98d0-4da1-ab57-d5e4b0391995",
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "d97e417a-941b-4a5d-bef3-a651adb918d8",
         "variant_step_by_step_aNtie7",
-        "faa2b3e6-c0a1-4269-baa6-d2605efe4c05",
         "4f95b592-8369-4ab0-b30d-24e463fb6890",
-        "04ea8843-f461-4f1d-8ea4-43f62fdfb21e",
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34",
-        "683f2b15-db3b-4f63-8d0f-e688cc678581",
-        "19de9abb-17c8-4d67-941d-b32706ed06fd",
         "10093fcf-2053-47e9-bedb-841bb0d046fa",
         "87197f5f-be0e-4b89-9270-62bf6917ebe7",
         "3d9ea84d-5527-4bce-abe6-5debef3ec955",

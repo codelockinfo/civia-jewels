@@ -805,7 +805,7 @@
         "collection_bg_color": "#ffffff",
         "collection_bg_color_gradient": "",
         "text_list": "SHOP NOW",
-        "url_list": "shopify://collections/rose-gold",
+        "url_list": "",
         "enable_layout_special": true,
         "bg_card": "#ffffff",
         "padding_card": 15,

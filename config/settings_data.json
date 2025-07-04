@@ -842,14 +842,6 @@
     },
     "content_for_index": [],
     "blocks": {
-<<<<<<< HEAD
-      "6097499278999377719": {
-        "type": "shopify://apps/globo-mega-menu/blocks/app-embed/7a00835e-fe40-45a5-a615-2eb4ab697b58",
-        "disabled": false,
-        "settings": {}
-      },
-=======
->>>>>>> 67e83a2e8ebe102f9c739026d4987c037c0baf56
       "1232542678405107163": {
         "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
         "disabled": false,
@@ -870,6 +862,11 @@
           "video-title": "",
           "use-variant": "false"
         }
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
       }
     }
   }

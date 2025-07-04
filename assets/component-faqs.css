@@ -254,10 +254,10 @@ faqs-item{
     /*transition: transform 500ms ease-in-out;*/
 }
 
-.faqs .faqs-item .card-header:not(.collapsed) .title::after {
+/* .faqs .faqs-item .card-header:not(.collapsed) .title::after {
     transform: scale(1);
     transform-origin: left;
-}
+} */
 
 .faqs .faqs-item .card-header:not(.collapsed) + .collapse{
     pointer-events: auto;

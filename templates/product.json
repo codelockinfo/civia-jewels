@@ -468,6 +468,101 @@
         "mg_bottom_mobile": 0
       }
     },
+    "faqs_AiMJWx": {
+      "type": "faqs",
+      "blocks": {
+        "paragraph_VTCyNX": {
+          "type": "paragraph",
+          "settings": {
+            "title": "",
+            "question_1": "Are these real diamonds?",
+            "answer_1": "Yes. Our diamonds are real lab-grown diamonds, sharing the same physical, chemical, and optical characteristics as mined diamonds. They’re not diamond simulants and not to be confused with moissanite or cubic zirconia.",
+            "question_2": "Are these moissanite?",
+            "answer_2": "No. We do not use moissanite or any other diamond simulants. Our stones are genuine lab-grown diamonds, certified by recognized gemological labs.",
+            "question_3": "Are the diamonds certified?",
+            "answer_3": "Yes! All our larger diamonds, especially those in solitaire settings, come with IGI certification for complete assurance of quality and authenticity. Smaller diamonds are certified by SGL. Each certificate details the diamond’s color, clarity, cut, and other essential characteristics, verifying that you’re getting a genuine, high-quality lab-grown diamond.",
+            "question_4": "What is the color, clarity, and cut of the diamonds?",
+            "answer_4": "We use only premium-quality lab-grown diamonds that fall into the D, E, or F (near-colorless) color range, with VVS or VS clarity (minimal inclusions). All our diamonds are crafted with an Excellent cut to maximize brilliance and sparkle.",
+            "question_5": "Why are your prices so much Affordable?",
+            "answer_5": "We are a Direct-to-Consumer (D2C) brand. Because we grow and manufacture our own diamonds and jewelry in-house, we cut out traditional retail markups. This allows us to offer exceptional quality at a more accessible price without compromising craftsmanship.",
+            "question_6": "Do you offer buy now, pay later?",
+            "answer_6": "Yes. We understand that flexibility is important. We partner with leading payment providers to offer buy now, pay later options at checkout. Simply select the plan that works best for you when finalizing your purchase.",
+            "question_7": "Do you accept returns?",
+            "answer_7": "Yes. We want you to love your purchase. That’s why we offer a 30-day free return policy. If you’re not completely satisfied with your order, you can return it in its original condition within 30 days for a full refund or exchange. Simply contact our customer support team or visit our Returns &amp; Exchanges page for instructions on how to initiate a return.",
+            "question_8": "I saw a different price before, and now prices have changed. Can I get the older price?",
+            "answer_8": "Our prices can vary based on promotions, raw material costs, and market fluctuations. While we strive to maintain consistent pricing, once a promotion or price update has ended, we cannot retroactively apply older prices. We appreciate your understanding.",
+            "question_9": "Are the delivery dates guaranteed?",
+            "answer_9": "We do our best to estimate and fulfill delivery dates as accurately as possible. However, unforeseen events (like shipping carrier delays or severe weather) may affect timelines. If you have a specific delivery requirement, please contact us so we can work toward meeting your needs.",
+            "question_10": "Do you do customization?",
+            "answer_10": "Yes! We love creating custom pieces to help bring your vision to life. Simply reach out with your ideas, and our design team will guide you through the process—from selecting the perfect diamond shape to choosing the ideal setting."
+          }
+        },
+        "paragraph_VLgzYR": {
+          "type": "paragraph",
+          "settings": {
+            "title": "",
+            "question_1": "Is there any warranty on the jewelry?",
+            "answer_1": "Yes! We stand behind the quality of our craftsmanship. All our pieces come with a lifetime warranty against manufacturing defects. If you encounter any issues, simply contact our support team, and we’ll make it right.",
+            "question_2": "Question",
+            "answer_2": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
+            "question_3": "Question",
+            "answer_3": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
+            "question_4": "Question",
+            "answer_4": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
+            "question_5": "Question",
+            "answer_5": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
+            "question_6": "Question",
+            "answer_6": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
+            "question_7": "Question",
+            "answer_7": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
+            "question_8": "Question",
+            "answer_8": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
+            "question_9": "Question",
+            "answer_9": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>",
+            "question_10": "Question",
+            "answer_10": "<p>Use overlay text to give your customers insight into your brand. Select image and text that relates to your style and story.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_VTCyNX",
+        "paragraph_VLgzYR"
+      ],
+      "name": "t:sections.faqs.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "title": "FAQs",
+        "color_title": "#000000",
+        "fontsize_title": 34,
+        "fontsize_title_mb": 16,
+        "mg_bottom_title": 12,
+        "mg_bottom_title_mb": 12,
+        "enable_border_title": false,
+        "border_color_title": "#051c42",
+        "description": "",
+        "color_des": "#202020",
+        "fontsize_des": 16,
+        "contact_text": "",
+        "contact_link": "",
+        "contact_color": "#ffffff",
+        "contact_color_border": "#f8f8f8",
+        "contact_color_bg": "#ef6454",
+        "contact_color_bg_gradient": "",
+        "contact_color_hover": "#ffffff",
+        "contact_color_border_hover": "#ef6454",
+        "contact_color_bg_hover": "#ef6454",
+        "contact_color_bg_gradient_hover": "",
+        "title_alignment": "left",
+        "show_faqs_filter": false,
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -578,6 +673,7 @@
   },
   "order": [
     "main",
+    "faqs_AiMJWx",
     "product-recommendations",
     "product-recently-viewed"
   ]

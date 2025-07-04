@@ -232,10 +232,13 @@ faqs-item{
 }
 
 .faqs .faqs-item .card-header .title {
-    padding: 15px 80px 15px 15px;
-    background-color: #fafafa;
+    padding: 10px 80px 10px 15px;
     cursor: pointer;
+    font-size: 17px;
     position: relative;
+    border-radius: 10px;
+    border-top: 1px solid #fff;
+    box-shadow: 0 2px 6px #00000026;
 }
 
 .faqs .faqs-item .card-header .title::after {

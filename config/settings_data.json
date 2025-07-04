@@ -11,7 +11,7 @@
   "current": {
     "layout_body": "default",
     "mobile_menu": "default",
-    "collection_layout": "default",
+    "collection_layout": "full_width",
     "list_collections_layout": "collections_01_grid",
     "product_page_layout": "left_right_sidebar",
     "type_font_1": "shopify_fonts",

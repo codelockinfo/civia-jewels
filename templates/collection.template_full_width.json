@@ -68,6 +68,9 @@
         "14197ccd-6d04-4e33-a53a-c6a9b85fdd8a"
       ],
       "settings": {
+        "container": "default",
+        "padding_full_width": 0,
+        "layout": "1",
         "show_breadcrumb": true,
         "breadcrumb_alignment": "center",
         "breadcrumb_color": "#ffffff",
@@ -78,15 +81,12 @@
         "breadcrumb_gradient_mb": "",
         "show_page_title": true,
         "page_title_alignment": "center",
-        "container": "default",
-        "padding_full_width": 0,
         "mg_top_desktop": 0,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
         "mg_bottom_desktop": 45,
         "mg_bottom_tablet": 0,
-        "mg_bottom_mobile": 0,
-        "layout": "1"
+        "mg_bottom_mobile": 0
       }
     },
     "product-grid": {
@@ -102,7 +102,10 @@
         },
         "ce351101-2c54-4627-b740-b2c592067b4a": {
           "type": "filter",
-          "settings": { "heading": "Filter Title", "list_tags": "" }
+          "settings": {
+            "heading": "Filter Title",
+            "list_tags": ""
+          }
         },
         "3978fd59-b580-49e1-9893-38d762f48f10": {
           "type": "product_block",
@@ -117,11 +120,17 @@
         },
         "dc4f771a-d1ea-42a7-8792-b895132fa9fe": {
           "type": "image",
-          "settings": { "heading": "", "link": "" }
+          "settings": {
+            "heading": "",
+            "link": ""
+          }
         },
         "34930b49-8499-46d3-bf41-2cbb334ca73d": {
           "type": "image",
-          "settings": { "heading": "", "link": "" }
+          "settings": {
+            "heading": "",
+            "link": ""
+          }
         },
         "2f7f02ac-4072-40ea-844f-59943e256971": {
           "type": "text",
@@ -154,7 +163,7 @@
         "enable_sticky": false,
         "sidebar_layout": "layout_1",
         "sidebar_collapse_default": "expand",
-        "sidebar_type": "horizontal",
+        "sidebar_type": "vertical",
         "sidebar_position": "left",
         "sidebar_heading_font": "font_1",
         "sidebar_heading_font_size": 12,
@@ -296,7 +305,9 @@
           }
         }
       },
-      "block_order": ["cf0ec312-c547-4ffc-95e5-fe512cb488f6"],
+      "block_order": [
+        "cf0ec312-c547-4ffc-95e5-fe512cb488f6"
+      ],
       "settings": {
         "id_section": "",
         "container": "1770",
@@ -360,7 +371,9 @@
           }
         }
       },
-      "block_order": ["5d524300-536a-46fe-8a5b-d82755095233"],
+      "block_order": [
+        "5d524300-536a-46fe-8a5b-d82755095233"
+      ],
       "settings": {
         "container": "1770",
         "padding_full_width": 0,

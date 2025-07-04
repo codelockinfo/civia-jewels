@@ -311,6 +311,9 @@
         "custom_information_UyNtU3",
         "9630b233-8164-4dad-ab64-8830bedf328a"
       ],
+      "custom_css": [
+        ".product-form__label .text {border-radius: 19px; padding: 0 30px; border: 2px solid var(--swatch-border);}"
+      ],
       "settings": {
         "container": "default",
         "padding_full_width": 0,

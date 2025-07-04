@@ -258,7 +258,9 @@ faqs-item{
     transform: scale(1);
     transform-origin: left;
 } */
-
+.desc-answer{
+      font-size: 14px;
+}
 .faqs .faqs-item .card-header:not(.collapsed) + .collapse{
     pointer-events: auto;
 }

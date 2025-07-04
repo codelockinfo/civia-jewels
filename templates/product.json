@@ -642,21 +642,6 @@
         "include_margins": false
       }
     },
-    "17516157532b5aa6b6": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_medals_EXAhtU": {
-          "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_medals_EXAhtU"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -770,7 +755,6 @@
     "rich_text_qmyNc8",
     "faqs_AiMJWx",
     "1751612175757ace94",
-    "17516157532b5aa6b6",
     "product-recommendations",
     "product-recently-viewed"
   ]

@@ -633,10 +633,15 @@
         "judge_me_reviews_review_widget_8p4jGX": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
+        },
+        "judge_me_reviews_medals_PELLpc": {
+          "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_8p4jGX"
+        "judge_me_reviews_review_widget_8p4jGX",
+        "judge_me_reviews_medals_PELLpc"
       ],
       "settings": {
         "include_margins": false

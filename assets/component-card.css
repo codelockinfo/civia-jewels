@@ -2587,6 +2587,7 @@ quickshop-update-quantity.disabled {
 
     .card-information__group-2 .card-vendor {
         width: 100%;
+        display: none;
     }
 
     .card-information__wrapper.text-center .card-information__group-2 {

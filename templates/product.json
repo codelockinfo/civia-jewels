@@ -183,6 +183,21 @@
             "spacing_bottom": 0
           }
         },
+        "9630b233-8164-4dad-ab64-8830bedf328a": {
+          "type": "complementary_products",
+          "settings": {
+            "complementary_product_title": "Pairs well with",
+            "complementary_product_layout": "1",
+            "complementary_product_limit_1": 2,
+            "complementary_product_limit_2": 3,
+            "complementary_product_arrows": false,
+            "complementary_product_dots": false,
+            "complementary_product_object": "cover",
+            "complementary_product_button_atc": false,
+            "spacing_top": 30,
+            "spacing_bottom": 0
+          }
+        },
         "custom_liquid_URXfK6": {
           "type": "custom_liquid",
           "settings": {
@@ -276,21 +291,6 @@
             "fontsize_text": 14,
             "content_popup": "",
             "spacing_top": 0,
-            "spacing_bottom": 12
-          }
-        },
-        "9630b233-8164-4dad-ab64-8830bedf328a": {
-          "type": "complementary_products",
-          "settings": {
-            "complementary_product_title": "Pairs well with",
-            "complementary_product_layout": "2",
-            "complementary_product_limit_1": 2,
-            "complementary_product_limit_2": 3,
-            "complementary_product_arrows": false,
-            "complementary_product_dots": true,
-            "complementary_product_object": "cover",
-            "complementary_product_button_atc": false,
-            "spacing_top": 30,
             "spacing_bottom": 0
           }
         }
@@ -310,14 +310,14 @@
         "3d9ea84d-5527-4bce-abe6-5debef3ec955",
         "b9d6eb19-10f4-41f8-bfdc-ea10e8b3182a",
         "19ab1d9f-74b2-4c76-bf2e-1bc749e5c2a3",
+        "9630b233-8164-4dad-ab64-8830bedf328a",
         "custom_liquid_URXfK6",
         "custom_information_z7ixNf",
         "custom_information_D9LEnL",
         "custom_information_VEJrzr",
         "custom_information_m9cPxA",
         "custom_information_HaQcKn",
-        "custom_information_UyNtU3",
-        "9630b233-8164-4dad-ab64-8830bedf328a"
+        "custom_information_UyNtU3"
       ],
       "custom_css": [
         ".product-form__label .text {border-radius: 19px; padding: 0 30px;}"

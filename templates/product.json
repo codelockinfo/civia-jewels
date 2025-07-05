@@ -204,6 +204,12 @@
             "custom_liquid": "<div class=\"icon-row\">\n\n  <!-- Drop Hint -->\n  <a href=\"#\" class=\"icon-box\">\n    <span class=\"icon\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 21 20\">\n        <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAAXNSR0IArs4c6QAAAV5JREFUOE+9lLFLw0AUxr90qba0k1nMns05i0Qy+A/EqZCAg3Tr4JSgs10DZnMSktXsThmc8hcImROoIAhi2wiVyjuIpPHS9kD7wQ25e/z43vfuIhVFscQfS9opdPn+is8kwlf+jFZPxt7p8OebGuuY15D6B9weG53OH8YM2CQCds89MejHrb0xaYLy3K44TZIErusy2PhYxpHcbgS/zBa4eJxAURSYpslWqRWoruts3/M8HPba6D7doTV944KnJ0Nkiw4GgwE7T9OUDzUMA6PRCL7vIwxDBp5FN6ChVbV/doUJ+qD6IAhg2/Z6aBzHiKKoEVwCHcdhBjRNg6qqm6Hkqg6e3l+CB6TaraFUTDEQvIyCJm1Z1q/BCEGrYGqTbge1XJ20sNNyOHmeM2AdVp4LO934ArbJlPKjCy2itU7pNWVZJsIDRUMmyAz3RdEmFYmq3tlu/6eibqv1/+L0G6BU/SH+e1YuAAAAAElFTkSuQmCC\" width=\"21\" height=\"20\" />\n      </svg>\n    </span>\n    <span class=\"label\">Drop Hint</span>\n  </a>\n\n  <!-- Email -->\n  <a href=\"mailto:example@example.com\" class=\"icon-box\">\n    <span class=\"icon\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 21 20\">\n        <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAAAXNSR0IArs4c6QAAAONJREFUOE/tlbEJhTAQhs85FMusYCe4QsDOjGCfEewdIaldwTorWOsONvIef0DBR0zMw9JAsPDy3X//XTRZ1/VDD6/khR6eDsNAUkpK0/S2y9u2UV3X1LbtcebkaVmWlOe5DSiKIgg2xlgRy7LQNE1uaFVVpLWmpmmo6zovGEAhBCml7NMLHcfRZgYYCVxW4D0EAIiKGGNhKOq4Av8CEXsbiuDds12xCxgNxQFMBHaWZTaJy+sopXs7oXCe58vG/QUNzVYQetVxH9gL7fve+oZyYxYuC+fcPfwxIF/s++l7/nfyBbST2CEFaBC/AAAAAElFTkSuQmCC\" width=\"21\" height=\"20\" />\n      </svg>\n    </span>\n    <span class=\"label\">Email</span>\n  </a>\n\n  <!-- Phone -->\n  <a href=\"tel:+18889986099\" class=\"icon-box\">\n    <span class=\"icon\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 20 20\">\n        <image xlink:href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAQ1JREFUOE+9lLENhDAMRX1zsAfUrEANI9AzAtSMADUrUMMcsAPdnV4kSzklkBxCZwkREuXlO9/mdRzHWx6M11+Ay7JI3/ey77skSSJd15l3TDgKgVVVJW3bGgjgLMukrusYnjjAsiy/AHrAPM9RKr3AoiiERyPPc6MYpaEIAh9ViCmoG4YhSh3qHYXqLina41Cquu4AUYUx4ziKlg/j22XDSU3TGAClQsoYdLtsANpG8K2lxDwZpGl6Wuynrcf9AaBLtm2TdV2NakqHNeZ8HXTZy1fpssY12PXqddl2Uw3ybbTv2d4T/NtM02RStH8SzAH0tWMQqKcD4E4JlJ8VezRQQZhx1dM/AWO65XHgB7296iEYMY4RAAAAAElFTkSuQmCC\" width=\"20\" height=\"20\" />\n      </svg>\n    </span>\n    <span class=\"label\">+1 888-998-6099</span>\n  </a>\n\n</div>\n<style>\n.icon-row {\n  display: flex;\n  gap: 30px;\n  align-items: center;\n  background-color: #fafafa;\n  padding: 40px 5px;\n  flex-wrap: wrap;\n}\n\n.icon-box {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  font-family: sans-serif;\n  font-size: 14px;\n  color: #000;\n}\n\n.icon-box.phone {\n  padding: 6px 12px;\n  border-radius: 4px;\n}\n\n.icon svg {\n  width: 24px;\n  height: 24px;\n  display: inline-block;\n}\n\n.icon image {\n  width: 100%;\n  height: 100%;\n}\n\n</style>"
           }
         },
+        "custom_liquid_nPM3cR": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b854195-06b2-4cb2-b8fc-4cfc74cf9f9f\" data-elfsight-app-lazy></div>"
+          }
+        },
         "custom_information_z7ixNf": {
           "type": "custom_information",
           "settings": {
@@ -312,6 +318,7 @@
         "19ab1d9f-74b2-4c76-bf2e-1bc749e5c2a3",
         "9630b233-8164-4dad-ab64-8830bedf328a",
         "custom_liquid_URXfK6",
+        "custom_liquid_nPM3cR",
         "custom_information_z7ixNf",
         "custom_information_D9LEnL",
         "custom_information_VEJrzr",
@@ -321,7 +328,7 @@
       ],
       "custom_css": [
         "dd.price__compare {display: none;}",
-        ".price-item--sale.price-item .text{display:none;}"
+        ".price-item--sale.price-item .text {display: none;}"
       ],
       "settings": {
         "container": "default",

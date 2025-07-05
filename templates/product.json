@@ -192,7 +192,7 @@
             "complementary_product_limit_2": 3,
             "complementary_product_arrows": false,
             "complementary_product_dots": false,
-            "complementary_product_object": "cover",
+            "complementary_product_object": "none",
             "complementary_product_button_atc": false,
             "spacing_top": 30,
             "spacing_bottom": 0

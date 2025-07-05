@@ -142,7 +142,7 @@
         "footer_bottom_4rRLp6": {
           "type": "footer_bottom",
           "settings": {
-            "pdtop_footer_bottom": 50,
+            "pdtop_footer_bottom": 0,
             "pdbottom_footer_bottom": 10,
             "border_top": true,
             "footer_bottom_color": "#000000",

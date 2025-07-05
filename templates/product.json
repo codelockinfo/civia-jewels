@@ -320,7 +320,7 @@
         "custom_information_UyNtU3"
       ],
       "custom_css": [
-        ".product-form__label .text {border-radius: 19px; padding: 0 30px;}"
+        "dd.price__compare {display: none;}"
       ],
       "settings": {
         "container": "default",

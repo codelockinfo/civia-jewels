@@ -3074,7 +3074,7 @@
           "search_button_bg_color_gradient": "Button background gradient",
           "search_button_border": "Button border color",
           "input_font_size": "Input font size",
-          "input_text_transform": "E style",
+          "input_text_transform": "Input text style",
           "input_font_weight": "Input text font weight",
           "style_search": {
             "option": "Search popup style"

@@ -2,7 +2,7 @@
     position: absolute;
     top: var(--badge-postion-top);
     z-index: 2;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 

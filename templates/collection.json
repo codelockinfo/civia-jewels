@@ -35,7 +35,7 @@
             "all_sub_collection_padding_bottom": 10,
             "sub_collection_title": "Jump To",
             "sub_collection_title_color": "#000000",
-            "fontsize_sub_collection": 12,
+            "fontsize_sub_collection": 14,
             "fontweight_sub_collection": "500",
             "sub_collection_text_transform": "uppercase",
             "show_sub_collection_image": false,

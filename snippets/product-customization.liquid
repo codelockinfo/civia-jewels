@@ -9,7 +9,7 @@
 			endunless
 		-%}
 		<div class="product-form__input clearfix line-item-property__field">
-		  	<label for="{{ property_id }}" class="form-label form__label">{{ Namw }}</label>
+		  	<label for="{{ property_id }}" class="form-label form__label">{{ property_name }}</label>
 		  	<input id="{{ property_id }}" type="text" name="properties[{{ property_value }}]" class="form__input form-input" placeholder="Plase enter Engraving for your ring">
 		</div>
 	{%- endif -%}
@@ -22,7 +22,7 @@
 				assign property_value = property_value | prepend: '_'
 			endunless
 		-%}
-		<div class="product-form__input clearfix line-item-property__field" style="display: none;">
+		<div class="product-form__input clearfix line-item-property__field" style="display: none">
 		  	<label for="{{ property_id }}" class="form-label form__label">{{ property_name }}</label>
 		  	<input id="{{ property_id }}" type="file" accept="image/*" name="properties[{{ property_value }}]" class="form__input form-input">
 		</div>

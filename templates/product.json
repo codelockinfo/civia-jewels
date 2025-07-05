@@ -194,7 +194,7 @@
             "complementary_product_dots": false,
             "complementary_product_object": "none",
             "complementary_product_button_atc": false,
-            "spacing_top": 30,
+            "spacing_top": 0,
             "spacing_bottom": 0
           }
         },

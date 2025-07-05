@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "settings_schema": {
     "colors": {
@@ -3065,7 +3074,7 @@
           "search_button_bg_color_gradient": "Button background gradient",
           "search_button_border": "Button border color",
           "input_font_size": "Input font size",
-          "input_text_transform": "Input text style",
+          "input_text_transform": "E style",
           "input_font_weight": "Input text font weight",
           "style_search": {
             "option": "Search popup style"

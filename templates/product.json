@@ -221,7 +221,7 @@
             "color_des": "#999999",
             "fontsize_text": 14,
             "content_popup": "",
-            "spacing_top": 10,
+            "spacing_top": 20,
             "spacing_bottom": 12
           }
         },

@@ -193,7 +193,7 @@
       ],
       "settings": {
         "container": "1570",
-        "padding_full_width": 60,
+        "padding_full_width": 40,
         "type_footer_heading": "font_1",
         "type_footer_heading_font_size": 17,
         "type_footer_heading_line_height": 22,
@@ -210,7 +210,7 @@
         "enable_border_footer_top": false,
         "border_footer_top_color": "#282828",
         "pdtop_footer_top": 35,
-        "pdbottom_footer_top": 40,
+        "pdbottom_footer_top": 0,
         "footer_top_bg": "#fff7f7",
         "footer_top_bg_gradient": "",
         "show_footer_top_bg_img": false,

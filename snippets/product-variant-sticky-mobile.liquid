@@ -18,7 +18,7 @@
                             assign option_index = forloop.index0
                         -%}
                         <fieldset class="js product-form__input mobile{% if is_swatch %} product-form__swatch{% endif %} clearfix" data-product-attribute="set-rectangle" data-option-index="{{ forloop.index0 }}">
-                            <legend class="form__label">
+                            <legend class="form__label lable-variant">
                                 {{ option.name | append: ':' }}
                                 <span data-header-option>
                                     {{ option.selected_value }}

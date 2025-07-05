@@ -207,7 +207,7 @@
         "custom_liquid_nPM3cR": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b854195-06b2-4cb2-b8fc-4cfc74cf9f9f\" data-elfsight-app-lazy></div>\n\n\n<style>\n.eapps-widget-toolbar-panel-wrapper {\n    width: 100%;\n    display: none;\n    position: relative;\n}\n.bLiMHw {\n    display: inline-flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: left;\n    \n   backgroundcolor:rgb(255,255, 255);\n    border-radius: 8px;\n    padding: 12px 16px;\n    cursor: pointer;\n}\n</style>"
+            "custom_liquid": "<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b854195-06b2-4cb2-b8fc-4cfc74cf9f9f\" data-elfsight-app-lazy></div>\n\n\n<style>\n.eapps-widget-toolbar-panel-wrapper {\n    width: 100%;\n    display: none;\n    position: relative;\n}\n\n</style>"
           }
         },
         "custom_information_z7ixNf": {

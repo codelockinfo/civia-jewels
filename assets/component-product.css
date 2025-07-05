@@ -2135,6 +2135,7 @@ quantity-input.disabled {
     height: 16px;
     position: relative;
     top: -3px;
+    display: none; 
     margin-left: 10px;
 }
 

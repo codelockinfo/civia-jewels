@@ -146,7 +146,7 @@
                 <variant-selects class="no-js-hidden product-option has-default" data-product="{{ product.id }}" data-section="{{ section.id }}" data-url="{{ product.url }}">
                     {%- for option in product.options_with_values -%}
                         <div class="product-form__input product-form__input--dropdown" data-product-attribute="set-select" data-option-index="{{ forloop.index0 }}">
-                            <label class="form__label" for="option-{{ forloop.index0 }}-{{ section.id }}">
+                            <label class="form__label variant__lable" for="option-{{ forloop.index0 }}-{{ section.id }}">
                                 {{ option.name | append: ':' }}
                                 <span data-header-option>
                                     {{ option.selected_value }}
@@ -174,7 +174,7 @@
         </div>
         <noscript>
             <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
-                <label class="form__label" for="Variants-{{ section.id }}">
+                <label class="form__label variant__lable" for="Variants-{{ section.id }}">
                     {{ 'products.product.product_variants' | t }}
                 </label>
                 <div class="select">

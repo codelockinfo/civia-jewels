@@ -58,7 +58,7 @@
         "description_Nizn76"
       ],
       "settings": {
-        "container": "default",
+        "container": "container",
         "padding_full_width": 0,
         "layout": "1",
         "show_breadcrumb": true,
@@ -84,7 +84,6 @@
       "blocks": {
         "8472dad8-3289-4746-8b7f-e6ebe3175dd5": {
           "type": "lookbook",
-          "disabled": true,
           "settings": {
             "show_image": true,
             "link": "",

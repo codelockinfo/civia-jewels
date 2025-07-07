@@ -594,6 +594,9 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "custom_css": [
+        ".section-block-template--19829632434424__product-recommendations .halo-block-header .title .text {background-color: #ffffff; text-align: left;}"
+      ],
       "settings": {
         "display_product_block": true,
         "product_block_container": "1170",

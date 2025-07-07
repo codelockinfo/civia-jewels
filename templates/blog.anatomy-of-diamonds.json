@@ -267,18 +267,18 @@
       "type": "page",
       "name": "t:sections.main-page.name",
       "settings": {
-        "page": "",
+        "page": "article-anatomy",
         "container": "container",
         "padding_full_width": 0,
         "heading_size": 0,
         "heading_size_mb": 0,
-        "heading_color": "#FFFFFF",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "heading_color": "#ffffff",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
       }
     },
     "custom_service_block_WLkUDg": {

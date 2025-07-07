@@ -502,6 +502,7 @@
         "83cd34d4-6810-4c3f-b36e-e6123e267eae",
         "abbf5cca-71b7-4845-8125-55b853ffa907"
       ],
+      "custom_css": [],
       "settings": {
         "container": "1770",
         "padding_full_width": 0,
@@ -514,7 +515,7 @@
         "breadcrumb_bg_mb": "#f6f6f6",
         "breadcrumb_gradient_mb": "",
         "show_page_title": true,
-        "page_title_alignment": "left",
+        "page_title_alignment": "center",
         "des_collection": "",
         "des_collection_alignment": "center",
         "des_collection_font_size": 12,

@@ -231,6 +231,7 @@
       "block_order": [
         "large_img_YdNLPd"
       ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "id_section": "",
@@ -401,6 +402,7 @@
         "text_U8BDfC",
         "text_mfk6pY"
       ],
+      "disabled": true,
       "name": "t:sections.custom_service_block.name",
       "settings": {
         "id_section": "",

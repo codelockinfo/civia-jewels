@@ -66,6 +66,7 @@
         },
         "ce351101-2c54-4627-b740-b2c592067b4a": {
           "type": "filter",
+          "disabled": true,
           "settings": {
             "heading": "Color",
             "list_tags": "White,Black,Blue,Invory,Beige,Brown,Silver,Olive,Gainsboro,DimGray,Burlywood,Lightblue,Salmon,LightPink,LightCoral"

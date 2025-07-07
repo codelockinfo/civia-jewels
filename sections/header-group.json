@@ -110,9 +110,7 @@
         "logo_yjfkwB",
         "function_group_c7J36q"
       ],
-      "custom_css": [
-        "a{display: inline-block;}"
-      ],
+      "custom_css": [],
       "name": "Header - Basic",
       "settings": {
         "container": "1770",

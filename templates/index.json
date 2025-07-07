@@ -768,7 +768,7 @@
         "product_block_infinite_scroll": true,
         "product_block_swipe_on_mobile": true,
         "enable_product_card_pd_bottom": false,
-        "product_card_pd_bottom": 40,
+        "product_card_pd_bottom": 10,
         "product_block_dots": false,
         "product_block_dots_mb": true,
         "spacing_top_dots": 0,

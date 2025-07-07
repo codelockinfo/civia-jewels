@@ -36,7 +36,7 @@
             "font_weight_sub_title": "700",
             "sub_title_position": "sub_title_above",
             "color_sub_title": "#232323",
-            "color_sub_title_mb": "#fff",
+            "color_sub_title_mb": "#ffffff",
             "heading": "Our story",
             "special_text": "",
             "letter_spacing_heading": "",
@@ -45,18 +45,18 @@
             "font_size_heading_mb": 24,
             "margin_bottom_heading": 20,
             "font_weight_heading": "600",
-            "color_heading": "#fff",
-            "color_heading_mb": "#fff",
+            "color_heading": "#ffffff",
+            "color_heading_mb": "#ffffff",
             "border_title": "none",
             "border_color_title": "#232323",
-            "border_color_title_mobile": "#fff",
+            "border_color_title_mobile": "#ffffff",
             "text": "to revolutionise the diamond industry by offering high-quality, lab-grown diamonds direct to consumers. Inspired by a desire to cut out multiple layers of middlemen, our brand reimagines how diamonds are grown, polished, and transformed into exquisite jewellery pieces.",
             "font_size_des": 18,
             "font_size_des_mb": 12,
             "line_height_des": 26,
             "margin_bottom_des": 35,
-            "color_des": "#FFFFFF",
-            "color_des_mb": "#fff",
+            "color_des": "#ffffff",
+            "color_des_mb": "#ffffff",
             "countdown": "",
             "hide_countdown_fc": "countdown",
             "countdown_style": "round",
@@ -64,7 +64,7 @@
             "font_size_countdown_number": 30,
             "font_size_countdown_text": 14,
             "color_countdown": "#232323",
-            "color_countdown_mb": "#fff",
+            "color_countdown_mb": "#ffffff",
             "countdown_margin_bottom": 35,
             "content_width": 475,
             "bg_color_content": "",
@@ -78,29 +78,30 @@
             "btn_icon": "",
             "button_1_width": 235,
             "enable_button_custom_border": false,
-            "button_color": "#fff",
+            "button_color": "#ffffff",
             "button_border": "#232323",
             "button_background": "#232323",
             "button_background_gradient": "",
-            "button_color_hover": "#fff",
+            "button_color_hover": "#ffffff",
             "button_border_hover": "#232323",
             "button_background_hover": "#232323",
             "button_background_gradient_hover": "",
             "btn_text_2": "",
             "link_2": "",
             "btn_icon_2": "",
-            "button_color_2": "#fff",
+            "button_color_2": "#ffffff",
             "button_border_2": "#232323",
             "button_background_2": "#232323",
             "button_background_2_gradient": "",
-            "button_color_hover_2": "#fff",
+            "button_color_hover_2": "#ffffff",
             "button_border_hover_2": "#232323",
             "button_background_hover_2": "#232323",
             "button_background_gradient_hover_2": "",
+            "video_link": "",
             "adaptive_height_video": "56",
             "icon_style": "style_1",
-            "color_icon": "#fff",
-            "bg_color_icon": "#000",
+            "color_icon": "#ffffff",
+            "bg_color_icon": "#000000",
             "enable_custom_video_icon_position": false,
             "video_icon_horizontal_position": "",
             "video_icon_vertical_position": "",
@@ -143,10 +144,63 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
+    },
+    "rich_text_rMqUGA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hTJkK6": {
+          "type": "heading",
+          "settings": {
+            "heading": " The Traditional Diamond Supply Chain Problem",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000"
+          }
+        },
+        "text_CUtyhW": {
+          "type": "text",
+          "settings": {
+            "text": "The conventional lab-grown diamond pipeline involves multiple steps:",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_font_weight": "400",
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hTJkK6",
+        "text_CUtyhW"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_XzxDan"
+    "image_banner_XzxDan",
+    "rich_text_rMqUGA"
   ]
 }

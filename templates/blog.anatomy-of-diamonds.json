@@ -279,7 +279,7 @@
         "mg_top_desktop": 0,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
-        "mg_bottom_desktop": 30,
+        "mg_bottom_desktop": 60,
         "mg_bottom_tablet": 30,
         "mg_bottom_mobile": 30
       }

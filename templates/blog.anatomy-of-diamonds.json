@@ -234,7 +234,7 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "id_section": "",
-        "container": "1770",
+        "container": "1920",
         "padding_full_width": 0,
         "display_type": "slide",
         "enable_arrows": false,

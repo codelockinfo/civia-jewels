@@ -571,7 +571,7 @@
       ],
       "name": "t:sections.spotlight_block.presets.name",
       "settings": {
-        "container": "container",
+        "container": "1200",
         "padding_full_width": 0,
         "disable_padding_content": false,
         "mg_minus_desktop": 0,

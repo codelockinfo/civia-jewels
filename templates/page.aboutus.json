@@ -204,12 +204,54 @@
       "settings": {
         "background_image": "shopify://shop_images/about-diamond.jpg"
       }
+    },
+    "rich_text_AQwb6F": {
+      "type": "rich-text",
+      "blocks": {
+        "text_6dzCm8": {
+          "type": "text",
+          "settings": {
+            "text": "Each of these steps can add 4–6 price markups before the jewellery ever reaches the consumer, making diamonds unnecessarily expensive. customers to your store.</p>",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_font_weight": "400",
+            "text_line_height": 1,
+            "margin_top_text": 20,
+            "text_color": "#000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "text_6dzCm8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#fff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
     }
   },
   "order": [
     "main",
     "image_banner_XzxDan",
     "rich_text_rMqUGA",
-    "diamond_process_9RLQYb"
+    "diamond_process_9RLQYb",
+    "rich_text_AQwb6F"
   ]
 }

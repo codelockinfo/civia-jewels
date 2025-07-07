@@ -265,6 +265,9 @@
     },
     "page_icA8iQ": {
       "type": "page",
+      "custom_css": [
+        "p{font-size: 16px;}"
+      ],
       "name": "t:sections.main-page.name",
       "settings": {
         "page": "article-anatomy",

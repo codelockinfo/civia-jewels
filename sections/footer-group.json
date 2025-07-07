@@ -191,6 +191,9 @@
         "newsletter_with_social_exFrU9",
         "footer_bottom_4rRLp6"
       ],
+      "custom_css": [
+        ".footer-block__details p {margin: 0; font-size: 15px;}"
+      ],
       "settings": {
         "container": "1470",
         "padding_full_width": 40,

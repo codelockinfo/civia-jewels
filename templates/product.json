@@ -481,7 +481,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "container": "container",
+        "container": "1170",
         "padding_full_width": 0,
         "enable_border_top": false,
         "enable_border_bottom": false,

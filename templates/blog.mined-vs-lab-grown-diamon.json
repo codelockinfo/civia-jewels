@@ -138,7 +138,7 @@
         "large_img_YdNLPd": {
           "type": "largeImg",
           "settings": {
-            "image": "shopify://shop_images/the_title_image_1066x_e1acf1f7-91af-4787-8c3d-3e016b90f0c9.png",
+            "image": "shopify://shop_images/Frame_9_1498x_327fec8b-e02b-4b16-8a8a-52569e05b8fc.webp",
             "enable_max_width_image": false,
             "custom_width_image": 1170,
             "border_radius": 0,
@@ -263,10 +263,28 @@
         "mg_bottom_mobile": 20
       }
     },
-    "custom_service_block_WLkUDg": {
+    "page_9d8pFW": {
+      "type": "page",
+      "name": "t:sections.main-page.name",
+      "settings": {
+        "page": "mined-vs-lab-grown-diamonds",
+        "container": "container",
+        "padding_full_width": 0,
+        "heading_size": 0,
+        "heading_size_mb": 0,
+        "heading_color": "#FFFFFF",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    },
+    "custom_service_block_FGHLjn": {
       "type": "custom-service-block",
       "blocks": {
-        "text_bf4Mce": {
+        "text_xk93RR": {
           "type": "Text",
           "settings": {
             "bg_color_block": "#f8f8f8",
@@ -309,7 +327,7 @@
             "button_background_gradient_hover": ""
           }
         },
-        "text_U8BDfC": {
+        "text_TFtrWb": {
           "type": "Text",
           "settings": {
             "bg_color_block": "#f8f8f8",
@@ -352,7 +370,7 @@
             "button_background_gradient_hover": ""
           }
         },
-        "text_mfk6pY": {
+        "text_LPhfhQ": {
           "type": "Text",
           "settings": {
             "bg_color_block": "#f8f8f8",
@@ -397,9 +415,9 @@
         }
       },
       "block_order": [
-        "text_bf4Mce",
-        "text_U8BDfC",
-        "text_mfk6pY"
+        "text_xk93RR",
+        "text_TFtrWb",
+        "text_LPhfhQ"
       ],
       "name": "t:sections.custom_service_block.name",
       "settings": {
@@ -414,10 +432,10 @@
         "service_block_style": "style_3",
         "policies_bg": "#ffffff",
         "policies_bg_gradient": "",
-        "service_block_title": "Trending stories",
+        "service_block_title": "Recent posts",
         "enable_border_title": false,
         "color_title": "#000000",
-        "fontsize_title": 20,
+        "fontsize_title": 28,
         "fontsize_title_mb": 18,
         "mg_bottom_title_service_block": 12,
         "mg_bottom_title_service_block_mb": 12,
@@ -429,7 +447,7 @@
         "mg_bottom_service_block_des": 50,
         "view_all": "",
         "view_all_align": "center",
-        "font_weight_view_all": "400",
+        "font_weight_view_all": "500",
         "mg_top_view": 0,
         "mg_bottom_view": 30,
         "enable_border_view_all": true,
@@ -437,7 +455,7 @@
         "color_view_all": "#3c3c3c",
         "icon_view_all": "",
         "color_view_all_icon": "#eb492f",
-        "title_align": "center",
+        "title_align": "left",
         "item_width": "full_width",
         "border_item": "none",
         "enable_item_distance": true,
@@ -485,6 +503,7 @@
   "order": [
     "main",
     "image_banner_fFHAYx",
-    "custom_service_block_WLkUDg"
+    "page_9d8pFW",
+    "custom_service_block_FGHLjn"
   ]
 }

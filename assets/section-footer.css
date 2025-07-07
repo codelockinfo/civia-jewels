@@ -218,6 +218,7 @@
 .footer-block__details .rte .content-piece,
 .footer-block__newsletter .rte .content-piece {
     display: flex;
+    height: 37px;
 }
 
 .footer-block__newsletter .rte .content-piece {

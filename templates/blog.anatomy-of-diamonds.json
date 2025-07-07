@@ -268,7 +268,7 @@
       "custom_css": [
         "p {font-size: 16px; color: #505055;}",
         "span.info-item.date {font-size: 16px;}",
-        "::marker{color: black;}"
+        "::marker {color: black;}"
       ],
       "name": "t:sections.main-page.name",
       "settings": {
@@ -440,7 +440,7 @@
         "service_block_title": "Recent posts",
         "enable_border_title": false,
         "color_title": "#000000",
-        "fontsize_title": 20,
+        "fontsize_title": 28,
         "fontsize_title_mb": 18,
         "mg_bottom_title_service_block": 12,
         "mg_bottom_title_service_block_mb": 12,

@@ -15,7 +15,8 @@
         "040b56d3-2b31-437e-87e0-9f75db59fdba": {
           "type": "collection",
           "settings": {
-            "collection": "cosmopolis",
+            "collection": "trending-pic",
+            "image": "shopify://shop_images/81172.alt.jpg",
             "display_countdown": false,
             "title": "SPECIAL OFFERS",
             "title_font_size": 20,
@@ -51,7 +52,8 @@
         "d8a2e0b1-4f99-48fa-af54-1e2c3f7f1516": {
           "type": "collection",
           "settings": {
-            "collection": "suito",
+            "collection": "rose-gold-1",
+            "image": "shopify://shop_images/82024.alt1_7c83e9d2-8f00-4b0b-9942-75f07a7fe05b.jpg",
             "display_countdown": false,
             "title": "Special Offers",
             "title_font_size": 16,

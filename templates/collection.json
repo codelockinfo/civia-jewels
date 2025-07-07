@@ -56,14 +56,6 @@
             "des_color": "#3c3c3c"
           }
         },
-        "80b0a11c-fb01-4b89-8a29-1dbb2a1db16a": {
-          "type": "category",
-          "settings": {
-            "heading": "Categories",
-            "type": "1_level",
-            "link_list": ""
-          }
-        },
         "ce351101-2c54-4627-b740-b2c592067b4a": {
           "type": "filter",
           "disabled": true,
@@ -119,7 +111,6 @@
       },
       "block_order": [
         "8472dad8-3289-4746-8b7f-e6ebe3175dd5",
-        "80b0a11c-fb01-4b89-8a29-1dbb2a1db16a",
         "ce351101-2c54-4627-b740-b2c592067b4a",
         "6684d566-6940-4457-9cf9-f1a8a6e80573",
         "3978fd59-b580-49e1-9893-38d762f48f10",

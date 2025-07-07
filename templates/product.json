@@ -23,8 +23,8 @@
             "breadcrumb_gradient_mb": "",
             "breadcrumb_mg_top_desktop": 10,
             "breadcrumb_mg_top_mobile": 0,
-            "breadcrumb_mg_bottom_desktop": 20,
-            "breadcrumb_mg_bottom_mobile": 10
+            "breadcrumb_mg_bottom_desktop": 0,
+            "breadcrumb_mg_bottom_mobile": 0
           }
         },
         "b0ea69b7-8a54-4a3c-9abd-0fcceeabaaa0": {

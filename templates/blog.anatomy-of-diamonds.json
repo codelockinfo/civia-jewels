@@ -271,7 +271,7 @@
       "name": "t:sections.main-page.name",
       "settings": {
         "page": "article-anatomy",
-        "container": "container",
+        "container": "1170",
         "padding_full_width": 0,
         "heading_size": 0,
         "heading_size_mb": 0,
@@ -281,7 +281,7 @@
         "mg_top_mobile": 0,
         "mg_bottom_desktop": 30,
         "mg_bottom_tablet": 30,
-        "mg_bottom_mobile": 0
+        "mg_bottom_mobile": 30
       }
     },
     "custom_service_block_WLkUDg": {

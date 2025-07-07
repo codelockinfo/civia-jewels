@@ -503,7 +503,7 @@
         "abbf5cca-71b7-4845-8125-55b853ffa907"
       ],
       "settings": {
-        "container": "container",
+        "container": "1770",
         "padding_full_width": 0,
         "colors_bg": "#ffffff",
         "colors_bg_gradient": "",
@@ -535,7 +535,7 @@
         "type": "custom",
         "sort": "alphabetical",
         "item_per_row": "4",
-        "item_per_row_mb": "1",
+        "item_per_row_mb": "2",
         "padding_top_collection_list": 15,
         "padding_bottom_collection_list": 80,
         "item_grid_gap": 15,

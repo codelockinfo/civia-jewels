@@ -263,6 +263,24 @@
         "mg_bottom_mobile": 20
       }
     },
+    "page_icA8iQ": {
+      "type": "page",
+      "name": "t:sections.main-page.name",
+      "settings": {
+        "page": "",
+        "container": "container",
+        "padding_full_width": 0,
+        "heading_size": 0,
+        "heading_size_mb": 0,
+        "heading_color": "#FFFFFF",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    },
     "custom_service_block_WLkUDg": {
       "type": "custom-service-block",
       "blocks": {
@@ -485,6 +503,7 @@
   "order": [
     "main",
     "image_banner_fFHAYx",
+    "page_icA8iQ",
     "custom_service_block_WLkUDg"
   ]
 }

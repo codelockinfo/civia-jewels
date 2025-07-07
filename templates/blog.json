@@ -1,1 +1,270 @@
-{"sections":{"main":{"type":"main-blog","blocks":{"275addbb-56b4-4828-a499-03e58376b7c4":{"type":"category","settings":{"heading":"Categories","type":"1_level","link_list":"categories-footer-home3"}},"55c8959f-8115-4017-bf9e-6937d51df687":{"type":"recent_post","settings":{"heading":"RECENT ARTICLES","number":5}},"6543713f-63f0-4882-ad34-5a2cdf3308dd":{"type":"product_block","settings":{"heading":"Featured Products","product_block_collection":"collection-home-1-2","product_block_layout":"grid","product_block_limit":4,"product_block_dots":false,"product_block_arrows":true}},"5ad48b09-ec51-476a-b52c-e12ce0707c61":{"type":"image","settings":{"heading":"","image":"shopify:\/\/shop_images\/blog-sidebar-2-1.jpg","link":""}},"74038a9b-b77e-4134-88bb-bcd7f06fdda1":{"type":"image","settings":{"heading":"","image":"shopify:\/\/shop_images\/blog-sidebar-2-2.jpg","link":""}},"9bcdee17-7ee7-4353-b16c-f7b04bdf5b84":{"type":"text","settings":{"heading":"Custom Block","text":"<p>Custom CMS block displayed at the left sidebar on the Catalog Page. Put your own content here: text, html, images, media... or whatever you like.<\/p>\n<p>There are many similar sample content placeholders across the store. All editable from Theme Editor.<\/p>"}},"580588b2-a150-4670-9def-6bc2575c20ea":{"type":"recent_tag","settings":{"heading":"Blog Tags","show_tag_count":false,"number":10}}},"block_order":["275addbb-56b4-4828-a499-03e58376b7c4","55c8959f-8115-4017-bf9e-6937d51df687","6543713f-63f0-4882-ad34-5a2cdf3308dd","5ad48b09-ec51-476a-b52c-e12ce0707c61","74038a9b-b77e-4134-88bb-bcd7f06fdda1","9bcdee17-7ee7-4353-b16c-f7b04bdf5b84","580588b2-a150-4670-9def-6bc2575c20ea"],"settings":{"container":"container","show_breadcrumb":true,"breadcrumb_alignment":"left","show_page_title":true,"page_title_alignment":"left","show_collapse":false,"enable_sticky":false,"sidebar_layout":"layout_2","sidebar_collapse_default":"expand","sidebar_position":"left","sidebar_heading_font":"font_2","sidebar_heading_font_size":13,"sidebar_heading_font_weight":"900","sidebar_heading_text_transform":"uppercase","image_ratio":"adapt","portrait_aspect_ratio":70,"limit":7,"item_per_row":"1","show_placeholder":false,"show_date":true,"show_author":true,"show_comment":true,"show_summary":true,"show_read_more":false,"blog_text_align":"left","background_color":"#ffffff","title_color":"#232323","text_color":"#3c3c3c","info_color":"#999999","title_font_size":20,"title_mobile_font_size":18,"title_font_weight":"600","title_text_transform":"capitalize","text_font_size":13,"text_font_weight":"400","text_text_transform":"none","info_font_size":12,"info_font_weight":"400","info_text_transform":"none","info_font_style":"italic","mg_top_desktop":0,"mg_top_tablet":0,"mg_top_mobile":0,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "blocks": {
+        "275addbb-56b4-4828-a499-03e58376b7c4": {
+          "type": "category",
+          "settings": {
+            "heading": "Categories",
+            "type": "1_level",
+            "link_list": ""
+          }
+        },
+        "55c8959f-8115-4017-bf9e-6937d51df687": {
+          "type": "recent_post",
+          "settings": {
+            "heading": "RECENT ARTICLES",
+            "number": 5
+          }
+        },
+        "6543713f-63f0-4882-ad34-5a2cdf3308dd": {
+          "type": "product_block",
+          "settings": {
+            "heading": "Featured Products",
+            "product_block_collection": "collection-home-1-2",
+            "product_block_layout": "grid",
+            "product_block_limit": 4,
+            "product_block_dots": false,
+            "product_block_arrows": true
+          }
+        },
+        "5ad48b09-ec51-476a-b52c-e12ce0707c61": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "link": ""
+          }
+        },
+        "74038a9b-b77e-4134-88bb-bcd7f06fdda1": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "link": ""
+          }
+        },
+        "9bcdee17-7ee7-4353-b16c-f7b04bdf5b84": {
+          "type": "text",
+          "settings": {
+            "heading": "Custom Block",
+            "text": "<p>Custom CMS block displayed at the left sidebar on the Catalog Page. Put your own content here: text, html, images, media... or whatever you like.</p>\n<p>There are many similar sample content placeholders across the store. All editable from Theme Editor.</p>"
+          }
+        },
+        "580588b2-a150-4670-9def-6bc2575c20ea": {
+          "type": "recent_tag",
+          "settings": {
+            "heading": "Blog Tags",
+            "show_tag_count": false,
+            "number": 10
+          }
+        }
+      },
+      "block_order": [
+        "275addbb-56b4-4828-a499-03e58376b7c4",
+        "55c8959f-8115-4017-bf9e-6937d51df687",
+        "6543713f-63f0-4882-ad34-5a2cdf3308dd",
+        "5ad48b09-ec51-476a-b52c-e12ce0707c61",
+        "74038a9b-b77e-4134-88bb-bcd7f06fdda1",
+        "9bcdee17-7ee7-4353-b16c-f7b04bdf5b84",
+        "580588b2-a150-4670-9def-6bc2575c20ea"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "show_breadcrumb": true,
+        "breadcrumb_alignment": "left",
+        "breadcrumb_bg": "",
+        "breadcrumb_gradient": "",
+        "breadcrumb_bg_mb": "#f6f6f6",
+        "breadcrumb_gradient_mb": "",
+        "show_page_title": true,
+        "page_title_alignment": "left",
+        "show_collapse": false,
+        "enable_sticky": false,
+        "sidebar_layout": "layout_2",
+        "sidebar_collapse_default": "expand",
+        "sidebar_position": "left",
+        "sidebar_heading_font": "font_2",
+        "sidebar_heading_font_size": 13,
+        "sidebar_heading_font_weight": "900",
+        "sidebar_heading_text_transform": "uppercase",
+        "image_ratio": "adapt",
+        "portrait_aspect_ratio": 70,
+        "limit": 7,
+        "item_per_row": "1",
+        "show_placeholder": false,
+        "show_date": true,
+        "show_author": true,
+        "show_comment": true,
+        "show_summary": true,
+        "show_read_more": false,
+        "blog_text_align": "left",
+        "background_color": "#ffffff",
+        "title_color": "#232323",
+        "text_color": "#3c3c3c",
+        "info_color": "#999999",
+        "title_font_size": 20,
+        "title_mobile_font_size": 18,
+        "title_font_weight": "600",
+        "title_text_transform": "capitalize",
+        "text_font_size": 13,
+        "text_font_weight": "400",
+        "text_text_transform": "none",
+        "info_font_size": 12,
+        "info_font_weight": "400",
+        "info_text_transform": "none",
+        "info_font_style": "italic",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
+    "image_banner_fFHAYx": {
+      "type": "image-banner",
+      "blocks": {
+        "large_img_YdNLPd": {
+          "type": "largeImg",
+          "settings": {
+            "image": "shopify://shop_images/blog-list-bg_1920x_f7a20a17-27c1-46c6-8fc7-ea4ca4b34ef2.jpg",
+            "enable_max_width_image": false,
+            "custom_width_image": 1170,
+            "border_radius": 0,
+            "enable_scroll_down": false,
+            "enable_custom_image": false,
+            "image_behavior": "none",
+            "sub_title": "",
+            "border_sub_title": false,
+            "font_size_sub_title": 14,
+            "font_size_sub_title_mb": 14,
+            "margin_bottom_sub_title": 14,
+            "sub_heading_font": "font_1",
+            "font_weight_sub_title": "700",
+            "sub_title_position": "sub_title_above",
+            "color_sub_title": "#232323",
+            "color_sub_title_mb": "#fff",
+            "heading": "OUR BLOG",
+            "special_text": "",
+            "letter_spacing_heading": "",
+            "enable_style_italic": false,
+            "font_size_heading": 40,
+            "font_size_heading_mb": 24,
+            "margin_bottom_heading": 20,
+            "font_weight_heading": "600",
+            "color_heading": "#FFFFFF",
+            "color_heading_mb": "#fff",
+            "border_title": "none",
+            "border_color_title": "#232323",
+            "border_color_title_mobile": "#fff",
+            "text": "",
+            "font_size_des": 12,
+            "font_size_des_mb": 12,
+            "line_height_des": 26,
+            "margin_bottom_des": 35,
+            "color_des": "#232323",
+            "color_des_mb": "#fff",
+            "countdown": "",
+            "hide_countdown_fc": "countdown",
+            "countdown_style": "round",
+            "countdown_position": "countdown_below_desc",
+            "font_size_countdown_number": 30,
+            "font_size_countdown_text": 14,
+            "color_countdown": "#232323",
+            "color_countdown_mb": "#fff",
+            "countdown_margin_bottom": 35,
+            "content_width": 475,
+            "bg_color_content": "",
+            "align": "center",
+            "align_items": "center",
+            "position": "center",
+            "custom_horizontal": "",
+            "custom_vertical": "",
+            "btn_text": "",
+            "link": "",
+            "btn_icon": "",
+            "button_1_width": 235,
+            "enable_button_custom_border": false,
+            "button_color": "#fff",
+            "button_border": "#232323",
+            "button_background": "#232323",
+            "button_background_gradient": "",
+            "button_color_hover": "#fff",
+            "button_border_hover": "#232323",
+            "button_background_hover": "#232323",
+            "button_background_gradient_hover": "",
+            "btn_text_2": "",
+            "link_2": "",
+            "btn_icon_2": "",
+            "button_color_2": "#fff",
+            "button_border_2": "#232323",
+            "button_background_2": "#232323",
+            "button_background_2_gradient": "",
+            "button_color_hover_2": "#fff",
+            "button_border_hover_2": "#232323",
+            "button_background_hover_2": "#232323",
+            "button_background_gradient_hover_2": "",
+            "adaptive_height_video": "56",
+            "icon_style": "style_1",
+            "color_icon": "#fff",
+            "bg_color_icon": "#000",
+            "enable_custom_video_icon_position": false,
+            "video_icon_horizontal_position": "",
+            "video_icon_vertical_position": "",
+            "video_icon_horizontal_position_mb": "",
+            "video_icon_vertical_position_mb": ""
+          }
+        }
+      },
+      "block_order": [
+        "large_img_YdNLPd"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "id_section": "",
+        "container": "fullwidth",
+        "padding_full_width": 0,
+        "display_type": "slide",
+        "enable_arrows": false,
+        "arrows_position": "",
+        "enable_dots": false,
+        "enable_autoplay": false,
+        "list_gap": 0,
+        "image_banner_title": "",
+        "enable_border_title": false,
+        "color_title": "#202020",
+        "fontsize_title": 24,
+        "fontsize_title_mb": 20,
+        "margin_bottom_title": 25,
+        "image_banner_des": "",
+        "color_des": "#202020",
+        "fontsize_des": 16,
+        "title_align": "center",
+        "style_bg": "none",
+        "bg_color": "",
+        "bg_color_gradient": "",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_fFHAYx"
+  ]
+}

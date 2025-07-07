@@ -619,7 +619,7 @@
         "fontsize_title_mb": 18,
         "color_title": "#232323",
         "border_color_title": "#232323",
-        "product_block_title_align": "center",
+        "product_block_title_align": "left",
         "product_block_limit": 10,
         "grid_gap": 30,
         "product_block_per_row": "4",

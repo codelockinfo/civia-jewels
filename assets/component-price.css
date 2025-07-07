@@ -70,7 +70,7 @@
 }
 
 .price-item .text{
-    display: inline-block;
+    display: none;
     vertical-align: middle;
     font-size: var(--font-body-size);
     font-weight: var(--font-weight-normal);

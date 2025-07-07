@@ -29,7 +29,7 @@
             "phone_text": "<p><a href=\"tel:+1 888-998-6099\">+1 888-998-6099</a></p>",
             "email_icon": "envelope_icon",
             "show_email_icon": true,
-            "email_text": "<p>support@civia-jewels.com</p>",
+            "email_text": "<p><a href=\"mailto:support@civia-jewelsjewel.com\" title=\"mailto:support@civia-jewelsjewel.com\">support@civia-jewels.com</a></p>",
             "icon_size": 16,
             "icon_color": "",
             "content_spacing": 1,

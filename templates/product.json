@@ -207,7 +207,7 @@
         "custom_liquid_nPM3cR": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<!-- Elfsight Google Reviews | Untitled Google Reviews -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b854195-06b2-4cb2-b8fc-4cfc74cf9f9f\" data-elfsight-app-lazy></div>\n\n<style>\n.eapps-widget-toolbar-panel-wrapper {\n    width: 100%;\n    display: none;\n    position: relative;\n}\na {\ndisplay:none;\n}\n</style>"
+            "custom_liquid": "<!-- Elfsight Google Reviews | Untitled Google Reviews -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b854195-06b2-4cb2-b8fc-4cfc74cf9f9f\" data-elfsight-app-lazy></div>\n\n<style>\n.eapps-widget-toolbar-panel-wrapper {\n    width: 100%;\n    display: none;\n    position: relative;\n}\n\n</style>"
           }
         },
         "custom_information_z7ixNf": {
@@ -326,9 +326,7 @@
         "custom_information_HaQcKn",
         "custom_information_UyNtU3"
       ],
-      "custom_css": [
-        ".price-item--sale.price-item .text {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "container": "default",
         "padding_full_width": 0,

@@ -192,7 +192,7 @@
         "footer_bottom_4rRLp6"
       ],
       "custom_css": [
-        ".footer-block__details p {margin: 0; font-size: 15px;}"
+        ".footer-block__details p {margin: 0; font-size: 15px; margin-bottom: 15px;}"
       ],
       "settings": {
         "container": "1470",

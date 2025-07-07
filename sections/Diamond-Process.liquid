@@ -19,60 +19,63 @@
 {% endschema %}
 
 <style>
-  .diamond-section {
+  .diamond-process-container {
     position: relative;
     background-image: url('{{ section.settings.background_image | img_url: "2000x" }}');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    width: 100%;
+    aspect-ratio: 3 / 1;
     color: white;
     font-family: 'Segoe UI', sans-serif;
-  }
-
-  .diamond-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
   }
 
-  .steps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
+  .diamond-text-overlay {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
   }
 
-  .step-item {
-    font-size: 18px;
+  .diamond-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .diamond-step {
+    max-width: 320px;
+    font-size: 16px;
     line-height: 1.6;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 8px;
+    text-align: left;
+    font-weight: 400;
   }
 
-  .step-item strong {
-    font-size: 24px;
-    display: block;
-    margin-bottom: 8px;
-    color: #ffffff;
+  .diamond-step strong {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
   }
 
   @media (max-width: 768px) {
-    .step-item {
-      font-size: 16px;
-      padding: 15px;
+    .diamond-row {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
 
-    .step-item strong {
-      font-size: 20px;
+    .diamond-step {
+      max-width: 90%;
+      text-align: center;
     }
   }
 </style>

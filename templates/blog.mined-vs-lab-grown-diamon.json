@@ -138,7 +138,7 @@
         "large_img_YdNLPd": {
           "type": "largeImg",
           "settings": {
-            "image": "shopify://shop_images/blog-list-bg_1920x_f7a20a17-27c1-46c6-8fc7-ea4ca4b34ef2.jpg",
+            "image": "shopify://shop_images/the_title_image_1066x_e1acf1f7-91af-4787-8c3d-3e016b90f0c9.png",
             "enable_max_width_image": false,
             "custom_width_image": 1170,
             "border_radius": 0,
@@ -155,7 +155,7 @@
             "sub_title_position": "sub_title_above",
             "color_sub_title": "#232323",
             "color_sub_title_mb": "#ffffff",
-            "heading": "OUR BLOG",
+            "heading": "",
             "special_text": "",
             "letter_spacing_heading": "",
             "enable_style_italic": false,

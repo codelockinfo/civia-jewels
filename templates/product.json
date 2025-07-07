@@ -327,7 +327,6 @@
         "custom_information_UyNtU3"
       ],
       "custom_css": [
-        "dd.price__compare {display: none;}",
         ".price-item--sale.price-item .text {display: none;}"
       ],
       "settings": {

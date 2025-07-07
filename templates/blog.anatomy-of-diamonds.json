@@ -268,7 +268,7 @@
       "custom_css": [
         "p {font-size: 16px; color: #505055;}",
         "span.info-item.date {font-size: 16px;}",
-        "::markerSpecificity: (0,0,1) {color: black;}"
+        "::marker{color: black;}"
       ],
       "name": "t:sections.main-page.name",
       "settings": {

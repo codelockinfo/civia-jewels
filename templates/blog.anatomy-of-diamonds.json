@@ -266,7 +266,8 @@
     "page_icA8iQ": {
       "type": "page",
       "custom_css": [
-        "p {font-size: 16px; color: #505055;}"
+        "p {font-size: 16px; color: #505055;}",
+        "span.info-item.date {font-size: 16px;}"
       ],
       "name": "t:sections.main-page.name",
       "settings": {

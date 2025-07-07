@@ -266,7 +266,7 @@
     "page_icA8iQ": {
       "type": "page",
       "custom_css": [
-        "p{font-size: 16px;}"
+        "p {font-size: 16px; color: darkblue;}"
       ],
       "name": "t:sections.main-page.name",
       "settings": {

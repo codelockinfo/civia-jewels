@@ -537,7 +537,7 @@
         "paragraph_VTCyNX"
       ],
       "custom_css": [
-        "@media (min-width: 1025px) {.container-1170 {max-width: 1200px; padding-left: 30px; padding-right: 30px; margin-left: auto; margin-right: auto; }}"
+        "@media (min-width: 1025px) {.container-1170 {max-width: 1200px; padding-left: 130px; padding-right: 130px; margin-left: auto; margin-right: auto; }}"
       ],
       "name": "t:sections.faqs.presets.name",
       "settings": {

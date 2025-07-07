@@ -266,7 +266,7 @@
     "page_icA8iQ": {
       "type": "page",
       "custom_css": [
-        "p {font-size: 16px; color: darkblue;}"
+        "p {font-size: 16px; color: #505055;}"
       ],
       "name": "t:sections.main-page.name",
       "settings": {
@@ -279,8 +279,8 @@
         "mg_top_desktop": 0,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
-        "mg_bottom_desktop": 0,
-        "mg_bottom_tablet": 0,
+        "mg_bottom_desktop": 30,
+        "mg_bottom_tablet": 30,
         "mg_bottom_mobile": 0
       }
     },

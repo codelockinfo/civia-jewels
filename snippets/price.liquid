@@ -60,7 +60,7 @@
                 </dt>
             {%- endcomment -%}
             
-            <dd class="price__compare" data-compare="{{compare_at_price}}" style="font-size: 16px;"><s class="price-item price-item--regular">{% if settings.currency_format_enable %}{{ compare_at_price | money_with_currency }}{% else %}{{ compare_at_price | money }}{% endif %}</s></dd>
+            <dd class="price__compare" data-compare="{{compare_at_price}}"><s class="price-item price-item--regular">{% if settings.currency_format_enable %}{{ compare_at_price | money_with_currency }}{% else %}{{ compare_at_price | money }}{% endif %}</s></dd>
             {%- comment -%}
                 <dt>
                     <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>

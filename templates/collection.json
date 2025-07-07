@@ -120,7 +120,7 @@
       ],
       "settings": {
         "container": "fullwidth",
-        "padding_full_width": 0,
+        "padding_full_width": 100,
         "colors_bg": "rgba(0,0,0,0)",
         "colors_bg_gradient": "",
         "sidebar_collapse": "collapse",

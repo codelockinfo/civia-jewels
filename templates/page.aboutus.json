@@ -197,11 +197,19 @@
         "mg_bottom_tablet": 0,
         "mg_bottom_mobile": 0
       }
+    },
+    "diamond_process_9RLQYb": {
+      "type": "Diamond-Process",
+      "name": "Diamond Process Section",
+      "settings": {
+        "background_image": "shopify://shop_images/about-diamond.jpg"
+      }
     }
   },
   "order": [
     "main",
     "image_banner_XzxDan",
-    "rich_text_rMqUGA"
+    "rich_text_rMqUGA",
+    "diamond_process_9RLQYb"
   ]
 }

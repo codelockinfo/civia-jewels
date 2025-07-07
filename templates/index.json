@@ -980,7 +980,7 @@
         "judge_me_reviews_review_widget_homepage_U7pmfg"
       ],
       "custom_css": [
-        ".jdgm-rev-widg {padding: 24px 16px; margin: 0; border: none; max-width: 1200px;}"
+        ".jdgm-rev-widg {padding: 24px 16px; margin: 0 auto; border: none; max-width: 1200px;}"
       ],
       "settings": {
         "include_margins": true

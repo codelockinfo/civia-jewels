@@ -504,7 +504,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "container": "1770",
+        "container": "1170",
         "padding_full_width": 0,
         "colors_bg": "#ffffff",
         "colors_bg_gradient": "",
@@ -550,7 +550,7 @@
         "mg_top_show_more": 0,
         "mg_bottom_show_more": 0,
         "color_show_more": "#232323",
-        "show_more_border": "#FFFFFF",
+        "show_more_border": "#ffffff",
         "show_more_background": "#ffffff",
         "show_more_background_gradient": "",
         "show_more_color_hover": "#ffffff",

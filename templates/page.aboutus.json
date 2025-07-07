@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+<<<<<<< HEAD
       "disabled": true,
       "settings": {}
     },
@@ -253,5 +254,12 @@
     "rich_text_rMqUGA",
     "diamond_process_9RLQYb",
     "rich_text_AQwb6F"
+=======
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+>>>>>>> 1f83fb77c8761f5e6faeeb9565a825a6bf7c5813
   ]
 }

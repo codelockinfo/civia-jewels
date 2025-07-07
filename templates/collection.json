@@ -12,7 +12,7 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "container": "container",
+        "container": "1770",
         "padding_full_width": 0,
         "layout": "1",
         "show_breadcrumb": true,
@@ -66,7 +66,6 @@
         },
         "ce351101-2c54-4627-b740-b2c592067b4a": {
           "type": "filter",
-          "disabled": true,
           "settings": {
             "heading": "Color",
             "list_tags": "White,Black,Blue,Invory,Beige,Brown,Silver,Olive,Gainsboro,DimGray,Burlywood,Lightblue,Salmon,LightPink,LightCoral"
@@ -128,7 +127,7 @@
         "2f7f02ac-4072-40ea-844f-59943e256971"
       ],
       "settings": {
-        "container": "default",
+        "container": "1770",
         "padding_full_width": 0,
         "colors_bg": "rgba(0,0,0,0)",
         "colors_bg_gradient": "",

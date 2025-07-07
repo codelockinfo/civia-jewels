@@ -51,6 +51,7 @@
 
 .price-style-2.price--on-sale .price__sale .price__compare {
     margin: 0;
+    font-size: 16px;
 }
 
 .card .card-information__wrapper.text-center .price--on-sale .price__sale.show_saved_price {

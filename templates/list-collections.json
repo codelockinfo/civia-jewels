@@ -540,7 +540,7 @@
         "padding_top_collection_list": 15,
         "padding_bottom_collection_list": 80,
         "item_grid_gap": 15,
-        "collection_pagination_showmore": "show_more",
+        "collection_pagination_showmore": "all",
         "collection_limit": 20,
         "button_show_more": "",
         "fontsize_show_more": 14,

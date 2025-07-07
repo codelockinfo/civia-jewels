@@ -596,7 +596,7 @@
       "type": "product-recommendations",
       "settings": {
         "display_product_block": true,
-        "product_block_container": "container",
+        "product_block_container": "1170",
         "padding_full_width": 0,
         "enable_border_top": false,
         "enable_border_bottom": false,

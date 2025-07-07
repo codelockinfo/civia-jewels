@@ -585,6 +585,9 @@
       "block_order": [
         "judge_me_reviews_review_widget_8p4jGX"
       ],
+      "custom_css": [
+        ".jdgm-rev-widg {padding: 24px 16px; margin: 0 auto; border: none; max-width: 1200px; justify-content: center;}"
+      ],
       "settings": {
         "include_margins": false
       }

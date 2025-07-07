@@ -192,7 +192,9 @@
         "footer_bottom_4rRLp6"
       ],
       "custom_css": [
-        ".footer-block__details p {margin: 0; font-size: 15px; margin-bottom: 15px;}"
+        ".footer-block__details p {margin: 0; font-size: 15px; margin-bottom: 15px;}",
+        ".hWhwaM {height: 100%; display: flex; flex-wrap: wrap;}",
+        ".igVhfg {display: inline-flex; flex-direction: column; align-items: center; justify-content: center; /* margin: 0px auto; */ background-color: rgb(248, 248, 248); border-radius: 8px; padding: 12px 16px; cursor: pointer;}"
       ],
       "settings": {
         "container": "1470",

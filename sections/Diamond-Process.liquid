@@ -1,6 +1,100 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Diamond Process Section",
+  "tag": "section",
+  "class": "shopify-section diamond-process",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Diamond Process Section"
+    }
+  ]
+}
 {% endschema %}
+
+<style>
+  .diamond-section {
+    position: relative;
+    background-image: url('{{ section.settings.background_image | img_url: "2000x" }}');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .diamond-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .step-item {
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .step-item strong {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    .step-item {
+      font-size: 16px;
+      padding: 15px;
+    }
+
+    .step-item strong {
+      font-size: 20px;
+    }
+  }
+</style>
+
+<section class="diamond-section">
+  <div class="diamond-overlay">
+    <div class="steps-grid">
+      <div class="step-item">
+        <strong>1.</strong> A diamond growing company produces the rough stones.
+      </div>
+      <div class="step-item">
+        <strong>2.</strong> Polishing companies (often in Surat) cut and polish these stones, then sell them to traders in Surat.
+      </div>
+      <div class="step-item">
+        <strong>3.</strong> Surat traders sell to traders in Mumbai.
+      </div>
+      <div class="step-item">
+        <strong>4.</strong> Mumbai traders export diamonds to international trading hubs (New York, Los Angeles, London, Hong Kong, etc.).
+      </div>
+      <div class="step-item">
+        <strong>5.</strong> Jewelry stores purchase the stones, sending them to separate manufacturers to create the final jewelry pieces.
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,137 @@
+{% schema %}
+{
+  "name": "Our Process",
+  "tag": "section",
+  "class": "our-process-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Our Process"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "block_background_color",
+      "label": "Block Background Color",
+      "default": "#0f1110"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Process Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Step Title",
+          "default": "Step Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Step Description",
+          "default": "Step description goes here."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Our Process",
+      "category": "Custom Sections",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "title": "Growing",
+            "description": "We use cutting-edge techniques to cultivate rough lab diamonds that are identical to mined diamonds in chemistry, structure, and brilliance—only more sustainable and ethically sourced."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+.our-process-section {
+  padding: 60px 20px;
+  background-color: {{ section.settings.background_color }};
+  text-align: center;
+}
+
+.our-process-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2b2b2b;
+}
+
+.process-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.process-step {
+  background-color: {{ section.settings.block_background_color }};
+  padding: 30px 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  max-width: 280px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+}
+
+.process-step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.process-step p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+@media(max-width: 768px) {
+  .process-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .process-step {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+{% endstyle %}
+
+<section class="our-process-section">
+  <h2>{{ section.settings.section_heading }}</h2>
+  <div class="process-grid">
+    {% for block in section.blocks %}
+      <div class="process-step" {{ block.shopify_attributes }}>
+        <h3>{{ block.settings.title }}</h3>
+        <p>{{ block.settings.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

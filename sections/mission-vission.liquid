@@ -93,12 +93,28 @@
       border-right: 1px solid #fff;
     }
 
-  @media(max-width: 768px) {
-    .mission-vision-wrapper {
-      flex-direction: column;
-    }
-    
+  @media (max-width: 768px) {
+  .mission-vision-wrapper {
+    flex-direction: column;
   }
+
+  .mission-box,
+  .vision-box {
+    flex: 1 1 100%;
+  }
+
+  .box-header {
+    font-size: 20px;
+  }
+
+  .box-desc {
+    font-size: 14px;
+  }
+
+  .mission-box:first-child {
+      border-right: 1px solid #000;
+    }
+}
 {% endstyle %}
 <h2>{{ section.settings.heading }}</h2>
 <section class="mission-vision-section" style="background-color: {{ section.settings.background_color }};">

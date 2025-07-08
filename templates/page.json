@@ -17,7 +17,8 @@
     "page_mPBCRD": {
       "type": "page",
       "custom_css": [
-        ".shopify-policy__title {text-align: center; font-size: 40px;}"
+        ".shopify-policy__title {text-align: center; font-size: 40px;}",
+        ".shopify-policy__body {max-width: 600px; margin: 0 auto;}"
       ],
       "name": "t:sections.main-page.name",
       "settings": {

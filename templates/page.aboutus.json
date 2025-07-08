@@ -245,6 +245,18 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
+    },
+    "mission_vission_9JxK6N": {
+      "type": "mission-vission",
+      "name": "Mission & Vision",
+      "settings": {
+        "heading": "Our Mission & Vision",
+        "background_color": "#0f1110",
+        "mission_title": "Our Mission",
+        "mission_text": "To democratize the diamond market by delivering responsibly-grown, impeccably-polished diamonds directly to consumers—free from multiple layers of overhead.",
+        "vision_title": "Our Vision",
+        "vision_text": "To make diamonds an investment again by combining ethical sourcing, top-notch craftsmanship, and competitive pricing."
+      }
     }
   },
   "order": [
@@ -252,6 +264,7 @@
     "image_banner_XzxDan",
     "rich_text_rMqUGA",
     "diamond_process_text_hRD6ki",
-    "rich_text_AQwb6F"
+    "rich_text_AQwb6F",
+    "mission_vission_9JxK6N"
   ]
 }

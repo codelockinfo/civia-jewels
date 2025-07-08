@@ -89,26 +89,15 @@
       padding: 30px 0px;
 
     }
-    /* Vertical Divider */
-  .mission-vision-wrapper::before {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 80%;
-    background-color: #ffff;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-  }
+    .mission-box:first-child {
+      border-right: 1px solid #fff;
+    }
 
   @media(max-width: 768px) {
     .mission-vision-wrapper {
       flex-direction: column;
     }
-    .mission-vision-wrapper::before {
-      display: none;
-    }
+    
   }
 {% endstyle %}
 <h2>{{ section.settings.heading }}</h2>

@@ -1,0 +1,113 @@
+{% schema %}
+{
+  "name": "Mission & Vision",
+  "tag": "section",
+  "class": "mission-vision-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Our Mission & Vision"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#0f1110"
+    },
+    {
+      "type": "header",
+      "content": "Mission Block"
+    },
+    {
+      "type": "text",
+      "id": "mission_title",
+      "label": "Mission Title",
+      "default": "Our Mission"
+    },
+    {
+      "type": "textarea",
+      "id": "mission_text",
+      "label": "Mission Text",
+      "default": "To democratize the diamond market by delivering responsibly-grown, impeccably-polished diamonds directly to consumers—free from multiple layers of overhead."
+    },
+    {
+      "type": "header",
+      "content": "Vision Block"
+    },
+    {
+      "type": "text",
+      "id": "vision_title",
+      "label": "Vision Title",
+      "default": "Our Vision"
+    },
+    {
+      "type": "textarea",
+      "id": "vision_text",
+      "label": "Vision Text",
+      "default": "To make diamonds an investment again by combining ethical sourcing, top-notch craftsmanship, and competitive pricing."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mission & Vision",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+.mission-vision-section {
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+.mission-vision-section h2 {
+  font-size: 2.5rem;
+  color: #2b2b2b;
+  margin-bottom: 40px;
+}
+.mission-vision-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+.mission-box, .vision-box {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+.mission-box h3, .vision-box h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.mission-box p, .vision-box p {
+  font-size: 1rem;
+  color: #dddddd;
+  line-height: 1.7;
+}
+@media(max-width: 768px) {
+  .mission-vision-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+{% endstyle %}
+
+<section class="mission-vision-section" style="background-color: {{ section.settings.background_color }};">
+  <h2>{{ section.settings.heading }}</h2>
+  <div class="mission-vision-wrapper">
+    <div class="mission-box">
+      <h3>{{ section.settings.mission_title }}</h3>
+      <p>{{ section.settings.mission_text }}</p>
+    </div>
+    <div class="vision-box">
+      <h3>{{ section.settings.vision_title }}</h3>
+      <p>{{ section.settings.vision_text }}</p>
+    </div>
+  </div>
+</section>

@@ -625,22 +625,22 @@
         "step_hWcGNy": {
           "type": "step",
           "settings": {
-            "title": "Step Title",
-            "description": "Step description goes here."
+            "title": "Polishing",
+            "description": "Our skilled artisans in Surat expertly cut and polish each rough stone, ensuring every diamond meets our exacting quality standards."
           }
         },
         "step_bJicpN": {
           "type": "step",
           "settings": {
-            "title": "Step Title",
-            "description": "Step description goes here."
+            "title": "Design & Manufacturing",
+            "description": "Our skilled artisans in Surat expertly cut and polish each rough stone, ensuring every diamond meets our exacting quality standard."
           }
         },
         "step_jLXBP6": {
           "type": "step",
           "settings": {
-            "title": "Step Title",
-            "description": "Step description goes here."
+            "title": "Direct-to-Consumer (D2C)",
+            "description": "Finally, we bypass typical third-party retail channels and deliver our pieces straight to you—maintaining cost-efficiency and direct communication along the way."
           }
         }
       },

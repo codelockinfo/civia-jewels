@@ -85,6 +85,7 @@
         },
         "perks_dJiaFf": {
           "type": "perks",
+          "disabled": true,
           "settings": {
             "show_size_chart": true,
             "size_chart_type": "custom_image",

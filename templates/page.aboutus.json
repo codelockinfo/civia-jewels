@@ -1012,7 +1012,7 @@
           "type": "heading",
           "settings": {
             "heading": "Fair Pricing & Higher Value",
-            "heading_size": 30,
+            "heading_size": 32,
             "heading_size_mb": 30,
             "heading_line_height": 1,
             "heading_color": "#000"
@@ -1022,7 +1022,7 @@
           "type": "text",
           "settings": {
             "text": "When people buy diamonds at regular jewelry stores, the store often charges a veryHigh Margin When you try to sell your jewelry back, they tend to offer a significantly lower buy-back price. Because we don’t rely on multiple middlemen and keep our pricing transparent, our pieces maintain stronger value over time.",
-            "text_size": 16,
+            "text_size": 18,
             "text_size_mb": 12,
             "text_font_weight": "400",
             "text_line_height": 1,
@@ -1064,7 +1064,7 @@
           "type": "heading",
           "settings": {
             "heading": "Lifetime Free Upgrades",
-            "heading_size": 30,
+            "heading_size": 32,
             "heading_size_mb": 30,
             "heading_line_height": 1,
             "heading_color": "#000"

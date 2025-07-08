@@ -83,6 +83,21 @@
             "spacing_bottom": 22
           }
         },
+        "perks_dJiaFf": {
+          "type": "perks",
+          "settings": {
+            "show_size_chart": true,
+            "size_chart_type": "custom_image",
+            "size_chart_image": "shopify://shop_images/Close-up_of_sparkling_diamonds__1.png",
+            "size_chart_page": "",
+            "size_chart_image_type": "jpg",
+            "show_compare_color": true,
+            "show_compare_color_drop_drap": true,
+            "compare_layout": "1",
+            "spacing_top": 0,
+            "spacing_bottom": 22
+          }
+        },
         "4f95b592-8369-4ab0-b30d-24e463fb6890": {
           "type": "price",
           "settings": {
@@ -308,6 +323,7 @@
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "d97e417a-941b-4a5d-bef3-a651adb918d8",
         "variant_step_by_step_aNtie7",
+        "perks_dJiaFf",
         "4f95b592-8369-4ab0-b30d-24e463fb6890",
         "customization_property_V8DL9N",
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34",

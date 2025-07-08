@@ -311,29 +311,29 @@
             "video_link": "",
             "adaptive_height_video": "56",
             "icon_style": "style_1",
-            "color_icon": "#fff",
-            "bg_color_icon": "#000",
+            "color_icon": "#ffffff",
+            "bg_color_icon": "#000000",
             "button_style": "style_1",
             "btn_text": "",
             "link": "",
             "button_1_width": 235,
             "enable_button_custom_border": false,
-            "button_color": "#fff",
+            "button_color": "#ffffff",
             "button_border": "#232323",
             "button_background": "#232323",
             "button_background_gradient": "",
-            "button_color_hover": "#fff",
+            "button_color_hover": "#ffffff",
             "button_border_hover": "#232323",
             "button_background_hover": "#232323",
             "button_background_gradient_hover": "",
             "btn_2_text": "Shop Now",
             "link_btn_2": "",
             "button_2_width": 235,
-            "button_2_color": "#fff",
+            "button_2_color": "#ffffff",
             "button_2_border": "#232323",
             "button_2_background": "#232323",
             "button_2_background_gradient": "",
-            "button_2_color_hover": "#fff",
+            "button_2_color_hover": "#ffffff",
             "button_2_border_hover": "#232323",
             "button_2_background_hover": "#232323",
             "button_2_background_gradient_hover": "",
@@ -429,29 +429,29 @@
             "video_link": "",
             "adaptive_height_video": "56",
             "icon_style": "style_1",
-            "color_icon": "#fff",
-            "bg_color_icon": "#000",
+            "color_icon": "#ffffff",
+            "bg_color_icon": "#000000",
             "button_style": "style_1",
             "btn_text": "",
             "link": "",
             "button_1_width": 235,
             "enable_button_custom_border": false,
-            "button_color": "#fff",
+            "button_color": "#ffffff",
             "button_border": "#232323",
             "button_background": "#232323",
             "button_background_gradient": "",
-            "button_color_hover": "#fff",
+            "button_color_hover": "#ffffff",
             "button_border_hover": "#232323",
             "button_background_hover": "#232323",
             "button_background_gradient_hover": "",
             "btn_2_text": "Shop Now",
             "link_btn_2": "",
             "button_2_width": 235,
-            "button_2_color": "#fff",
+            "button_2_color": "#ffffff",
             "button_2_border": "#232323",
             "button_2_background": "#232323",
             "button_2_background_gradient": "",
-            "button_2_color_hover": "#fff",
+            "button_2_color_hover": "#ffffff",
             "button_2_border_hover": "#232323",
             "button_2_background_hover": "#232323",
             "button_2_background_gradient_hover": "",
@@ -547,29 +547,29 @@
             "video_link": "",
             "adaptive_height_video": "56",
             "icon_style": "style_1",
-            "color_icon": "#fff",
-            "bg_color_icon": "#000",
+            "color_icon": "#ffffff",
+            "bg_color_icon": "#000000",
             "button_style": "style_1",
             "btn_text": "",
             "link": "",
             "button_1_width": 235,
             "enable_button_custom_border": false,
-            "button_color": "#fff",
+            "button_color": "#ffffff",
             "button_border": "#232323",
             "button_background": "#232323",
             "button_background_gradient": "",
-            "button_color_hover": "#fff",
+            "button_color_hover": "#ffffff",
             "button_border_hover": "#232323",
             "button_background_hover": "#232323",
             "button_background_gradient_hover": "",
             "btn_2_text": "Shop Now",
             "link_btn_2": "",
             "button_2_width": 235,
-            "button_2_color": "#fff",
+            "button_2_color": "#ffffff",
             "button_2_border": "#232323",
             "button_2_background": "#232323",
             "button_2_background_gradient": "",
-            "button_2_color_hover": "#fff",
+            "button_2_color_hover": "#ffffff",
             "button_2_border_hover": "#232323",
             "button_2_background_hover": "#232323",
             "button_2_background_gradient_hover": "",
@@ -611,6 +611,51 @@
         "mg_bottom_tablet": 0,
         "mg_bottom_mobile": 0
       }
+    },
+    "process_steps_6yq8jA": {
+      "type": "process-steps",
+      "blocks": {
+        "step_wdGqKG": {
+          "type": "step",
+          "settings": {
+            "title": "Growing",
+            "description": "We use cutting-edge techniques to cultivate rough lab diamonds that are identical to mined diamonds in chemistry, structure, and brilliance—only more sustainable and ethically sourced."
+          }
+        },
+        "step_hWcGNy": {
+          "type": "step",
+          "settings": {
+            "title": "Step Title",
+            "description": "Step description goes here."
+          }
+        },
+        "step_bJicpN": {
+          "type": "step",
+          "settings": {
+            "title": "Step Title",
+            "description": "Step description goes here."
+          }
+        },
+        "step_jLXBP6": {
+          "type": "step",
+          "settings": {
+            "title": "Step Title",
+            "description": "Step description goes here."
+          }
+        }
+      },
+      "block_order": [
+        "step_wdGqKG",
+        "step_hWcGNy",
+        "step_bJicpN",
+        "step_jLXBP6"
+      ],
+      "name": "Process steps",
+      "settings": {
+        "section_heading": "Our Process",
+        "background_color": "#ffffff",
+        "block_background_color": "#0f1110"
+      }
     }
   },
   "order": [
@@ -622,6 +667,7 @@
     "mission_vission_9JxK6N",
     "image_banner_BDB6ND",
     "image_banner_r77ewC",
-    "image_banner_kdRPBb"
+    "image_banner_kdRPBb",
+    "process_steps_6yq8jA"
   ]
 }

@@ -77,16 +77,15 @@
 
   .process-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
   }
 
   .process-step {
     background-color: {{ section.settings.block_background_color }};
-    max-width: 25x;
-    text-align: left;
-    color: #ffffff;
-    transition: transform 0.3s ease;
+    padding: 30px 20px;
+    max-width: 25%;
+    text-align: left; 
+    color: #ffffff; 
   }
 
   .process-step:hover {
@@ -124,8 +123,8 @@
       {% for block in section.blocks %}
         <div class="process-step" {{ block.shopify_attributes }}>
           <div class="content-ps">
-            <h3>{{ block.settings.title }}</h3>
-            <p>{{ block.settings.description }}</p>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.description }}</p>
           </div>
         </div>
       {% endfor %}

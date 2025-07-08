@@ -198,6 +198,13 @@
         "mg_bottom_mobile": 55
       }
     },
+    "diamond_process_text_hRD6ki": {
+      "type": "Diamond-Process-text",
+      "name": "Diamond Process Section",
+      "settings": {
+        "background_image": "shopify://shop_images/about-diamond.jpg"
+      }
+    },
     "rich_text_AQwb6F": {
       "type": "rich-text",
       "blocks": {
@@ -238,20 +245,13 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
-    },
-    "diamond_process_text_hRD6ki": {
-      "type": "Diamond-Process-text",
-      "name": "Diamond Process Section",
-      "settings": {
-        "background_image": "shopify://shop_images/about-diamond.jpg"
-      }
     }
   },
   "order": [
     "main",
     "image_banner_XzxDan",
     "rich_text_rMqUGA",
-    "rich_text_AQwb6F",
-    "diamond_process_text_hRD6ki"
+    "diamond_process_text_hRD6ki",
+    "rich_text_AQwb6F"
   ]
 }

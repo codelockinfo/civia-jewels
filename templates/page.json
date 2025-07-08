@@ -19,7 +19,7 @@
       "name": "t:sections.main-page.name",
       "settings": {
         "page": "shipping-info",
-        "container": "container",
+        "container": "1170",
         "padding_full_width": 0,
         "heading_size": 0,
         "heading_size_mb": 24,

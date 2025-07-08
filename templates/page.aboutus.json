@@ -1028,7 +1028,7 @@
             "text_line_height": 1,
             "margin_top_text": 20,
             "text_color": "#000",
-            "text_width": "800px"
+            "text_width": ""
           }
         }
       },
@@ -1080,7 +1080,7 @@
             "text_line_height": 1,
             "margin_top_text": 20,
             "text_color": "#000",
-            "text_width": "800px"
+            "text_width": ""
           }
         }
       },

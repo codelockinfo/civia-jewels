@@ -1055,8 +1055,8 @@
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_bottom_tablet": 20,
+        "mg_bottom_mobile": 0
       }
     },
     "rich_text_9pkDLA": {
@@ -1108,7 +1108,7 @@
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_bottom_mobile": 0
       }
     }
   },

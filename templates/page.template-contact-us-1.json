@@ -41,7 +41,7 @@
     "main": {
       "type": "main-contact-us-1",
       "custom_css": [
-        ".contact-text {font-size: 18px;}"
+        ".contact-text {font-size: 16px;}"
       ],
       "settings": {
         "container": "1170",

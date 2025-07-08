@@ -85,11 +85,10 @@
         },
         "perks_dJiaFf": {
           "type": "perks",
-          "disabled": true,
           "settings": {
             "show_size_chart": true,
             "size_chart_type": "custom_image",
-            "size_chart_image": "shopify://shop_images/Close-up_of_sparkling_diamonds__1.png",
+            "size_chart_image": "shopify://shop_images/Untitled-design-3_1024x1024_4590b886-a55e-4770-8c31-0887c4aa1122.webp",
             "size_chart_page": "",
             "size_chart_image_type": "jpg",
             "show_compare_color": true,

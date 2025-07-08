@@ -803,7 +803,7 @@
         "display_border_top": false,
         "display_border_bottom": false,
         "border_color": "#d0d0d0",
-        "service_block_swipe_on_mobile": "slider",
+        "service_block_swipe_on_mobile": "list",
         "color_icon_slider": "#212121",
         "service_block_style": "style_1",
         "policies_bg": "#ffffff",

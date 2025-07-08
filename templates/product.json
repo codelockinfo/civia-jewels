@@ -83,6 +83,21 @@
             "spacing_bottom": 22
           }
         },
+        "perks_dJiaFf": {
+          "type": "perks",
+          "settings": {
+            "show_size_chart": true,
+            "size_chart_type": "custom_image",
+            "size_chart_image": "shopify://shop_images/Untitled-design-3_1024x1024_4590b886-a55e-4770-8c31-0887c4aa1122.webp",
+            "size_chart_page": "",
+            "size_chart_image_type": "jpg",
+            "show_compare_color": true,
+            "show_compare_color_drop_drap": true,
+            "compare_layout": "1",
+            "spacing_top": 0,
+            "spacing_bottom": 22
+          }
+        },
         "4f95b592-8369-4ab0-b30d-24e463fb6890": {
           "type": "price",
           "settings": {
@@ -308,6 +323,7 @@
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "d97e417a-941b-4a5d-bef3-a651adb918d8",
         "variant_step_by_step_aNtie7",
+        "perks_dJiaFf",
         "4f95b592-8369-4ab0-b30d-24e463fb6890",
         "customization_property_V8DL9N",
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34",
@@ -420,8 +436,8 @@
           "settings": {
             "heading": "Your Dream Design, Crafted with Elegance",
             "heading_size": 33,
-            "heading_size_mb": 30,
-            "heading_line_height": 1.9,
+            "heading_size_mb": 33,
+            "heading_line_height": 2,
             "heading_color": "#000000"
           }
         },
@@ -430,7 +446,7 @@
           "settings": {
             "text": "Give Life To Your Vision",
             "text_size": 22,
-            "text_size_mb": 12,
+            "text_size_mb": 22,
             "text_font_weight": "400",
             "text_line_height": 1,
             "margin_top_text": 30,
@@ -456,28 +472,12 @@
             "button_bg_gradient_hover": "",
             "button_width": "270px"
           }
-        },
-        "social_media_KneFPK": {
-          "type": "social_media",
-          "disabled": true,
-          "settings": {
-            "social_spacing_top": 0,
-            "social_spacing_bottom": 0,
-            "social_icon_color": "",
-            "social_icon_background_color": "",
-            "social_icon_background_gradient": "",
-            "social_icon_hover_color": "",
-            "social_icon_background_hover_color": "",
-            "social_icon_background_hover_gradient": "",
-            "social_icon_ring_color": ""
-          }
         }
       },
       "block_order": [
         "heading_4kTckB",
         "text_fwPT3G",
-        "button_TaGnyK",
-        "social_media_KneFPK"
+        "button_TaGnyK"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -546,7 +546,7 @@
         "title": "FAQs",
         "color_title": "#000000",
         "fontsize_title": 34,
-        "fontsize_title_mb": 16,
+        "fontsize_title_mb": 34,
         "mg_bottom_title": 12,
         "mg_bottom_title_mb": 12,
         "enable_border_title": false,
@@ -564,7 +564,7 @@
         "contact_color_border_hover": "#ef6454",
         "contact_color_bg_hover": "#ef6454",
         "contact_color_bg_gradient_hover": "",
-        "title_alignment": "left",
+        "title_alignment": "center",
         "show_faqs_filter": false,
         "mg_top_desktop": 50,
         "mg_top_tablet": 50,

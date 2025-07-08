@@ -1,0 +1,142 @@
+{% schema %}
+{
+  "name": "Mission & Vision",
+  "tag": "section",
+  "class": "mission-vision-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Our Mission & Vision"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#0f1110"
+    },
+    {
+      "type": "header",
+      "content": "Mission Block"
+    },
+    {
+      "type": "text",
+      "id": "mission_title",
+      "label": "Mission Title",
+      "default": "Our Mission"
+    },
+    {
+      "type": "textarea",
+      "id": "mission_text",
+      "label": "Mission Text",
+      "default": "To democratize the diamond market by delivering responsibly-grown, impeccably-polished diamonds directly to consumers—free from multiple layers of overhead."
+    },
+    {
+      "type": "header",
+      "content": "Vision Block"
+    },
+    {
+      "type": "text",
+      "id": "vision_title",
+      "label": "Vision Title",
+      "default": "Our Vision"
+    },
+    {
+      "type": "textarea",
+      "id": "vision_text",
+      "label": "Vision Text",
+      "default": "To make diamonds an investment again by combining ethical sourcing, top-notch craftsmanship, and competitive pricing."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mission & Vision",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+    .mission-vision-section {
+      padding: 60px 0px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .conatiner-1170{
+      max-width: 1200px;
+    }
+    .mission-vision-section h2 {
+      font-size: 40px;
+      color: #2b2b2b;
+      margin-bottom: 40px;
+    }
+    .mission-vision-wrapper {
+      display: flex;
+    }
+    .mission-box, .vision-box {
+      max-width: 50%;
+      padding: 0px 70px;
+    }
+    .box-header{
+      font-size: 26px;
+      text-align: left;
+    }
+    .box-desc{
+      font-size: 16px;
+      text-align: left;
+      padding: 30px 0px;
+
+    }
+    .mission-box:first-child {
+      border-right: 1px solid #fff;
+    }
+
+  @media (max-width: 768px) {
+  .mission-vision-section {
+      padding: 30px 0px;
+      text-align: center;
+      color: #ffffff;
+    }
+  .mission-vision-wrapper {
+      display: block;
+    }
+  .mission-box, .vision-box {
+      max-width: 100%;
+      padding: 0px 10px;
+    }
+  .mission-vision-section h2 {
+      font-size: 25px;
+      color: #2b2b2b;
+      margin-bottom: 40px;
+    }
+  .box-header {
+    font-size: 20px;
+  }
+
+  .box-desc {
+    font-size: 14px;
+    padding: 14px 0px;
+  }
+
+  .mission-box:first-child {
+      margin-bottom: 30px;
+    }
+}
+{% endstyle %}
+<h2>{{ section.settings.heading }}</h2>
+<section class="mission-vision-section" style="background-color: {{ section.settings.background_color }};">
+  <div class="container-1170">
+    <div class="mission-vision-wrapper">
+      <div class="mission-box">
+        <div class="box-header">{{ section.settings.mission_title }}</div>
+        <div class="box-desc">{{ section.settings.mission_text }}</div>
+      </div>
+      <div class="vision-box">
+        <div class="box-header">{{ section.settings.vision_title }}</div>
+        <div class="box-desc">{{ section.settings.vision_text }}</div>
+      </div>
+    </div>
+  </div>
+</section>

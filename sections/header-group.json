@@ -11,53 +11,6 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
-    "announcement_bar_NwwQJx": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement_3cwnD3": {
-          "type": "announcement",
-          "settings": {
-            "text": "FREE 30 DAYS RETURNS",
-            "btn_color": "#f84248",
-            "btn_border_color": "#ffffff",
-            "btn_bg_color": "#ffffff",
-            "btn_bg_color_gradient": ""
-          }
-        },
-        "announcement_EjFEaj": {
-          "type": "announcement",
-          "settings": {
-            "text": "50% OFF SITEWIDE 4TH Of JULY DISCOUNT",
-            "btn_color": "#f84248",
-            "btn_border_color": "#ffffff",
-            "btn_bg_color": "#ffffff",
-            "btn_bg_color_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement_3cwnD3",
-        "announcement_EjFEaj"
-      ],
-      "settings": {
-        "layout": "slider",
-        "enable_close": false,
-        "color_text": "#ffffff",
-        "bg_color_text": "#000000",
-        "bg_color_text_gradient": "",
-        "font_size_text": 15,
-        "font_style_text": "normal",
-        "font_weight_text": "400",
-        "arrow_active": false,
-        "content_max_width": 38,
-        "padding_top": 5,
-        "padding_top_tablet": 5,
-        "padding_top_mobile": 5,
-        "padding_bottom": 5,
-        "padding_bottom_tablet": 5,
-        "padding_bottom_mobile": 5
-      }
-    },
     "header_basic_T6xUEr": {
       "type": "header-basic",
       "blocks": {
@@ -120,6 +73,53 @@
         "enable_transparent": false,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "announcement_bar_nVXMbi": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_iQqJqx": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE 30 DAYS RETURNS",
+            "btn_color": "#f84248",
+            "btn_border_color": "#ffffff",
+            "btn_bg_color": "#ffffff",
+            "btn_bg_color_gradient": ""
+          }
+        },
+        "announcement_wLLm99": {
+          "type": "announcement",
+          "settings": {
+            "text": "50% OFF SITEWIDE 4TH Of JULY DISCOUNT",
+            "btn_color": "#f84248",
+            "btn_border_color": "#ffffff",
+            "btn_bg_color": "#ffffff",
+            "btn_bg_color_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_iQqJqx",
+        "announcement_wLLm99"
+      ],
+      "settings": {
+        "layout": "slider",
+        "enable_close": true,
+        "color_text": "#ffffff",
+        "bg_color_text": "#000000",
+        "bg_color_text_gradient": "",
+        "font_size_text": 15,
+        "font_style_text": "normal",
+        "font_weight_text": "400",
+        "arrow_active": false,
+        "content_max_width": 38,
+        "padding_top": 5,
+        "padding_top_tablet": 5,
+        "padding_top_mobile": 5,
+        "padding_bottom": 5,
+        "padding_bottom_tablet": 5,
+        "padding_bottom_mobile": 5
       }
     },
     "header_navigation_compact_RykPkH": {
@@ -421,7 +421,7 @@
     }
   },
   "order": [
-    "announcement_bar_NwwQJx",
+    "announcement_bar_nVXMbi",
     "header_basic_T6xUEr",
     "header_navigation_compact_RykPkH",
     "header_navigation_utility_g9ymLB",

@@ -203,7 +203,8 @@
       "custom_css": [
         "p {font-size: 18px; color: #505055;}",
         "span.info-item.date {font-size: 18px;}",
-        "::marker {color: black;}"
+        "::marker {color: black;}",
+        "h2 {font-size: 2.8rem; font-weight: 700;}"
       ],
       "name": "t:sections.main-page.name",
       "settings": {

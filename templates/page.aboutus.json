@@ -119,7 +119,7 @@
         "id_section": "",
         "container": "fullwidth",
         "padding_full_width": 0,
-        "display_type": "slide",
+        "display_type": "list",
         "enable_arrows": false,
         "arrows_position": "",
         "enable_dots": false,

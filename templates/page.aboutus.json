@@ -54,7 +54,7 @@
             "font_size_des": 18,
             "font_size_des_mb": 12,
             "line_height_des": 26,
-            "margin_bottom_des": 35,
+            "margin_bottom_des": 0,
             "color_des": "#ffffff",
             "color_des_mb": "#ffffff",
             "countdown": "",

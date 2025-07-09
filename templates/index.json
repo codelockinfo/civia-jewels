@@ -712,7 +712,7 @@
         "product_bg": "#ffffff",
         "product_bg_gradient": "",
         "product_block_collection": "trending-pic",
-        "product_block_limit": 20,
+        "product_block_limit": 4,
         "grid_gap": 18,
         "pb_style": "style2",
         "style_block_header": "style3",
@@ -944,6 +944,9 @@
         "text_gqfqxB",
         "button_8WP3VL",
         "social_media_jpRPG7"
+      ],
+      "custom_css": [
+        ".rich-text__blocks h2 {font-family: 'Optima nova';}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {

@@ -181,11 +181,43 @@
             "show_banner_3": false,
             "banner_url_3": ""
           }
+        },
+        "megamenu_style_2_rqmU9f": {
+          "type": "megamenu_style_2",
+          "settings": {
+            "layout_block": "custom_width",
+            "header_custom_width_size": 1200,
+            "item": "wedding brands",
+            "column": 3,
+            "show_banner_1": false,
+            "banner_url_1": "",
+            "show_banner_2": false,
+            "banner_url_2": "",
+            "show_banner_3": false,
+            "banner_url_3": ""
+          }
+        },
+        "megamenu_style_2_TL3nae": {
+          "type": "megamenu_style_2",
+          "settings": {
+            "layout_block": "custom_width",
+            "header_custom_width_size": 1200,
+            "item": "earrings",
+            "column": 3,
+            "show_banner_1": false,
+            "banner_url_1": "",
+            "show_banner_2": false,
+            "banner_url_2": "",
+            "show_banner_3": false,
+            "banner_url_3": ""
+          }
         }
       },
       "block_order": [
         "main_menu_UAjncR",
-        "megamenu_style_2_49eQEK"
+        "megamenu_style_2_49eQEK",
+        "megamenu_style_2_rqmU9f",
+        "megamenu_style_2_TL3nae"
       ],
       "name": "t:sections.header.settings.navigation.name_2",
       "settings": {

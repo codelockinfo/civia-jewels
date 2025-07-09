@@ -125,7 +125,7 @@
     "header_navigation_utility_g9ymLB": {
       "type": "header-navigation-utility",
       "blocks": {
-        "main_menu_fAdpyF": {
+        "main_menu_gWXkpe": {
           "type": "main_menu",
           "settings": {
             "menu": "main-menu",
@@ -230,7 +230,7 @@
         }
       },
       "block_order": [
-        "main_menu_fAdpyF",
+        "main_menu_gWXkpe",
         "megamenu_style_2_At8VHE",
         "megamenu_style_2_BqaHqg",
         "megamenu_style_2_QRD4UK",

@@ -211,30 +211,13 @@
             "show_banner_3": false,
             "banner_url_3": ""
           }
-        },
-        "megamenu_style_1_ALtBnK": {
-          "type": "megamenu_style_1",
-          "disabled": true,
-          "settings": {
-            "layout_block": "custom_width",
-            "header_custom_width_size": 1200,
-            "item": "earrings",
-            "column": 3,
-            "show_banner_1": false,
-            "banner_1": "shopify://shop_images/image_1370x_36ec8dc5-9892-44d3-8240-a237222ce732.webp",
-            "banner_url_1": "",
-            "show_product": false,
-            "product_title": "Featured Products",
-            "product_collection": "rose-gold-modern-tension-set-round-solitaire-wide-band-ring"
-          }
         }
       },
       "block_order": [
         "main_menu_gWXkpe",
         "megamenu_style_2_At8VHE",
         "megamenu_style_2_BqaHqg",
-        "megamenu_style_2_QRD4UK",
-        "megamenu_style_1_ALtBnK"
+        "megamenu_style_2_QRD4UK"
       ],
       "name": "t:sections.header.settings.navigation.name_4",
       "settings": {

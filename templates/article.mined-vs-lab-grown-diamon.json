@@ -218,10 +218,10 @@
         "mg_bottom_mobile": 50
       }
     },
-    "custom_service_block_dacVfR": {
+    "custom_service_block_6cwHt3": {
       "type": "custom-service-block",
       "blocks": {
-        "text_6URUMb": {
+        "text_ADjcAp": {
           "type": "Text",
           "settings": {
             "bg_color_block": "#f8f8f8",
@@ -264,7 +264,7 @@
             "button_background_gradient_hover": ""
           }
         },
-        "text_nit8wz": {
+        "text_tr8Efm": {
           "type": "Text",
           "settings": {
             "bg_color_block": "#f8f8f8",
@@ -291,7 +291,7 @@
             "mg_bottom_des": 0,
             "color_des_block": "#3c3c3c",
             "button": "",
-            "link": "shopify://blogs/news/anatomy-of-diamonds-a-closer-look",
+            "link": "shopify://blogs/news/are-diamonds-a-good-investment",
             "button_style": "style1",
             "fontsize_button": 14,
             "button_width": 235,
@@ -307,7 +307,7 @@
             "button_background_gradient_hover": ""
           }
         },
-        "text_NnwQkG": {
+        "text_aCnejq": {
           "type": "Text",
           "settings": {
             "bg_color_block": "#f8f8f8",
@@ -334,7 +334,7 @@
             "mg_bottom_des": 0,
             "color_des_block": "#3c3c3c",
             "button": "",
-            "link": "",
+            "link": "shopify://blogs/news/mined-vs-lab-grown-diamonds",
             "button_style": "style1",
             "fontsize_button": 14,
             "button_width": 235,
@@ -352,9 +352,9 @@
         }
       },
       "block_order": [
-        "text_6URUMb",
-        "text_nit8wz",
-        "text_NnwQkG"
+        "text_ADjcAp",
+        "text_tr8Efm",
+        "text_aCnejq"
       ],
       "name": "t:sections.custom_service_block.name",
       "settings": {
@@ -384,7 +384,7 @@
         "mg_bottom_service_block_des": 50,
         "view_all": "",
         "view_all_align": "center",
-        "font_weight_view_all": "500",
+        "font_weight_view_all": "400",
         "mg_top_view": 0,
         "mg_bottom_view": 30,
         "enable_border_view_all": true,
@@ -441,6 +441,6 @@
     "main",
     "image_banner_AXkJUY",
     "page_DKbrmy",
-    "custom_service_block_dacVfR"
+    "custom_service_block_6cwHt3"
   ]
 }

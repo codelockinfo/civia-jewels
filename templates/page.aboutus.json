@@ -21,7 +21,7 @@
           "type": "largeImg",
           "settings": {
             "image": "shopify://shop_images/Top_Banner_1920x_e285f71e-8da5-49ca-a8ac-2d71c8507c97.webp",
-            "mobile_image": "shopify://shop_images/Top_Banner_1920x_e285f71e-8da5-49ca-a8ac-2d71c8507c97.webp",
+            "mobile_image": "shopify://shop_images/Top_Banner_1920x_e285f71e-8da5-49ca-a8ac-2d71c8507c97.png",
             "enable_max_width_image": false,
             "custom_width_image": 1170,
             "border_radius": 0,

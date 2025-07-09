@@ -12,7 +12,7 @@
     "main": {
       "type": "main-cart",
       "settings": {
-        "container": "container",
+        "container": "1770",
         "side_padding_full_width": 0,
         "show_breadcrumb": true,
         "breadcrumb_color": "#999999",

@@ -946,7 +946,8 @@
         "social_media_jpRPG7"
       ],
       "custom_css": [
-        ".rich-text__blocks h2 {font-family: 'Optima nova';}"
+        ".rich-text__blocks h2 {font-family: \"Optima nova\";}",
+        "a.button{font-family: 'Optima nova';}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {

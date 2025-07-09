@@ -202,7 +202,7 @@
     "gift_content": "Do you want a gift wrap?",
     "main_cart_gift_content": "DO YOU WANT A GIFT WRAP? <span style=\"font-weight: bold\">ONLY FOR $10.00<span></span></span>",
     "show_cart_shipping": false,
-    "shipping_rate_calculator_default_country": "United States",
+    "shipping_rate_calculator_default_country": "India",
     "show_shipping_note": false,
     "show_cart_discount": false,
     "show_quick_cart_popular_product": true,

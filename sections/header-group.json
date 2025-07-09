@@ -41,7 +41,7 @@
       ],
       "settings": {
         "layout": "slider",
-        "enable_close": false,
+        "enable_close": true,
         "color_text": "#ffffff",
         "bg_color_text": "#000000",
         "bg_color_text_gradient": "",

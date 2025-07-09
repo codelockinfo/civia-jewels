@@ -221,7 +221,7 @@
       ],
       "name": "t:sections.header.settings.navigation.name_2",
       "settings": {
-        "container": "1170",
+        "container": "1470",
         "padding_full_width": 0,
         "sticky_header_type": "on_scroll",
         "sticky_header_width": "full",

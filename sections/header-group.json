@@ -11,13 +11,23 @@
   "type": "header",
   "name": "Header Group",
   "sections": {
-    "announcement_bar_qVLUeR": {
+    "announcement_bar_ez3FFk": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_U6XzjV": {
+        "announcement_aX3c8x": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Welcome to our store</p>",
+            "text": "FREE 30 DAYS RETURNS",
+            "btn_color": "#f84248",
+            "btn_border_color": "#ffffff",
+            "btn_bg_color": "#ffffff",
+            "btn_bg_color_gradient": ""
+          }
+        },
+        "announcement_dTj8T3": {
+          "type": "announcement",
+          "settings": {
+            "text": "50% OFF SITEWIDE 4TH Of JULY DISCOUNT",
             "btn_color": "#f84248",
             "btn_border_color": "#ffffff",
             "btn_bg_color": "#ffffff",
@@ -26,26 +36,26 @@
         }
       },
       "block_order": [
-        "announcement_U6XzjV"
+        "announcement_aX3c8x",
+        "announcement_dTj8T3"
       ],
-      "name": "t:sections.announcement-bar.name",
       "settings": {
         "layout": "slider",
         "enable_close": false,
-        "color_text": "#b05d5d",
-        "bg_color_text": "#ffe8e8",
+        "color_text": "#ffffff",
+        "bg_color_text": "#000000",
         "bg_color_text_gradient": "",
-        "font_size_text": 12,
+        "font_size_text": 15,
         "font_style_text": "normal",
-        "font_weight_text": "500",
+        "font_weight_text": "400",
         "arrow_active": false,
         "content_max_width": 38,
-        "padding_top": 0,
-        "padding_top_tablet": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom": 0,
-        "padding_bottom_tablet": 0,
-        "padding_bottom_mobile": 0
+        "padding_top": 5,
+        "padding_top_tablet": 5,
+        "padding_top_mobile": 5,
+        "padding_bottom": 5,
+        "padding_bottom_tablet": 5,
+        "padding_bottom_mobile": 5
       }
     },
     "header_basic_T6xUEr": {
@@ -411,7 +421,7 @@
     }
   },
   "order": [
-    "announcement_bar_qVLUeR",
+    "announcement_bar_ez3FFk",
     "header_basic_T6xUEr",
     "header_navigation_compact_RykPkH",
     "header_navigation_utility_g9ymLB",

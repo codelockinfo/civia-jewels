@@ -199,18 +199,44 @@
         },
         "megamenu_style_2_QRD4UK": {
           "type": "megamenu_style_2",
+          "disabled": true,
           "settings": {
             "layout_block": "custom_width",
             "header_custom_width_size": 1200,
             "item": "earrings",
+            "column": 2,
+            "show_banner_1": true,
+            "banner_url_1": "",
+            "show_banner_2": true,
+            "banner_url_2": "",
+            "show_banner_3": true,
+            "banner_url_3": ""
+          }
+        },
+        "megamenu_style_3_GxGc4z": {
+          "type": "megamenu_style_3",
+          "name": "Mega menu style 4",
+          "settings": {
+            "layout_block": "custom_width",
+            "header_custom_width_size": 1200,
+            "mega_tyle": "style1",
+            "item": "earrings",
             "column": 5,
-            "show_banner_1": false,
-            "banner_1": "shopify://shop_images/EMP02375_3_940x_1d2fae7c-8c93-4c21-a8f7-2197790cd65a.webp",
-            "banner_url_1": "shopify://collections",
+            "show_banner_1": true,
+            "banner_1": "shopify://shop_images/image_1370x_36ec8dc5-9892-44d3-8240-a237222ce732.webp",
+            "banner_url_1": "",
             "show_banner_2": false,
+            "banner_2": "shopify://shop_images/Close-up_of_sparkling_diamonds__1_7400bd76-2fa4-4a91-86d9-a8c67282391d.png",
             "banner_url_2": "",
             "show_banner_3": false,
-            "banner_url_3": ""
+            "banner_3": "shopify://shop_images/image_1370x_36ec8dc5-9892-44d3-8240-a237222ce732.webp",
+            "banner_url_3": "",
+            "show_banner_4": false,
+            "banner_url_4": "",
+            "show_banner_5": false,
+            "banner_url_5": "",
+            "show_banner_6": false,
+            "banner_url_6": ""
           }
         }
       },
@@ -218,7 +244,8 @@
         "main_menu_fAdpyF",
         "megamenu_style_2_At8VHE",
         "megamenu_style_2_BqaHqg",
-        "megamenu_style_2_QRD4UK"
+        "megamenu_style_2_QRD4UK",
+        "megamenu_style_3_GxGc4z"
       ],
       "name": "t:sections.header.settings.navigation.name_4",
       "settings": {

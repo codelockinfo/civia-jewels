@@ -110,7 +110,9 @@
         "logo_yjfkwB",
         "function_group_c7J36q"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media (min-width: 1025px) {.header-basic__item .header-top--right .header__search .search-modal__form .search__button svg {width: 18px; height: 18px; right: -3px; transform: none; } .header-basic__item .header-top--right .customer-links .icon {width: 18px; height: 18px; position: relative; top: -1px; } .header-basic__item .header-top--right .header__icon--wishlist .icon, .header-basic__item .header-top--right .header__icon--cart .icon {width: 18px; height: 18px; }}"
+      ],
       "name": "Header - Basic",
       "settings": {
         "container": "1470",

@@ -6339,7 +6339,7 @@ summary::-webkit-details-marker {
         }
 
         .container-1470{
-            max-width: 1500px;
+            max-width: 1500px!important;
             padding-left: 15px;
             padding-right: 15px;
             margin-left: auto;

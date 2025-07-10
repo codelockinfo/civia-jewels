@@ -971,19 +971,7 @@
                                                 %}
                                             </div>
                                         {%- endif -%}
-                                    {% if product.metafields.custom.metal_options %}
-  <div class="metal-icons-section">
-    <label>Metal:</label>
-    <div class="icon-options">
-      {% for image in product.metafields.custom.metal_options %}
-        <div class="icon-option">
-          <img src="{{ image | image_url: width: 50 }}" alt="Metal Icon" />
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-{% endif %}
-
+                                    
                                     {%- when 'variant_picker' -%}
                                         {% unless has_product_combo %}
                                             <div class="productView-moreItem productView-moreItem-product-variant{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"

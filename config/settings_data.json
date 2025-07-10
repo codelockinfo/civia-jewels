@@ -173,6 +173,7 @@
     "category_filter_label1": "",
     "category_filter_label2": "",
     "category_filter_label3": "",
+    "show_quick_search": true,
     "quick_search_to_show": 3,
     "search_type": "all",
     "search_trending_title": "Trending Now",

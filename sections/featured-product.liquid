@@ -605,11 +605,11 @@
                                                     color_text: color_text
                                                 %}
                                             {%- else -%}
-                                                <div class="productView-desc hhh halo-text-format" 
+                                                <div class="productView-desc halo-text-format" 
                                                     style="--color-text: {{ block.settings.color_text }};
                                                     --fontsize-text: {{ block.settings.fontsize_text | append: 'px' }}"
                                                 >
-                                                    {{ 'products.product.description_placeholder' | t }}
+                                                    {{ 'products.product._placeholder' | t }}
                                                 </div>
                                             {%- endif -%}
                                         </div>

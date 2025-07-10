@@ -7,7 +7,7 @@
 -%}
 <div class="productView-options{% if enable_border_top %} has-border-top{% endif %}{% if enable_border_bottom %} has-border-bottom{% endif %}">
     {%- if variantCount > 0  and product.has_only_default_variant != true -%}
-        <div class="productView-variants halo-productOptions" id="product-option-{{ product.id }}-{{ section.id }}"  data-type="{{ picker_type }}">
+        <div class="productView-variants fhfh halo-productOptions" id="product-option-{{ product.id }}-{{ section.id }}"  data-type="{{ picker_type }}">
             {%- if picker_type == 'button' -%}
                 {%- assign product_swatch_option = settings.swatch | downcase -%}
                 <variant-radios class="no-js-hidden product-option has-default" data-product="{{ product.id }}" data-section="{{ section.id }}" data-url="{{ product.url }}">

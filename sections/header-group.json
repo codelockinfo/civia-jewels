@@ -113,7 +113,7 @@
       "custom_css": [],
       "name": "Header - Basic",
       "settings": {
-        "container": "1770",
+        "container": "full",
         "padding_full_width": 0,
         "background": "#ffffff",
         "gradient": "",
@@ -220,7 +220,7 @@
         "megamenu_style_2_TL3nae"
       ],
       "custom_css": [
-        ".lv3-child-icon{width: 30px; height: 30px;}"
+        ".lv3-child-icon {width: 30px; height: 30px;}"
       ],
       "name": "t:sections.header.settings.navigation.name_2",
       "settings": {

@@ -48,12 +48,12 @@
             "spacing_bottom": 12
           }
         },
-        "image_8UFbcL": {
+        "image_JbKm7d": {
           "type": "image",
           "settings": {
-            "heading": "Image",
+            "heading": "sec",
             "image": "{{ product.metafields.custom.metal.value }}",
-            "link": "{{ product.url }}"
+            "link": "shopify://products/yellow-gold-modern-tension-set-round-solitaire-wide-band-ring"
           }
         },
         "d98e243b-3682-495a-965a-1c7f7d460880": {
@@ -328,7 +328,7 @@
         "2e8c7c14-a0ad-4930-a1d8-3def05310426",
         "b0ea69b7-8a54-4a3c-9abd-0fcceeabaaa0",
         "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c",
-        "image_8UFbcL",
+        "image_JbKm7d",
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "d97e417a-941b-4a5d-bef3-a651adb918d8",
         "variant_step_by_step_aNtie7",

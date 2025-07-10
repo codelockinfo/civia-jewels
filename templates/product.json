@@ -48,21 +48,6 @@
             "spacing_bottom": 12
           }
         },
-        "complementary_products_XGTBVX": {
-          "type": "complementary_products",
-          "settings": {
-            "complementary_product_title": "Pairs well with",
-            "complementary_product_layout": "1",
-            "complementary_product_limit_1": 2,
-            "complementary_product_limit_2": 3,
-            "complementary_product_arrows": false,
-            "complementary_product_dots": true,
-            "complementary_product_object": "cover",
-            "complementary_product_button_atc": false,
-            "spacing_top": 30,
-            "spacing_bottom": 0
-          }
-        },
         "d98e243b-3682-495a-965a-1c7f7d460880": {
           "type": "variant_picker",
           "settings": {
@@ -335,7 +320,6 @@
         "2e8c7c14-a0ad-4930-a1d8-3def05310426",
         "b0ea69b7-8a54-4a3c-9abd-0fcceeabaaa0",
         "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c",
-        "complementary_products_XGTBVX",
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "d97e417a-941b-4a5d-bef3-a651adb918d8",
         "variant_step_by_step_aNtie7",

@@ -979,10 +979,15 @@
                                             <div class="product-color">
                                               <strong>Color:</strong> 
                                               <div class="product-color-icon">
-                                                <img 
-                                                  src="{{ product.metafields.custom.metal_color | image_url: width: 60 }}" 
-                                                  alt="Color Icon"
+                                                {% for icon in product.metafields.custom.metal_color %}
+                                                  <img
+                                                    src="{{ icon | image_url: width: 60 }}"
+                                                    alt="{{ icon.alt | default: 'Metal color swatch' }}"
+                                                    width="60"
+                                                    height="60"
+                                                    class="rounded border"
                                                   />
+                                                {% endfor %}
                                               </div>
                                             </div>
                                           {% endif %}

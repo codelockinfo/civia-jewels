@@ -1204,28 +1204,23 @@
 
                       <div class="product-metals">
                         <strong>Metal</strong>
-                        {% assign metal_ids = product.metafields.custom.metal_color.value %}
-
-                        {% if metal_ids != blank %}
+                        {% if product.metafields.custom.metal_color != blank %}
                           <div class="metal-options" style="display: flex; gap: 10px; margin-top: 10px;">
-                            {% for gid in metal_ids %}
-                              {% assign image_id = gid | split: '/' | last | plus: 0 %}
-                              {% assign matched_image = product.media | where: 'id', image_id | first %}
-                              {% if matched_image %}
-                                <div class="metal-option" style="text-align: center;">
-                                  <img
-                                    src="{{ matched_image.preview_image | image_url: width: 60 }}"
-                                    alt="Metal"
-                                    width="36"
-                                    height="36"
-                                    style="border-radius: 50%; border: 2px solid #ccc;"
-                                  >
+                            {% for file in product.metafields.custom.metal_color %}
+                              <div class="metal-option" style="text-align: center;">
+                                <img
+                                  src="{{ file | file_url }}"
+                                  alt="{{ file.alt | default: 'Metal' }}"
+                                  width="36"
+                                  height="36"
+                                  style="border-radius: 50%; border: 2px solid #ccc;"
+                                >
+                                <div style="margin-top: 5px; font-size: 14px;">
+                                  {{ file.alt | default: 'Option ' | append: forloop.index }}
                                 </div>
-                              {% endif %}
+                              </div>
                             {% endfor %}
                           </div>
-                        {% else %}
-                          <p>⚠️ No metal color media found.</p>
                         {% endif %}
                       </div>
                     {% endif %}

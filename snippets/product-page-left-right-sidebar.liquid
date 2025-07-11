@@ -1207,23 +1207,25 @@
                         {% assign metal_ids = product.metafields.custom.metal_color.value %}
 
                         {% if metal_ids != blank %}
-                          <div class="metal-options">
-                            {% for id in metal_ids %}
-                              {% assign matched_image = product.media | where: 'id', id | first %}
-                              {% if matched_image != blank %}
-                                <div class="metal-option">
+                          <div class="metal-options" style="display: flex; gap: 10px; margin-top: 10px;">
+                            {% for gid in metal_ids %}
+                              {% assign image_id = gid | split: '/' | last | plus: 0 %}
+                              {% assign matched_image = product.media | where: 'id', image_id | first %}
+                              {% if matched_image %}
+                                <div class="metal-option" style="text-align: center;">
                                   <img
                                     src="{{ matched_image.preview_image | image_url: width: 60 }}"
-                                    alt="Metal Option"
-                                    width="60"
-                                    height="60"
+                                    alt="Metal"
+                                    width="36"
+                                    height="36"
+                                    style="border-radius: 50%; border: 2px solid #ccc;"
                                   >
                                 </div>
                               {% endif %}
                             {% endfor %}
                           </div>
                         {% else %}
-                          <p>No metal color images found.</p>
+                          <p>⚠️ No metal color media found.</p>
                         {% endif %}
                       </div>
                     {% endif %}

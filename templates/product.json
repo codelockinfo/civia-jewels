@@ -48,6 +48,10 @@
             "spacing_bottom": 12
           }
         },
+        "metal_color_AWCzCV": {
+          "type": "metal-color",
+          "settings": {}
+        },
         "diamond_weight_XNtJCp": {
           "type": "diamond-weight",
           "settings": {}
@@ -301,6 +305,7 @@
         "2e8c7c14-a0ad-4930-a1d8-3def05310426",
         "b0ea69b7-8a54-4a3c-9abd-0fcceeabaaa0",
         "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c",
+        "metal_color_AWCzCV",
         "diamond_weight_XNtJCp",
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "perks_dJiaFf",

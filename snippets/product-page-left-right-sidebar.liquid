@@ -1611,6 +1611,8 @@
                       {% render 'halo-share', product: product, share_layout: check_show_share %}
                     </div>
                   {%- endif -%}
+                {%- when 'daimond-weight'-%}}
+                  {% render 'Daimond-Weight', product: product, share_layout: check_show_share %}
                 {%- when 'trust_image' -%}
                   {%- liquid
                     assign show_trust_image = block.settings.show_trust_image

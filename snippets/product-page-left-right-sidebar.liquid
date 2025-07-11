@@ -95,7 +95,7 @@
         assign has_breadcrumb = true
       when 'title'
         assign check_block_title = true
-
+      
       when 'quantity_selector'
         assign check_block_qty = true
         assign qty_style = block.settings.qty_style
@@ -168,6 +168,11 @@
       when 'share'
         assign show_share = block.settings.show_share
         assign share_layout = block.settings.share_layout
+
+      when 'daimond-weight'
+        assign show_share = block.settings.show_daimond-weight
+        assign share_layout = block.settings.daimond-weight_layout
+        
       when 'variant_picker'
         assign picker_type = block.settings.picker_type
         assign show_variant_image_group = block.settings.show_variant_image_group

@@ -1,7 +1,7 @@
 <div class="diamond-weight-selector">
   <label class="dw-label">Diamond Weight: <span id="selected-weight">1 Carat</span></label>
   <div class="dw-options">
-    {% assign weights = "2,1.5,2,2.5,3,4,5,6,7,8,9" | split: "," %}
+    {% assign weights = "1,1.5,2,2.5,3,4,5,6,7,8,9" | split: "," %}
     {% for weight in weights %}
       <button 
         class="dw-option {% if forloop.first %}active{% endif %}" 
@@ -44,14 +44,3 @@
   font-weight: bold;
 }
 </style>
-
-<script>
-  function selectDiamondWeight(button) {
-    // Remove active from all
-    document.querySelectorAll('.dw-option').forEach(btn => btn.classList.remove('active'));
-    // Add to clicked
-    button.classList.add('active');
-    // Update label
-    document.getElementById('selected-weight').innerText = button.innerText;
-  }
-</script>

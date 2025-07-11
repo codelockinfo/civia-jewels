@@ -1205,8 +1205,8 @@
                       <div class="product-metals">
                         <strong>Metal</strong>
                         <div class="metal-options">
-                          {% for file in product.metafields.custom.metal_color %}
-                            {% assign index = forloop.index0 %}
+                         {% comment %} {% for file in product.metafields.custom.metal_color %}
+                            {% assign index = forloop.index0 %} {% endcomment %}
                             <label class="metal-option">
                               <input
                                 type="radio"
@@ -1223,7 +1223,7 @@
                                 {{ image.alt | default: 'Option ' | append: forloop.index }}
                               </span>
                             </label>
-                          {% endfor %}
+                          
                         </div>
                       </div>
                     {% endif %}

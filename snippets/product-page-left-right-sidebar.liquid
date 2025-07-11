@@ -1203,7 +1203,7 @@
 
                       <div class="product-metals">
                         <strong>Metal:</strong>
-                        {% if product.metafields.custom.metal_color != blank %}
+                        
                           <div class="metal-options" style="display: flex; gap: 15px; margin-top: 10px;">
                             <a
                               href="#"
@@ -1251,19 +1251,19 @@
                             </a>
                           </div>
                         <script>
-  const metalOptions = document.querySelectorAll('.metal-option');
+                            const metalOptions = document.querySelectorAll('.metal-option');
 
-  metalOptions.forEach(option => {
-    option.addEventListener('click', function (e) {
-      e.preventDefault();
-      metalOptions.forEach(o => o.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-</script>
+                                metalOptions.forEach(option => {
+                                option.addEventListener('click', function (e) {
+                                e.preventDefault();
+                                metalOptions.forEach(o => o.classList.remove('active'));
+                                this.classList.add('active');
+                                });
+                              });
+                        </script>
                         {% endif %}
                       </div>
-                    {% endif %}
+                    
                     <div
                       class="productView-moreItem productView-moreItem-product-variant{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"
                       style="

@@ -56,8 +56,8 @@
           "type": "diamond-weight",
           "settings": {
             "weight1": "1",
-            "weight2": "",
-            "weight3": "",
+            "weight2": "2",
+            "weight3": "3",
             "weight4": "",
             "weight5": "",
             "weight6": "",

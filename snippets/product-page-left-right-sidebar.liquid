@@ -1250,17 +1250,7 @@
                               <div style="margin-top: 5px; font-size: 14px;">Gold</div>
                             </a>
                           </div>
-                        <script>
-  const metalOptions = document.querySelectorAll('.metal-option');
-
-  metalOptions.forEach(option => {
-    option.addEventListener('click', function (e) {
-      e.preventDefault();
-      metalOptions.forEach(o => o.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-</script>
+                          
                         {% endif %}
                       </div>
                     {% endif %}

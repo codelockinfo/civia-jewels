@@ -976,9 +976,15 @@
                                         
                                         {% unless has_product_combo %}
                                            
-  <div class="product-color">
-    <strong>Color:</strong> {{ product.category.metafields.custom.color.value }}
-  </div>
+                                            <div class="product-color">
+                                              <strong>Color:</strong> 
+                                              <div class="product-color-icon">
+                                                <img 
+                                                  src="{{ product.category.metafields.custom.color | image_url: width: 60 }}" 
+                                                  alt="Color Icon"
+                                                  />
+                                              </div>
+                                            </div>
 
                                             <div class="productView-moreItem hiii productView-moreItem-product-variant{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"
                                                 style="--spacing-top: {{ spacing_top | append: 'px' }};

@@ -1217,7 +1217,7 @@
                                 {% endif %}
                               >
                               <span class="metal-circle">
-                                <img src="{{ image | image_url: width: 60 }}" alt="Metal Option" width="36" height="36">
+                                <img src="{{ image.image | image_url: width: 60 }}" alt="{{ image.alt | default: 'Metal Option' }}" width="36" height="36">
                               </span>
                               <span class="metal-label">
                                 {{ image.alt | default: 'Option ' | append: forloop.index }}

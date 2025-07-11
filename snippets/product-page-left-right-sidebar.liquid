@@ -975,15 +975,16 @@
                                     {%- when 'variant_picker' -%}
                                         
                                         {% unless has_product_combo %}
+                                           
+  <div class="product-color">
+    <strong>Color:</strong> {{ product.category.metafields.custom.color.value }}
+  </div>
+
                                             <div class="productView-moreItem hiii productView-moreItem-product-variant{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"
                                                 style="--spacing-top: {{ spacing_top | append: 'px' }};
                                                 --spacing-bottom: {{ spacing_bottom | append: 'px' }}"
                                             >
-                                                {% if product.category.metafields.custom.color %}
-  <div class="product-color">
-    <strong>Color:</strong> {{ product.category.metafields.custom.color.value }}
-  </div>
-{% endif %}
+                                               
                                                 {%- if settings.enable_combined_products_listing -%}
                                                     {% render 'combined-products-listing', product: product %}
                                                 {%- endif -%}

@@ -1205,25 +1205,29 @@
                       <div class="product-metals">
                         <strong>Metal</strong>
                         <div class="metal-options">
-                         {% comment %} {% for file in product.metafields.custom.metal_color %}{% endcomment %}
-                            {% assign index = forloop.index0 %} 
+                          {% for image in product.metafields.custom.metal_color %}
                             <label class="metal-option">
                               <input
                                 type="radio"
                                 name="metal_color"
-                                value="metal_{{ index }}"
+                                value="metal_{{ forloop.index0 }}"
                                 {% if forloop.first %}
                                   checked
                                 {% endif %}
                               >
                               <span class="metal-circle">
-                                <img src="{{ image.image | image_url: width: 60 }}" alt="{{ image.alt | default: 'Metal Option' }}" width="36" height="36">
+                                <img
+                                  src="{{ image.image | image_url: width: 60 }}"
+                                  alt="{{ image.alt | default: 'Metal Option' }}"
+                                  width="36"
+                                  height="36"
+                                >
                               </span>
                               <span class="metal-label">
                                 {{ image.alt | default: 'Option ' | append: forloop.index }}
                               </span>
                             </label>
-                          
+                          {% endfor %}
                         </div>
                       </div>
                     {% endif %}

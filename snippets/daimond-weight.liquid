@@ -2,6 +2,7 @@
 <div class="diamond-weight-selector">
   <label class="dw-label">Diamond Weight: <span id="selected-weight">{{ section.settings.weight_1 }}</span></label>
   <div class="dw-options">
+    {%- render 'main-product.liquid' -%}}
     {% for i in (1..15) %}
       {% assign weight_value = section.settings["weight_" | append: i ] %}
       {% if weight_value != blank %}

@@ -1206,7 +1206,7 @@
                         <strong>Metal</strong>
                         {% if product.metafields.custom.metal_color != blank %}
                           <div class="metal-options" style="display: flex; gap: 10px; margin-top: 10px;">
-                            {% for file in product.metafields.custom.metal_color %}
+                            
                               <div class="metal-option" style="text-align: center;">
                                 <img
                                   src="{{ file | file_url }}"
@@ -1219,7 +1219,7 @@
                                   {{ file.alt | default: 'Option ' | append: forloop.index }}
                                 </div>
                               </div>
-                            {% endfor %}
+                          
                           </div>
                         {% endif %}
                       </div>

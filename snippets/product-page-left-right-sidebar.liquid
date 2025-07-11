@@ -1615,6 +1615,10 @@
                   <div>
                     {% render 'daimond-weight', product: product %}
                   </div>
+                {%- when 'metal-color' -%}
+                  <div>
+                    {% render 'metal-color', product: product %}
+                  </div>
                 {%- when 'trust_image' -%}
                   {%- liquid
                     assign show_trust_image = block.settings.show_trust_image

@@ -1205,6 +1205,8 @@
                       <div class="product-metals">
                         <strong>Metal</strong>
                         <div class="metal-options">
+                          <p>Raw output: {{ product.metafields.custom.metal_color }}</p>
+<p>Size: {{ product.metafields.custom.metal_color.size }}</p>
                           {% for image in product.metafields.custom.metal_color %}
                             {% assign index = forloop.index0 %}
                             <label class="metal-option">

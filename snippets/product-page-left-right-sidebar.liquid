@@ -1204,34 +1204,27 @@
 
                       <div class="product-metals">
                         <strong>Metal</strong>
-                        <div class="metal-options">
-                          <p>Raw output: {{ product.metafields.custom.metal_color }}</p>
-<p>Size: {{ product.metafields.custom.metal_color.size }}</p>
-                          {% for image in product.metafields.custom.metal_color %}
-                            {% assign index = forloop.index0 %}
-                            <label class="metal-option">
-                              <input
-                                type="radio"
-                                name="metal_color"
-                                value="metal_{{ index }}"
-                                {% if forloop.first %}
-                                  checked
-                                {% endif %}
-                              >
-                              <span class="metal-circle">
-                                <img
-                                  src="{{ image | file_url }}"
-                                  alt="{{ image.alt | default: 'Metal Option' }}"
-                                  width="36"
-                                  height="36"
-                                >
-                              </span>
-                              <span class="metal-label">
-                                {{ image.alt | default: 'Option ' | append: forloop.index }}
-                              </span>
-                            </label>
-                          {% endfor %}
-                        </div>
+                        {% assign metal_ids = product.metafields.custom.metal_color.value %}
+
+                        {% if metal_ids != blank %}
+                          <div class="metal-options">
+                            {% for id in metal_ids %}
+                              {% assign matched_image = product.media | where: 'id', id | first %}
+                              {% if matched_image != blank %}
+                                <div class="metal-option">
+                                  <img
+                                    src="{{ matched_image.preview_image | image_url: width: 60 }}"
+                                    alt="Metal Option"
+                                    width="60"
+                                    height="60"
+                                  >
+                                </div>
+                              {% endif %}
+                            {% endfor %}
+                          </div>
+                        {% else %}
+                          <p>No metal color images found.</p>
+                        {% endif %}
                       </div>
                     {% endif %}
                     <div

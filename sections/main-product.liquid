@@ -29,6 +29,31 @@
     {% render 'product-page-step-by-step' %}
 {% endif %}
 
+{% if request.design_mode %}
+  <div class="customizer-add-button">
+    <button onclick="alert('Use the left sidebar ➕ Add block to add a new weight option.')">
+       Add New Weight Option
+    </button>
+  </div>
+
+  <style>
+    .customizer-add-button {
+      margin-top: 20px;
+      padding: 10px;
+      background: #fffbe5;
+      border: 1px dashed #f4c542;
+    }
+
+    .customizer-add-button button {
+      background: #ffeb3b;
+      border: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+{% endif %}
+
 {% schema %}
 {
     "name": "t:sections.main-product.name",
@@ -3459,13 +3484,19 @@
                     "default": 0
                 }
             ]
-        },
-     
-        {
-                  "type": "metal-color",
-                  "name": "Metal Color",
-                  "settings": []
-                },
+        }, {
+    "type": "weight_option",
+    "name": "Weight Option",
+    "settings": [
+      {
+        "type": "text",
+        "id": "label",
+        "label": "Weight Label",
+        "default": "1 Carat"
+      }
+    ]
+  },
+
         {
             "type": "delivery_time",
             "name": "t:sections.main-product.settings.header__24.content",

@@ -1,10 +1,3 @@
-
-
-
-<!-- <pre>{{ weight1 | json }}</pre>
-<pre>{{ weight2 | json }}</pre> -->
-
-
 <div class="diamond-weight-selector">
   <label class="dw-label">Diamond Weight: </label>
   <div class="dw-options">
@@ -15,7 +8,11 @@
     {% for key in weight_keys %}
       {% assign weight_value = block.settings[key] %}
       {% if weight_value != blank %}
-        <p>{{ weight_value }}</p>
+        <button
+                class="dw-option {% if forloop.first %}active{% endif %}"
+                onclick="selectDiamondWeight(this)">
+                {{ weight }} Carat
+              </button>
       {% endif %}
     {% endfor %}
   {% endif %}

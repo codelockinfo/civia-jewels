@@ -1,62 +1,83 @@
-<div class="diamond-weight-selector">
-  <label class="dw-label">Diamond Weight: </label>
-  <div class="dw-options">
-{% for block in section.blocks %}
-  {% if block.type == 'diamond-weight' %}
-    {% assign weight_keys = "weight1,weight2,weight3,weight4,weight5,weight6,weight7,weight8,weight9,weight10,weight11,weight12" | split: "," %}
-
-    {% for key in weight_keys %}
-      {% assign weight_value = block.settings[key] %}
-      {% if weight_value != blank %}
-        <button
-                class="dw-option {% if forloop.first %}active{% endif %}"
-                onclick="selectDiamondWeight(this)">
-                {{ weight_value }} Carat
-              </button>
+<div class="diamond-shape-wrapper">
+  <label class="shape-label">Diamond Shape:</label>
+  <div class="shape-grid">
+    {% for block in section.blocks %}
+      {% if block.type == 'diamond-weight' %}
+        {% for i in (1..12) %}
+          {% assign label = block.settings["weight" | append: i] %}
+          {% assign image = block.settings["diamond_image" | append: i] %}
+          {% if label != blank or image != blank %}
+            <div class="shape-item" onclick="selectDiamondShape(this)">
+              {% if image != blank %}
+                <img src="{{ image | image_url: width: 100 }}" alt="{{ label }}" class="shape-image">
+              {% endif %}
+              {% if label != blank %}
+                <div class="shape-label-text">{{ label }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
       {% endif %}
     {% endfor %}
-  {% endif %}
-{% endfor %}
   </div>
 </div>
-<div class="diamond-weight-options">
-  {% for block in section.blocks %}
-    {% if block.type == 'weight_option' %}
-      <button class="weight-button">
-        {{ block.settings.label }}
-      </button>
-    {% endif %}
-  {% endfor %}
-</div>
+
 <style>
-  .diamond-weight-selector {
-  margin: 20px 0;
-}
+  .diamond-shape-wrapper {
+    margin: 25px 0;
+  }
 
-.dw-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
+  .shape-label {
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 16px;
+  }
 
-.dw-options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+  .shape-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 16px;
+    align-items: center;
+    justify-items: center;
+  }
 
-.dw-option {
-  padding: 10px 18px;
-  border: 2px solid #ccc;
-  background: #fff;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.2s ease;
-}
+  .shape-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, border 0.2s ease;
+  }
 
-.dw-option.active {
-  border-color: #000;
-  font-weight: bold;
-}
+  .shape-item:hover {
+    transform: scale(1.05);
+  }
+
+  .shape-item.active .shape-image {
+    border-color: #000;
+  }
+
+  .shape-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding: 6px;
+    background: #fff;
+  }
+
+  .shape-label-text {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #333;
+  }
 </style>
+
+<script>
+  function selectDiamondShape(element) {
+    document.querySelectorAll('.shape-item').forEach(function(item) {
+      item.classList.remove('active');
+    });
+    element.classList.add('active');
+  }
+</script>

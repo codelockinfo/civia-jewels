@@ -5,7 +5,7 @@
     {% for key in weight_keys %}
       {% assign weight_value = block.settings[key] %}
       {% if weight_value != blank %}
-        <p>Weight {{ forloop.index }}: {{ weight_value }}</p>
+        <p>{{ weight_value }}</p>
       {% endif %}
     {% endfor %}
   {% endif %}

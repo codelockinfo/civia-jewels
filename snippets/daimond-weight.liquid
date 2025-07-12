@@ -28,6 +28,7 @@
   assign weights = weight_string | split: ','
 -%}
 {% for block in section.blocks %}
+  {{ forloop.index }}  *****
   {% if block.type == 'diamond-weight' %}
     <pre>{{ block.settings.weight1 | json }}</pre>
   {% endif %}

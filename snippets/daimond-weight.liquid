@@ -27,8 +27,14 @@
 
   assign weights = weight_string | split: ','
 -%}
-<pre>{{ weight1 | json }}</pre>
-<pre>{{ weight2 | json }}</pre>
+{% for block in section.blocks %}
+  {% if block.type == 'diamond-weight' %}
+    <pre>{{ block.settings.weight1 | json }}</pre>
+  {% endif %}
+{% endfor %}
+
+<!-- <pre>{{ weight1 | json }}</pre>
+<pre>{{ weight2 | json }}</pre> -->
 
 
 <div class="diamond-weight-selector">

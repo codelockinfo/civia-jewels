@@ -1,38 +1,16 @@
-{%- liquid
-  assign weight1 = block.settings.weight1
-  assign weight2 = block.settings.weight2
-  assign weight3 = block.settings.weight3
-  assign weight4 = block.settings.weight4
-  assign weight5 = block.settings.weight5
-  assign weight6 = block.settings.weight6
-  assign weight7 = block.settings.weight7
-  assign weight8 = block.settings.weight8
-  assign weight9 = block.settings.weight9
-  assign weight10 = block.settings.weight10
-  assign weight11 = block.settings.weight11
-  assign weight12 = block.settings.weight12
-
-  assign weight_string = weight1
-  assign weight_string = weight_string | append: ',' | append: weight2
-  assign weight_string = weight_string | append: ',' | append: weight3
-  assign weight_string = weight_string | append: ',' | append: weight4
-  assign weight_string = weight_string | append: ',' | append: weight5
-  assign weight_string = weight_string | append: ',' | append: weight6
-  assign weight_string = weight_string | append: ',' | append: weight7
-  assign weight_string = weight_string | append: ',' | append: weight8
-  assign weight_string = weight_string | append: ',' | append: weight9
-  assign weight_string = weight_string | append: ',' | append: weight10
-  assign weight_string = weight_string | append: ',' | append: weight11
-  assign weight_string = weight_string | append: ',' | append: weight12
-
-  assign weights = weight_string | split: ','
--%}
 {% for block in section.blocks %}
-  {{ forloop.index }}  *****
   {% if block.type == 'diamond-weight' %}
-    <pre>{{ weights | json }}</pre>
+    {% assign weight_keys = "weight1,weight2,weight3,weight4,weight5,weight6,weight7,weight8,weight9,weight10,weight11,weight12" | split: "," %}
+
+    {% for key in weight_keys %}
+      {% assign weight_value = block.settings[key] %}
+      {% if weight_value != blank %}
+        <p>Weight {{ forloop.index }}: {{ weight_value }}</p>
+      {% endif %}
+    {% endfor %}
   {% endif %}
 {% endfor %}
+
 
 <!-- <pre>{{ weight1 | json }}</pre>
 <pre>{{ weight2 | json }}</pre> -->

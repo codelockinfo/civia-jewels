@@ -8,10 +8,6 @@
     {% assign product_handle = product.handle %}
     {% assign all_shapes = '' | split: ',' %}
     {% assign current_shape = '' %}
-
-    {%- comment -%}
-    Step 1: Detect current shape from URL
-    {%- endcomment -%}
     {% for block in section.blocks %}
       {% if block.type == 'diamond-weight' %}
         {% for i in (0..11) %}

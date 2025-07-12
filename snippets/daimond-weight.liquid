@@ -1,80 +1,45 @@
 {%- liquid
-    assign weight1 = block.settings.weight1
-    assign weight2 = block.settings.weight2
-    assign weight3 = block.settings.weight3
-    assign weight4 = block.settings.weight4
-    assign weight5 = block.settings.weight5
-    assign weight6 = block.settings.weight6
-    assign weight7 = block.settings.weight7
-    assign weight8 = block.settings.weight8
-    assign weight9 = block.settings.weight9
-    assign weight10 = block.settings.weight10
-    assign weight11= block.settings.weight11
-    assign weight12= block.settings.weight12
+  assign weight1 = block.settings.weight1
+  assign weight2 = block.settings.weight2
+  assign weight3 = block.settings.weight3
+  assign weight4 = block.settings.weight4
+  assign weight5 = block.settings.weight5
+  assign weight6 = block.settings.weight6
+  assign weight7 = block.settings.weight7
+  assign weight8 = block.settings.weight8
+  assign weight9 = block.settings.weight9
+  assign weight10 = block.settings.weight10
+  assign weight11 = block.settings.weight11
+  assign weight12 = block.settings.weight12
+
+  assign weight_string = weight1
+  assign weight_string = weight_string | append: ',' | append: weight2
+  assign weight_string = weight_string | append: ',' | append: weight3
+  assign weight_string = weight_string | append: ',' | append: weight4
+  assign weight_string = weight_string | append: ',' | append: weight5
+  assign weight_string = weight_string | append: ',' | append: weight6
+  assign weight_string = weight_string | append: ',' | append: weight7
+  assign weight_string = weight_string | append: ',' | append: weight8
+  assign weight_string = weight_string | append: ',' | append: weight9
+  assign weight_string = weight_string | append: ',' | append: weight10
+  assign weight_string = weight_string | append: ',' | append: weight11
+  assign weight_string = weight_string | append: ',' | append: weight12
+
+  assign weights = weight_string | split: ','
 -%}
+
 <div class="diamond-weight-selector">
   <label class="dw-label">Diamond Weight: </label>
   <div class="dw-options">
-      <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight1 }}Carat
-      </button>
-      <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight2 }}Carat
-      </button>
-      <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight3 }}Carat
-        </button>
-        <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight4 }}Carat
-      </button>
-    <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight5}}Carat
-      </button>
-    <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight6 }}Carat
-      </button>
-    <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight7 }}Carat
-      </button>
-    <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight8 }}Carat
-      </button>
-    <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight9 }}Carat
-      </button>
-    <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight10 }}Carat
-      </button>
-    <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight11 }}Carat
-      </button>
-    <button 
-        class="dw-option {% if forloop.first %}active{% endif %}" 
-        onclick="selectDiamondWeight(this)">
-         {{ weight12 }}Carat
-      </button>
+      {%- for weight in weights  -%}
+        {%- if weight != blank %}
+          <button
+            class="dw-option {% if forloop.first %}active{% endif %}"
+          onclick="selectDiamondWeight(this)">
+            {{ weight }} Carat
+          </button>
+         {%- endif -%}
+      {%- endfor -%}
   </div>
 </div>
 

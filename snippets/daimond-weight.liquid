@@ -1,24 +1,57 @@
 <div class="diamond-weight-selector">
   <label class="dw-label">Diamond Shape: </label>
   <div class="dw-options">
+    {% assign weight_keys = 'weight1,weight2,weight3,weight4,weight5,weight6,weight7,weight8,weight9,weight10,weight11,weight12'
+      | split: ','
+    %}
+
+    {% assign image_keys = 'diamond_image1,diamond_image2,diamond_image3,diamond_image4,diamond_image5,diamond_image6,diamond_image7,diamond_image8,diamond_image9,diamond_image10,diamond_image11,diamond_image12'
+      | split: ','
+    %}
+
+    {% assign product_handle = product.handle %}
+
+    {% assign all_shapes = '' | split: ',' %}
+
+    {% assign current_shape = '' %}
+
     {% for block in section.blocks %}
       {% if block.type == 'diamond-weight' %}
-        {% assign weight_keys = "weight1,weight2,weight3,weight4,weight5,weight6,weight7,weight8,weight9,weight10,weight11,weight12" | split: "," %}
-        {% assign image_keys = "diamond_image1,diamond_image2,diamond_image3,diamond_image4,diamond_image5,diamond_image6,diamond_image7,diamond_image8,diamond_image9,diamond_image10,diamond_image11,diamond_image12" | split: "," %}
-
         {% for i in (0..11) %}
-          {% assign weight_value = block.settings[weight_keys[i]] %}
-          {% assign image_value = block.settings[image_keys[i]] %}
+          {% assign shape = block.settings[weight_keys[i]] | downcase | replace: ' ', '-' %}
 
-          {% if weight_value != blank or image_value != blank %}
-            <div class="dw-option" onclick="selectDiamondWeight(this)">
-              {% if image_value != blank %}
-                <img src="{{ image_value | image_url: width: 100 }}" alt="{{ weight_value }}" class="dw-image" />
+          {% assign image = block.settings[image_keys[i]] %}
+
+          {% if shape != blank %}
+            {% unless all_shapes contains shape %}
+              {% assign all_shapes = all_shapes | push: shape %}
+            {% endunless %}
+
+            {% if product_handle contains shape %}
+              {% assign current_shape = shape %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+    {% for block in section.blocks %}
+      {% if block.type == 'diamond-weight' %}
+        {% for i in (0..11) %}
+          {% assign shape = block.settings[weight_keys[i]] | downcase | replace: ' ', '-' %}
+
+          {% assign shape_label = block.settings[weight_keys[i]] %}
+
+          {% assign image = block.settings[image_keys[i]] %}
+
+          {% if shape != blank %}
+            {% assign new_handle = product_handle | replace: current_shape, shape %}
+            <a class="dw-option" href="/products/{{ new_handle }}">
+              {% if image != blank %}
+                <img src="{{ image | image_url: width: 100 }}" alt="{{ shape_label }}" class="dw-image">
               {% endif %}
-              {% if weight_value != blank %}
-                <div class="dw-label-text">{{ weight_value }}</div>
-              {% endif %}
-            </div>
+              <div class="dw-label-text">{{ shape_label }}</div>
+            </a>
           {% endif %}
         {% endfor %}
       {% endif %}
@@ -36,7 +69,7 @@
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 25px;
-    
+
   }
 
   .dw-options {

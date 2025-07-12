@@ -1,18 +1,22 @@
 <div class="diamond-weight-selector">
-  <label class="dw-label">Diamond Shape: </label>
+  <label class="dw-label">Diamond Weight: </label>
   <div class="dw-options">
     {% for block in section.blocks %}
       {% if block.type == 'diamond-weight' %}
-        {% for i in (1..12) %}
-          {% assign weight = block.settings["weight" | append: i] %}
-          {% assign image = block.settings["diamond_image" | append: i] %}
-          {% if weight != blank or image != blank %}
-            <div class="dw-option-wrapper" onclick="selectDiamondWeight(this)">
-              {% if image != blank %}
-                <img src="{{ image | image_url: width: 100 }}" alt="{{ weight }}" class="dw-image">
+        {% assign weight_keys = "weight1,weight2,weight3,weight4,weight5,weight6,weight7,weight8,weight9,weight10,weight11,weight12" | split: "," %}
+        {% assign image_keys = "diamond_image1,diamond_image2,diamond_image3,diamond_image4,diamond_image5,diamond_image6,diamond_image7,diamond_image8,diamond_image9,diamond_image10,diamond_image11,diamond_image12" | split: "," %}
+
+        {% for i in (0..11) %}
+          {% assign weight_value = block.settings[weight_keys[i]] %}
+          {% assign image_value = block.settings[image_keys[i]] %}
+
+          {% if weight_value != blank or image_value != blank %}
+            <div class="dw-option" onclick="selectDiamondWeight(this)">
+              {% if image_value != blank %}
+                <img src="{{ image_value | image_url: width: 100 }}" alt="{{ weight_value }}" class="dw-image" />
               {% endif %}
-              {% if weight != blank %}
-                <div class="dw-label-text">{{ weight }}</div>
+              {% if weight_value != blank %}
+                <div class="dw-label-text">{{ weight_value }}</div>
               {% endif %}
             </div>
           {% endif %}
@@ -31,23 +35,24 @@
     display: block;
     font-weight: 600;
     margin-bottom: 10px;
-    font-size: 16px;
   }
 
   .dw-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 14px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
-  .dw-option-wrapper {
-    text-align: center;
+  .dw-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     cursor: pointer;
+    text-align: center;
     transition: transform 0.2s ease;
   }
 
-  .dw-option-wrapper:hover {
+  .dw-option:hover {
     transform: scale(1.05);
   }
 
@@ -56,26 +61,26 @@
     height: 60px;
     object-fit: contain;
     border-radius: 50%;
-    border: 2px solid #ddd;
-    padding: 6px;
-    background-color: #fff;
-  }
-
-  .dw-option-wrapper.active .dw-image {
-    border-color: #000;
+    border: 2px solid #ccc;
+    padding: 5px;
+    background: #fff;
   }
 
   .dw-label-text {
-    margin-top: 6px;
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 13px;
     color: #333;
+  }
+
+  .dw-option.active .dw-image {
+    border-color: #000;
   }
 </style>
 
 <script>
   function selectDiamondWeight(el) {
-    document.querySelectorAll('.dw-option-wrapper').forEach(function(item) {
-      item.classList.remove('active');
+    document.querySelectorAll('.dw-option').forEach(function(option) {
+      option.classList.remove('active');
     });
     el.classList.add('active');
   }

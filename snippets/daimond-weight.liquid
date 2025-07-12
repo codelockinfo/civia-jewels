@@ -1,18 +1,18 @@
-<div class="diamond-shape-wrapper">
-  <label class="shape-label">Diamond Shape:</label>
-  <div class="shape-grid">
+<div class="diamond-weight-selector">
+  <label class="dw-label">Diamond Shape: </label>
+  <div class="dw-options">
     {% for block in section.blocks %}
       {% if block.type == 'diamond-weight' %}
         {% for i in (1..12) %}
-          {% assign label = block.settings["weight" | append: i] %}
+          {% assign weight = block.settings["weight" | append: i] %}
           {% assign image = block.settings["diamond_image" | append: i] %}
-          {% if label != blank or image != blank %}
-            <div class="shape-item" onclick="selectDiamondShape(this)">
+          {% if weight != blank or image != blank %}
+            <div class="dw-option-wrapper" onclick="selectDiamondWeight(this)">
               {% if image != blank %}
-                <img src="{{ image | image_url: width: 100 }}" alt="{{ label }}" class="shape-image">
+                <img src="{{ image | image_url: width: 100 }}" alt="{{ weight }}" class="dw-image">
               {% endif %}
-              {% if label != blank %}
-                <div class="shape-label-text">{{ label }}</div>
+              {% if weight != blank %}
+                <div class="dw-label-text">{{ weight }}</div>
               {% endif %}
             </div>
           {% endif %}
@@ -23,50 +23,49 @@
 </div>
 
 <style>
-  .diamond-shape-wrapper {
-    margin: 25px 0;
+  .diamond-weight-selector {
+    margin: 20px 0;
   }
 
-  .shape-label {
-    font-weight: 600;
-    margin-bottom: 12px;
+  .dw-label {
     display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
     font-size: 16px;
   }
 
-  .shape-grid {
+  .dw-options {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 16px;
-    align-items: center;
+    gap: 14px;
     justify-items: center;
   }
 
-  .shape-item {
+  .dw-option-wrapper {
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s ease, border 0.2s ease;
+    transition: transform 0.2s ease;
   }
 
-  .shape-item:hover {
+  .dw-option-wrapper:hover {
     transform: scale(1.05);
   }
 
-  .shape-item.active .shape-image {
-    border-color: #000;
-  }
-
-  .shape-image {
+  .dw-image {
     width: 60px;
     height: 60px;
     object-fit: contain;
     border-radius: 50%;
     border: 2px solid #ddd;
     padding: 6px;
-    background: #fff;
+    background-color: #fff;
   }
 
-  .shape-label-text {
+  .dw-option-wrapper.active .dw-image {
+    border-color: #000;
+  }
+
+  .dw-label-text {
     margin-top: 6px;
     font-size: 14px;
     color: #333;
@@ -74,10 +73,10 @@
 </style>
 
 <script>
-  function selectDiamondShape(element) {
-    document.querySelectorAll('.shape-item').forEach(function(item) {
+  function selectDiamondWeight(el) {
+    document.querySelectorAll('.dw-option-wrapper').forEach(function(item) {
       item.classList.remove('active');
     });
-    element.classList.add('active');
+    el.classList.add('active');
   }
 </script>

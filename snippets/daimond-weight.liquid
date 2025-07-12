@@ -27,21 +27,21 @@
 
   assign weights = weight_string | split: ','
 -%}
+<pre>{{ weights | json }}</pre>
+
 
 <div class="diamond-weight-selector">
   <label class="dw-label">Diamond Weight: </label>
   <div class="dw-options">
-    H2234werq
-      {%- for weight in weights  -%}
-        {{ weight.weight1 }}H1100000
-        {%- if weight != blank %}
-          <button
-            class="dw-option {% if forloop.first %}active{% endif %}"
+    {%- for weight in weights -%}
+      {%- if weight != blank -%}
+        <button
+          class="dw-option {% if forloop.first %}active{% endif %}"
           onclick="selectDiamondWeight(this)">
-            {{ weight }} Carat
-          </button>
-         {%- endif -%}
-      {%- endfor -%}
+          {{ weight }} Carat
+        </button>
+      {%- endif -%}
+    {%- endfor -%}
   </div>
 </div>
 

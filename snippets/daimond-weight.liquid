@@ -32,6 +32,7 @@
   <label class="dw-label">Diamond Weight: </label>
   <div class="dw-options">
       {%- for weight in weights  -%}
+        {{ weight.weight1 }}H11
         {%- if weight != blank %}
           <button
             class="dw-option {% if forloop.first %}active{% endif %}"

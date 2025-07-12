@@ -19,7 +19,15 @@
 {% endfor %}
   </div>
 </div>
-
+<div class="diamond-weight-options">
+  {% for block in section.blocks %}
+    {% if block.type == 'weight_option' %}
+      <button class="weight-button">
+        {{ block.settings.label }}
+      </button>
+    {% endif %}
+  {% endfor %}
+</div>
 <style>
   .diamond-weight-selector {
   margin: 20px 0;

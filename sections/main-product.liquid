@@ -29,31 +29,6 @@
     {% render 'product-page-step-by-step' %}
 {% endif %}
 
-{% if request.design_mode %}
-  <div class="customizer-add-button">
-    <button onclick="alert('Use the left sidebar ➕ Add block to add a new weight option.')">
-       Add New Weight Option
-    </button>
-  </div>
-
-  <style>
-    .customizer-add-button {
-      margin-top: 20px;
-      padding: 10px;
-      background: #fffbe5;
-      border: 1px dashed #f4c542;
-    }
-
-    .customizer-add-button button {
-      background: #ffeb3b;
-      border: none;
-      padding: 10px 15px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
-{% endif %}
-
 {% schema %}
 {
     "name": "t:sections.main-product.name",
@@ -3484,19 +3459,79 @@
                     "default": 0
                 }
             ]
-        }, {
-    "type": "weight_option",
-    "name": "Weight Option",
-    "settings": [
-      {
-        "type": "text",
-        "id": "label",
-        "label": "Weight Label",
-        "default": "1 Carat"
-      }
-    ]
-  },
-
+        },
+     
+        {
+  "type": "diamond-weight",
+  "name": "Diamond Weight Block",
+  "settings": [
+    {
+      "type": "text",
+      "id": "weight1",
+      "label": "Weight Option 1"
+    },
+    {
+      "type": "text",
+      "id": "weight2",
+      "label": "Weight Option 2"
+    },
+    {
+      "type": "text",
+      "id": "weight3",
+      "label": "Weight Option 3"
+    },
+    {
+      "type": "text",
+      "id": "weight4",
+      "label": "Weight Option 4"
+    },
+    {
+      "type": "text",
+      "id": "weight5",
+      "label": "Weight Option 5"
+    },
+    {
+      "type": "text",
+      "id": "weight6",
+      "label": "Weight Option 6"
+    },
+    {
+      "type": "text",
+      "id": "weight7",
+      "label": "Weight Option 7"
+    },
+    {
+      "type": "text",
+      "id": "weight8",
+      "label": "Weight Option 8"
+    },
+    {
+      "type": "text",
+      "id": "weight9",
+      "label": "Weight Option 9"
+    },
+    {
+      "type": "text",
+      "id": "weight10",
+      "label": "Weight Option 10"
+    },
+    {
+      "type": "text",
+      "id": "weight11",
+      "label": "Weight Option 11"
+    },
+    {
+      "type": "text",
+      "id": "weight12",
+      "label": "Weight Option 12"
+    }
+  ]
+},
+        {
+                  "type": "metal-color",
+                  "name": "Metal Color",
+                  "settings": []
+                },
         {
             "type": "delivery_time",
             "name": "t:sections.main-product.settings.header__24.content",

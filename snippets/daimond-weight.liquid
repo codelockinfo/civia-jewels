@@ -29,7 +29,7 @@
 -%}
 {% for block in section.blocks %}
   {% if block.type == 'diamond-weight' %}
-    <pre>{{weight1 | json }}</pre>
+    <pre>{{ block.settings.weight1 | json }}</pre>
   {% endif %}
 {% endfor %}
 

@@ -42,7 +42,7 @@
             "show_image": true,
             "link": "",
             "show_title": true,
-            "page_title_alignment": "left",
+            "page_title_alignment": "center",
             "page_title_text_transform": "capitalize",
             "fontsize_title": 24,
             "margin_top_title": 30,

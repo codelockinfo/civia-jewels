@@ -91,15 +91,12 @@
                             </a>
                           </div>
                         <script>
-                            const metalOptions = document.querySelectorAll('.metal-option');
-
-                                metalOptions.forEach(option => {
-                                option.addEventListener('click', function (e) {
-                                e.preventDefault();
-                                metalOptions.forEach(o => o.classList.remove('active'));
-                                this.classList.add('active');
-                                });
-                              });
+                            function selectDiamondWeight(el) {
+                                  document.querySelectorAll('.metal-option').forEach(function(option) {
+                                  option.classList.remove('active');
+                                  });
+                                  el.classList.add('active');
+                            }
                         </script>
                        
                       </div>

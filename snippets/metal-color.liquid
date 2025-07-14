@@ -140,7 +140,25 @@
 
 <div class="product-metals">
   <strong>Metal:</strong>
-  
+  <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
+    {% for metal_object in product.metafields.shopify["color-pattern"].value %}
+      {% assign metal_title = metal_object.title %}
+      {% assign metal_img = metal_object.image %}
+
+      <a
+        href="#"
+        class="metal-option"
+        onclick="selectMetalOption(this); return false;"
+      >
+        {% if metal_img != blank %}
+          <img src="{{ metal_img | img_url: '60x60' }}" alt="{{ metal_title }}">
+        {% else %}
+          <img src="https://via.placeholder.com/36?text=No+Img" alt="No image">
+        {% endif %}
+        <div class="metal-label">{{ metal_title }}</div>
+      </a>
+    {% endfor %}
+  </div>
 </div>
 
 <script>

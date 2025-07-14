@@ -190,3 +190,8 @@
     line-height: normal;
     vertical-align: unset;
 }
+
+.price-item .price-item--regular{
+      color: #818181 !important;
+    font-size: 16px !important;
+}

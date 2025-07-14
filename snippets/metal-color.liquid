@@ -44,51 +44,43 @@
 <div class="product-metals">
   <strong>Metal:</strong>
 
-  <div class="metal-options" style="display: flex; gap: 15px; margin-top: 10px;">
-    <a
-      href="#"
-      class="metal-option"
-      style="text-align: center; text-decoration: none; color: inherit;"
-    >
-      <img
-        src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Item_1_1.png?v=1752215923"
-        alt="Silver"
-        width="36"
-        height="36"
-        style="border-radius: 50%; border: 1px solid #ccc;margin: 0 auto;"
-      >
-      <div class="metal-label" style="margin-top: 5px; font-size: 14px;">White Gold</div>
-    </a>
+  {% assign metal_colors = product.metafields.custom.color | split: ',' %}
 
-    <a
-      href="#"
-      class="metal-option"
-      style="text-align: center; text-decoration: none; color: inherit;"
-    >
-      <img
-        src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Item_8a0b41d2-44aa-4fa6-87b6-5d67923166cc.png?v=1752215905"
-        alt="Rose Gold"
-        width="36"
-        height="36"
-        style="border-radius: 50%; border: 1px solid #ccc; margin: 0 auto;"
-      >
-      <div class="metal-label" style="margin-top: 5px; font-size: 14px;">Rose Gold</div>
-    </a>
+  <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
+    {% for metal in metal_colors %}
+      {% assign trimmed_metal = metal | strip %}
+      {% assign metal_img_url = '' %}
 
-    <a
-      href="#"
-      class="metal-option"
-      style="text-align: center; text-decoration: none; color: inherit;"
-    >
-      <img
-        src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Item_2_bec0e8ee-fc15-400a-bfe9-c818d68ad671.png?v=1752215906"
-        alt="Gold"
-        width="36"
-        height="36"
-        style="border-radius: 50%; border: 1px solid #ccc;margin: 0 auto;"
+      {%- case trimmed_metal -%}
+        {%- when 'Silver' -%}
+          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/silver.png' %}
+        {%- when 'Rose Gold' -%}
+          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/rosegold.png' %}
+        {%- when 'Gold' -%}
+          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/gold.png' %}
+        {%- when 'White Gold' -%}
+          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Item_1_1.png?v=1752215923' %}
+        {%- else -%}
+          {% assign metal_img_url = 'https://via.placeholder.com/36' %}
+      {%- endcase -%}
+
+      <a
+        href="#"
+        class="metal-option"
+        style="text-align: center; text-decoration: none; color: inherit;"
       >
-      <div class="metal-label" style="margin-top: 5px; font-size: 14px;">Yellow Gold</div>
-    </a>
+        <img
+          src="{{ metal_img_url }}"
+          alt="{{ trimmed_metal }}"
+          width="36"
+          height="36"
+          style="border-radius: 50%; border: 1px solid #ccc; margin: 0 auto;"
+        >
+        <div class="metal-label" style="margin-top: 5px; font-size: 14px;">
+          {{ trimmed_metal }}
+        </div>
+      </a>
+    {% endfor %}
   </div>
   <script>
     function selectDiamondWeight(el) {

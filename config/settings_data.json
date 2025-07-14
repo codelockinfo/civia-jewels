@@ -176,6 +176,7 @@
     "show_quick_search": true,
     "quick_search_to_show": 10,
     "search_type": "product",
+    "show_search_trending": false,
     "search_trending_title": "Trending Now",
     "seach_trending_item_1": "dempus",
     "seach_trending_item_2": "sample",

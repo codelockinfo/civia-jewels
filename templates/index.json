@@ -642,7 +642,7 @@
         "shadow_inset": "no",
         "mg_top_desktop": 50,
         "mg_top_tablet": 30,
-        "mg_top_mobile": 20,
+        "mg_top_mobile": 30,
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 20,
         "mg_bottom_mobile": 10

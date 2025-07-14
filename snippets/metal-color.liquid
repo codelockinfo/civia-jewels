@@ -47,7 +47,7 @@
   {% assign metal_colors = product.metafields.color | split: ',' %}
 
   <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
-    {% for metal in metal_colors %}
+    {% for color in metal_colors %}
       {% assign trimmed_metal = metal | strip %}
       {% assign metal_img_url = '' %}
 

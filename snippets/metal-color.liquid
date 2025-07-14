@@ -139,7 +139,7 @@
   <strong>Metal:</strong>
   <div class="metal-options-wrapper">
     {% for metal_object in product.metafields.shopify['color-pattern'].value %}
-      {% assign metal_title = metal_object.label %}
+      {% assign metal_label = metal_object.label %}
       {% assign metal_img = metal_object.image %}
       {% assign handle = product.handle %}
       {% assign current_metal = '' %}
@@ -158,11 +158,11 @@
         onclick="selectMetalOption(this); return false;"
       >
         {% if metal_img != blank %}
-          <img src="{{ metal_img | img_url: '60x60' }}" alt="{{ metal_title }}">
+          <img src="{{ metal_img | img_url: '60x60' }}" alt="{{ metal_label }}">
         {% else %}
           <img src="https://via.placeholder.com/36?text=No+Img" alt="No image">
         {% endif %}
-        <div class="metal-label">{{ metal_title }}</div>
+        <div class="metal-label">{{ metal_label }}</div>
       </a>
     {% endfor %}
   </div>

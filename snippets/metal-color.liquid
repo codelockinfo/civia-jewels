@@ -43,10 +43,17 @@
 
 <div class="product-metals">
   <strong>Metal:</strong>
-
-  {% assign metal_colors = product.metafields.custom.color | split: ',' %}
-
-  
+  {% if product.metafields.custom.color %}
+  <div class="product-color-options">
+    <strong>Available Colors:</strong>
+    <ul>
+      {% for color in product.metafields.custom.color %}
+        <li>{{ color }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+  {% assign metal_colors = product.category.metafields.color | split: ',' %}
 
   <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
     {% for metal in metal_colors %}

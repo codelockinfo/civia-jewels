@@ -46,6 +46,10 @@
 
   {% assign metal_colors = product.category.metafields.color | split: ',' %}
 
+  {% if product.metafields.custom.color != blank %}
+  <div><strong>Ring Size:</strong> {{ product.metafields.custom.color }}</div>
+{% endif %}
+
   <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
     {% for metal in metal_colors %}
       {% assign trimmed_metal = metal | strip %}

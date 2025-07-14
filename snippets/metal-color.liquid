@@ -51,15 +51,13 @@
       {% assign trimmed_metal = metal | strip %}
       {% assign metal_img_url = '' %}
 
-      {%- case trimmed_metal -%}
-        {%- when 'Silver' -%}
-          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/silver.png' %}
-        {%- when 'Rose Gold' -%}
-          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/rosegold.png' %}
-        {%- when 'Gold' -%}
-          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/gold.png' %}
-        {%- when 'White Gold' -%}
+      {%- case trimmed_metal | downcase -%}
+        {%- when 'white gold' -%}
           {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Item_1_1.png?v=1752215923' %}
+        {%- when 'rose gold' -%}
+          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/rosegold.png' %}
+        {%- when 'yellow gold' -%}
+          {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/yellowgold.png' %}
         {%- else -%}
           {% assign metal_img_url = 'https://via.placeholder.com/36' %}
       {%- endcase -%}

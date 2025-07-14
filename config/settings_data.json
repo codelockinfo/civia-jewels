@@ -130,6 +130,8 @@
     "pagination_style": "1",
     "show_effect_close": true,
     "product_card_layout": "01",
+    "enable_background_button_card": false,
+    "enable_custom_position_swatch_layout_card_1": true,
     "disable_product_card_border": true,
     "enable_custom_layout_card": true,
     "enable_infor_on_image": false,

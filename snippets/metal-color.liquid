@@ -44,12 +44,16 @@
 <div class="product-metals">
   <strong>Metal:</strong>
 
-  {% assign metal_colors = product.metafields.color | split: ',' %}
+  {% assign metal_colors = product.metafields.custom.color | split: ',' %}
+
+  <p><strong>DEBUG:</strong> Colors = {{ metal_colors | json }}</p>
 
   <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
     {% for metal in metal_colors %}
       {% assign trimmed_metal = metal | strip %}
       {% assign metal_img_url = '' %}
+
+      <p><strong>Checking:</strong> {{ trimmed_metal }}</p>
 
       {%- case trimmed_metal | downcase -%}
         {%- when 'white gold' -%}
@@ -59,7 +63,7 @@
         {%- when 'yellow gold' -%}
           {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/yellowgold.png' %}
         {%- else -%}
-          {% assign metal_img_url = 'https://via.placeholder.com/36' %}
+          {% assign metal_img_url = 'https://via.placeholder.com/36?text=No+Match' %}
       {%- endcase -%}
 
       <a
@@ -80,6 +84,7 @@
       </a>
     {% endfor %}
   </div>
+
   <script>
     function selectDiamondWeight(el) {
           document.querySelectorAll('.metal-option').forEach(function(option) {

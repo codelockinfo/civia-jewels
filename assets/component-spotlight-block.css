@@ -745,7 +745,7 @@
     }
 
     .spotlight-block .halo-row:not(.slider--tablet):not(.scroll-snap-mobile){
-        gap: 52px;
+        /* gap: 52px; */
     }
 }
 

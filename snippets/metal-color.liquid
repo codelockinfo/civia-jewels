@@ -44,7 +44,7 @@
 <div class="product-metals">
   <strong>Metal:</strong>
 
-  {% assign metal_colors = product.metafields.custom.color | split: ',' %}
+  {% assign metal_colors = product.metafields.color | split: ',' %}
 
   <p><strong>DEBUG:</strong> Colors = {{ metal_colors | json }}</p>
 

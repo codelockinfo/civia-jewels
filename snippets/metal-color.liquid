@@ -97,9 +97,9 @@
 {% endcomment %}
 
 <style>
-  .metal-options {
+  .metal-options-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin-top: 12px;
     align-items: center;
     margin-bottom: 15px;
@@ -136,8 +136,8 @@
 </style>
 
 <div class="product-metals">
-  <strong style="margin-bottom: 10px;">Metal:</strong>
-  <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
+  <strong >Metal:</strong>
+  <div class="metal-options-wrapper" ">
     {% for metal_object in product.metafields.shopify['color-pattern'].value %}
       {% assign metal_title = metal_object.name %}
       {% assign metal_img = metal_object.image %}

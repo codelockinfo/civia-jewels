@@ -141,10 +141,16 @@
     {% for metal_object in product.metafields.shopify['color-pattern'].value %}
       {% assign metal_title = metal_object.label %}
       {% assign metal_img = metal_object.image %}
+      {% assign handle = product.handle %}
+      {% assign current_metal = '' %}
 
+      {% assign link_handle = handle %}
+      {% if current_metal != '' and current_metal != metal %}
+        {% assign link_handle = handle | replace: current_metal, metal %}
+      {% endif %}
       <a
-        href="#"
-        class="metal-option"
+        href="/products/{{ link_handle }}"
+        class="metal-option{% if metal == current_metal %} active{% endif %}"
         onclick="selectMetalOption(this); return false;"
       >
         {% if metal_img != blank %}

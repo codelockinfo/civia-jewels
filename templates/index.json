@@ -708,7 +708,7 @@
         "color_border_bottom": "#e8e8e8",
         "enable_minus_mg_top": false,
         "minus_spacing_top": -100,
-        "product_block_layout": "slider",
+        "product_block_layout": "grid",
         "product_bg": "#ffffff",
         "product_bg_gradient": "",
         "product_block_collection": "trending-pic",

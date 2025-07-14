@@ -285,7 +285,7 @@
     "product_title_color": "#232323",
     "product_title_color_hover": "#232323",
     "product_price_color": "#312c2c",
-    "product_price_sale_color": "#000000",
+    "product_price_sale_color": "#ff4d4d",
     "product_price_compare_color": "#999999",
     "product_swatch_border": "#cbcbcb",
     "product_swatch_border_active": "#232323",

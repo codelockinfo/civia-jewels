@@ -95,7 +95,7 @@
         assign has_breadcrumb = true
       when 'title'
         assign check_block_title = true
-      
+
       when 'quantity_selector'
         assign check_block_qty = true
         assign qty_style = block.settings.qty_style
@@ -170,9 +170,9 @@
         assign share_layout = block.settings.share_layout
 
       when 'daimond-weight'
-        assign show_share = block.settings.show_daimond-weight
-        assign share_layout = block.settings.daimond-weight_layout
-        
+        assign show_share = block.settings['show_daimond-weight']
+        assign share_layout = block.settings['daimond-weight_layout']
+
       when 'variant_picker'
         assign picker_type = block.settings.picker_type
         assign show_variant_image_group = block.settings.show_variant_image_group
@@ -1163,7 +1163,6 @@
 
                 {%- when 'variant_picker' -%}
                   {% unless has_product_combo %}
-                    
                     <div
                       class="productView-moreItem productView-moreItem-product-variant{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"
                       style="
@@ -1507,7 +1506,7 @@
                   {%- endif -%}
                 {%- when 'diamond-weight' -%}
                   <div>
-                    {% render 'daimond-weight', product: product %}
+                    {% render 'diamond-weight', product: product %}
                   </div>
                 {%- when 'metal-color' -%}
                   <div>

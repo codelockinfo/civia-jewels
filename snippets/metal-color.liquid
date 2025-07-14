@@ -144,6 +144,9 @@
       {% assign handle = product.handle %}
       {% assign current_metal = '' %}
 
+      {% if current_shape == '' and handle contains shape %}
+        {% assign current_shape = shape %}
+      {% endif %}
       {% assign link_handle = handle %}
       {% if current_metal != '' and current_metal != metal %}
         {% assign link_handle = handle | replace: current_metal, metal %}

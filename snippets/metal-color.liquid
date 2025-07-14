@@ -51,8 +51,6 @@
       {% assign trimmed_metal = metal | strip %}
       {% assign metal_img_url = '' %}
 
-      <p><strong>Checking:</strong> {{ trimmed_metal }}</p>
-
       {%- case trimmed_metal | downcase -%}
         {%- when 'white gold' -%}
           {% assign metal_img_url = 'https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Item_1_1.png?v=1752215923' %}

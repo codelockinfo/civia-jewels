@@ -1,4 +1,4 @@
-<style>
+{% comment %} <style>
   .metal-options {
     display: flex;
     gap: 20px;
@@ -42,9 +42,12 @@
 </style>
 
 <div class="product-metals">
-  
+  <strong>Metal:</strong>
 
-  {% assign metal_colors = product.category.metafields.color | split: ',' %}
+  {% assign metal_colors = product.metafields.shopify["color-pattern"] | split: ',' %}
+
+
+  
 
   <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
     {% for metal in metal_colors %}
@@ -90,3 +93,79 @@
     }
   </script>
 </div>
+ {% endcomment %}
+
+
+
+
+
+ <style>
+  .metal-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .metal-option {
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .metal-option img {
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+  }
+
+  .metal-option.active img {
+    border: 2px solid #000 !important;
+  }
+
+  .metal-option.active .metal-label {
+    font-weight: bold !important;
+  }
+
+  .metal-label {
+    display: block;
+    margin-top: 6px;
+    color: #333;
+  }
+</style>
+
+<div class="product-metals">
+  <strong>Metal:</strong>
+  <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
+    {% for metal_object in product.metafields.shopify["color-pattern"].value %}
+      {% assign metal_title = metal_object.title %}
+      {% assign metal_img = metal_object.image %}
+
+      <a
+        href="#"
+        class="metal-option"
+        onclick="selectMetalOption(this); return false;"
+      >
+        {% if metal_img != blank %}
+          <img src="{{ metal_img | img_url: '60x60' }}" alt="{{ metal_title }}">
+        {% else %}
+          <img src="https://via.placeholder.com/36?text=No+Img" alt="No image">
+        {% endif %}
+        <div class="metal-label">{{ metal_title }}</div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  function selectMetalOption(el) {
+    document.querySelectorAll('.metal-option').forEach(function(option) {
+      option.classList.remove('active');
+    });
+    el.classList.add('active');
+  }
+</script>

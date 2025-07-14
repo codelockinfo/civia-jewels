@@ -46,8 +46,6 @@
 
   {% assign metal_colors = product.metafields.custom.color | split: ',' %}
 
-  <p><strong>DEBUG:</strong> Colors = {{ metal_colors | json }}</p>
-
   <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
     {% for metal in metal_colors %}
       {% assign trimmed_metal = metal | strip %}

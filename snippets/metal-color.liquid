@@ -44,7 +44,7 @@
 <div class="product-metals">
   <strong>Metal:</strong>
 
-  {% assign metal_colors = product.metafields.custom.color | split: ',' %}
+  {% assign metal_colors = product.metafields.color | split: ',' %}
 
   <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
     {% for metal in metal_colors %}

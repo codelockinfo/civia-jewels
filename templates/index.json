@@ -9,6 +9,41 @@
  */
 {
   "sections": {
+    "search_block_k7FPL8": {
+      "type": "search-block",
+      "name": "t:sections.search_block.presets.name",
+      "settings": {
+        "container": "fullwidth",
+        "padding_full_width": 0,
+        "text_align": "center",
+        "content_align": "center",
+        "content_max_width": 400,
+        "search_block_title": "",
+        "color_title": "#232323",
+        "margin_bottom_title": 45,
+        "fontsize_title": 16,
+        "fontsize_title_mb": 22,
+        "title_text_transform": "uppercase",
+        "search_block_des": "",
+        "color_des": "#3c3c3c",
+        "margin_bottom_des": 30,
+        "fontsize_des": 16,
+        "search_input_color": "",
+        "search_input_bg": "",
+        "search_input_gradient": "",
+        "search_input_border": "",
+        "search_block_placeholder": "search",
+        "search_input_align": "center",
+        "padding_top_input": 12,
+        "padding_bottom_input": 13,
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
     "image_banner_9a3qMq": {
       "type": "image-banner",
       "blocks": {
@@ -991,6 +1026,7 @@
     }
   },
   "order": [
+    "search_block_k7FPL8",
     "image_banner_9a3qMq",
     "brand_slider_xCF7Yc",
     "spotlight_block_Lt8xr9",

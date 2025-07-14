@@ -136,10 +136,10 @@
 </style>
 
 <div class="product-metals">
-  <strong >Metal:</strong>
-  <div class="metal-options-wrapper" ">
+  <strong>Metal:</strong>
+  <div class="metal-options-wrapper">
     {% for metal_object in product.metafields.shopify['color-pattern'].value %}
-      {% assign metal_title = metal_object.name %}
+      {% assign metal_title = metal_object.label %}
       {% assign metal_img = metal_object.image %}
 
       <a

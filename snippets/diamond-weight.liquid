@@ -1,61 +1,49 @@
 <div class="diamond-weight-selector">
   <label class="dw-label">Diamond Shape: </label>
   <div class="dw-options">
+    {% assign weight_keys = 'shape1,shape2,shape3,shape4,shape5,shape6,shape7,shape8,shape9,shape10,shape11,shape12'
+      | split: ','
+    %}
+    {% assign image_keys = 'diamond_image1,diamond_image2,diamond_image3,diamond_image4,diamond_image5,diamond_image6,diamond_image7,diamond_image8,diamond_image9,diamond_image10,diamond_image11,diamond_image12'
+      | split: ','
+    %}
+
     {% assign handle = product.handle %}
+    {% assign current_shape = '' %}
 
-    {%- comment -%}
-      Extract current metal from the first two words in the handle
-      E.g., yellow-gold-modern-ring → current_metal = yellow-gold
-    {%- endcomment -%}
-    {% assign parts = handle | split: '-' %}
-    {% assign current_metal = parts[0] | append: '-' | append: parts[1] %}
+    {% assign selected_block = section.blocks | where: 'type', 'diamond-weight' | first %}
 
-    <div class="metal-options-wrapper">
-      {% for metal_object in product.metafields.shopify['color-pattern'].value %}
-        {% assign metal_label = metal_object.label %}
-        {% assign metal_img = metal_object.image %}
-        {% assign metal_slug = metal_label | downcase | replace: ' ', '-' %}
+    {% if selected_block %}
+      {% for i in (0..11) %}
+        {% assign shape_label = selected_block.settings[weight_keys[i]] %}
+        {% assign shape = shape_label | downcase | replace: ' ', '-' %}
+        {% assign image = selected_block.settings[image_keys[i]] %}
 
-        {%- comment -%}
-          Replace current metal slug in handle with this option's slug
-        {%- endcomment -%}
-        {% assign link_handle = handle %}
-        {% if current_metal != metal_slug %}
-          {% assign link_handle = handle | replace_first: current_metal, metal_slug %}
+        {% if current_shape == '' and handle contains shape %}
+          {% assign current_shape = shape %}
         {% endif %}
-
-        <a
-          href="/products/{{ link_handle }}"
-          class="metal-option{% if metal_slug == current_metal %} active{% endif %}"
-          onclick="selectMetalOption(this); return false;"
-          style="text-align: center; text-decoration: none; color: inherit;"
-        >
-          {% if metal_img != blank %}
-            <img
-              src="{{ metal_img | img_url: '60x60' }}"
-              alt="{{ metal_label }}"
-            >
-          {% else %}
-            <img
-              src="https://via.placeholder.com/36?text=No+Img"
-              alt="No image"
-            >
-          {% endif %}
-          <div class="metal-label" style="margin-top: 5px; font-size: 14px;">
-            {{ metal_label }}
-          </div>
-        </a>
       {% endfor %}
-    </div>
 
-    <script>
-      function selectMetalOption(el) {
-        var link = el.getAttribute('href');
-        if (link) {
-          window.location.href = link;
-        }
-      }
-    </script>
+      {% for i in (0..11) %}
+        {% assign shape_label = selected_block.settings[weight_keys[i]] %}
+        {% assign shape = shape_label | downcase | replace: ' ', '-' %}
+        {% assign image = selected_block.settings[image_keys[i]] %}
+
+        {% if shape != blank %}
+          {% assign link_handle = handle %}
+          {% if current_shape != '' and current_shape != shape %}
+            {% assign link_handle = handle | replace: current_shape, shape %}
+          {% endif %}
+
+          <a class="dw-option{% if shape == current_shape %} active{% endif %}" href="/products/{{ link_handle }}">
+            {% if image %}
+              <img src="{{ image | image_url: width: 100 }}" alt="{{ shape_label }}" class="dw-image">
+            {% endif %}
+            <div class="dw-label-text">{{ shape_label }}</div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
   </div>
 </div>
 

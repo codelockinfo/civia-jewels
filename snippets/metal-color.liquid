@@ -138,24 +138,37 @@
 
 <div class="product-metals">
   <strong>Metal:</strong>
+  {% assign handle = product.handle %}
+  {% assign current_metal = '' %}
+
+  {%- comment -%}
+    Step 1: Detect which metal is currently in the handle
+  {%- endcomment -%}
+  {% for metal_object in product.metafields.shopify['color-pattern'].value %}
+    {% assign metal_label = metal_object.label %}
+    {% assign metal_slug = metal_label | downcase | replace: ' ', '-' %}
+    {% if current_metal == '' and handle contains metal_slug %}
+      {% assign current_metal = metal_slug %}
+    {% endif %}
+  {% endfor %}
+
+  {%- comment -%}
+    Step 2: Render all metal options and generate link handles
+  {%- endcomment -%}
   <div class="metal-options-wrapper">
     {% for metal_object in product.metafields.shopify['color-pattern'].value %}
       {% assign metal_label = metal_object.label %}
       {% assign metal_img = metal_object.image %}
-      {% assign handle = product.handle %}
-      {% assign current_metal = '' %}
+      {% assign metal_slug = metal_label | downcase | replace: ' ', '-' %}
 
-      {% assign metal = metal_label | downcase | replace: ' ', '-' %}
-      {% if current_metal == '' and handle contains metal %}
-        {% assign current_metal = metal %}
-      {% endif %}
       {% assign link_handle = handle %}
-      {% if current_metal != '' and current_metal != metal %}
-        {% assign link_handle = handle | replace: current_metal, metal %}
+      {% if current_metal != '' and current_metal != metal_slug %}
+        {% assign link_handle = handle | replace: current_metal, metal_slug %}
       {% endif %}
+
       <a
         href="/products/{{ link_handle }}"
-        class="metal-option{% if metal == current_metal %} active{% endif %}"
+        class="metal-option{% if metal_slug == current_metal %} active{% endif %}"
         onclick="selectMetalOption(this); return false;"
       >
         {% if metal_img != blank %}

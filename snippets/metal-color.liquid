@@ -46,7 +46,7 @@
 
   ytyrt{{ product.category.metafields.color }}
 
-  {% assign metal_colors = product.metafields.color | split: ',' %}
+  {% assign metal_colors = product.category.metafields.color | split: ',' %}
 
   <div class="metal-options-wrapper" style="display: flex; gap: 15px;">
     {% for metal in metal_colors %}

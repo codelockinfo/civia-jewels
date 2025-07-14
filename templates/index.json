@@ -577,7 +577,7 @@
         "mg_minus_desktop": 0,
         "mg_minus_mobile": 0,
         "block_layout": "grid",
-        "spotlight_block_swipe_on_mobile": "list",
+        "spotlight_block_swipe_on_mobile": "scroll",
         "column": "4",
         "column_mb": "2",
         "center_mode": false,

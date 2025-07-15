@@ -4,7 +4,7 @@
     font-size: 0;
     border: 2px solid #f1f1f1;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+    border-radius: 7px;
 }
 
 .product-item > .card {

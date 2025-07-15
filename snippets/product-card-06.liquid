@@ -329,15 +329,14 @@
                 </div>
                 <!-- Add more shapes as needed -->
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev shape-prev"></div>
+              <div class="swiper-button-next shape-next"></div>
             </div>
           </div>
-
           <!-- Metal Selector -->
           <div class="variant-group">
-            <div class="variant-label">Metal</div>
-            <div class="swiper variant-swiper metal-swiper">
+            <div class="variant-label">Shape</div>
+            <div class="swiper variant-swiper shape-swiper">
               <div class="swiper-wrapper variant-options">
                 <div class="swiper-slide variant-option metal" onclick="selectVariant(this, 'metal')">
                   <img
@@ -443,63 +442,92 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 <style>
-  .variant-section{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    font-size: 14px;
+    .variant-section{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 14px;
+    }
+    .variant-group {
+      display: flex;
+      align-items: center;
+    }
+    .variant-label {
+      width: 60px;
+      font-size: 14px;
+    }
+    .variant-swiper{
+      width: calc(100% - 65px);
+    }
+    .variant-options {
+      display: flex;
+      gap: 10px;
+    }
+    .variant-option-squre{
+      width: 28px;
+      height: 28px;
+      border: 1px solid #a4a4a4;
+      border-radius: 5px!important;
+      overflow: hidden;
+      cursor: pointer;
+      transition: border 0.3s;
+    }
+    .variant-option {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #a4a4a4;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+      transition: border 0.3s;
+    }
+    .variant-option.active {
+      border: 1px solid #000;
+    }
+    .variant-option img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .swiper-button-next, .swiper-button-prev {
+      color: #000;
+    }
+    .variant-swiper {
+      padding: 0px 0;
+    }
+    .divider {
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+
+    .shape-swiper {
+    position: relative;
   }
-  .variant-group {
+
+  .shape-prev,
+  .shape-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: white;
+    border: 1px solid #ccc;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-  }
-  .variant-label {
-    width: 60px;
-    font-size: 14px;
-  }
-  .variant-swiper{
-    width: calc(100% - 65px);
-  }
-  .variant-options {
-    display: flex;
-    gap: 10px;
-  }
-  .variant-option-squre{
-    width: 28px;
-    height: 28px;
-    border: 1px solid #a4a4a4;
-    border-radius: 5px!important;
-    overflow: hidden;
+    justify-content: center;
     cursor: pointer;
-    transition: border 0.3s;
   }
-  .variant-option {
-    width: 28px;
-    height: 28px;
-    border: 1px solid #a4a4a4;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-    transition: border 0.3s;
+
+  .shape-prev {
+    left: -10px;
   }
-  .variant-option.active {
-    border: 1px solid #000;
-  }
-  .variant-option img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  .swiper-button-next, .swiper-button-prev {
-    color: #000;
-  }
-  .variant-swiper {
-    padding: 0px 0;
-  }
-  .divider {
-    border-top: 1px solid #ddd;
-    margin: 20px 0;
+
+  .shape-next {
+    right: -10px;
   }
 </style>
 
@@ -515,8 +543,8 @@
     slidesPerView: 'auto',
     spaceBetween: 10,
     navigation: {
-      nextEl: '.shape-swiper .swiper-button-next',
-      prevEl: '.shape-swiper .swiper-button-prev',
+      nextEl: '.shape-next',
+      prevEl: '.shape-prev',
     },
   });
 

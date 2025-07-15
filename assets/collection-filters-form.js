@@ -21,7 +21,7 @@ class CollectionFiltersForm extends HTMLElement {
             this.querySelector('#filter__price--apply').addEventListener('click', this.debouncedOnClick.bind(this));
         }
 
-        if ($('.facets-horizontal .js-filter[style="display: block;"]').length > 0) {
+        if ($('.facets-horizontal .js-filter[style="display: none;"]').length > 0) {
             $('.results-count .results').hide();
         } else {
             $('.results-count .results').show();

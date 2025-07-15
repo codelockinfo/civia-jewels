@@ -252,10 +252,16 @@
             <div class="variant-label">Shape</div>
             <div class="swiper variant-swiper shape-swiper">
               <div class="swiper-wrapper variant-options">
-                <div class="swiper-slide variant-option variant-option-squre " onclick="selectVariant(this, 'shape')">
+                <div
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="selectVariant(this, 'shape')"
+                >
                   <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
                 </div>
-                <div class="swiper-slide variant-option variant-option-squre" onclick="selectVariant(this, 'shape')">
+                <div
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="selectVariant(this, 'shape')"
+                >
                   <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/OVAL__DIAMOND.jpg" alt="Oval">
                 </div>
                 <!-- Add more shapes as needed -->
@@ -270,19 +276,19 @@
             <div class="variant-label">Metal</div>
             <div class="swiper variant-swiper metal-swiper">
               <div class="swiper-wrapper variant-options">
-                <div class="swiper-slide variant-option" onclick="selectVariant(this, 'metal')">
+                <div class="swiper-slide variant-option metal" onclick="selectVariant(this, 'metal')">
                   <img
                     src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
                     alt="Rose Gold"
                   >
                 </div>
-                <div class="swiper-slide variant-option" onclick="selectVariant(this, 'metal')">
+                <div class="swiper-slide variant-option metal" onclick="selectVariant(this, 'metal')">
                   <img
                     src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_1.png?v=1728998464"
                     alt="White Gold"
                   >
                 </div>
-                <div class="swiper-slide variant-option" onclick="selectVariant(this, 'metal')">
+                <div class="swiper-slide variant-option metal" onclick="selectVariant(this, 'metal')">
                   <img
                     src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_2.png?v=1728998531"
                     alt="Yellow Gold"
@@ -436,10 +442,11 @@
 
 <script>
   function selectVariant(el, type) {
-    document.querySelectorAll('.variant-option').forEach(opt => opt.classList.remove('active'));
-    el.classList.add('active');
-    // Do something with selected value if needed
-  }
+  document.querySelectorAll(`.variant-option.${type}`).forEach(opt => {
+    opt.classList.remove('active');
+  });
+  el.classList.add('active');
+}
 
   new Swiper('.shape-swiper', {
     slidesPerView: 'auto',

@@ -3094,7 +3094,7 @@ quickshop-update-quantity.disabled {
         transform: translate3d(0, 0, 0);
     }
 
-    .card:hover .card-product__group {
+     .card-product__group {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -3387,7 +3387,4 @@ quickshop-update-quantity.disabled {
     .style-card--list .card-information {
         padding: 0 0 0 10px !important;
     }
-}
-.card-product__group{
-  display: block!important;
 }

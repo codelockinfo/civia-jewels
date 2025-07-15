@@ -3388,3 +3388,6 @@ quickshop-update-quantity.disabled {
         padding: 0 0 0 10px !important;
     }
 }
+.card-product__group{
+  display: block!important;
+}

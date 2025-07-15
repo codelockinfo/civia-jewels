@@ -3390,7 +3390,7 @@ quickshop-update-quantity.disabled {
 }
 .product-divider {
   border: none;
-  border-top: 2px dotted #000;
+  border-top: 2px dotted #a4a4a4;
   margin: 10px 0;
   width: 100%;
 }

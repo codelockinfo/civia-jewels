@@ -760,7 +760,8 @@
   
     .page-sidebar.page-sidebar--horizontal .halo-sidebar-wrapper {
         width: 100%;
-        height: auto;
+        height: 100%;
+        padding: 20px 20px 70px;
         padding-bottom: 0;
         overflow: inherit;
         z-index: 10;

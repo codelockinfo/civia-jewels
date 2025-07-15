@@ -3388,3 +3388,9 @@ quickshop-update-quantity.disabled {
         padding: 0 0 0 10px !important;
     }
 }
+.product-divider {
+  border: none;
+  border-top: 1px dotted #ccc;
+  margin: 12px 0;
+  width: 100%;
+}

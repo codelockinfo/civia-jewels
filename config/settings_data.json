@@ -135,7 +135,7 @@
     "product_card_layout": "06",
     "enable_background_button_card": false,
     "enable_custom_position_swatch_layout_card_1": true,
-    "disable_product_card_border": true,
+    "disable_product_card_border": false,
     "enable_custom_layout_card": true,
     "enable_infor_on_image": false,
     "product_block_image_ratio": "square",

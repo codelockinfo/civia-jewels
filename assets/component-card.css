@@ -3087,12 +3087,12 @@ quickshop-update-quantity.disabled {
         pointer-events: auto;
     }
 
-    .card:hover .card-wishlist {
+    /* .card:hover .card-wishlist {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
         transform: translate3d(0, 0, 0);
-    }
+    } */
 
      .card-product__group {
         opacity: 1;

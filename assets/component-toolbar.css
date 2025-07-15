@@ -531,14 +531,14 @@ body.toolbar-modal-open {
         /* display: none; */
     }
 
-    .toolbar-wrapper:not(.toolbar-mobile) {
+    /* .toolbar-wrapper:not(.toolbar-mobile) {
         justify-content: space-between;
     }
-
-    .toolbar-wrapper .toolbar-col.toolbar-colLeft {
+ */
+    /* .toolbar-wrapper .toolbar-col.toolbar-colLeft {
         display: flex;
         align-items: center;
-    }
+    } */
 
     .toolbar .toolbar-label {
         display: inline-block;
@@ -551,7 +551,7 @@ body.toolbar-modal-open {
     /**/
     .toolbar .toolbar-dropdown.filter-sortby .label-tab.hidden-on-desktop,
     .toolbar .dropdown-menu.hidden-on-desktop  {
-        /* display: none; */
+        display: block;
     }
 }
 

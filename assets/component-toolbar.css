@@ -269,6 +269,7 @@
     width: 75px;
     justify-content: flex-start;
     text-align: left;
+    cursor: pointer;
 }
 
 .toolbar .toolbar-item .toolbar-icon.icon-filter .icon {

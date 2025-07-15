@@ -245,7 +245,45 @@
           </div>
         {%- endif -%}
 
-        <div>hi</div>
+        <!-- Simplified HTML for Shape & Metal Swiper Variant Section -->
+        <div class="variant-section">
+          <!-- Shape -->
+          <div class="variant-group">
+            <div class="variant-label">Shape</div>
+            <div class="swiper shape-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="variant-option active" data-shape="Round" data-tooltip="Round">
+                    <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
+                  </a>
+                </div>
+                <!-- Add more shape slides here -->
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <!-- Metal -->
+          <div class="variant-group">
+            <div class="variant-label">Metal</div>
+            <div class="swiper metal-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="variant-option metal active" data-metal="Rose Gold" data-tooltip="Rose Gold">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
+                      alt="Rose Gold"
+                    >
+                  </a>
+                </div>
+                <!-- Add more metal slides here -->
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
 
         {%- if product_card_product.metafields.custom.positive_vibes_almost_sold_out
           or product_card_product.metafields.custom.positive_vibes_recently_people_gave_review

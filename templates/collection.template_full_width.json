@@ -94,6 +94,7 @@
       "blocks": {
         "80b0a11c-fb01-4b89-8a29-1dbb2a1db16a": {
           "type": "category",
+          "disabled": true,
           "settings": {
             "heading": "Categories",
             "type": "1_level",
@@ -109,6 +110,7 @@
         },
         "3978fd59-b580-49e1-9893-38d762f48f10": {
           "type": "product_block",
+          "disabled": true,
           "settings": {
             "heading": "Featured Products",
             "product_block_collection": "collection-home-1-2",
@@ -134,6 +136,7 @@
         },
         "2f7f02ac-4072-40ea-844f-59943e256971": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "heading": "Custom Block",
             "text": "<p>Custom CMS block displayed at the left sidebar on the Catalog Page. Put your own content here: text, html, images, media... or whatever you like.</p>\n\n<p>There are many similar sample content placeholders across the store. All editable from admin panel.</p>"

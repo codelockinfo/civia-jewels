@@ -246,38 +246,48 @@
         {%- endif -%}
 
         <!-- Simplified HTML for Shape & Metal Swiper Variant Section -->
-        <div class="variant-section">
-          <!-- Shape -->
+        <div class="variant-section variant-section-custom">
+          <!-- Shape Selector -->
           <div class="variant-group">
             <div class="variant-label">Shape</div>
-            <div class="swiper shape-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#" class="variant-option active" data-shape="Round" data-tooltip="Round">
-                    <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
-                  </a>
+            <div class="swiper variant-swiper shape-swiper">
+              <div class="swiper-wrapper variant-options">
+                <div class="swiper-slide variant-option" onclick="selectVariant(this, 'shape')">
+                  <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
                 </div>
-                <!-- Add more shape slides here -->
+                <div class="swiper-slide variant-option" onclick="selectVariant(this, 'shape')">
+                  <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/OVAL__DIAMOND.jpg" alt="Oval">
+                </div>
+                <!-- Add more shapes as needed -->
               </div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
           </div>
 
-          <!-- Metal -->
+          <!-- Metal Selector -->
           <div class="variant-group">
             <div class="variant-label">Metal</div>
-            <div class="swiper metal-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#" class="variant-option metal active" data-metal="Rose Gold" data-tooltip="Rose Gold">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
-                      alt="Rose Gold"
-                    >
-                  </a>
+            <div class="swiper variant-swiper metal-swiper">
+              <div class="swiper-wrapper variant-options">
+                <div class="swiper-slide variant-option" onclick="selectVariant(this, 'metal')">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
+                    alt="Rose Gold"
+                  >
                 </div>
-                <!-- Add more metal slides here -->
+                <div class="swiper-slide variant-option" onclick="selectVariant(this, 'metal')">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_1.png?v=1728998464"
+                    alt="White Gold"
+                  >
+                </div>
+                <div class="swiper-slide variant-option" onclick="selectVariant(this, 'metal')">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_2.png?v=1728998531"
+                    alt="Yellow Gold"
+                  >
+                </div>
               </div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
@@ -360,65 +370,73 @@
     </div>
   </div>
 </div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 <style>
-  .variant-section {
-    margin-top: 20px;
-  }
   .variant-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .variant-label {
-    font-weight: 600;
-    margin-bottom: 8px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .variant-options {
+    display: flex;
+    gap: 10px;
   }
   .variant-option {
-    display: inline-block;
-    border: 1px solid transparent;
-    padding: 5px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-  .variant-option img {
     width: 36px;
     height: 36px;
-    border-radius: 50%;
     border: 2px solid transparent;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border 0.3s;
   }
-  .variant-option.active img {
-    border-color: #111;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  .variant-option.active {
+    border-color: #000;
   }
-  .swiper {
-    padding: 5px 0;
+  .variant-option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #333;
-    width: 25px;
-    height: 25px;
+  .swiper-button-next, .swiper-button-prev {
+    color: #000;
+  }
+  .variant-swiper {
+    padding: 10px 0;
+  }
+  .divider {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
   }
 </style>
 
-<!-- JS (requires Swiper.js) -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    new Swiper(".shape-swiper", {
-      slidesPerView: 'auto',
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".shape-swiper .swiper-button-next",
-        prevEl: ".shape-swiper .swiper-button-prev",
-      },
-    });
+  function selectVariant(el, type) {
+    document.querySelectorAll('.variant-option').forEach(opt => opt.classList.remove('active'));
+    el.classList.add('active');
+    // Do something with selected value if needed
+  }
 
-    new Swiper(".metal-swiper", {
-      slidesPerView: 'auto',
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".metal-swiper .swiper-button-next",
-        prevEl: ".metal-swiper .swiper-button-prev",
-      },
-    });
+  new Swiper('.shape-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.shape-swiper .swiper-button-next',
+      prevEl: '.shape-swiper .swiper-button-prev',
+    },
+  });
+
+  new Swiper('.metal-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.metal-swiper .swiper-button-next',
+      prevEl: '.metal-swiper .swiper-button-prev',
+    },
   });
 </script>

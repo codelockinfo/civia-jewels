@@ -1,7 +1,7 @@
 {{ 'component-toolbar.css' | asset_url | stylesheet_tag }}
 <toolbar-item class="toolbar" data-toolbar data-id="{{ section.id }}">
   {%- if has_sidebar -%}
-    <div class="toolbar-wrapper hjhjhjhj toolbar-mobile{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="toolbar-wrapper toolbar-mobile{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
       <div class="toolbar-item toolbar-sidebar" data-sidebar>
         <span class="toolbar-icon icon-filter">
           {%- render 'icon-sidebar' %}

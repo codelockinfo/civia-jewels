@@ -154,7 +154,8 @@ body.open-mobile-sidebar .halo-grid-content {
 
 @media (min-width: 1025px){
 	.page-sidebar{
-	    position: static;
+      max-width: 385px;
+	    /* position: static;
 	    top: 30px;
 	    left: unset!important;
 	    right: unset!important;
@@ -170,7 +171,7 @@ body.open-mobile-sidebar .halo-grid-content {
 	    opacity: 1;
 	    visibility: visible;
 	    float: left;
-	    transition: var(--anchor-transition);
+	    transition: var(--anchor-transition); */
 	}
 
 	.blog-layout-default .page-sidebar {
@@ -190,7 +191,7 @@ body.open-mobile-sidebar .halo-grid-content {
 	}
 
 	.sidebar-toogle{
-		display: block;
+		display: none;
 		margin-bottom: 0;
 	}
 

@@ -685,9 +685,9 @@
     }
 
     .page-sidebar .halo-sidebar-wrapper {
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .tags-list-item:hover {

@@ -533,7 +533,7 @@ body.toolbar-modal-open {
     }
 
     .toolbar-wrapper:not(.toolbar-mobile) {
-        justify-content: space-between;
+        justify-content: end;
     }
 
     .toolbar-wrapper .toolbar-col.toolbar-colLeft {

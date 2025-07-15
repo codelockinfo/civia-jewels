@@ -127,6 +127,7 @@
 .card__heading {
     font-size: var(--product-title-font-size);
     margin: 0;
+    padding: 0px 15px;
 }
 .card-title {
     font-family: var(--product-title-font);

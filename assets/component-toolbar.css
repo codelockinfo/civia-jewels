@@ -551,7 +551,7 @@ body.toolbar-modal-open {
     /**/
     .toolbar .toolbar-dropdown.filter-sortby .label-tab.hidden-on-desktop,
     .toolbar .dropdown-menu.hidden-on-desktop  {
-        display: none;
+        /* display: none; */
     }
 }
 

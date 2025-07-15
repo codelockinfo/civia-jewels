@@ -40,108 +40,105 @@
 }
 {% endschema %}
 
-  <div class="image-text-section" style="display: flex; align-items: center; gap: 40px; padding: 60px 0;">
-    <div class="text" style="flex: 1;">
-      <div class="subheading">{{ section.settings.subheading }}</div>
-      <div class="heading">{{ section.settings.heading }}</div>
-      <div class="desc">{{ section.settings.description }}</div>
-    </div>
-    <div class="image " style="flex: 1;">
-      <div class=" zoom-in-hover">
-        <a href="{{ section.settings.image_link }}">
-          <img
-            src="{{ section.settings.image | image_url }}"
-            alt="Image"
-          >
-        </a>
-      </div>
+<div class="image-text-section" style="display: flex; align-items: center; gap: 40px; padding: 60px 0; margin: 0 auto;">
+  <div class="text" style="flex: 1;">
+    <div class="subheading">{{ section.settings.subheading }}</div>
+    <div class="heading">{{ section.settings.heading }}</div>
+    <div class="desc">{{ section.settings.description }}</div>
+  </div>
+  <div class="image " style="flex: 1;">
+    <div class=" zoom-in-hover">
+      <a href="{{ section.settings.image_link }}">
+        <img
+          src="{{ section.settings.image | image_url }}"
+          alt="Image"
+        >
+      </a>
     </div>
   </div>
-
+</div>
 
 <style>
-    
 
-      .image-text-section {
-        max-width: 1400px;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      padding: 60px 0;
+
+        .image-text-section {
+          max-width: 1400px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 60px 0;
+      }
+
+      .image-text-section .text {
+        flex: 1;
+      }
+
+      .image-text-section .image {
+        flex: 1;
+      }
+
+      .image-text-section img {
+        max-width: 100%;
+        /* border-radius: 8px; */
+      }
+      .subheading{
+        font-size:26px;
+        margin-bottom: 30px;
+        color: #000000;
+      }
+
+      .heading{
+        font-family: Kaisei Decol, serif;
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+      .desc{
+        font-size: 24px;
+        line-height: 1.1;
+      }
+      .zoom-in-hover img {
+       transition: transform 0.3s ease;
+       transform: scale(1);
     }
 
-    .image-text-section .text {
-      flex: 1;
+    .zoom-in-hover:hover img {
+      transform: scale(1.05); /* Zoom in on hover */
     }
 
+    @media (max-width: 768px) {
+    .image-text-section {
+      flex-direction: column-reverse; /* Image first, then text */
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .subheading {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .heading {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .desc {
+      font-size: 18px;
+    }
+
+    .image-text-section .text,
     .image-text-section .image {
-      flex: 1;
+      flex: unset;
+      width: 100%;
     }
-
-    .image-text-section img {
-      max-width: 100%;
-      /* border-radius: 8px; */
-    }
-    .subheading{
-      font-size:26px;
-      margin-bottom: 30px;
-      color: #000000;
-    }
-
-    .heading{
-      font-family: Kaisei Decol, serif;
-      font-size: 60px;
-      line-height: 1;
-      margin-bottom: 20px;
-      font-weight: 500;
-    }
-    .desc{
-      font-size: 24px;
-      line-height: 1.1;
-    }
+    .image-text-section .text {
+      padding: 0 40px;
+      }
     .zoom-in-hover img {
-     transition: transform 0.3s ease;
-     transform: scale(1);
-  }
-
-  .zoom-in-hover:hover img {
-    transform: scale(1.05); /* Zoom in on hover */
-  }
-
-  @media (max-width: 768px) {
-  .image-text-section {
-    flex-direction: column-reverse; /* Image first, then text */
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .subheading {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-
-  .heading {
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
-
-  .desc {
-    font-size: 18px;
-  }
-
-  .image-text-section .text,
-  .image-text-section .image {
-    flex: unset;
-    width: 100%;
-  }
-  .image-text-section .text {
-    padding: 0 40px;
+      width: 100%;
+      height: auto;
     }
-  .zoom-in-hover img {
-    width: 100%;
-    height: auto;
   }
-}
-
-
 </style>

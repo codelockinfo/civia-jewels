@@ -535,10 +535,10 @@ body.toolbar-modal-open {
         justify-content: space-between;
     }
  */
-    /* .toolbar-wrapper .toolbar-col.toolbar-colLeft {
+    .toolbar-wrapper .toolbar-col.toolbar-colLeft {
         display: flex;
         align-items: center;
-    } */
+    }
 
     .toolbar .toolbar-label {
         display: inline-block;

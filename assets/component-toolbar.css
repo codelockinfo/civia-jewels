@@ -528,7 +528,7 @@ body.toolbar-modal-open {
     }
 
     .toolbar-wrapper.toolbar-mobile {
-        display: none;
+        /* display: none; */
     }
 
     .toolbar-wrapper:not(.toolbar-mobile) {

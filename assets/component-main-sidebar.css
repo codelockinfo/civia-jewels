@@ -423,7 +423,8 @@
 } 
 
 .page-sidebar .halo-sidebar-header {    
-    padding: 13px 20px 6px 20px;    
+    padding: 13px 20px 6px 20px;  
+    display: none;
 }
 
 .sidebar--layout_2 .halo-text-format {

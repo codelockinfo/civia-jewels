@@ -338,7 +338,7 @@
         "mg_top_desktop": 50,
         "mg_top_tablet": 30,
         "mg_top_mobile": 20,
-        "mg_bottom_desktop": 30,
+        "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 10,
         "mg_bottom_mobile": 0
       }
@@ -640,7 +640,7 @@
         "shadow_spread": 0,
         "shadow_color": "transparent",
         "shadow_inset": "no",
-        "mg_top_desktop": 30,
+        "mg_top_desktop": 50,
         "mg_top_tablet": 30,
         "mg_top_mobile": 30,
         "mg_bottom_desktop": 50,

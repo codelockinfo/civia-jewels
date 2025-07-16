@@ -487,7 +487,13 @@
         gap: 10px;
       }
       .variant-option-squre{
-
+        width: 28px;
+        height: 28px;
+        border: 1px solid #a4a4a4;
+        border-radius: 5px!important;
+        overflow: hidden;
+        cursor: pointer;
+        transition: border 0.3s;
       }
       .variant-option {
         width: 28px;
@@ -555,10 +561,20 @@
   }
   .swiper-button-next:after, .swiper-button-prev:after {
     display:none;
+  }
     @media (max-width: 768px) {
+      .variant-option-squre{
+        width: 18px;
+        height: 18px;
+        border: 1px solid #a4a4a4;
+        border-radius: 5px!important;
+        overflow: hidden;
+        cursor: pointer;
+        transition: border 0.3s;
+      }
       .variant-option {
-        width: 18px!important;
-        height: 18px!important;
+        width: 18px;
+        height: 18px;
         border: 1px solid #a4a4a4;
         border-radius: 50%;
         overflow: hidden;

@@ -811,7 +811,7 @@
         "url_list": "shopify://collections/trending-pic",
         "enable_layout_special": true,
         "bg_card": "#ffffff",
-        "padding_card": 15,
+        "padding_card": 10,
         "border_radius_card": 5,
         "border_layout_card": "full",
         "border_width_card": 2,

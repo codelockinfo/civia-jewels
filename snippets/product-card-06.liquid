@@ -563,14 +563,26 @@
     display:none;
     @media (max-width: 768px) {
       .variant-option {
-        width: 18px;
-        height: 18px;
+        width: 18px!important;
+        height: 18px!important;
         border: 1px solid #a4a4a4;
         border-radius: 50%;
         overflow: hidden;
         cursor: pointer;
         transition: border 0.3s;
       }
+      .shape-prev,
+  .shape-next {
+    width: 15px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
     }
 </style>
 

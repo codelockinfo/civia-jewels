@@ -716,7 +716,7 @@
         "product_bg_gradient": "",
         "product_block_collection": "trending-pic",
         "product_block_limit": 4,
-        "grid_gap": 20,
+        "grid_gap": 22,
         "pb_style": "style2",
         "style_block_header": "style1",
         "product_block_title": "Trending Picks",

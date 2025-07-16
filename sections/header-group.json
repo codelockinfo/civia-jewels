@@ -133,7 +133,7 @@
             "menu": "main-menu",
             "menu_top_spacing": 10,
             "menu_bottom_spacing": 10,
-            "grid_gap_menu_item": 20,
+            "grid_gap_menu_item": 22,
             "alignment": "center",
             "bg_mega_menu": "#ffffff",
             "bg_mega_menu_gradient": "",

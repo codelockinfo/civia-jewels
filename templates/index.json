@@ -697,6 +697,9 @@
     },
     "product_block_9ctyYD": {
       "type": "product-block",
+      "custom_css": [
+        ".products-grid.product.product-item.card.card-information.card-information__wrapper.variant-section{display: none;}"
+      ],
       "name": "t:sections.product_block.presets.name",
       "settings": {
         "container": "1170",

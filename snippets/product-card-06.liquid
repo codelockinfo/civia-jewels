@@ -561,6 +561,17 @@
   }
   .swiper-button-next:after, .swiper-button-prev:after {
     display:none;
+    @media (max-width: 768px) {
+      .variant-option {
+        width: 18px;
+        height: 18px;
+        border: 1px solid #a4a4a4;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+        transition: border 0.3s;
+      }
+    }
 </style>
 
 <script>

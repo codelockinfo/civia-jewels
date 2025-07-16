@@ -754,7 +754,7 @@
         "button_icon": "",
         "mg_bottom_button": 0,
         "enable_button_shadow": false,
-        "color_button": "#000000",
+        "color_button": "#f8f8f8",
         "border_color_button": "#ffffff",
         "bg_color_button": "#ffffff",
         "bg_color_gradient_button": "",

@@ -24,7 +24,7 @@
         "heading_color": "#000000",
         "mg_top_desktop": 50,
         "mg_top_tablet": 50,
-        "mg_top_mobile": 0,
+        "mg_top_mobile": 30,
         "mg_bottom_desktop": 0,
         "mg_bottom_tablet": 0,
         "mg_bottom_mobile": 0
@@ -34,7 +34,7 @@
       "type": "search-block",
       "name": "t:sections.search_block.presets.name",
       "settings": {
-        "container": "fullwidth",
+        "container": "1170",
         "padding_full_width": 0,
         "text_align": "center",
         "content_align": "center",

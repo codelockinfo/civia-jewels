@@ -7,68 +7,110 @@
 {{ 'component-product-listing.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
-    assign padding_top = section.settings.mg_top_desktop | append: 'px'
-    assign padding_bottom = section.settings.mg_bottom_desktop | append: 'px'
-    assign padding_top_tablet = section.settings.mg_top_tablet | append: 'px'
-    assign padding_bottom_tablet = section.settings.mg_bottom_tablet | append: 'px'
-    assign padding_top_mobile = section.settings.mg_top_mobile | append: 'px'
-    assign padding_bottom_mobile = section.settings.mg_bottom_mobile | append: 'px'
-    assign show_breadcrumb = section.settings.show_breadcrumb
-    assign breadcrumb_alignment = section.settings.breadcrumb_alignment
-    assign breadcrumb_bg = section.settings.breadcrumb_bg
-    assign breadcrumb_gradient = section.settings.breadcrumb_gradient
-    assign breadcrumb_bg_mb = section.settings.breadcrumb_bg_mb
-    assign breadcrumb_gradient_mb = section.settings.breadcrumb_gradient_mb
-    assign show_page_title = section.settings.show_page_title
-    assign page_title_alignment = section.settings.page_title_alignment
-    assign container = section.settings.container
-    assign default_layout_desktop = section.settings.default_layout_desktop
+  assign padding_top = section.settings.mg_top_desktop | append: 'px'
+  assign padding_bottom = section.settings.mg_bottom_desktop | append: 'px'
+  assign padding_top_tablet = section.settings.mg_top_tablet | append: 'px'
+  assign padding_bottom_tablet = section.settings.mg_bottom_tablet | append: 'px'
+  assign padding_top_mobile = section.settings.mg_top_mobile | append: 'px'
+  assign padding_bottom_mobile = section.settings.mg_bottom_mobile | append: 'px'
+  assign show_breadcrumb = section.settings.show_breadcrumb
+  assign breadcrumb_alignment = section.settings.breadcrumb_alignment
+  assign breadcrumb_bg = section.settings.breadcrumb_bg
+  assign breadcrumb_gradient = section.settings.breadcrumb_gradient
+  assign breadcrumb_bg_mb = section.settings.breadcrumb_bg_mb
+  assign breadcrumb_gradient_mb = section.settings.breadcrumb_gradient_mb
+  assign show_page_title = section.settings.show_page_title
+  assign page_title_alignment = section.settings.page_title_alignment
+  assign container = section.settings.container
+  assign default_layout_desktop = section.settings.default_layout_desktop
 -%}
 
-<div data-section-id="{{ section.id }}" data-section-type="wishlist" id="WishlistSection-{{ section.id }}" data-section="{{ section.id }}">
-    <div class="wishlist-container {% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
-        {%- if show_breadcrumb -%}
-            {% render 'breadcrumb', alignment: breadcrumb_alignment %}
-        {%- endif -%}
-        {%- if show_page_title -%}
-            <h1 class="page-header text-{{ page_title_alignment }}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
-                {{ page.title | escape }}
-            </h1>
-        {%- endif -%}
-        <div class="halo-page-content halo-wishlist-content">
-            <div class="wishlist-table-wrapper{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
-                <div class="product-listing" data-wishlist-container>
-                    <wishlist-view class="wishlist-items-container" data-default-desktop-col="{{ default_layout_desktop }}">
-                        <div class="toolbar">
-                            <label class="toolbar-label">
-                                {{ 'sections.collection_template.view_as' | t }}
-                            </label>
-                            <div class="toolbar-item toolbar-viewAs clearfix" data-view-as>
-                                <span class="toolbar-icon icon-mode icon-mode-list active" data-col="1" role="button" aria-label="List" tabindex="0"></span>
-                                <span class="toolbar-icon icon-mode icon-mode-grid grid-2" data-col="2" role="button" aria-label="Grid 2" tabindex="0"></span>
-                                <span class="toolbar-icon icon-mode icon-mode-grid grid-3" data-col="3" role="button" aria-label="Grid 3" tabindex="0"></span>
-                                <span class="toolbar-icon icon-mode icon-mode-grid grid-4" data-col="4" role="button" aria-label="Grid 4" tabindex="0"></span>
-                                <span class="toolbar-icon icon-mode icon-mode-grid grid-5" data-col="5" role="button" aria-label="Grid 5" tabindex="0"></span>
-                            </div>
-                        </div>
-                        <div class="wishlist-items-display" data-wishlist-items-display></div>
-                        <div class="wishlist-items-display grid show productList" data-wishlist-items-grid-display></div>
-                    </wishlist-view>
-                </div>
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="wishlist"
+  id="WishlistSection-{{ section.id }}"
+  data-section="{{ section.id }}"
+>
+  <div class="wishlist-container {% if container == '1170' %}container-1170{% elsif container == '1770' %}container-1770{% elsif container == 'fullwidth'%}container-full{% else %}container{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+    {%- if show_breadcrumb -%}
+      {% render 'breadcrumb', alignment: breadcrumb_alignment %}
+    {%- endif -%}
+    {%- if show_page_title -%}
+      <h1 class="page-header text-{{ page_title_alignment }}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        {{ page.title | escape }}
+      </h1>
+    {%- endif -%}
+    <div class="halo-page-content halo-wishlist-content">
+      <div class="wishlist-table-wrapper{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="product-listing" data-wishlist-container>
+          <wishlist-view class="wishlist-items-container" data-default-desktop-col="{{ default_layout_desktop }}">
+            <div class="toolbar">
+              <label class="toolbar-label" style="display: none;">
+                {{ 'sections.collection_template.view_as' | t }}
+              </label>
+              <div class="toolbar-item toolbar-viewAs clearfix" data-view-as>
+                <span
+                  class="toolbar-icon icon-mode icon-mode-list active"
+                  data-col="1"
+                  role="button"
+                  aria-label="List"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="toolbar-icon icon-mode icon-mode-grid grid-2"
+                  data-col="2"
+                  role="button"
+                  aria-label="Grid 2"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="toolbar-icon icon-mode icon-mode-grid grid-3"
+                  data-col="3"
+                  role="button"
+                  aria-label="Grid 3"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="toolbar-icon icon-mode icon-mode-grid grid-4"
+                  data-col="4"
+                  role="button"
+                  aria-label="Grid 4"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="toolbar-icon icon-mode icon-mode-grid grid-5"
+                  data-col="5"
+                  role="button"
+                  aria-label="Grid 5"
+                  tabindex="0"
+                ></span>
+              </div>
             </div>
-            <div class="wishlist-footer pagination-right{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" data-wishlist-footer>
-                <a class="wishlist-share link link-underline" href="mailto:?subject= {{ page.title | strip_html }}&amp;body=" data-wishlist-share>
-                    <div class="mail-icon-container">
-                        {% render 'icon-mail' %}
-                    </div>
-                    <span class="text">
-                        {{ 'wishlist.general.share' | t }}
-                    </span>
-                </a>
-                <ul class="pagination__list list-unstyled" role="list"  id="wishlist-paginate"></ul>
-            </div>
+            <div class="wishlist-items-display" data-wishlist-items-display></div>
+            <div class="wishlist-items-display grid show productList" data-wishlist-items-grid-display></div>
+          </wishlist-view>
         </div>
+      </div>
+      <div
+        class="wishlist-footer pagination-right{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"
+        data-wishlist-footer
+      >
+        <a
+          class="wishlist-share link link-underline"
+          href="mailto:?subject= {{ page.title | strip_html }}&amp;body="
+          data-wishlist-share
+        >
+          <div class="mail-icon-container">
+            {% render 'icon-mail' %}
+          </div>
+          <span class="text">
+            {{ 'wishlist.general.share' | t }}
+          </span>
+        </a>
+        <ul class="pagination__list list-unstyled" role="list" id="wishlist-paginate"></ul>
+      </div>
     </div>
+  </div>
 </div>
 
 <script>
@@ -419,251 +461,251 @@
 </script>
 
 <style type="text/css" media="screen">
-    #WishlistSection-{{ section.id }}{
-        padding-top: {{ padding_top }};
-        padding-bottom: {{ padding_bottom }};
-    }
+  #WishlistSection-{{ section.id }}{
+      padding-top: {{ padding_top }};
+      padding-bottom: {{ padding_bottom }};
+  }
 
-    #WishlistSection-{{ section.id }} .wishlist-footer .wishlist-share {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
+  #WishlistSection-{{ section.id }} .wishlist-footer .wishlist-share {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  }
 
-    @media (max-width: 1024px) {
-        #WishlistSection-{{ section.id }}{
-            padding-top: {{ padding_top_tablet }};
-            padding-bottom: {{ padding_bottom_tablet }};
-        }
+  @media (max-width: 1024px) {
+      #WishlistSection-{{ section.id }}{
+          padding-top: {{ padding_top_tablet }};
+          padding-bottom: {{ padding_bottom_tablet }};
+      }
 
-        #WishlistSection-{{ section.id }} .breadcrumb {
-            background: {% if breadcrumb_gradient_mb != blank and breadcrumb_gradient_mb != 'rgba(0,0,0,0)' %}{{ breadcrumb_gradient_mb }}{% elsif breadcrumb_bg_mb != blank and breadcrumb_bg_mb != 'rgba(0,0,0,0)' %}{{ breadcrumb_bg_mb }}{% endif %};
-        }
-    }
+      #WishlistSection-{{ section.id }} .breadcrumb {
+          background: {% if breadcrumb_gradient_mb != blank and breadcrumb_gradient_mb != 'rgba(0,0,0,0)' %}{{ breadcrumb_gradient_mb }}{% elsif breadcrumb_bg_mb != blank and breadcrumb_bg_mb != 'rgba(0,0,0,0)' %}{{ breadcrumb_bg_mb }}{% endif %};
+      }
+  }
 
-    @media (max-width: 550px) {
-        #WishlistSection-{{ section.id }}{
-            padding-top: {{ padding_top_mobile }};
-            padding-bottom: {{ padding_bottom_mobile }};
-        }
-    }
+  @media (max-width: 550px) {
+      #WishlistSection-{{ section.id }}{
+          padding-top: {{ padding_top_mobile }};
+          padding-bottom: {{ padding_bottom_mobile }};
+      }
+  }
 
-    @media (min-width: 1025px) {
-        #WishlistSection-{{ section.id }} .breadcrumb-container {
-            position: relative;
-        }
+  @media (min-width: 1025px) {
+      #WishlistSection-{{ section.id }} .breadcrumb-container {
+          position: relative;
+      }
 
-        #WishlistSection-{{ section.id }} .breadcrumb::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: {% if breadcrumb_gradient != blank and breadcrumb_gradient != 'rgba(0,0,0,0)' %}{{ breadcrumb_gradient }}{% elsif breadcrumb_bg != blank and breadcrumb_bg != 'rgba(0,0,0,0)' %}{{ breadcrumb_bg }}{% endif %};
-            z-index: -1;
-        }
-    }
+      #WishlistSection-{{ section.id }} .breadcrumb::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: {% if breadcrumb_gradient != blank and breadcrumb_gradient != 'rgba(0,0,0,0)' %}{{ breadcrumb_gradient }}{% elsif breadcrumb_bg != blank and breadcrumb_bg != 'rgba(0,0,0,0)' %}{{ breadcrumb_bg }}{% endif %};
+          z-index: -1;
+      }
+  }
 </style>
 
 {% schema %}
-    {
-        "name": "t:sections.main_wishlist.name",
-        "settings":
-        [
-            {
-                "type": "checkbox",
-                "id": "show_breadcrumb",
-                "label": "t:sections.general.settings.breadcrumb.label__1",
-                "default": false
-            },
-            {
-                "type": "select",
-                "id": "breadcrumb_alignment",
-                "label": "t:sections.general.settings.breadcrumb.label__2",
-                "options": [
-                    {
-                        "value": "left",
-                        "label": "t:settings_schema.typography.settings.type_button_font.left"
-                    },
-                    {
-                        "value": "center",
-                        "label": "t:settings_schema.typography.settings.type_button_font.center"
-                    },
-                    {
-                        "value": "right",
-                        "label": "t:settings_schema.typography.settings.type_button_font.right"
-                    }
-                ],
-                "default": "left"
-            },
-            { 
-                "type": "color",
-                "id": "breadcrumb_bg",
-                "label": "t:settings_schema.colors.settings.colors_name.background_color_2"
-            },
-            {
-                "type": "color_background",
-                "id": "breadcrumb_gradient",
-                "label": "t:settings_schema.colors.settings.colors_name.background_color_gradient"
-            },
-            { 
-                "type": "color",
-                "id": "breadcrumb_bg_mb",
-                "label": "t:settings_schema.colors.settings.colors_name.background_color_mobile",
-                "default": "#f6f6f6"
-            },
-            {
-                "type": "color_background",
-                "id": "breadcrumb_gradient_mb",
-                "label": "t:settings_schema.colors.settings.colors_name.background_gradient_mobile"
-            },
-            {
-                "type": "checkbox",
-                "id": "show_page_title",
-                "label": "t:sections.general.settings.page-title.label__1",
-                "default": true
-            },
-            {
-                "type": "select",
-                "id": "page_title_alignment",
-                "label": "t:sections.general.settings.page-title.label__2",
-                "options": [
-                    {
-                        "value": "left",
-                        "label": "t:settings_schema.typography.settings.type_button_font.left"
-                    },
-                    {
-                        "value": "center",
-                        "label": "t:settings_schema.typography.settings.type_button_font.center"
-                    },
-                    {
-                        "value": "right",
-                        "label": "t:settings_schema.typography.settings.type_button_font.right"
-                    }
-                ],
-                "default": "center"
-            },
-            {
-                "type": "select",
-                "id": "container",
-                "label": "t:sections.layout.container.option",
-                "default": "fullwidth",
-                "options": [
-                    {
-                        "value": "container",
-                        "label": "t:sections.layout.container.option1"
-                    },
-                    {
-                        "value": "1170",
-                        "label": "t:sections.layout.container.option4"
-                    },
-                    {
-                        "value": "1770",
-                        "label": "t:sections.layout.container.option3"
-                    },
-                    {
-                        "value": "fullwidth",
-                        "label": "t:sections.layout.container.option2"
-                    }
-                ]
-            },
-            {
-                "type": "select",
-                "id": "default_layout_desktop",
-                "label": "t:sections.main-collection-product-grid.settings.product.label__2",
-                "default": "3",
-                "options": [
-                    {
-                        "value": "1",
-                        "label": "t:sections.main-collection-product-grid.settings.product.options__1"
-                    },
-                    {
-                        "value": "2",
-                        "label": "t:sections.main-collection-product-grid.settings.product.options__2"
-                    },
-                    {
-                        "value": "3",
-                        "label": "t:sections.main-collection-product-grid.settings.product.options__3"
-                    },
-                    {
-                        "value": "4",
-                        "label": "t:sections.main-collection-product-grid.settings.product.options__4"
-                    },
-                    {
-                        "value": "5",
-                        "label": "t:sections.main-collection-product-grid.settings.product.options__5"
-                    }
-                ]
-            },
-            {
-                "type": "header",
-                "content": "t:settings_schema.typography.settings.type_button_font.padding_top"
-            },
-            {
-                "type": "range",
-                "id": "mg_top_desktop",
-                "label": "t:sections.layout.mg_desktop.label",
-                "min": 0,
-                "max": 100,
-                "step": 5,
-                "unit": "t:sections.layout.mg_desktop.unit",
-                "default": 50
-            },
-            {
-                "type": "range",
-                "id": "mg_top_tablet",
-                "label": "t:sections.layout.mg_tablet.label",
-                "min": 0,
-                "max": 100,
-                "step": 5,
-                "unit": "t:sections.layout.mg_desktop.unit",
-                "default": 50
-            },
-            {
-                "type": "range",
-                "id": "mg_top_mobile",
-                "label": "t:sections.layout.mg_mobile.label",
-                "min": 0,
-                "max": 100,
-                "step": 5,
-                "unit": "t:sections.layout.mg_desktop.unit",
-                "default": 50
-            },
-            {
-                "type": "header",
-                "content": "t:settings_schema.typography.settings.type_button_font.padding_bottom"
-            },
-            {
-                "type": "range",
-                "id": "mg_bottom_desktop",
-                "label": "t:sections.layout.mg_desktop.label",
-                "min": 0,
-                "max": 100,
-                "step": 5,
-                "unit": "t:sections.layout.mg_desktop.unit",
-                "default": 50
-            },
-            {
-                "type": "range",
-                "id": "mg_bottom_tablet",
-                "label": "t:sections.layout.mg_tablet.label",
-                "min": 0,
-                "max": 100,
-                "step": 5,
-                "unit": "t:sections.layout.mg_desktop.unit",
-                "default": 50
-            },
-            {
-                "type": "range",
-                "id": "mg_bottom_mobile",
-                "label": "t:sections.layout.mg_mobile.label",
-                "min": 0,
-                "max": 100,
-                "step": 5,
-                "unit": "t:sections.layout.mg_desktop.unit",
-                "default": 50
-            }
-        ]
-    }
+{
+    "name": "t:sections.main_wishlist.name",
+    "settings":
+    [
+        {
+            "type": "checkbox",
+            "id": "show_breadcrumb",
+            "label": "t:sections.general.settings.breadcrumb.label__1",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "breadcrumb_alignment",
+            "label": "t:sections.general.settings.breadcrumb.label__2",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "t:settings_schema.typography.settings.type_button_font.left"
+                },
+                {
+                    "value": "center",
+                    "label": "t:settings_schema.typography.settings.type_button_font.center"
+                },
+                {
+                    "value": "right",
+                    "label": "t:settings_schema.typography.settings.type_button_font.right"
+                }
+            ],
+            "default": "left"
+        },
+        {
+            "type": "color",
+            "id": "breadcrumb_bg",
+            "label": "t:settings_schema.colors.settings.colors_name.background_color_2"
+        },
+        {
+            "type": "color_background",
+            "id": "breadcrumb_gradient",
+            "label": "t:settings_schema.colors.settings.colors_name.background_color_gradient"
+        },
+        {
+            "type": "color",
+            "id": "breadcrumb_bg_mb",
+            "label": "t:settings_schema.colors.settings.colors_name.background_color_mobile",
+            "default": "#f6f6f6"
+        },
+        {
+            "type": "color_background",
+            "id": "breadcrumb_gradient_mb",
+            "label": "t:settings_schema.colors.settings.colors_name.background_gradient_mobile"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_page_title",
+            "label": "t:sections.general.settings.page-title.label__1",
+            "default": true
+        },
+        {
+            "type": "select",
+            "id": "page_title_alignment",
+            "label": "t:sections.general.settings.page-title.label__2",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "t:settings_schema.typography.settings.type_button_font.left"
+                },
+                {
+                    "value": "center",
+                    "label": "t:settings_schema.typography.settings.type_button_font.center"
+                },
+                {
+                    "value": "right",
+                    "label": "t:settings_schema.typography.settings.type_button_font.right"
+                }
+            ],
+            "default": "center"
+        },
+        {
+            "type": "select",
+            "id": "container",
+            "label": "t:sections.layout.container.option",
+            "default": "fullwidth",
+            "options": [
+                {
+                    "value": "container",
+                    "label": "t:sections.layout.container.option1"
+                },
+                {
+                    "value": "1170",
+                    "label": "t:sections.layout.container.option4"
+                },
+                {
+                    "value": "1770",
+                    "label": "t:sections.layout.container.option3"
+                },
+                {
+                    "value": "fullwidth",
+                    "label": "t:sections.layout.container.option2"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "id": "default_layout_desktop",
+            "label": "t:sections.main-collection-product-grid.settings.product.label__2",
+            "default": "3",
+            "options": [
+                {
+                    "value": "1",
+                    "label": "t:sections.main-collection-product-grid.settings.product.options__1"
+                },
+                {
+                    "value": "2",
+                    "label": "t:sections.main-collection-product-grid.settings.product.options__2"
+                },
+                {
+                    "value": "3",
+                    "label": "t:sections.main-collection-product-grid.settings.product.options__3"
+                },
+                {
+                    "value": "4",
+                    "label": "t:sections.main-collection-product-grid.settings.product.options__4"
+                },
+                {
+                    "value": "5",
+                    "label": "t:sections.main-collection-product-grid.settings.product.options__5"
+                }
+            ]
+        },
+        {
+            "type": "header",
+            "content": "t:settings_schema.typography.settings.type_button_font.padding_top"
+        },
+        {
+            "type": "range",
+            "id": "mg_top_desktop",
+            "label": "t:sections.layout.mg_desktop.label",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "t:sections.layout.mg_desktop.unit",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "mg_top_tablet",
+            "label": "t:sections.layout.mg_tablet.label",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "t:sections.layout.mg_desktop.unit",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "mg_top_mobile",
+            "label": "t:sections.layout.mg_mobile.label",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "t:sections.layout.mg_desktop.unit",
+            "default": 50
+        },
+        {
+            "type": "header",
+            "content": "t:settings_schema.typography.settings.type_button_font.padding_bottom"
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_desktop",
+            "label": "t:sections.layout.mg_desktop.label",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "t:sections.layout.mg_desktop.unit",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_tablet",
+            "label": "t:sections.layout.mg_tablet.label",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "t:sections.layout.mg_desktop.unit",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "mg_bottom_mobile",
+            "label": "t:sections.layout.mg_mobile.label",
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "unit": "t:sections.layout.mg_desktop.unit",
+            "default": 50
+        }
+    ]
+}
 {% endschema %}

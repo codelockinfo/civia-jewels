@@ -372,24 +372,24 @@
     .search-modal__form
     .search__button
     svg {
-    width: 18px;
-    height: 18px;
-    right: -3px;
-    transform: none;
+    width: 18px!important;
+    height: 18px!important;
+    right: -3px!important;
+    transform: none!important;
   }
   .header-basic__item .header-top--right .customer-links .icon {
-    width: 18px;
-    height: 18px;
-    position: relative;
-    top: -1px;
+    width: 18px!important;
+    height: 18px!important;
+    position: relative!important;
+    top: -1px!important;
   }
   .header-basic__item .header-top--right .header__icon--wishlist .icon,
   .header-basic__item .header-top--right .header__icon--cart .icon {
-    width: 18px;
-    height: 18px;
+    width: 18px!important;
+    height: 18px!important;
   }
   .search__input {
-    font-size: 18px;
+    font-size: 18px!important;
   }
 }
 

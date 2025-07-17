@@ -32,6 +32,9 @@
     },
     "search_block_WNiCfN": {
       "type": "search-block",
+      "custom_css": [
+        ".search-block{width: 100%!important;}"
+      ],
       "name": "t:sections.search_block.presets.name",
       "settings": {
         "container": "1170",

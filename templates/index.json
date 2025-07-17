@@ -11,6 +11,7 @@
   "sections": {
     "search_block_KwFRY7": {
       "type": "search-block",
+      "disabled": true,
       "name": "t:sections.search_block.presets.name",
       "settings": {
         "container": "fullwidth",

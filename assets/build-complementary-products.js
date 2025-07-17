@@ -92,7 +92,7 @@ if (typeof complementaryProductsComponent === 'undefined')
                                 settings: {
                                     get slidesToShow() {
                                         if (complementaryStyle) {
-                                            slidesToShow: 1
+                                            slidesToShow: 2
                                         }
                                         if (!complementaryStyle) {
                                             slidesToShow: 1

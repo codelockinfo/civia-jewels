@@ -357,7 +357,7 @@
           "type": "search",
           "settings": {
             "icon": "1",
-            "popup_action": false,
+            "popup_action": true,
             "color": "#000000"
           }
         },

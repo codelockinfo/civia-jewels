@@ -95,7 +95,7 @@
             "customer_color": "#000000",
             "show_wishlist": true,
             "wishlist_color": "#000000",
-            "show_wishlist_number": false,
+            "show_wishlist_number": true,
             "wishlist_color_item": "#ffffff",
             "wishlist_bg_item": "#000000",
             "show_cart": true,

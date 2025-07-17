@@ -9,18 +9,71 @@
  */
 {
   "sections": {
+    "page_TcQNg7": {
+      "type": "page",
+      "name": "t:sections.main-page.name",
+      "settings": {
+        "page": "wish-list",
+        "container": "1170",
+        "padding_full_width": 0,
+        "heading_size": 30,
+        "heading_size_mb": 24,
+        "heading_color": "#000",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
+    "search_block_WNiCfN": {
+      "type": "search-block",
+      "name": "t:sections.search_block.presets.name",
+      "settings": {
+        "container": "fullwidth",
+        "padding_full_width": 0,
+        "text_align": "center",
+        "content_align": "center",
+        "content_max_width": 1000,
+        "search_block_title": "",
+        "color_title": "#232323",
+        "margin_bottom_title": 45,
+        "fontsize_title": 16,
+        "fontsize_title_mb": 22,
+        "title_text_transform": "uppercase",
+        "search_block_des": "",
+        "color_des": "#3c3c3c",
+        "margin_bottom_des": 30,
+        "fontsize_des": 16,
+        "search_input_color": "",
+        "search_input_bg": "",
+        "search_input_gradient": "",
+        "search_input_border": "",
+        "search_block_placeholder": "Search item",
+        "search_input_align": "left",
+        "padding_top_input": 12,
+        "padding_bottom_input": 13,
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
     "main": {
       "type": "main-wishlist-page",
       "settings": {
-        "show_breadcrumb": true,
+        "show_breadcrumb": false,
         "breadcrumb_alignment": "left",
         "breadcrumb_bg": "",
         "breadcrumb_gradient": "",
         "breadcrumb_bg_mb": "#f6f6f6",
         "breadcrumb_gradient_mb": "",
-        "show_page_title": true,
+        "show_page_title": false,
         "page_title_alignment": "left",
-        "container": "container",
+        "container": "1170",
         "default_layout_desktop": "3",
         "mg_top_desktop": 0,
         "mg_top_tablet": 0,
@@ -32,6 +85,8 @@
     }
   },
   "order": [
+    "page_TcQNg7",
+    "search_block_WNiCfN",
     "main"
   ]
 }

@@ -228,6 +228,7 @@
         },
         "custom_liquid_nPM3cR": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<!-- Elfsight Google Reviews | Untitled Google Reviews -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b854195-06b2-4cb2-b8fc-4cfc74cf9f9f\" data-elfsight-app-lazy></div>\n\n<style>\n.eapps-widget-toolbar-panel-wrapper {\n    width: 100%;\n    display: none;\n    position: relative;\n}\n\n</style>"
           }

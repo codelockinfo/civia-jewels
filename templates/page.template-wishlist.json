@@ -11,6 +11,9 @@
   "sections": {
     "page_TcQNg7": {
       "type": "page",
+      "custom_css": [
+        ".container-1170 h2{margin: 0px;}"
+      ],
       "name": "t:sections.main-page.name",
       "settings": {
         "page": "wish-list",
@@ -18,7 +21,7 @@
         "padding_full_width": 0,
         "heading_size": 30,
         "heading_size_mb": 24,
-        "heading_color": "#000",
+        "heading_color": "#000000",
         "mg_top_desktop": 0,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
@@ -53,7 +56,7 @@
         "search_block_placeholder": "Search item",
         "search_input_align": "left",
         "padding_top_input": 12,
-        "padding_bottom_input": 13,
+        "padding_bottom_input": 12,
         "mg_top_desktop": 0,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,

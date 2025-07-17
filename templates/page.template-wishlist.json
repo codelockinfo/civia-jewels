@@ -33,7 +33,7 @@
     "search_block_WNiCfN": {
       "type": "search-block",
       "custom_css": [
-        ".search-block{width: 100%!important;}"
+        ".search-block {width: 100% !important;}"
       ],
       "name": "t:sections.search_block.presets.name",
       "settings": {
@@ -65,7 +65,7 @@
         "mg_top_mobile": 0,
         "mg_bottom_desktop": 0,
         "mg_bottom_tablet": 0,
-        "mg_bottom_mobile": 0
+        "mg_bottom_mobile": 20
       }
     },
     "main": {

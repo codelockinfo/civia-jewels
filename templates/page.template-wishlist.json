@@ -12,7 +12,7 @@
     "page_TcQNg7": {
       "type": "page",
       "custom_css": [
-        ".container-1170 h2{margin: 0px;}"
+        ".container-1170 h2 {margin: 0px;}"
       ],
       "name": "t:sections.main-page.name",
       "settings": {
@@ -22,8 +22,8 @@
         "heading_size": 30,
         "heading_size_mb": 24,
         "heading_color": "#000000",
-        "mg_top_desktop": 0,
-        "mg_top_tablet": 0,
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
         "mg_top_mobile": 0,
         "mg_bottom_desktop": 0,
         "mg_bottom_tablet": 0,

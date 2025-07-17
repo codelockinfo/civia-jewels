@@ -1,1 +1,73 @@
-{"sections":{"main":{"type":"main-wishlist-page","settings":{"show_breadcrumb":true,"breadcrumb_alignment":"left","breadcrumb_bg":"","breadcrumb_gradient":"","breadcrumb_bg_mb":"#f6f6f6","breadcrumb_gradient_mb":"","show_page_title":true,"page_title_alignment":"left","container":"container","default_layout_desktop":"3","mg_top_desktop":0,"mg_top_tablet":0,"mg_top_mobile":0,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-wishlist-page",
+      "settings": {
+        "show_breadcrumb": false,
+        "breadcrumb_alignment": "left",
+        "breadcrumb_bg": "",
+        "breadcrumb_gradient": "",
+        "breadcrumb_bg_mb": "#f6f6f6",
+        "breadcrumb_gradient_mb": "",
+        "show_page_title": false,
+        "page_title_alignment": "left",
+        "container": "1170",
+        "default_layout_desktop": "4",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
+    "search_block_AxtWp9": {
+      "type": "search-block",
+      "name": "t:sections.search_block.presets.name",
+      "settings": {
+        "container": "1170",
+        "padding_full_width": 0,
+        "text_align": "center",
+        "content_align": "center",
+        "content_max_width": 1000,
+        "search_block_title": "",
+        "color_title": "#232323",
+        "margin_bottom_title": 45,
+        "fontsize_title": 16,
+        "fontsize_title_mb": 22,
+        "title_text_transform": "uppercase",
+        "search_block_des": "",
+        "color_des": "#3c3c3c",
+        "margin_bottom_des": 30,
+        "fontsize_des": 16,
+        "search_input_color": "",
+        "search_input_bg": "",
+        "search_input_gradient": "",
+        "search_input_border": "",
+        "search_block_placeholder": "Search item",
+        "search_input_align": "left",
+        "padding_top_input": 13,
+        "padding_bottom_input": 13,
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "search_block_AxtWp9",
+    "main"
+  ]
+}

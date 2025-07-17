@@ -383,14 +383,6 @@
             "wishlist_bg_item": "#232323"
           }
         },
-        "20dae707-64c0-4ea3-a05e-561cae9836d8": {
-          "type": "customer",
-          "disabled": true,
-          "settings": {
-            "icon": "1",
-            "color": "#232323"
-          }
-        },
         "633f9dae-3f65-4bda-9ca8-9d3e231aaf9d": {
           "type": "cart",
           "settings": {
@@ -407,7 +399,6 @@
         "163e2cb5-14f2-4af6-9ac3-77193c082f53",
         "550fbd21-75fb-4051-9dee-77d91b5239f0",
         "wishlist_EHpmp8",
-        "20dae707-64c0-4ea3-a05e-561cae9836d8",
         "633f9dae-3f65-4bda-9ca8-9d3e231aaf9d"
       ],
       "settings": {

@@ -2980,7 +2980,7 @@ quickshop-update-quantity.disabled {
     }
     .card-wishlist .wishlist-icon:hover .text{
         opacity: 0;
-        visibility: hidden;
+        visibility: hidden!important;
     }
     .card-product__group.group-left .card-wishlist .wishlist-icon:hover .text,
     .card-product__group.group-left .card-quickview .quickview-icon:hover .text,

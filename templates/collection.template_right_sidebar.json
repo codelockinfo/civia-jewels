@@ -34,6 +34,209 @@
         "mg_bottom_mobile": 0
       }
     },
+    "brand_slider_izdbqW": {
+      "type": "brand-slider",
+      "blocks": {
+        "image_M8MfJ6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/download.webp",
+            "title": "Round",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/round-diamond-rings"
+          }
+        },
+        "image_WQJ4pd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/download_5fc85456-91e4-47f5-b9eb-efeb15ab2bd6.webp",
+            "title": "Oval",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/oval-diamond-rings"
+          }
+        },
+        "image_tRHnUr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/download.avif",
+            "title": "Emerald",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/emerald-diamond-rings"
+          }
+        },
+        "image_AQt9hY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_1675_245x_4b012626-cd33-44b9-b579-8401aa329952.avif",
+            "title": "Cushion",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/cushion-diamond-rings"
+          }
+        },
+        "image_p9FjPC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pear-shape_webp_785x_e1e33c5c-c74a-40f2-b92f-4a769557a436.webp",
+            "title": "Pear",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/pear-diamond-rings"
+          }
+        },
+        "image_fwiLdC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/princess-shape_webp_785x_71b928ad-058f-4195-8adf-a4af6404949f.png",
+            "title": "Princess",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/princess-diamond-rings"
+          }
+        },
+        "image_iPeXnK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/marquise-shape_webp_245x_0e230e25-a4e0-4a53-9114-4b455dc5046c.webp",
+            "title": "Marquise",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/marquise-diamond-rings"
+          }
+        },
+        "image_ReAJhL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/heart-shape_webp_785x_3d745ce2-3596-4638-9140-a696f501e112.webp",
+            "title": "Heart",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/heart-diamond-rings"
+          }
+        },
+        "image_q6pF4h": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/radiant-shape_webp_245x_9aa4c33e-f7e0-4f24-a049-3b8a1c2cc1ab.png",
+            "title": "Radiant",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/radiant-diamond-rings"
+          }
+        }
+      },
+      "block_order": [
+        "image_M8MfJ6",
+        "image_WQJ4pd",
+        "image_tRHnUr",
+        "image_AQt9hY",
+        "image_p9FjPC",
+        "image_fwiLdC",
+        "image_iPeXnK",
+        "image_ReAJhL",
+        "image_q6pF4h"
+      ],
+      "disabled": true,
+      "name": "t:sections.brand.presets.name",
+      "settings": {
+        "container": "1170",
+        "padding_full_width": 0,
+        "brands_block_style": "style_1",
+        "brand_layout": "grid",
+        "scroll_from": "ltr",
+        "brand_scroll_time": "20",
+        "display_brand_border": true,
+        "brand_bg": "#ffffff",
+        "brand_bg_gradient": "",
+        "title_align": "center_below",
+        "brand_title": "",
+        "color_title": "#000000",
+        "fontsize_title": 38,
+        "fontsize_title_mb": 22,
+        "mg_bottom_title": 0,
+        "mg_bottom_title_mb": 0,
+        "enable_border_title": false,
+        "border_color_title": "#051c42",
+        "brand_des": "",
+        "color_des": "#3c3c3c",
+        "fontsize_des": 16,
+        "mg_bottom_des": 0,
+        "view_all": "",
+        "view_all_fs": 12,
+        "font_weight_view_all": "400",
+        "mg_bottom_view": 0,
+        "enable_border_view_all": true,
+        "link_view_all": "",
+        "color_view_all": "#3c3c3c",
+        "icon_view_all": "",
+        "color_view_all_icon": "#eb492f",
+        "view_all_icon_side": "left",
+        "spacing_view_all_icon": 0,
+        "btn_text": "",
+        "fontsize_btn": 12,
+        "btn_spacing_top": 15,
+        "btn_color": "#828282",
+        "btn_link": "",
+        "enable_autoplay": false,
+        "brand_speed": "3000",
+        "brand_rows": "9",
+        "enable_arrows": true,
+        "enable_dots": false,
+        "enable_center_mode": false,
+        "style_position_arrows": "none",
+        "position_horizontal_arrow": 15,
+        "color_arrow": "",
+        "arrow_background": "",
+        "arrow_background_gradient": "",
+        "arrow_border": "",
+        "color_arrow_hover": "",
+        "arrow_background_hover": "",
+        "arrow_background_gradient_hover": "",
+        "arrow_border_hover": "",
+        "brand_rows_mb": "3",
+        "brand_image_ratio": "square",
+        "item_distance": 15,
+        "margin_bottom_image": 0,
+        "margin_bottom_image_mb": 0,
+        "brand_item_border": "none",
+        "border_radius": 0,
+        "border_color": "#e2e5e7",
+        "border_color_hover": "#2d2d2d",
+        "hover_effect": "zoom",
+        "color_underline_image_hover": "#000000",
+        "fontsize_text": 16,
+        "fontsize_text_mb": 13,
+        "font_weight_title": "400",
+        "margin_bottom_title": 0,
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
     "product-grid": {
       "type": "main-collection-right-sidebar",
       "blocks": {
@@ -183,6 +386,7 @@
   },
   "order": [
     "banner",
+    "brand_slider_izdbqW",
     "product-grid",
     "product-recently-viewed"
   ]

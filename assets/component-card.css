@@ -2986,7 +2986,7 @@ quickshop-update-quantity.disabled {
         right: auto;
     }
     .card-product__group.group-left .card-wishlist .wishlist-icon:hover .text{
-      display: none;
+      display: none!important;
     }
     .card-product__group.group-right .card-wishlist .wishlist-icon:hover .text,
     .card-product__group.group-right .card-quickview .quickview-icon:hover .text,

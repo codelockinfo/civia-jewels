@@ -562,6 +562,12 @@
     .swiper-button-next:after, .swiper-button-prev:after {
       display:none;
     }
+  .swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled {
+      opacity: .35;
+      display: none!important;
+      cursor: auto;
+      pointer-events: none
+  }
       @media (max-width: 768px) {
         .variant-option-squre{
           width: 18px;

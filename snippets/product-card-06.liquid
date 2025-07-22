@@ -627,6 +627,15 @@
 </style>
 
 <script>
+   window.shapeProductMap = [
+    {% for product in collection.products %}
+      {
+        handle: "{{ product.handle }}",
+        title: "{{ product.title | downcase }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+  
   function selectVariant(el, type) {
   document.querySelectorAll(`.variant-option.${type}`).forEach(opt => {
     opt.classList.remove('active');
@@ -643,7 +652,6 @@ new Swiper('.shape-swiper', {
   },
 });
 
-   <script>
   function redirectToShape(element) {
     const selectedShape = element.dataset.shape; // e.g. "oval"
     const products = window.shapeProductMap;
@@ -657,15 +665,4 @@ new Swiper('.shape-swiper', {
       alert("Product with shape '" + selectedShape + "' not found.");
     }
   }
-</script>
-</script>
-<script>
-  window.shapeProductMap = [
-    {% for product in collection.products %}
-      {
-        handle: "{{ product.handle }}",
-        title: "{{ product.title | downcase }}"
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
 </script>

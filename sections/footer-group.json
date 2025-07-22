@@ -194,7 +194,7 @@
       "custom_css": [
         ".footer-block__details p {margin: 0; font-size: 15px; margin-bottom: 15px; font-weight: 500;}",
         ".footer-block__list .text {font-weight: 500;}",
-        ".footer-block__newsletter .rte p{font-weight: 500;}"
+        ".footer-block__newsletter .rte p {font-weight: 500;}"
       ],
       "settings": {
         "container": "1470",
@@ -202,7 +202,7 @@
         "type_footer_heading": "font_1",
         "type_footer_heading_font_size": 20,
         "type_footer_heading_line_height": 22,
-        "type_footer_heading_font_weight": "600",
+        "type_footer_heading_font_weight": "700",
         "type_footer_heading_text_transform": "capitalize",
         "type_footer_heading_margin_bottom": 12,
         "type_footer_heading_letter_spacing": ".05em",

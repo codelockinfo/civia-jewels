@@ -468,6 +468,7 @@
             "button_style": "button_1",
             "button_label": "Request Custom Design",
             "button_link": "",
+            "enable_custom_button_link": true,
             "margin_top_button": 30,
             "enable_underline_button": false,
             "button_color": "#ffffff",

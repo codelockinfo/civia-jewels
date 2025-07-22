@@ -1,5 +1,5 @@
 <!-- Ring Size Selector Button -->
-<div class="ring-size-button" onclick="toggleRingSizeModal(true)">Select Ring Size</div>
+<div class="ring-size-button" id="ringSizeButton" onclick="toggleRingSizeModal(true)">Select Ring Size</div>
 
 <!-- Modal Drawer -->
 <div id="ringSizeDrawer" class="ring-size-drawer-overlay">
@@ -114,7 +114,6 @@
     }
 </style>
 
-<!-- JavaScript -->
 <script>
   function toggleRingSizeModal(show) {
     const overlay = document.getElementById('ringSizeDrawer');
@@ -125,12 +124,24 @@
     }
   }
 
-  // Optional: Close when clicking outside the drawer
+  // Close drawer when clicking outside
   window.addEventListener('click', function(event) {
     const overlay = document.getElementById('ringSizeDrawer');
     const drawer = overlay.querySelector('.ring-size-drawer');
     if (event.target === overlay) {
       toggleRingSizeModal(false);
     }
+  });
+
+  // Size click logic
+  document.querySelectorAll('.ring-size-option').forEach(option => {
+    option.addEventListener('click', function () {
+      const selectedSize = this.innerText.trim();
+      document.getElementById('ringSizeButton').innerText = `Ring Size: ${selectedSize}`;
+      document.getElementById('selectedRingSize').value = selectedSize;
+
+      // Close drawer
+      toggleRingSizeModal(false);
+    });
   });
 </script>

@@ -223,9 +223,8 @@
                                 </div>
                               {%- endunless -%}
                             {%- endif -%}
-
+                            <p class="ring-size-line">Ring Size: US-{{ item.properties['Ring Size'] }}</p>
                             {%- if section.settings.show_vendor -%}
-                              <p class="ring-size-line">Ring Size: US-{{ item.properties['Ring Size'] }}</p>
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}
                             {%- if item.properties.size != 0 -%}

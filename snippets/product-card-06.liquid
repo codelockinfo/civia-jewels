@@ -633,4 +633,29 @@ new Swiper('.shape-swiper', {
     prevEl: '.shape-prev',
   },
 });
+
+  function changeShape(selectedShape) {
+    const currentUrl = window.location.pathname; // /products/round-diamond-ring
+    const shapeList = [
+      'round', 'oval', 'emerald', 'cushion', 'pear', 'princess',
+      'marquise', 'heart', 'radiant'
+    ];
+
+    let newHandle = currentUrl;
+
+    // Replace existing shape in handle
+    shapeList.forEach(shape => {
+      if (newHandle.includes(shape)) {
+        newHandle = newHandle.replace(shape, selectedShape);
+      }
+    });
+
+    // If no match found, just add shape to end
+    if (!newHandle.includes(selectedShape)) {
+      newHandle += '-' + selectedShape;
+    }
+
+    // Redirect to new product URL
+    window.location.href = newHandle;
+  }
 </script>

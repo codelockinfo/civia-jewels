@@ -618,14 +618,6 @@
 </style>
 
 <script>
-   window.shapeProductMap = [
-    {% for product in collection.products %}
-      {
-        handle: "{{ product.handle }}",
-        title: "{{ product.title | downcase }}"
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
   
   function selectVariant(el, type) {
   document.querySelectorAll(`.variant-option.${type}`).forEach(opt => {
@@ -654,6 +646,32 @@ new Swiper('.shape-swiper', {
       window.location.href = `/products/${matched.handle}`;
     } else {
       alert("Product with shape '" + selectedShape + "' not found.");
+    }
+  }
+</script>
+<script>
+  // Store product handles and titles for current collection
+  window.shapeProductMap = [
+    {% for product in collection.products %}
+      {
+        handle: "{{ product.handle }}",
+        title: "{{ product.title | downcase }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  function redirectToProduct(element) {
+    const selectedShape = element.dataset.shape?.toLowerCase();
+    const products = window.shapeProductMap;
+
+    const match = products.find(p => 
+      p.handle.includes(selectedShape) || p.title.includes(selectedShape)
+    );
+
+    if (match) {
+      window.location.href = `/products/${match.handle}`;
+    } else {
+      alert("No product found with shape: " + selectedShape);
     }
   }
 </script>

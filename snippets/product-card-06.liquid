@@ -464,136 +464,142 @@
 </div>
 
 <style>
-      .variant-section{
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        font-size: 14px;
-        padding-top: 15px;
-      }
-      .variant-group {
-        display: flex;
-        align-items: center;
-      }
-      .variant-label {
-        width: 60px;
-        font-size: 14px;
-      }
-      .variant-swiper{
-        width: calc(100% - 65px);
-      }
-      .variant-options {
-        display: flex;
-        gap: 10px;
-      }
-      .variant-option-squre{
-        width: 28px;
-        height: 28px;
-        border: 1px solid #a4a4a4;
-        border-radius: 5px!important;
-        overflow: hidden;
-        cursor: pointer;
-        transition: border 0.3s;
-      }
-      .variant-option {
-        width: 28px;
-        height: 28px;
-        border: 1px solid #a4a4a4;
-        border-radius: 50%;
-        overflow: hidden;
-        cursor: pointer;
-        transition: border 0.3s;
-      }
-      .variant-option.active {
-        border: 1px solid #000;
-      }
-      .variant-option img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-      .swiper-button-next, .swiper-button-prev {
-        color: #000;
-      }
-      .variant-swiper {
-        padding: 0px 0;
-      }
-      .divider {
-        border-top: 1px solid #ddd;
-        margin: 20px 0;
-      }
-      .swiper-slide{
-        margin: 0!important;
-      }
+        .variant-section{
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          font-size: 14px;
+          padding-top: 15px;
+        }
+        .variant-group {
+          display: flex;
+          align-items: center;
+        }
+        .variant-label {
+          width: 60px;
+          font-size: 14px;
+        }
+        .variant-swiper{
+          width: calc(100% - 65px);
+        }
+        .variant-options {
+          display: flex;
+          gap: 10px;
+        }
+        .variant-option-squre{
+          width: 28px;
+          height: 28px;
+          border: 1px solid #a4a4a4;
+          border-radius: 5px!important;
+          overflow: hidden;
+          cursor: pointer;
+          transition: border 0.3s;
+        }
+        .variant-option {
+          width: 28px;
+          height: 28px;
+          border: 1px solid #a4a4a4;
+          border-radius: 50%;
+          overflow: hidden;
+          cursor: pointer;
+          transition: border 0.3s;
+        }
+        .variant-option.active {
+          border: 1px solid #000;
+        }
+        .variant-option img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .swiper-button-next, .swiper-button-prev {
+          color: #000;
+        }
+        .variant-swiper {
+          padding: 0px 0;
+        }
+        .divider {
+          border-top: 1px solid #ddd;
+          margin: 20px 0;
+        }
+        .swiper-slide{
+          margin: 0!important;
+        }
 
 
-  .shape-prev,
-  .shape-next {
-    width: 20px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-
-  .shape-prev:hover,
-  .shape-next:hover {
-    background-color: #f0f0f0;
-  }
-
-  .shape-prev {
-    left: 0;
-  }
-
-  .shape-next {
-    right: 0;
-  }
-
-  .shape-prev svg,
-  .shape-next svg {
-    width: 16px;
-    height: 16px;
-  }
-  .swiper-button-next:after, .swiper-button-prev:after {
-    display:none;
-  }
-    @media (max-width: 768px) {
-      .variant-option-squre{
-        width: 18px;
-        height: 18px;
-        border: 1px solid #a4a4a4;
-        border-radius: 5px!important;
-        overflow: hidden;
-        cursor: pointer;
-        transition: border 0.3s;
-      }
-      .variant-option {
-        width: 18px;
-        height: 18px;
-        border: 1px solid #a4a4a4;
-        border-radius: 50%;
-        overflow: hidden;
-        cursor: pointer;
-        transition: border 0.3s;
-      }
-      .shape-prev,
-  .shape-next {
-    width: 20px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
+    .shape-prev,
+    .shape-next {
+      width: 20px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
     }
+
+    .shape-prev:hover,
+    .shape-next:hover {
+      background-color: #f0f0f0;
+    }
+
+    .shape-prev {
+      left: 0;
+    }
+
+    .shape-next {
+      right: 0;
+    }
+
+    .shape-prev svg,
+    .shape-next svg {
+      width: 16px;
+      height: 16px;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+      display:none;
+    }
+      @media (max-width: 768px) {
+        .variant-option-squre{
+          width: 18px;
+          height: 18px;
+          border: 1px solid #a4a4a4;
+          border-radius: 5px!important;
+          overflow: hidden;
+          cursor: pointer;
+          transition: border 0.3s;
+        }
+        .variant-option {
+          width: 18px;
+          height: 18px;
+          border: 1px solid #a4a4a4;
+          border-radius: 50%;
+          overflow: hidden;
+          cursor: pointer;
+          transition: border 0.3s;
+        }
+        .shape-prev,
+    .shape-next {
+      width: 20px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled {
+      opacity: .35;
+      display: none!important;
+      cursor: auto;
+      pointer-events: none
+  }
+      }
 </style>
 
 <script>

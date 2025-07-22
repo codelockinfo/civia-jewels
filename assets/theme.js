@@ -6440,7 +6440,7 @@
             $.ajax({
                 type: "post",
                 url: "/cart/add.js",
-                data: 'quantity=' + quantity + '&id=' + variant_id,
+                data: 'quantity=' + quantity + '&id=' + varia,
                 dataType: 'json',
 
                 beforeSend: function() {

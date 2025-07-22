@@ -223,10 +223,9 @@
                                 </div>
                               {%- endunless -%}
                             {%- endif -%}
-                            <div>123456</div>
-                            {% if item.properties['Ring Size'] %}
-                              <p class="ring-size-line">Ring Size: US-{{ item.properties['Ring Size'] }}</p>
-                            {% endif %}
+
+                            <p class="ring-size-line">Ring Size: US-{{ item.properties['Ring Size'] }}</p>
+
                             {%- if section.settings.show_vendor -%}
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}

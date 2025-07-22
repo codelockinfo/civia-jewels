@@ -192,7 +192,8 @@
         "footer_bottom_4rRLp6"
       ],
       "custom_css": [
-        ".footer-block__details p {margin: 0; font-size: 15px; margin-bottom: 15px; font-weight: 500;}"
+        ".footer-block__details p {margin: 0; font-size: 15px; margin-bottom: 15px; font-weight: 500;}",
+        ".footer-block__list .text{font-weight: 500;}"
       ],
       "settings": {
         "container": "1470",

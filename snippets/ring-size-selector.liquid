@@ -137,7 +137,7 @@
   document.querySelectorAll('.ring-size-option').forEach(option => {
     option.addEventListener('click', function () {
       const selectedSize = this.innerText.trim();
-      document.getElementById('ringSizeButton').innerText = `Ring Size: ${selectedSize}`;
+      document.getElementById('ringSizeButton').innerText = `Size: ${selectedSize}`;
       document.getElementById('selectedRingSize').value = selectedSize;
 
       // Close drawer

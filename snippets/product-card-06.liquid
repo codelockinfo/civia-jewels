@@ -635,43 +635,43 @@ new Swiper('.shape-swiper', {
   },
 });
 
-  // function redirectToShape(element) {
-  //   const selectedShape = element.dataset.shape; // e.g. "oval"
-  //   const products = window.shapeProductMap;
+  function redirectToShape(element) {
+    const selectedShape = element.dataset.shape; // e.g. "oval"
+    const products = window.shapeProductMap;
 
-  //   // Try to find a product whose handle or title includes the shape name
-  //   const matched = products.find(p => p.handle.includes(selectedShape) || p.title.includes(selectedShape));
+    // Try to find a product whose handle or title includes the shape name
+    const matched = products.find(p => p.handle.includes(selectedShape) || p.title.includes(selectedShape));
 
-  //   if (matched) {
-  //     window.location.href = `/products/${matched.handle}`;
-  //   } else {
-  //     alert("Product with shape '" + selectedShape + "' not found.");
-  //   }
-  // }
+    if (matched) {
+      window.location.href = `/products/${matched.handle}`;
+    } else {
+      alert("Product with shape '" + selectedShape + "' not found.");
+    }
+  }
 </script>
 <script>
   // Store product handles and titles for current collection
-  window.shapeProductMap = [
-    {% for product in collection.products %}
-      {
-        handle: "{{ product.handle }}",
-        title: "{{ product.title | downcase }}"
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
+  // window.shapeProductMap = [
+  //   {% for product in collection.products %}
+  //     {
+  //       handle: "{{ product.handle }}",
+  //       title: "{{ product.title | downcase }}"
+  //     }{% unless forloop.last %},{% endunless %}
+  //   {% endfor %}
+  // ];
 
-  function redirectToProduct(element) {
-    const selectedShape = element.dataset.shape?.toLowerCase();
-    const products = window.shapeProductMap;
+  // function redirectToProduct(element) {
+  //   const selectedShape = element.dataset.shape?.toLowerCase();
+  //   const products = window.shapeProductMap;
 
-    const match = products.find(p => 
-      p.handle.includes(selectedShape) || p.title.includes(selectedShape)
-    );
+  //   const match = products.find(p => 
+  //     p.handle.includes(selectedShape) || p.title.includes(selectedShape)
+  //   );
 
-    if (match) {
-      window.location.href = `/products/${match.handle}`;
-    } else {
-      alert("No product found with shape: " + selectedShape);
-    }
-  }
+  //   if (match) {
+  //     window.location.href = `/products/${match.handle}`;
+  //   } else {
+  //     alert("No product found with shape: " + selectedShape);
+  //   }
+  // }
 </script>

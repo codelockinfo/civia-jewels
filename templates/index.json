@@ -913,6 +913,7 @@
             "button_style": "button_1",
             "button_label": "Request Custom Ring",
             "button_link": "tel: +1 888-998-6099",
+            "enable_custom_button_link": true,
             "margin_top_button": 30,
             "enable_underline_button": false,
             "button_color": "#ffffff",

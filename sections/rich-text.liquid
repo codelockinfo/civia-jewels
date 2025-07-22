@@ -62,15 +62,17 @@
               <div class="scroll-trigger animate--slide-in" style="--animation-order: {{ forloop.index }};">
             {% endif %}
             <a
-              {% if block.settings.button_link == blank %}
-                aria-disabled="true"
-              {% else %}
+              {% if block.settings.enable_custom_button_link %}
+                href="sms:+911234567890?body=I want a custom design"
+              {% elsif block.settings.button_link != blank %}
                 href="{{ block.settings.button_link }}"
+              {% else %}
+                aria-disabled="true"
               {% endif %}
               class="button{% if block.settings.button_style == 'button_2' %} button_style_2{% endif %}"
               style="--color-button-style: {{ block.settings.button_color }};--bg-button-style: {% if block.settings.button_bg_gradient != blank %}{{ block.settings.button_bg_gradient }}{% else %}{{ block.settings.button_bg_color }}{% endif %};--border-button-style: {{ block.settings.button_border_color }};--color-button-hover-style: {{ block.settings.button_color_hover }};--bg-button-hover-style: {% if block.settings.button_bg_gradient_hover != blank %}{{ block.settings.button_bg_gradient_hover }}{% else %}{{ block.settings.button_bg_color_hover }}{% endif %};--border-button-hover-style: {{ block.settings.button_border_color_hover }};--width-button-style: {{ block.settings.button_width }};--margin_top_button-style: {{ block.settings.margin_top_button | append: 'px' }};{% if block.settings.enable_underline_button %}text-decoration: underline;text-underline-offset: {% if settings.enable_button_1_border_outside %}0.6rem{% else %}0.2rem{% endif %};text-decoration-color: #051c424d{% endif %}"
             >
-              {{- block.settings.button_label | escape -}}
+              {{ block.settings.button_label | escape }}
             </a>
             {% if settings.banner_animation == 'effect_fade_up' %}
               </div>

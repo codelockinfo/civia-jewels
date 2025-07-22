@@ -124,28 +124,29 @@
     }
   }
 
-  // Close drawer when clicking outside
+  // Close drawer on outside click
   window.addEventListener('click', function(event) {
     const overlay = document.getElementById('ringSizeDrawer');
-    const drawer = overlay.querySelector('.ring-size-drawer');
     if (event.target === overlay) {
       toggleRingSizeModal(false);
     }
   });
 
-  // Handle ring size selection
-  document.querySelectorAll('.ring-size-option').forEach(option => {
-    option.addEventListener('click', function () {
-      const selectedSize = this.innerText.trim();
+  // Handle size selection and close drawer
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.ring-size-option').forEach(option => {
+      option.addEventListener('click', function () {
+        const size = this.textContent.trim();
 
-      // Update button text
-      document.getElementById('ringSizeButton').innerText = `Ring Size: ${selectedSize}`;
+        // Update visible button text
+        document.getElementById('ringSizeButton').innerText = `Ring Size: ${size}`;
 
-      // Update hidden input
-      document.getElementById('selectedRingSize').value = selectedSize;
+        // Set hidden input value
+        document.getElementById('selectedRingSize').value = size;
 
-      // Close the drawer
-      toggleRingSizeModal(hide);
+        // Close the drawer
+        toggleRingSizeModal(false);
+      });
     });
   });
 </script>

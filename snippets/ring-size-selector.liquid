@@ -3,17 +3,17 @@
   Select Ring Size
 </div>
 
-<!-- Modal Overlay -->
-<div id="ringSizeModal" class="modal-overlay">
-  <div class="modal">
-    <div class="close-btn" onclick="document.getElementById('ringSizeModal').style.display='none'">&times;</div>
+<!-- Modal Drawer -->
+<div id="ringSizeDrawer" class="ring-size-drawer-overlay">
+  <div class="ring-size-drawer">
+    <div class="close-btn" onclick="toggleRingSizeModal(false)">&times;</div>
     <h3>Ring Size</h3>
     <p>
       Following are the available sizes for the product. If you have any query or confusion regarding the size, contact
       our <a href="/pages/contact" style="color:#007ace;">customer support</a>.
     </p>
 
-    <!-- Ring size grid -->
+    <!-- Ring Size Grid -->
     <div class="ring-size-grid">
       <div class="ring-size-option">DON'T KNOW</div>
       {% assign sizes = '3,3.25,3.5,3.75,4,4.25,4.5,4.75,5,5.25,5.5,5.75,6,6.25,6.5,6.75,7,7.25,7.5,7.75,8,8.25,8.5,8.75,9,9.25,9.5,9.75,10,10.25,10.5,10.75,11,11.25,11.5,11.75,12,12.25,12.5,12.75,13'
@@ -45,68 +45,82 @@
     color: #fff;
     background-color: #000;
   }
-  .modal-overlay {
-    display: none;
+  .ring-size-drawer-overlay {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    top: 0; right: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
     z-index: 1000;
-    justify-content: center;
-    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
   }
 
-  .modal {
+  .ring-size-drawer-overlay.active {
+    display: block;
+  }
+
+  .ring-size-drawer {
     background: #fff;
+    position: absolute;
+    right: -400px;
+    top: 0;
+    height: 100%;
+    width: 350px;
     padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-    width: 95%;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    position: relative;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    transition: right 0.4s ease-in-out;
   }
 
-  .modal h3 {
-    margin-top: 0;
+  .ring-size-drawer-overlay.active .ring-size-drawer {
+    right: 0;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
   }
 
   .ring-size-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   .ring-size-option {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
-    cursor: pointer;
     border-radius: 4px;
+    cursor: pointer;
     transition: background 0.3s;
   }
 
   .ring-size-option:hover {
-    background: #f0f0f0;
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: bold;
+    background-color: #f0f0f0;
   }
 </style>
 
-<!-- Close modal on outside click -->
+<!-- JavaScript -->
 <script>
+  function toggleRingSizeModal(show) {
+    const overlay = document.getElementById('ringSizeDrawer');
+    if (show) {
+      overlay.classList.add('active');
+    } else {
+      overlay.classList.remove('active');
+    }
+  }
+
+  // Optional: Close when clicking outside drawer
   window.addEventListener('click', function(event) {
-    var modal = document.getElementById('ringSizeModal');
-    if (event.target === modal) {
-      modal.style.display = "none";
+    const overlay = document.getElementById('ringSizeDrawer');
+    const drawer = overlay.querySelector('.ring-size-drawer');
+    if (event.target === overlay) {
+      toggleRingSizeModal(false);
     }
   });
 </script>

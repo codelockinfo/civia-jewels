@@ -192,9 +192,7 @@
         "footer_bottom_4rRLp6"
       ],
       "custom_css": [
-        ".footer-block__details p {margin: 0; font-size: 15px; margin-bottom: 15px; font-weight: 500;}",
-        ".footer-block__list .text {font-weight: 500;}",
-        ".footer-block__newsletter .rte p {font-weight: 500;}"
+        ".footer-block__details p {margin: 0; font-size: 15px; margin-bottom: 15px; font-weight: 500;}"
       ],
       "settings": {
         "container": "1470",
@@ -208,7 +206,7 @@
         "type_footer_heading_letter_spacing": ".05em",
         "type_footer_link": "font_1",
         "type_footer_link_font_size": 15,
-        "type_footer_link_font_weight": "400",
+        "type_footer_link_font_weight": "600",
         "type_footer_link_text_transform": "capitalize",
         "type_footer_link_line_height": 35,
         "type_footer_link_letter_spacing": ".02em",

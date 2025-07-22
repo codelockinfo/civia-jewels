@@ -3255,12 +3255,12 @@ quantity-input.disabled {
 
 @media (min-width: 1200px) {
     .halo-productView-left{
-        width: 62.4%;
+        width: 45%;
         padding-right: 60px;
     }
 
     .halo-productView-right{
-        width: 37.6%;
+        width: 50%;
     }
 
     .product-full-width .halo-productView-left{

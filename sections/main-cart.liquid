@@ -203,6 +203,7 @@
                                 ><span class="text">{{ item.product.title | escape }}</span></a
                               >
                             </h4>
+                            <div>hello</div>
                             {%- if item.product.variants.size != 0 -%}
                               {%- unless item.variant.title contains 'Default' -%}
                                 <div class="cart-item-option">
@@ -223,7 +224,7 @@
                                 </div>
                               {%- endunless -%}
                             {%- endif -%}
-                            <p class="ring-size-line">Ring Size: {{ item.properties['Ring Size'] }}</p>
+
                             {%- if section.settings.show_vendor -%}
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}

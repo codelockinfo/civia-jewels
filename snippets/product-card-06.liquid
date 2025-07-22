@@ -251,7 +251,7 @@
             <!-- Shape Selector -->
             <div class="variant-group">
               <div class="variant-label">Shape</div>
-              <div class="swiper variant-swiper shape-swiper">
+              <div class="swiper variant-swiper shape-swiper" id="shapeSwiper">
                 <div class="swiper-button-prev shape-prev">
                   <svg
                     class="svg sv-left-arrow shape-svg"
@@ -597,19 +597,45 @@
 </style>
 
 <script>
-  function selectVariant(el, type) {
-  document.querySelectorAll(`.variant-option.${type}`).forEach(opt => {
-    opt.classList.remove('active');
-  });
-  el.classList.add('active');
-}
+  document.addEventListener('DOMContentLoaded', function () {
+    const shapeSwiper = new Swiper('#shapeSwiper', {
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.shape-next',
+        prevEl: '.shape-prev',
+      },
+      on: {
+        init: function () {
+          toggleShapeArrows(this);
+        },
+        reachBeginning: function () {
+          toggleShapeArrows(this);
+        },
+        reachEnd: function () {
+          toggleShapeArrows(this);
+        },
+        slideChange: function () {
+          toggleShapeArrows(this);
+        },
+      },
+    });
 
-new Swiper('.shape-swiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.shape-next',
-    prevEl: '.shape-prev',
-  },
-});
+    function toggleShapeArrows(swiper) {
+      const prevArrow = document.querySelector('.shape-prev');
+      const nextArrow = document.querySelector('.shape-next');
+
+      if (swiper.isBeginning) {
+        prevArrow.style.display = 'none';
+      } else {
+        prevArrow.style.display = 'block';
+      }
+
+      if (swiper.isEnd) {
+        nextArrow.style.display = 'none';
+      } else {
+        nextArrow.style.display = 'block';
+      }
+    }
+  });
 </script>

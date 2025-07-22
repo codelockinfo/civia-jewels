@@ -637,7 +637,6 @@ new Swiper('.shape-swiper', {
 </script>
 <script>
   // Store product handles and titles for current collection
- <script>
   window.shapeProductMap = [
     {% for product in collection.products %}
       {
@@ -651,20 +650,14 @@ new Swiper('.shape-swiper', {
     const selectedShape = element.dataset.shape?.toLowerCase();
     const products = window.shapeProductMap;
 
-    console.log("Selected Shape:", selectedShape);
-    console.log("Available Products:", products);
-
     const match = products.find(p => 
       p.handle.includes(selectedShape) || p.title.includes(selectedShape)
     );
 
     if (match) {
-      console.log("Redirecting to:", `/products/${match.handle}`);
       window.location.href = `/products/${match.handle}`;
     } else {
-      console.warn("No match found for shape:", selectedShape);
       alert("No product found with shape: " + selectedShape);
     }
   }
-</script>
 </script>

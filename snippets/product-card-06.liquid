@@ -598,18 +598,46 @@
 
 <script>
   function selectVariant(el, type) {
-  document.querySelectorAll(`.variant-option.${type}`).forEach(opt => {
-    opt.classList.remove('active');
-  });
-  el.classList.add('active');
-}
+    document.querySelectorAll(`.variant-option.${type}`).forEach(opt => {
+      opt.classList.remove('active');
+    });
+    el.classList.add('active');
+  }
 
-new Swiper('.shape-swiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.shape-next',
-    prevEl: '.shape-prev',
-  },
-});
+  const shapeSwiper = new Swiper('.shape-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.shape-next',
+      prevEl: '.shape-prev',
+    },
+    on: {
+      init: function () {
+        toggleShapeArrows(this);
+      },
+      slideChange: function () {
+        toggleShapeArrows(this);
+      },
+      resize: function () {
+        toggleShapeArrows(this);
+      }
+    }
+  });
+
+  function toggleShapeArrows(swiper) {
+    const prevBtn = document.querySelector('.shape-prev');
+    const nextBtn = document.querySelector('.shape-next');
+
+    if (swiper.isBeginning) {
+      prevBtn.style.visibility = 'hidden';
+    } else {
+      prevBtn.style.visibility = 'visible';
+    }
+
+    if (swiper.isEnd) {
+      nextBtn.style.visibility = 'hidden';
+    } else {
+      nextBtn.style.visibility = 'visible';
+    }
+  }
 </script>

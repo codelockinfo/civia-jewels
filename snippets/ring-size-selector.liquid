@@ -1,1 +1,107 @@
-fsdfdsgf
+<!-- Ring Size Selector Button -->
+<div class="ring-size-button" onclick="document.getElementById('ringSizeModal').style.display='flex'">
+  Select Ring Size
+</div>
+
+<!-- Modal Overlay -->
+<div id="ringSizeModal" class="modal-overlay">
+  <div class="modal">
+    <div class="close-btn" onclick="document.getElementById('ringSizeModal').style.display='none'">&times;</div>
+    <h3>Ring Size</h3>
+    <p>
+      Following are the available sizes for the product. If you have any query or confusion regarding the size, contact
+      our <a href="/pages/contact" style="color:#007ace;">customer support</a>.
+    </p>
+
+    <!-- Ring size grid -->
+    <div class="ring-size-grid">
+      <div class="ring-size-option">DON'T KNOW</div>
+      {% assign sizes = '3,3.25,3.5,3.75,4,4.25,4.5,4.75,5,5.25,5.5,5.75,6,6.25,6.5,6.75,7,7.25,7.5,7.75,8,8.25,8.5,8.75,9,9.25,9.5,9.75,10,10.25,10.5,10.75,11,11.25,11.5,11.75,12,12.25,12.5,12.75,13'
+        | split: ','
+      %}
+      {% for size in sizes %}
+        <div class="ring-size-option">{{ size }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- Styling -->
+<style>
+  .ring-size-button {
+    padding: 15px 25px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
+  .modal h3 {
+    margin-top: 0;
+  }
+
+  .ring-size-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .ring-size-option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+
+  .ring-size-option:hover {
+    background: #f0f0f0;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+  }
+</style>
+
+<!-- Close modal on outside click -->
+<script>
+  window.addEventListener('click', function(event) {
+    var modal = document.getElementById('ringSizeModal');
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>

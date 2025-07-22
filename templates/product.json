@@ -105,6 +105,10 @@
             "spacing_bottom": 22
           }
         },
+        "ring_size_selector_Nqtbfy": {
+          "type": "ring-size-selector",
+          "settings": {}
+        },
         "4f95b592-8369-4ab0-b30d-24e463fb6890": {
           "type": "price",
           "settings": {
@@ -332,6 +336,7 @@
         "metal_color_AWCzCV",
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "perks_dJiaFf",
+        "ring_size_selector_Nqtbfy",
         "4f95b592-8369-4ab0-b30d-24e463fb6890",
         "customization_property_V8DL9N",
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34",

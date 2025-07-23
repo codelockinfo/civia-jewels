@@ -226,9 +226,6 @@
                             {% if item.properties['Ring Size'] %}
                               <p>Ring Size: {{ item.properties['Ring Size'] }}</p>
                             {% endif %}
-                            {% for p in item.properties.ringsize %}
-                              <li>{{ p[0] }}: {{ p[1] }}</li>
-                            {% endfor %}
                             {%- if section.settings.show_vendor -%}
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}

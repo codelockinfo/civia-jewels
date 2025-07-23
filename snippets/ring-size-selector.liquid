@@ -1,14 +1,5 @@
 <!-- Ring Size Selector Button -->
 
-{%- liquid
-  assign property_id = product.id | append: ring_size | handleize
-  assign property_name = ring_size | escape
-  assign property_value = property_name
-  unless ring_size_hidden
-    assign property_value = property_value | prepend: '_'
-  endunless
--%}
-
 <div
   class="ring-size-button"
   id="ringSizeButton"
@@ -149,24 +140,7 @@
 
 <!-- JavaScript Logic -->
 <script>
-  function selectRingSize(size) {
-    document.getElementById('ring-size-input').value = size;
 
-    // Close the drawer if it's open
-    toggleRingSizeModal(false);
-
-    // Optionally update the button text
-    document.getElementById('ringSizeButton').innerText = `Selected: US-${size}`;
-  }
-
-  function toggleRingSizeModal(open) {
-    const drawer = document.getElementById('ringSizeDrawer');
-    if (open) {
-      drawer.classList.add('open');
-    } else {
-      drawer.classList.remove('open');
-    }
-  }
     
   function toggleRingSizeModal(show) {
     const overlay = document.getElementById('ringSizeDrawer');

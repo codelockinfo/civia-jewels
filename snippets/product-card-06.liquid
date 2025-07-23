@@ -259,15 +259,27 @@
                 </div>
 
                 <div class="swiper-wrapper variant-options">
-                  {%- assign roundUrl = product_card_product.handle | replace: 'round' -%}
                   <a
-                    href="/product/roundUrl"
+                    href="javascript:void(0);"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
-                    data-shape="round"
+                    data-shape="oval"
+                    data-handle="{{ product_card_product.handle }}"
                   >
                     <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
                   </a>
+                  <script>
+  function redirectToProduct(element) {
+    const shape = element.getAttribute('data-shape');
+    const handle = element.getAttribute('data-handle');
+
+    // Replace 'round' in the handle with the selected shape
+    const newHandle = handle.replace(/round/g, shape);
+
+    // Redirect to new URL
+    window.location.href = `/products/${newHandle}`;
+  }
+                  </script>
 
                   <a
                     href="javascript:void(0)"

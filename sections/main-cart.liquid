@@ -226,10 +226,6 @@
                             {%- if section.settings.show_vendor -%}
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}
-
-                            <div class="ring-size-line">Ring Size: {{ item.properties.ringe_size }}</div>
-                            <pre>{{ item.properties | json }}</pre>
-
                             {%- if item.properties.size != 0 -%}
                               <dl class="cart-item-properties definitionList">
                                 {%- for property in item.properties -%}

@@ -228,7 +228,7 @@
                             {%- endif -%}
 
                             <div class="ring-size-line">Ring Size: {{ item.properties.ringe_size }}</div>
-                            <pre>{{ item.properties.ring_size | json }}</pre>
+                            <pre>{{ item.properties | json }}</pre>
 
                             {%- if item.properties.size != 0 -%}
                               <dl class="cart-item-properties definitionList">

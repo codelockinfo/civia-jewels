@@ -136,33 +136,19 @@
       font-weight: 400;
       border: 1px solid #000;
     }
-    @keyframes slideUp {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0%);
-    }
+  @media (max-width: 480px) {
+     .ring-size-drawer {
+    position: absolute;
+    top: 0;
+    right: -400px;
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    padding: 25px 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease-in-out;
+    overflow-y: auto;
   }
-
-  /* Mobile-friendly */
-  @media screen and (max-width: 480px) {
-    .ring-size-drawer {
-      padding: 16px;
-      max-height: 85vh;
-    }
-
-    .ring-size-option {
-      font-size: 13px;
-      min-width: 22%;
-    }
-
-    .drawer-title {
-      font-size: 18px;
-    }
-
-    .drawer-desc {
-      font-size: 13px;
     }
   }
 </style>

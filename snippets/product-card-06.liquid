@@ -259,7 +259,8 @@
                 </div>
 
                 <div class="swiper-wrapper variant-options">
-                  {%- assign roundUrl = product_card_product.handle | replace: 'round' -%}
+                  {% assign roundUrl = product_card_product.handle | replace: 'round', 'round' %}
+
                   <a
                     href="/product/0000{{ roundUrl }}"
                     class="swiper-slide variant-option variant-option-squre shape"
@@ -268,9 +269,9 @@
                   >
                     <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
                   </a>
-                  {%- assign roundUrl = product_card_product.handle | replace: 'oval' -%}
+                  {% assign ovelUrl = product_card_product.handle | replace: 'round', 'oval' %}
                   <a
-                    href="/product/{{ roundUrl }}"
+                    href="/product/{{ ovelUrl }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="oval"

@@ -231,6 +231,7 @@
                                 <div class="ring-size-line">Ring Size: {{ property.last }}</div>
                               {%- endif -%}
                             {%- endfor -%}
+                            <pre>{{ item.properties | json }}</pre>
                             {%- if item.properties.size != 0 -%}
                               <dl class="cart-item-properties definitionList">
                                 {%- for property in item.properties -%}

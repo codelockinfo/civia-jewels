@@ -8,14 +8,24 @@
       assign property_value = property_value | prepend: '_'
     endunless
   -%}
-  <div class="ring-size-button" id="ringSizeButton" onclick="toggleRingSizeModal(true)">Select Ring Size</div>
+
+  <div
+    class="ring-size-button"
+    id="ringSizeButton"
+    onclick="toggleRingSizeModal(true)"
+    data-ring-size="{{ property_value }}"
+  >
+    Select Ring Size
+  </div>
+
   <input
     type="hidden"
     name="properties[Ring Size]"
     id="selectedRingSize"
-    value=""
+    value="{{ property_value }}"
   >
 {%- endif -%}
+
 <!-- Modal Drawer -->
 <div id="ringSizeDrawer" class="ring-size-drawer-overlay">
   <div class="ring-size-drawer">

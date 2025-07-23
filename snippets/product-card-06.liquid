@@ -246,7 +246,6 @@
         {%- endif -%}
 
         {% if template contains 'collection' %}
-          {{ product_card_product.handle }} 00000
           <!-- Simplified HTML for Shape & Metal Swiper Variant Section -->
           <div class="variant-section variant-section-custom" data-handle="{{ product.handle }}">
             <!-- Shape Selector -->
@@ -260,14 +259,16 @@
                 </div>
 
                 <div class="swiper-wrapper variant-options">
+                  {%- assign roundUrl = product_card_product.handle | replace: 'round' -%}
                   <a
-                    href="javascript:void(0)"
+                    href="/product/roundUrl"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="round"
                   >
                     <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
                   </a>
+                  { assign roundUrl = product_card_product.handle | replace : 'round'}
                   <a
                     href="javascript:void(0)"
                     class="swiper-slide variant-option variant-option-squre shape"

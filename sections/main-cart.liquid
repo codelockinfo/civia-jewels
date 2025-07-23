@@ -227,7 +227,7 @@
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}
 
-                            <div class="ring-size-line">Ring Size: {{ item.properties.ring_size }}</div>
+                            <div class="ring-size-line">Ring Size: {{ item.properties.first }}</div>
                             {%- if item.properties.size != 0 -%}
                               <dl class="cart-item-properties definitionList">
                                 {%- for property in item.properties -%}

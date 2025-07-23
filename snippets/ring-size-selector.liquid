@@ -150,6 +150,9 @@
 
 <!-- JavaScript Logic -->
 <script>
+  function setRingSize(value) {
+    document.getElementById("selectedRingSize").value = value;
+    
   function toggleRingSizeModal(show) {
     const overlay = document.getElementById('ringSizeDrawer');
     if (show) {

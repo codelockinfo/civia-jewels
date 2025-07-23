@@ -303,7 +303,7 @@
                         data-index="{{ forloop.index }}"
                       >
                         <div
-                          class="productView-img-container product-single__media correct-img"
+                          class="productView-img-container product-single__media "
                           data-media-id="{{ media.id }}"
                           {% unless media_fit == 'unset' %}
                             {% if product.featured_media %}
@@ -416,7 +416,7 @@
                       {%- if video_layout == 'thumbnail' -%}
                         <div class="productView-image productView-image-{{ media_size }}">
                           <div
-                            class="productView-img-container product-single__media"
+                            class="productView-img-container product-single__media correct-img"
                             data-media-id="{{ media.id }}"
                             {% if media_size == 'adapt' %}
                               style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"

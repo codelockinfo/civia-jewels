@@ -360,7 +360,7 @@
         "container": "default",
         "padding_full_width": 0,
         "show_sticky_info": true,
-        "media_fit": "cover",
+        "media_fit": "contain",
         "product_image_ratio": "square",
         "portrait_aspect_ratio": 148,
         "video_layout": "thumbnail",

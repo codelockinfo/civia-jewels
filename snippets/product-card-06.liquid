@@ -262,7 +262,7 @@
                   {% assign roundUrl = product_card_product.handle | replace: 'round', 'round' %}
 
                   <a
-                    href="/product/0000{{ roundUrl }}"
+                    href="/product/{{ roundUrl }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="round"

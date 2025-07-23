@@ -259,40 +259,99 @@
                 </div>
 
                 <div class="swiper-wrapper variant-options">
-                  {% assign shapes = product.metafields.custom.available_shapes | split: ',' %}
-                  {% assign shape_images = 'round:ROUND__DIAMOND.jpg,
-          oval:OVAL__DIAMOND.jpg,
-          emerald:EMERALD__DIAMOND.avif,
-          cushion:Group_1675_245x_89200ccc-e23f-4c53-97e8-b465bdb4615e.avif,
-          pear:pear-shape_webp_785x_8f253c15-bc78-46a3-9e9d-6a4d4615af29.webp,
-          princess:princess-shape_webp.webp,
-          marquise:marquise-shape_webp.avif,
-          heart:heart-shape_webp.webp,
-          radiant:radiant-shape_webp_245x_245x_6f5ec1dc-cf15-49d5-a8e9-db2603901628.avif'
-                    | split: ','
-                  %}
-
-                  {% for shape in shapes %}
-                    {% assign shape_trim = shape | strip %}
-                    {% assign image_file = '' %}
-                    {% for pair in shape_images %}
-                      {% assign parts = pair | split: ':' %}
-                      {% if parts[0] == shape_trim %}
-                        {% assign image_file = parts[1] %}
-                      {% endif %}
-                    {% endfor %}
-                    <a
-                      href="javascript:void(0)"
-                      class="swiper-slide variant-option shape"
-                      onclick="redirectToProduct(this)"
-                      data-shape="{{ shape_trim }}"
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="round"
+                  >
+                    <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="oval"
+                  >
+                    <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/OVAL__DIAMOND.jpg" alt="Oval">
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="emerald"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/EMERALD__DIAMOND.avif?v=1752468637"
+                      alt="Emerald"
                     >
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/{{ image_file }}"
-                        alt="{{ shape_trim | capitalize }}"
-                      >
-                    </a>
-                  {% endfor %}
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="cushion"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Group_1675_245x_89200ccc-e23f-4c53-97e8-b465bdb4615e.avif?v=1752582328"
+                      alt="Cushion"
+                    >
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="pear"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/pear-shape_webp_785x_8f253c15-bc78-46a3-9e9d-6a4d4615af29.webp?v=1752582369"
+                      alt="Pear"
+                    >
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="princess"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/princess-shape_webp.webp?v=1752468789"
+                      alt="Princess"
+                    >
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="marquise"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/marquise-shape_webp.avif?v=1752468767"
+                      alt="Marquise"
+                    >
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="heart"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/heart-shape_webp.webp?v=1752468712"
+                      alt="Heart"
+                    >
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option variant-option-squre shape"
+                    onclick="redirectToProduct(this)"
+                    data-shape="radiant"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/radiant-shape_webp_245x_245x_6f5ec1dc-cf15-49d5-a8e9-db2603901628.avif?v=1752582437"
+                      alt="Radiant"
+                    >
+                  </a>
                 </div>
 
                 <div class="swiper-button-next shape-next">
@@ -308,34 +367,36 @@
               <div class="variant-label">Metal</div>
               <div class="swiper variant-swiper metal-swiper">
                 <div class="swiper-wrapper variant-options">
-                  {% assign metals = product.metafields.custom.available_metals | split: ',' %}
-                  {% assign metal_images = 'rose:Item.png,
-          white:Item_1.png,
-          yellow:Item_2.png'
-                    | split: ','
-                  %}
-
-                  {% for metal in metals %}
-                    {% assign metal_trim = metal | strip %}
-                    {% assign metal_image = '' %}
-                    {% for pair in metal_images %}
-                      {% assign parts = pair | split: ':' %}
-                      {% if parts[0] == metal_trim %}
-                        {% assign metal_image = parts[1] %}
-                      {% endif %}
-                    {% endfor %}
-                    <a
-                      href="javascript:void(0)"
-                      class="swiper-slide variant-option metal"
-                      onclick="selectVariant(this, 'metal')"
-                      data-metal="{{ metal_trim }}"
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option metal"
+                    onclick="selectVariant(this, 'metal')"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
+                      alt="Rose Gold"
                     >
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/{{ metal_image }}"
-                        alt="{{ metal_trim | capitalize }} Gold"
-                      >
-                    </a>
-                  {% endfor %}
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option metal"
+                    onclick="selectVariant(this, 'metal')"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_1.png?v=1728998464"
+                      alt="White Gold"
+                    >
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="swiper-slide variant-option metal"
+                    onclick="selectVariant(this, 'metal')"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_2.png?v=1728998531"
+                      alt="Yellow Gold"
+                    >
+                  </a>
                 </div>
               </div>
             </div>

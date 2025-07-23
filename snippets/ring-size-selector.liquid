@@ -41,48 +41,121 @@
 
 <!-- CSS Styling -->
 <style>
-    .ring-size-button {
-      font-size: 13px;
-      padding: 12px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-      width: 100%;
-      text-align: center;
-      border-radius: 4px;
-      background-color: #fff;
-      font-weight: 400;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
+      .ring-size-button {
+        font-size: 13px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #fff;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
 
-    .ring-size-button:hover {
-      color: #fff;
-      background-color: #232323;
-    }
+      .ring-size-button:hover {
+        color: #fff;
+        background-color: #232323;
+      }
 
-    .drawer-title {
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 0px;
-    }
+      .drawer-title {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 0px;
+      }
 
-    .ring-size-drawer-overlay {
-      position: fixed;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      display: none;
-      z-index: 9999 !important;
-    }
+      .ring-size-drawer-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 9999 !important;
+      }
 
-    .ring-size-drawer-overlay.active {
-      display: block;
-    }
+      .ring-size-drawer-overlay.active {
+        display: block;
+      }
 
-    .ring-size-drawer {
+      .ring-size-drawer {
+        position: absolute;
+        top: 0;
+        right: -400px;
+        width: 25%;
+        height: 100%;
+        background-color: #fff;
+        padding: 25px 20px;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+        transition: right 0.4s ease-in-out;
+        overflow-y: auto;
+      }
+
+      .ring-size-drawer-overlay.active .ring-size-drawer {
+        right: 0;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .ring-size-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin-top: 25px;
+      }
+
+      .ring-size-option {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: 14px;
+      }
+
+      .ring-size-option:hover {
+        background-color: #f2f2f2;
+      }
+
+      .ring-size-option.selected {
+        background-color: #232323;
+        color: #fff;
+        border-color: #232323;
+      }
+
+      .ring-size-option.dont-know {
+        grid-column: span 2;
+        font-weight: 400;
+        border: 1px solid #000;
+      }
+    @media (max-width: 767px) {
+       .ring-size-drawer {
       position: absolute;
       top: 0;
       right: -400px;
-      width: 25%;
+      width: 90%;
+      height: 100%;
+      background-color: #fff;
+      padding: 25px 20px;
+      box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+      transition: right 0.4s ease-in-out;
+      overflow-y: auto;
+    }
+      }
+    @media (min-width: 768px) and (max-width: 1441px) {
+    .ring-size-drawer {
+      position: absolute;
+      top: 0;
+      right: -400px; /* Off-canvas hidden by default */
+      width: 30%;
       height: 100%;
       background-color: #fff;
       padding: 25px 20px;
@@ -91,80 +164,11 @@
       overflow-y: auto;
     }
 
-    .ring-size-drawer-overlay.active .ring-size-drawer {
-      right: 0;
-    }
-
-    .close-btn {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 24px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .ring-size-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      margin-top: 25px;
-    }
-
-    .ring-size-option {
-      padding: 10px;
-      border: 1px solid #ccc;
-      text-align: center;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      font-size: 14px;
-    }
-
-    .ring-size-option:hover {
-      background-color: #f2f2f2;
-    }
-
-    .ring-size-option.selected {
-      background-color: #232323;
-      color: #fff;
-      border-color: #232323;
-    }
-
-    .ring-size-option.dont-know {
-      grid-column: span 2;
-      font-weight: 400;
-      border: 1px solid #000;
-    }
-  @media (max-width: 767px) {
-     .ring-size-drawer {
-    position: absolute;
-    top: 0;
-    right: -400px;
-    width: 90%;
-    height: 100%;
-    background-color: #fff;
-    padding: 25px 20px;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
-    transition: right 0.4s ease-in-out;
-    overflow-y: auto;
-  }
-    }
-  @media (min-width: 768) and (max-width: 1441px) {
-     .ring-size-drawer {
-    position: absolute;
-    top: 0;
-    right: -400px;
-    width: 30%;
-    height: 100%;
-    background-color: #fff;
-    padding: 25px 20px;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
-    transition: right 0.4s ease-in-out;
-    overflow-y: auto;
-  }
+    .ring-size-drawer.show {
+      right: 0; /* Slide into view */
     }
   }
+    }
 </style>
 
 <!-- JavaScript Logic -->

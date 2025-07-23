@@ -1,51 +1,60 @@
-<div class="diamond-weight-selector">
-  <label class="dw-label">Diamond Shape: </label>
-  <div class="dw-options">
-    {% assign weight_keys = 'shape1,shape2,shape3,shape4,shape5,shape6,shape7,shape8,shape9,shape10,shape11,shape12'
-      | split: ','
-    %}
-    {% assign image_keys = 'diamond_image1,diamond_image2,diamond_image3,diamond_image4,diamond_image5,diamond_image6,diamond_image7,diamond_image8,diamond_image9,diamond_image10,diamond_image11,diamond_image12'
-      | split: ','
-    %}
+{% assign show_shape_selector = false %}
+{% for collection in product.collections %}
+  {% if collection.handle == 'engagement-rings' or collection.handle == 'diamond-earrings' %}
+    {% assign show_shape_selector = true %}
+  {% endif %}
+{% endfor %}
 
-    {% assign handle = product.handle %}
-    {% assign current_shape = '' %}
+{% if show_shape_selector %}
+  <div class="diamond-weight-selector">
+    <label class="dw-label">Diamond Shape: </label>
+    <div class="dw-options">
+      {% assign weight_keys = 'shape1,shape2,shape3,shape4,shape5,shape6,shape7,shape8,shape9,shape10,shape11,shape12'
+        | split: ','
+      %}
+      {% assign image_keys = 'diamond_image1,diamond_image2,diamond_image3,diamond_image4,diamond_image5,diamond_image6,diamond_image7,diamond_image8,diamond_image9,diamond_image10,diamond_image11,diamond_image12'
+        | split: ','
+      %}
 
-    {% assign selected_block = section.blocks | where: 'type', 'diamond-weight' | first %}
+      {% assign handle = product.handle %}
+      {% assign current_shape = '' %}
 
-    {% if selected_block %}
-      {% for i in (0..11) %}
-        {% assign shape_label = selected_block.settings[weight_keys[i]] %}
-        {% assign shape = shape_label | downcase | replace: ' ', '-' %}
-        {% assign image = selected_block.settings[image_keys[i]] %}
+      {% assign selected_block = section.blocks | where: 'type', 'diamond-weight' | first %}
 
-        {% if current_shape == '' and handle contains shape %}
-          {% assign current_shape = shape %}
-        {% endif %}
-      {% endfor %}
+      {% if selected_block %}
+        {% for i in (0..11) %}
+          {% assign shape_label = selected_block.settings[weight_keys[i]] %}
+          {% assign shape = shape_label | downcase | replace: ' ', '-' %}
+          {% assign image = selected_block.settings[image_keys[i]] %}
 
-      {% for i in (0..11) %}
-        {% assign shape_label = selected_block.settings[weight_keys[i]] %}
-        {% assign shape = shape_label | downcase | replace: ' ', '-' %}
-        {% assign image = selected_block.settings[image_keys[i]] %}
-
-        {% if shape != blank %}
-          {% assign link_handle = handle %}
-          {% if current_shape != '' and current_shape != shape %}
-            {% assign link_handle = handle | replace: current_shape, shape %}
+          {% if current_shape == '' and handle contains shape %}
+            {% assign current_shape = shape %}
           {% endif %}
+        {% endfor %}
 
-          <a class="dw-option{% if shape == current_shape %} active{% endif %}" href="/products/{{ link_handle }}">
-            {% if image %}
-              <img src="{{ image | image_url: width: 100 }}" alt="{{ shape_label }}" class="dw-image">
+        {% for i in (0..11) %}
+          {% assign shape_label = selected_block.settings[weight_keys[i]] %}
+          {% assign shape = shape_label | downcase | replace: ' ', '-' %}
+          {% assign image = selected_block.settings[image_keys[i]] %}
+
+          {% if shape != blank %}
+            {% assign link_handle = handle %}
+            {% if current_shape != '' and current_shape != shape %}
+              {% assign link_handle = handle | replace: current_shape, shape %}
             {% endif %}
-            <div class="dw-label-text">{{ shape_label }}</div>
-          </a>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+
+            <a class="dw-option{% if shape == current_shape %} active{% endif %}" href="/products/{{ link_handle }}">
+              {% if image %}
+                <img src="{{ image | image_url: width: 100 }}" alt="{{ shape_label }}" class="dw-image">
+              {% endif %}
+              <div class="dw-label-text">{{ shape_label }}</div>
+            </a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
   </div>
-</div>
+{% endif %}
 
 <style>
   .diamond-weight-selector {

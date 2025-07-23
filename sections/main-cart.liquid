@@ -227,8 +227,20 @@
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}
 
-                            <div class="ring-size-line">Ring Size: {{ properties.ring_size }}</div>
-
+                            <div class="ring-size-line">Ring Size: {{ item.properties.ring_size }}</div>
+                            {%- if item.properties.size != 0 -%}
+                              <dl class="cart-item-properties definitionList">
+                                {%- for property in item.properties -%}
+                                  {%- assign property_first_char = property.first | slice: 0 -%}
+                                  {%- if property.last != blank and property_first_char != '_' -%}
+                                    <div class="product-option">
+                                      <dt class="definitionList-key">{{ property.first }}:</dt>
+                                      <dd class="definitionList-value">{{ property.last }}</dd>
+                                    </div>
+                                  {%- endif -%}
+                                {%- endfor -%}
+                              </dl>
+                            {%- endif -%}
                             <pre>{{ item.properties | json }}</pre>
                             {%- if item.properties.size != 0 -%}
                               <dl class="cart-item-properties definitionList">

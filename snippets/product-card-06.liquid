@@ -268,9 +268,9 @@
                   >
                     <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
                   </a>
-
+                  {%- assign roundUrl = product_card_product.handle | replace: 'oval' -%}
                   <a
-                    href="javascript:void(0)"
+                    href="/product/{{ roundUrl }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="oval"

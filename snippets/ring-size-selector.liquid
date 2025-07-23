@@ -1,30 +1,29 @@
 <!-- Ring Size Selector Button -->
-{%- if ring_size != blank -%}
-  {%- liquid
-    assign property_id = product.id | append: ring_size | handleize
-    assign property_name = ring_size | escape
-    assign property_value = property_name
-    unless ring_size_hidden
-      assign property_value = property_value | prepend: '_'
-    endunless
-  -%}
 
-  <div
-    class="ring-size-button"
-    id="ringSizeButton"
-    onclick="toggleRingSizeModal(true)"
-    data-ring-size="{{ property_value }}"
-  >
-    Select Ring Size
-  </div>
+{%- liquid
+  assign property_id = product.id | append: ring_size | handleize
+  assign property_name = ring_size | escape
+  assign property_value = property_name
+  unless ring_size_hidden
+    assign property_value = property_value | prepend: '_'
+  endunless
+-%}
 
-  <input
-    type="hidden"
-    name="properties[ring_size]"
-    id="ring-size-input"
-    value=""
-  >
-{%- endif -%}
+<div
+  class="ring-size-button"
+  id="ringSizeButton"
+  onclick="toggleRingSizeModal(true)"
+  data-ring-size="{{ property_value }}"
+>
+  Select Ring Size
+</div>
+
+<input
+  type="hidden"
+  name="properties[ring_size]"
+  id="ring-size-input"
+  value=""
+>
 
 <!-- Modal Drawer -->
 <div id="ringSizeDrawer" class="ring-size-drawer-overlay">

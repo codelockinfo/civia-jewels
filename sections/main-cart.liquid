@@ -226,11 +226,9 @@
                             {%- if section.settings.show_vendor -%}
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}
-                            {%- for property in item.properties -%}
-                              {%- if property.first == 'Ring Size' and property.last != blank -%}
-                                <div class="ring-size-line">Ring Size: {{ property.last }}</div>
-                              {%- endif -%}
-                            {%- endfor -%}
+
+                            <div class="ring-size-line">Ring Size: {{ property.last }}</div>
+
                             <pre>{{ item.properties | json }}</pre>
                             {%- if item.properties.size != 0 -%}
                               <dl class="cart-item-properties definitionList">

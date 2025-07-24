@@ -38,46 +38,46 @@
         class="form__input form-input"
       >
     </div>
-    <div class="product-form__input clearfix line-item-property__field"></div>
-    <div
-      class="ring-size-button"
-      id="ringSizeButton"
-      onclick="toggleRingSizeModal(true)"
-      data-ring-size="{{ property_value }}"
-    >
-      Select Ring Size
-    </div>
+  {%- endif -%}
+  <div class="product-form__input clearfix line-item-property__field"></div>
+  <div
+    class="ring-size-button"
+    id="ringSizeButton"
+    onclick="toggleRingSizeModal(true)"
+    data-ring-size="{{ property_value }}"
+  >
+    Select Ring Size
+  </div>
 
-    <input
-      type="hidden"
-      name="properties[ring_size]"
-      id="ring-size-input"
-      value=""
-    >
+  <input
+    type="hidden"
+    name="properties[ring_size]"
+    id="ring-size-input"
+    value=""
+  >
 
-    <!-- Modal Drawer -->
-    <div id="ringSizeDrawer" class="ring-size-drawer-overlay">
-      <div class="ring-size-drawer">
-        <div class="close-btn" onclick="toggleRingSizeModal(false)">&times;</div>
-        <h3 class="drawer-title">Ring Size</h3>
-        <p class="drawer-desc">
-          Following are the available sizes for the product. If you have any query or confusion regarding the size,
-          contact our <a href="/pages/contact" style="color:#007ace;">customer support</a>.
-        </p>
+  <!-- Modal Drawer -->
+  <div id="ringSizeDrawer" class="ring-size-drawer-overlay">
+    <div class="ring-size-drawer">
+      <div class="close-btn" onclick="toggleRingSizeModal(false)">&times;</div>
+      <h3 class="drawer-title">Ring Size</h3>
+      <p class="drawer-desc">
+        Following are the available sizes for the product. If you have any query or confusion regarding the size,
+        contact our <a href="/pages/contact" style="color:#007ace;">customer support</a>.
+      </p>
 
-        <!-- Ring Size Grid -->
-        <div class="ring-size-grid">
-          <div class="ring-size-option dont-know">DON'T KNOW</div>
-          {% assign sizes = '3,3.25,3.5,3.75,4,4.25,4.5,4.75,5,5.25,5.5,5.75,6,6.25,6.5,6.75,7,7.25,7.5,7.75,8,8.25,8.5,8.75,9,9.25,9.5,9.75,10,10.25,10.5,10.75,11,11.25,11.5,11.75,12,12.25,12.5,12.75,13'
-            | split: ','
-          %}
-          {% for size in sizes %}
-            <div class="ring-size-option" onclick="selectRingSize('{{ size }}')">{{ size }}</div>
-          {% endfor %}
-        </div>
+      <!-- Ring Size Grid -->
+      <div class="ring-size-grid">
+        <div class="ring-size-option dont-know">DON'T KNOW</div>
+        {% assign sizes = '3,3.25,3.5,3.75,4,4.25,4.5,4.75,5,5.25,5.5,5.75,6,6.25,6.5,6.75,7,7.25,7.5,7.75,8,8.25,8.5,8.75,9,9.25,9.5,9.75,10,10.25,10.5,10.75,11,11.25,11.5,11.75,12,12.25,12.5,12.75,13'
+          | split: ','
+        %}
+        {% for size in sizes %}
+          <div class="ring-size-option" onclick="selectRingSize('{{ size }}')">{{ size }}</div>
+        {% endfor %}
       </div>
     </div>
-  {%- endif -%}
+  </div>
 </div>
 
 <!-- CSS Styling -->

@@ -93,7 +93,6 @@
     <div class="product-edit-itemRight">
       {%- assign product_form_id = 'product-form-edit-' | append: product.id -%}
       {% form 'product', product, id: product_form_id, novalidate: 'novalidate' %}
-        <h1>he</h1>
         <input type="hidden" name="id" value="{{ current_variant.id }}">
       {% endform %}
       <div class="product-edit-options halo-productOptions" id="product-edit-options-{{ product.id }}">

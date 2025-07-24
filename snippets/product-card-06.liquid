@@ -408,7 +408,7 @@
                   {% assign updated_handle = handle | replace: matched_metal, 'rose' %}
                   <a
                     href="/products/{{ updated_handle }}"
-                    class="swiper-slide variant-option metal {% if matched_metal == 'white' %} active{% endif %}"
+                    class="swiper-slide variant-option metal {% if matched_metal == 'rose' %} active{% endif %}"
                     onclick="selectVariant(this, 'metal')"
                   >
                     <img
@@ -419,7 +419,7 @@
                   {% assign updated_handle = handle | replace: matched_metal, 'yellow' %}
                   <a
                     href="/products/{{ updated_handle }}"
-                    class="swiper-slide variant-option metal {% if matched_metal == 'white' %} active{% endif %}"
+                    class="swiper-slide variant-option metal {% if matched_metal == 'yellow' %} active{% endif %}"
                     onclick="selectVariant(this, 'metal')"
                   >
                     <img

@@ -33,11 +33,12 @@
       <label for="{{ property_id }}" class="form-label form__label">{{ property_name }}</label>
       <input
         id="{{ property_id }}"
-        type="file"
+        type="text"
+        <!--
         accept="image/*"
-        name="properties[{{ property_value }}]"
-        class="form__input form-input"
+        --
       >
+      name="properties[{{ property_value }}]" class="form__input form-input" >
     </div>
   {%- endif -%}
 </div>

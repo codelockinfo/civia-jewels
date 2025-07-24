@@ -260,6 +260,12 @@
                 {% assign shapes = 'round,oval,emerald,cushion,pear,princess,marquise,heart,radiant' | split: ',' %}
                 {% assign handle = product_card_product.handle %}
                 {% assign matched_shape = '' %}
+                {% for shape in shapes %}
+                  {% if handle contains shape %}
+                    {% assign matched_shape = shape %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
                 <div class="swiper-wrapper variant-options">
                   {% assign updated_handle = handle | replace: matched_shape, 'round' %}
 

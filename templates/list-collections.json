@@ -12,47 +12,11 @@
     "main": {
       "type": "main-list-collections",
       "blocks": {
-        "d8a2e0b1-4f99-48fa-af54-1e2c3f7f1516": {
-          "type": "collection",
-          "settings": {
-            "collection": "3-stone-engagement-rings",
-            "image": "shopify://shop_images/83364.cu.jpg",
-            "display_countdown": false,
-            "title": "",
-            "title_font_size": 16,
-            "title_font_size_mb": 16,
-            "title_font_weight": "800",
-            "mg_bottom_title": 15,
-            "title_color": "#808080",
-            "des": "",
-            "des_font_size": 12,
-            "des_font_size_mb": 12,
-            "des_font_weight": "400",
-            "mg_bottom_des": 15,
-            "text_color": "#000000",
-            "countdown": "2020/01/7 0:0:00",
-            "item_countdown_width": 64,
-            "item_countdown_height": 64,
-            "item_countdown_gap": 7,
-            "item_countdown_radius": 50,
-            "border_color": "#ffffff",
-            "countdown_background": "",
-            "countdown_background_gradient": "",
-            "opacity_background": 0.8,
-            "num_font_size": 12,
-            "num_font_size_mb": 12,
-            "num_font_weight": "400",
-            "num_color": "#000000",
-            "text_time_font_size": 12,
-            "text_time_font_size_mb": 12,
-            "text_time_font_weight": "400",
-            "text_time_color": "#000000"
-          }
-        },
         "558d2588-e481-4e7f-a059-1cabaa2a9507": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "3-stone-engagement-rings",
+            "image": "shopify://shop_images/download_c9e55ba7-813c-4a70-b875-d21afbdbcaa8.webp",
             "display_countdown": true,
             "title": "",
             "title_font_size": 20,
@@ -124,7 +88,6 @@
         }
       },
       "block_order": [
-        "d8a2e0b1-4f99-48fa-af54-1e2c3f7f1516",
         "558d2588-e481-4e7f-a059-1cabaa2a9507",
         "2652c60c-835e-4f72-a7e8-05558d33a286",
         "0f331a33-2e64-4e1d-b681-ae29a13536ea",

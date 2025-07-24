@@ -31,15 +31,18 @@
     -%}
     <div class="product-form__input clearfix line-item-property__field">
       <label for="{{ property_id }}" class="form-label form__label">{{ property_name }}</label>
-      <input
-        id="{{ property_id }}"
-        type="text"
-        name="properties[{{ property_value }}]"
-        class="form__input form-input"
-      >
+      {% comment %}
+
+        <input
+          id="{{ property_id }}"
+          type="text"
+          name="properties[{{ property_value }}]"
+          class="form__input form-input"
+        >
+      {% endcomment %}
       <input
         type="hidden"
-        name="properties[ring_size]"
+        name="properties[{{ property_value }}]"
         id="ring-size-input"
         value=""
       >

@@ -934,7 +934,7 @@
               </div>
             {%- endif -%}
           </div>
-          <h1>989898</h1>
+
           {%- assign product_form_id = 'product-quick-view-form-' | append: product.id -%}
           {%- form 'product',
             product,
@@ -994,7 +994,6 @@
                   class="productView-action{% unless settings.show_wishlist %} productView-action-2{% endunless %}"
                   style="--atc-color: {{ settings.atc_color }};--atc-bg-color: {% if settings.atc_bg_color_gradient != blank %}{{ settings.atc_bg_color_gradient }}{% else %}{{ settings.atc_bg_color }}{% endif %};--atc-border-color: {{ settings.atc_border_color }};--atc-color-hover: {{ settings.atc_color_hover }};--atc-bg-color-hover: {% if settings.atc_bg_color_gradient_hover != blank %}{{ settings.atc_bg_color_gradient_hover }}{% else %}{{ settings.atc_bg_color_hover }}{% endif %};--atc-border-color-hover: {{ settings.atc_border_color_hover }}"
                 >
-                  <h1>HELLLLL</h1>
                   <input type="hidden" name="id" value="{{ current_variant.id }}">
                   <div class="product-form__buttons">
                     {%- if current_variant.available -%}

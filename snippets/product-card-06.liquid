@@ -2176,141 +2176,164 @@ new Swiper('.shape-swiper', {
 
         {% if template contains 'collection' %}
           <!-- Simplified HTML for Shape & Metal Swiper Variant Section -->
-          <div class="variant-section variant-section-custom">
+          <div class="variant-section variant-section-custom" data-handle="{{ product.handle }}">
             <!-- Shape Selector -->
             <div class="variant-group">
               <div class="variant-label">Shape</div>
               <div class="swiper variant-swiper shape-swiper">
                 <div class="swiper-button-prev shape-prev">
-                  <svg
-                    class="svg sv-left-arrow shape-svg"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M18.6277 24.6735C19.1063 24.2223 19.1241 23.4675 18.6742 22.9913L8.73463 12.4994L18.6741 2.00867C19.1253 1.53246 19.1063 0.778863 18.6277 0.326481C18.1503 -0.125902 17.3967 -0.105687 16.9443 0.371743L6.22976 11.6815C6.01306 11.9101 5.90354 12.2054 5.90354 12.4994C5.90354 12.7934 6.01306 13.0899 6.22976 13.3185L16.9443 24.6283C17.3967 25.1057 18.1503 25.1259 18.6277 24.6735Z" fill="#2B2B2B"></path>
+                  <svg class="svg sv-left-arrow shape-svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path d="M18.6277 24.6735C19.1063 24.2223 19.1241 23.4675 18.6742 22.9913L8.73463 12.4994L18.6741 2.00867C19.1253 1.53246 19.1063 0.778863 18.6277 0.326481C18.1503 -0.125902 17.3967 -0.105687 16.9443 0.371743L6.22976 11.6815C6.01306 11.9101 5.90354 12.2054 5.90354 12.4994C5.90354 12.7934 6.01306 13.0899 6.22976 13.3185L16.9443 24.6283C17.3967 25.1057 18.1503 25.1259 18.6277 24.6735Z" fill="#2B2B2B" />
                   </svg>
                 </div>
-                <div class="swiper-wrapper variant-options">
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
+                {% assign shapes = 'round,oval,emerald,cushion,pear,princess,marquise,heart,radiant' | split: ',' %}
+                {% assign handle = product_card_product.handle %}
+                {% assign matched_shape = '' %}
+
+                {% assign updated_handle = handle | replace: matched_shape, 'round' %}
+
+                <a
+                  href="/products/{{ updated_handle }}"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="round"
+                >
+                  <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
+                </a>
+                {% assign ovelUrl = handle | replace: 'round', 'oval' %}
+                <a
+                  href="/products/{{ ovelUrl }}"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="oval"
+                >
+                  <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/OVAL__DIAMOND.jpg" alt="Oval">
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="emerald"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/EMERALD__DIAMOND.avif?v=1752468637"
+                    alt="Emerald"
                   >
-                    <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/ROUND__DIAMOND.jpg" alt="Round">
-                  </div>
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="cushion"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Group_1675_245x_89200ccc-e23f-4c53-97e8-b465bdb4615e.avif?v=1752582328"
+                    alt="Cushion"
                   >
-                    <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/OVAL__DIAMOND.jpg" alt="Oval">
-                  </div>
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="pear"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/pear-shape_webp_785x_8f253c15-bc78-46a3-9e9d-6a4d4615af29.webp?v=1752582369"
+                    alt="Pear"
                   >
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/EMERALD__DIAMOND.avif?v=1752468637"
-                      alt="Emerald"
-                    >
-                  </div>
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="princess"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/princess-shape_webp.webp?v=1752468789"
+                    alt="Princess"
                   >
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/Group_1675_245x_89200ccc-e23f-4c53-97e8-b465bdb4615e.avif?v=1752582328"
-                      alt="Cushion"
-                    >
-                  </div>
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="marquise"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/marquise-shape_webp.avif?v=1752468767"
+                    alt="Marquise"
                   >
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/pear-shape_webp_785x_8f253c15-bc78-46a3-9e9d-6a4d4615af29.webp?v=1752582369"
-                      alt="Pear"
-                    >
-                  </div>
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="heart"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/heart-shape_webp.webp?v=1752468712"
+                    alt="Heart"
                   >
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/princess-shape_webp.webp?v=1752468789"
-                      alt="Princess"
-                    >
-                  </div>
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option variant-option-squre shape"
+                  onclick="redirectToProduct(this)"
+                  data-shape="radiant"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/radiant-shape_webp_245x_245x_6f5ec1dc-cf15-49d5-a8e9-db2603901628.avif?v=1752582437"
+                    alt="Radiant"
                   >
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/marquise-shape_webp.avif?v=1752468767"
-                      alt="Marquise"
-                    >
-                  </div>
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
-                  >
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/heart-shape_webp.webp?v=1752468712"
-                      alt="Heart"
-                    >
-                  </div>
-                  <div
-                    class="swiper-slide variant-option variant-option-squre shape"
-                    onclick="selectVariant(this, 'shape')"
-                  >
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0764/3211/3912/files/radiant-shape_webp_245x_245x_6f5ec1dc-cf15-49d5-a8e9-db2603901628.avif?v=1752582437"
-                      alt="Radiant"
-                    >
-                  </div>
-                  <!-- Add more shapes as needed -->
-                </div>
-                <div class="swiper-button-next shape-next">
-                  <svg
-                    class="svg sv-right-arrow"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M6.37228 24.6735C5.89368 24.2223 5.87586 23.4675 6.32584 22.9913L16.2654 12.4994L6.3259 2.00867C5.87468 1.53246 5.89373 0.778863 6.37233 0.326481C6.84971 -0.125902 7.60331 -0.105687 8.05569 0.371743L18.7702 11.6815C18.9869 11.9101 19.0965 12.2054 19.0965 12.4994C19.0965 12.7934 18.9869 13.0899 18.7702 13.3185L8.05569 24.6283C7.60326 25.1057 6.84971 25.1259 6.37228 24.6735Z" fill="#2B2B2B"></path>
-                  </svg>
-                </div>
+                </a>
+              </div>
+
+              <div class="swiper-button-next shape-next">
+                <svg class="svg sv-right-arrow" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <path d="M6.37228 24.6735C5.89368 24.2223 5.87586 23.4675 6.32584 22.9913L16.2654 12.4994L6.3259 2.00867C5.87468 1.53246 5.89373 0.778863 6.37233 0.326481C6.84971 -0.125902 7.60331 -0.105687 8.05569 0.371743L18.7702 11.6815C18.9869 11.9101 19.0965 12.2054 19.0965 12.4994C19.0965 12.7934 18.9869 13.0899 18.7702 13.3185L8.05569 24.6283C7.60326 25.1057 6.84971 25.1259 6.37228 24.6735Z" fill="#2B2B2B" />
+                </svg>
               </div>
             </div>
-            <!-- Metal Selector -->
-            <div class="variant-group">
-              <div class="variant-label">Metal</div>
-              <div class="swiper variant-swiper metal-swiper">
-                <div class="swiper-wrapper variant-options">
-                  <div class="swiper-slide variant-option metal" onclick="selectVariant(this, 'metal')">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
-                      alt="Rose Gold"
-                    >
-                  </div>
-                  <div class="swiper-slide variant-option metal" onclick="selectVariant(this, 'metal')">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_1.png?v=1728998464"
-                      alt="White Gold"
-                    >
-                  </div>
-                  <div class="swiper-slide variant-option metal" onclick="selectVariant(this, 'metal')">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_2.png?v=1728998531"
-                      alt="Yellow Gold"
-                    >
-                  </div>
-                </div>
+          </div>
+
+          <!-- Metal Selector -->
+          <div class="variant-group">
+            <div class="variant-label">Metal</div>
+            <div class="swiper variant-swiper metal-swiper">
+              <div class="swiper-wrapper variant-options">
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option metal"
+                  onclick="selectVariant(this, 'metal')"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
+                    alt="Rose Gold"
+                  >
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option metal"
+                  onclick="selectVariant(this, 'metal')"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_1.png?v=1728998464"
+                    alt="White Gold"
+                  >
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="swiper-slide variant-option metal"
+                  onclick="selectVariant(this, 'metal')"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_2.png?v=1728998531"
+                    alt="Yellow Gold"
+                  >
+                </a>
               </div>
             </div>
+          </div>
           </div>
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
           <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

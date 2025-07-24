@@ -261,13 +261,6 @@
                 {% assign handle = product_card_product.handle %}
                 {% assign matched_shape = '' %}
 
-                {% for shape in shapes %}
-                  {% if handle contains shape %}
-                    {% assign matched_shape = shape %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-
                 {% assign updated_handle = handle | replace: matched_shape, 'round' %}
 
                 <a
@@ -655,30 +648,4 @@ new Swiper('.shape-swiper', {
     prevEl: '.shape-prev',
   },
 });
-</script>
-<script>
-  Store product handles and titles for current collection
-  window.shapeProductMap = [
-    {% for product in collection.products %}
-      {
-        handle: "{{ product.handle }}",
-        title: "{{ product.title | downcase }}"
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
-
-  function redirectToProduct(element) {
-    const selectedShape = element.dataset.shape?.toLowerCase();
-    const products = window.shapeProductMap;
-
-    const match = products.find(p => 
-      p.handle.includes(selectedShape) || p.title.includes(selectedShape)
-    );
-
-    if (match) {
-      window.location.href = `/products/${match.handle}`;
-    } else {
-      alert("No product found with shape: " + selectedShape);
-    }
-  }
 </script>

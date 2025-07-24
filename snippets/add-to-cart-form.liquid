@@ -20,6 +20,7 @@
     assign has_popup = true
   endif
 -%}
+<h1>HEREREERE</h1>
 
 <form
   action="{{ routes.cart_url }}/add"
@@ -29,7 +30,6 @@
   data-product-id="{{ product.id }}"
   enctype="multipart/form-data"
 >
-  <h1>HEREREERE</h1>
   {%- if sold_out -%}
     {%- if settings.show_notify_form -%}
       <a

@@ -37,6 +37,12 @@
         name="properties[{{ property_value }}]"
         class="form__input form-input"
       >
+      <input
+        type="hidden"
+        name="properties[ring_size]"
+        id="ring-size-input"
+        value=""
+      >
     </div>
   {%- endif -%}
   <div class="product-form__input clearfix line-item-property__field"></div>
@@ -48,13 +54,6 @@
   >
     Select Ring Size
   </div>
-
-  <input
-    type="hidden"
-    name="properties[ring_size]"
-    id="ring-size-input"
-    value=""
-  >
 
   <!-- Modal Drawer -->
   <div id="ringSizeDrawer" class="ring-size-drawer-overlay">

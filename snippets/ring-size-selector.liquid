@@ -231,21 +231,3 @@
     });
   });
 </script>
-<script>
-  function selectRingSize(size) {
-    // Set the value of the hidden input so it goes into properties[]
-    const input = document.getElementById("ring-size-input");
-    const button = document.getElementById("ringSizeButton");
-
-    if (input) {
-      input.value = size;
-    }
-
-    if (button) {
-      button.innerText = "Selected: US-" + size;
-    }
-
-    // Close the modal
-    toggleRingSizeModal(false);
-  }
-</script>

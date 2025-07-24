@@ -226,6 +226,9 @@
                             {%- if section.settings.show_vendor -%}
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}
+
+                            {{ item.properties | json }}
+
                             {%- if item.properties.size != 0 -%}
                               <dl class="cart-item-properties definitionList">
                                 {%- for property in item.properties -%}

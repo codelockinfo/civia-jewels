@@ -286,8 +286,9 @@
                   >
                     <img src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/OVAL__DIAMOND.jpg" alt="Oval">
                   </a>
+                  {% assign updated_handle = handle | replace: matched_shape, 'emerald' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="emerald"
@@ -297,8 +298,9 @@
                       alt="Emerald"
                     >
                   </a>
+                  {% assign updated_handle = handle | replace: matched_shape, 'cushion' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="cushion"
@@ -308,8 +310,9 @@
                       alt="Cushion"
                     >
                   </a>
+                  {% assign updated_handle = handle | replace: matched_shape, 'pear' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="pear"
@@ -319,8 +322,9 @@
                       alt="Pear"
                     >
                   </a>
+                  {% assign updated_handle = handle | replace: matched_shape, 'princess' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="princess"
@@ -330,8 +334,9 @@
                       alt="Princess"
                     >
                   </a>
+                  {% assign updated_handle = handle | replace: matched_shape, 'marquise' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="marquise"
@@ -341,8 +346,9 @@
                       alt="Marquise"
                     >
                   </a>
+                  {% assign updated_handle = handle | replace: matched_shape, 'heart' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="heart"
@@ -352,8 +358,9 @@
                       alt="Heart"
                     >
                   </a>
+                  {% assign updated_handle = handle | replace: matched_shape, 'radiant' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option variant-option-squre shape"
                     onclick="redirectToProduct(this)"
                     data-shape="radiant"
@@ -377,9 +384,19 @@
             <div class="variant-group">
               <div class="variant-label">Metal</div>
               <div class="swiper variant-swiper metal-swiper">
+                {% assign metals = 'rose,white,yellow' | split: ',' %}
+                {% assign handle = product_card_product.handle %}
+                {% assign matched_metal = '' %}
+                {% for metal in metals %}
+                  {% if handle contains metal %}
+                    {% assign matched_metal = metal %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
                 <div class="swiper-wrapper variant-options">
+                  {% assign updated_handle = handle | replace: matched_metal, 'rose' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option metal"
                     onclick="selectVariant(this, 'metal')"
                   >
@@ -388,8 +405,9 @@
                       alt="Rose Gold"
                     >
                   </a>
+                  {% assign updated_handle = handle | replace: matched_metal, 'white' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option metal"
                     onclick="selectVariant(this, 'metal')"
                   >
@@ -398,8 +416,9 @@
                       alt="White Gold"
                     >
                   </a>
+                  {% assign updated_handle = handle | replace: matched_metal, 'yellow' %}
                   <a
-                    href="javascript:void(0)"
+                    href="/products/{{ updated_handle }}"
                     class="swiper-slide variant-option metal"
                     onclick="selectVariant(this, 'metal')"
                   >

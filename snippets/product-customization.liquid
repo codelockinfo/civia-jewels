@@ -23,7 +23,7 @@
   {%- if customization_option_2 != blank -%}
     {%- liquid
       assign property_id = product.id | append: customization_option_2 | handleize
-      assign property_name = 'Size'
+      assign property_name = 'Ring Size:'
       assign property_value = property_name
       unless customization_option_hidden
         assign property_value = property_value | prepend: '_'

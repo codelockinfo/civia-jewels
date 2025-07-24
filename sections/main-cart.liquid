@@ -227,7 +227,7 @@
                               <p class="cart-item-vendor">{{ item.product.vendor }}</p>
                             {%- endif -%}
 
-                            {{ item.properties | json }}
+                            <pre>{{ item.properties | json }}</pre>
 
                             {%- if item.properties.size != 0 -%}
                               <dl class="cart-item-properties definitionList">

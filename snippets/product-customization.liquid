@@ -29,7 +29,7 @@
         assign property_value = property_value | prepend: '_'
       endunless
     -%}
-    <div class="product-form__input clearfix line-item-property__field" style="display: none">
+    <div class="product-form__input clearfix line-item-property__field">
       <label for="{{ property_id }}" class="form-label form__label">{{ property_name }}</label>
       <input
         id="{{ property_id }}"

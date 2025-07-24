@@ -348,7 +348,8 @@
         "collection_Uahdm3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "cluster-sidess-engagement-rings",
+            "image": "shopify://shop_images/download_12bc4d62-45f7-4fca-ad20-40c9a6e2fd7f.webp",
             "display_countdown": false,
             "title": "Special Offers",
             "title_font_size": 16,

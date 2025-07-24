@@ -394,17 +394,6 @@
                   {% endif %}
                 {% endfor %}
                 <div class="swiper-wrapper variant-options">
-                  {% assign updated_handle = handle | replace: matched_metal, 'rose' %}
-                  <a
-                    href="/products/{{ updated_handle }}"
-                    class="swiper-slide variant-option metal"
-                    onclick="selectVariant(this, 'metal')"
-                  >
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
-                      alt="Rose Gold"
-                    >
-                  </a>
                   {% assign updated_handle = handle | replace: matched_metal, 'white' %}
                   <a
                     href="/products/{{ updated_handle }}"
@@ -414,6 +403,17 @@
                     <img
                       src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_1.png?v=1728998464"
                       alt="White Gold"
+                    >
+                  </a>
+                  {% assign updated_handle = handle | replace: matched_metal, 'rose' %}
+                  <a
+                    href="/products/{{ updated_handle }}"
+                    class="swiper-slide variant-option metal"
+                    onclick="selectVariant(this, 'metal')"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
+                      alt="Rose Gold"
                     >
                   </a>
                   {% assign updated_handle = handle | replace: matched_metal, 'yellow' %}

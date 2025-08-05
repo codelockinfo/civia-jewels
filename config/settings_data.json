@@ -543,7 +543,7 @@
           "6af60981-e602-4eaa-8501-8d4518fba450"
         ],
         "settings": {
-          "display_section": true,
+          "display_section": false,
           "font_size": 12,
           "font_weight": "500",
           "icon_size": 20,

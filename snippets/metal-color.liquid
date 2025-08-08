@@ -120,10 +120,11 @@
     object-fit: cover;
   }
 
-
+  .metal-option .active-img {
+    border: 2px solid #000 !important;
+  }
 
   .metal-option .active  {
-    border: 2px solid #000 !important;
     font-weight: 500 !important;
     color: #000 ;
   }
@@ -168,7 +169,7 @@
       >
         {% if metal_img != blank %}
           <img
-            class="{% if metal_slug == current_metal %} active{% endif %}"
+            class="{% if metal_slug == current_metal %} active-img{% endif %}"
             src="{{ metal_img | img_url: '60x60' }}"
             alt="{{ metal_label }}"
           >

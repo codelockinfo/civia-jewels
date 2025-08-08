@@ -147,32 +147,8 @@
       {% break %}
     {% endif %}
   {% endfor %}
-  {%- comment -%}
-    Extract current metal from the first two words in the handle
-    E.g., yellow-gold-modern-ring → current_metal = yellow-gold
-  {%- endcomment -%}
-  {% comment %}
-    {% assign parts = handle | split: '-' %}
-    {% assign current_metal = parts[0] | append: '-' | append: parts[1] %}
-  {% endcomment %}
 
   <div class="metal-options-wrapper" style="display: flex; gap: 12px;">
-    {% comment %}
-      {% assign metal_label = metal_object.label %}
-      {% assign metal_img = metal_object.image %}
-      {% assign metal_slug = metal_label | downcase | replace: ' ', '-' %}
-    {% endcomment %}
-
-    {%- comment -%}
-      Replace current metal slug in handle with this option's slug
-    {%- endcomment -%}
-    {% comment %}
-      {% assign link_handle = handle %}
-      {% if current_metal != metal_slug %}
-        {% assign link_handle = handle | replace_first: current_metal, metal_slug %}
-      {% endif %}
-      {% assign updated_handle = handle | replace: matched_metal, 'white' %}
-    {% endcomment %}
     <a
       href="/products/{{ updated-handle }}"
       class="metal-option"

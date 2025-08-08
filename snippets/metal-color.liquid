@@ -124,7 +124,7 @@
     border: 2px solid #000 !important;
   }
 
-  .metal-option .active  {
+  .metal-option .active-text  {
     font-weight: 500 !important;
     color: #000 ;
   }
@@ -179,7 +179,7 @@
             alt="No image"
           >
         {% endif %}
-        <div class="metal-label {% if metal_slug == current_metal %} active{% endif %}" style="margin-top: 5px; font-size: 14px;">
+        <div class="metal-label {% if metal_slug == current_metal %} active-text{% endif %}" style="margin-top: 5px; font-size: 14px;">
           {{ metal_label }}
         </div>
       </a>

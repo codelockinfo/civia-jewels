@@ -148,7 +148,6 @@
   {% assign current_metal = parts[0] | append: '-' | append: parts[1] %}
 
   <div class="metal-options-wrapper" style="display: flex; gap: 12px;">
-    {% for metal_object in product.metafields.shopify['color-pattern'].value %}
       {% assign metal_label = metal_object.label %}
       {% assign metal_img = metal_object.image %}
       {% assign metal_slug = metal_label | downcase | replace: ' ', '-' %}
@@ -167,23 +166,45 @@
         onclick="selectMetalOption(this); return false;"
         style="text-align: center; text-decoration: none; color: inherit;"
       >
-        {% if metal_img != blank %}
           <img
             class="{% if metal_slug == current_metal %} active-img{% endif %}"
-            src="{{ metal_img | img_url: '60x60' }}"
-            alt="{{ metal_label }}"
+            src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_1.png?v=1728998464"
+            alt="White Gold"
           >
-        {% else %}
-          <img
-            src="https://via.placeholder.com/36?text=No+Img"
-            alt="No image"
-          >
-        {% endif %}
         <div class="metal-label {% if metal_slug == current_metal %} active-text{% endif %}" style="margin-top: 5px; font-size: 14px;">
           {{ metal_label }}
         </div>
       </a>
-    {% endfor %}
+      <a
+        href="/products/{{ link_handle }}"
+        class="metal-option"
+        onclick="selectMetalOption(this); return false;"
+        style="text-align: center; text-decoration: none; color: inherit;"
+      >
+          <img
+            class="{% if metal_slug == current_metal %} active-img{% endif %}"
+            src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
+            alt="Rose Gold"
+          >
+        <div class="metal-label {% if metal_slug == current_metal %} active-text{% endif %}" style="margin-top: 5px; font-size: 14px;">
+          {{ metal_label }}
+        </div>
+      </a>
+      <a
+        href="/products/{{ link_handle }}"
+        class="metal-option"
+        onclick="selectMetalOption(this); return false;"
+        style="text-align: center; text-decoration: none; color: inherit;"
+      >
+          <img
+            class="{% if metal_slug == current_metal %} active-img{% endif %}"
+            src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_2.png?v=1728998531"
+            alt="Yellow Gold"
+          >
+        <div class="metal-label {% if metal_slug == current_metal %} active-text{% endif %}" style="margin-top: 5px; font-size: 14px;">
+          {{ metal_label }}
+        </div>
+      </a>
   </div>
 </div>
 

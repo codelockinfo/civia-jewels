@@ -43,11 +43,11 @@
               {% assign link_handle = handle | replace: current_shape, shape %}
             {% endif %}
 
-            <a class="dw-option{% if shape == current_shape %} active{% endif %}" href="/products/{{ link_handle }}">
+            <a class="dw-option" href="/products/{{ link_handle }}">
               {% if image %}
-                <img src="{{ image | image_url: width: 100 }}" alt="{{ shape_label }}" class="dw-image">
+                <img src="{{ image | image_url: width: 100 }}" alt="{{ shape_label }}" class="dw-image {% if shape == current_shape %} active-img{% endif %}">
               {% endif %}
-              <div class="dw-label-text">{{ shape_label }}</div>
+              <div class="dw-label-text {% if shape == current_shape %} active-text{% endif %}">{{ shape_label }}</div>
             </a>
           {% endif %}
         {% endfor %}
@@ -110,11 +110,11 @@
   }
 </style>
 
-<script>
+{% comment %} <script>
   function selectDiamondWeight(el) {
     document.querySelectorAll('.dw-option').forEach(function(option) {
       option.classList.remove('active');
     });
     el.classList.add('active');
   }
-</script>
+</script> {% endcomment %}

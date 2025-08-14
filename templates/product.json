@@ -78,6 +78,10 @@
           "type": "metal-color",
           "settings": {}
         },
+        "metal_selector_hwUeLQ": {
+          "type": "metal-selector",
+          "settings": {}
+        },
         "d98e243b-3682-495a-965a-1c7f7d460880": {
           "type": "variant_picker",
           "settings": {
@@ -335,6 +339,7 @@
         "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c",
         "diamond_weight_XNtJCp",
         "metal_color_AWCzCV",
+        "metal_selector_hwUeLQ",
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "perks_dJiaFf",
         "ring_size_selector_Nqtbfy",

@@ -30,13 +30,17 @@
     -%}
     <div class="product-form__input clearfix line-item-property__field">
       <label for="{{ property_id }}" class="form-label form__label">{{ property_name }}:</label>
-      <input
+      <select
         id="{{ property_id }}"
-        type="text"
         name="properties[{{ property_value }}]"
         class="form__input form-input"
-        placeholder="Select Metal Purity"
       >
+        <option value="" disabled selected>Select Metal Purity</option>
+        <option value="14K">925 Silver</option>
+        <option value="14K">14K</option>
+        <option value="18K">18K</option>
+        <option value="22K">22K</option>
+      </select>
     </div>
   {%- endif -%}
   {%- if customization_option_2 != blank -%}
@@ -68,7 +72,7 @@
       >
     </div>
   {%- endif -%}
-  
+
   <div class="product-form__input clearfix line-item-property__field"></div>
   <div
     class="ring-size-button"
@@ -104,7 +108,7 @@
 </div>
 
 <!-- CSS Styling -->
-{%  stylesheet %}
+{% stylesheet %}
       .ring-size-button {
         font-size: 13px;
         padding: 12px;
@@ -232,7 +236,6 @@
       right: 0; /* Slide into view */
     }
   }
-
 {% endstylesheet %}
 
 <!-- JavaScript Logic -->
@@ -255,7 +258,7 @@
       drawer.classList.remove('open');
     }
   }
-    
+
   function toggleRingSizeModal(show) {
     const overlay = document.getElementById('ringSizeDrawer');
     if (show) {
@@ -275,12 +278,12 @@
 
   // Select size and close drawer
   document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.ring-size-option').forEach(option => {
+    document.querySelectorAll('.ring-size-option').forEach((option) => {
       option.addEventListener('click', function () {
         const size = this.textContent.trim();
 
         // Remove previously selected class
-        document.querySelectorAll('.ring-size-option').forEach(opt => opt.classList.remove('selected'));
+        document.querySelectorAll('.ring-size-option').forEach((opt) => opt.classList.remove('selected'));
         this.classList.add('selected');
 
         // Update button text

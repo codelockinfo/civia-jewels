@@ -90,6 +90,10 @@
             "spacing_bottom": 0
           }
         },
+        "metal_selector_FMJRHd": {
+          "type": "metal-selector",
+          "settings": {}
+        },
         "perks_dJiaFf": {
           "type": "perks",
           "settings": {
@@ -331,6 +335,7 @@
         "diamond_weight_XNtJCp",
         "metal_color_AWCzCV",
         "d98e243b-3682-495a-965a-1c7f7d460880",
+        "metal_selector_FMJRHd",
         "perks_dJiaFf",
         "4f95b592-8369-4ab0-b30d-24e463fb6890",
         "customization_property_V8DL9N",
@@ -587,7 +592,10 @@
       "blocks": {
         "judge_me_reviews_review_widget_8p4jGX": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [

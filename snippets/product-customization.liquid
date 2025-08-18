@@ -19,10 +19,10 @@
       >
     </div>
   {%- endif -%}
-  {%- if customization_option_2 != blank -%}
+  {%- if customization_option_3 != blank -%}
     {%- liquid
-      assign property_id = product.id | append: customization_option_2 | handleize
-      assign property_name = customization_option_2 | escape
+      assign property_id = product.id | append: customization_option_3 | handleize
+      assign property_name = customization_option_3 | escape
       assign property_value = property_name
       unless customization_option_hidden
         assign property_value = property_value | prepend: '_'
@@ -39,10 +39,10 @@
       >
     </div>
   {%- endif -%}
-  {%- if customization_option_3 != blank -%}
+  {%- if customization_option_2 != blank -%}
     {%- liquid
-      assign property_id = product.id | append: customization_option_3 | handleize
-      assign property_name = customization_option_3 | escape
+      assign property_id = product.id | append: customization_option_2 | handleize
+      assign property_name = customization_option_2 | escape
       assign property_value = property_name
       unless customization_option_hidden
         assign property_value = property_value | prepend: '_'

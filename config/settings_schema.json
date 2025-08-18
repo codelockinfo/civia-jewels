@@ -3133,6 +3133,11 @@
         "label": "t:settings_schema.general.settings.customization-option.label__8"
       },
       {
+        "type": "text",
+        "id": "customization_option_3",
+        "label": "Metal Purity"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.general.settings.header__3.content"
       },

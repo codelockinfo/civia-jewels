@@ -214,7 +214,7 @@
         "border_footer_top_color": "#282828",
         "pdtop_footer_top": 40,
         "pdbottom_footer_top": 0,
-        "footer_top_bg": "#ffffff",
+        "footer_top_bg": "#fff7f7",
         "footer_top_bg_gradient": "",
         "show_footer_top_bg_img": false,
         "footer_top_bg_position_x": "center",

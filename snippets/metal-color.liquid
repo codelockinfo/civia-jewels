@@ -120,11 +120,11 @@
     object-fit: cover;
   }
 
-  .metal-option.active img {
+  .metal-option .active-img {
     border: 2px solid #000 !important;
   }
 
-  .metal-option.active .metal-label {
+  .metal-option .active-text  {
     font-weight: 500 !important;
     color: #000 ;
   }
@@ -139,52 +139,78 @@
 <div class="product-metals">
   <strong>Metal:</strong>
   {% assign handle = product.handle %}
-
-  {%- comment -%}
-    Extract current metal from the first two words in the handle
-    E.g., yellow-gold-modern-ring → current_metal = yellow-gold
-  {%- endcomment -%}
-  {% assign parts = handle | split: '-' %}
-  {% assign current_metal = parts[0] | append: '-' | append: parts[1] %}
+  {% assign metals = 'rose,white,yellow' | split: ',' %}
+  {% assign matched_metal = '' %}
+  {% for metal in metals %}
+    {% if handle contains metal %}
+      {% assign matched_metal = metal %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
 
   <div class="metal-options-wrapper" style="display: flex; gap: 12px;">
-    {% for metal_object in product.metafields.shopify['color-pattern'].value %}
-      {% assign metal_label = metal_object.label %}
-      {% assign metal_img = metal_object.image %}
-      {% assign metal_slug = metal_label | downcase | replace: ' ', '-' %}
-
-      {%- comment -%}
-        Replace current metal slug in handle with this option's slug
-      {%- endcomment -%}
-      {% assign link_handle = handle %}
-      {% if current_metal != metal_slug %}
-        {% assign link_handle = handle | replace_first: current_metal, metal_slug %}
-      {% endif %}
-
-      <a
-        href="/products/{{ link_handle }}"
-        class="metal-option{% if metal_slug == current_metal %} active{% endif %}"
-        onclick="selectMetalOption(this); return false;"
-        style="text-align: center; text-decoration: none; color: inherit;"
+    {%- assign updated_handle = handle | replace: matched_metal, 'white' -%}
+    <a
+      href="/products/{{ updated_handle }}"
+      class="metal-option"
+      onclick="selectMetalOption(this); return false;"
+      style="text-align: center; text-decoration: none; color: inherit;"
+    >
+      <img
+        class="{% if matched_metal == 'white' %}active-img{% endif %}"
+        src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_1.png?v=1728998464"
+        alt="White Gold"
       >
-        {% if metal_img != blank %}
-          <img
-            src="{{ metal_img | img_url: '60x60' }}"
-            alt="{{ metal_label }}"
-          >
-        {% else %}
-          <img
-            src="https://via.placeholder.com/36?text=No+Img"
-            alt="No image"
-          >
-        {% endif %}
-        <div class="metal-label" style="margin-top: 5px; font-size: 14px;">
-          {{ metal_label }}
-        </div>
-      </a>
-    {% endfor %}
+      <div
+        class="metal-label{% if matched_metal == 'white' %} active-text{% endif %}"
+        style="margin-top: 5px; font-size: 14px;"
+      >
+        White Gold
+      </div>
+    </a>
+
+    {% assign updated_handle = handle | replace: matched_metal, 'rose' %}
+    <a
+      href="/products/{{ updated_handle }}"
+      class="metal-option"
+      onclick="selectMetalOption(this); return false;"
+      style="text-align: center; text-decoration: none; color: inherit;"
+    >
+      <img
+        class="{% if matched_metal == 'rose' %}active-img{% endif %}"
+        src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item.png?v=1728998267"
+        alt="Rose Gold"
+      >
+      <div
+        class="metal-label{% if matched_metal == 'rose' %} active-text{% endif %}"
+        style="margin-top: 5px; font-size: 14px;"
+      >
+        Rose Gold
+      </div>
+    </a>
+
+    {% assign updated_handle = handle | replace: matched_metal, 'yellow' %}
+    <a
+      href="/products/{{ updated_handle }}"
+      class="metal-option"
+      onclick="selectMetalOption(this); return false;"
+      style="text-align: center; text-decoration: none; color: inherit;"
+    >
+      <img
+        class="{% if matched_metal == 'yellow' %}active-img{% endif %}"
+        src="https://cdn.shopify.com/s/files/1/0713/6598/4514/files/Item_2.png?v=1728998531"
+        alt="Yellow Gold"
+      >
+      <div
+        class="metal-label{% if matched_metal == 'yellow' %} active-text{% endif %}"
+        style="margin-top: 5px; font-size: 14px;"
+      >
+        Yellow Gold
+      </div>
+    </a>
   </div>
 </div>
+
 
 <script>
   function selectMetalOption(el) {

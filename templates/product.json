@@ -94,21 +94,6 @@
           "type": "metal-selector",
           "settings": {}
         },
-        "perks_dJiaFf": {
-          "type": "perks",
-          "settings": {
-            "show_size_chart": true,
-            "size_chart_type": "custom_image",
-            "size_chart_image": "shopify://shop_images/Untitled-design-3_1024x1024_4590b886-a55e-4770-8c31-0887c4aa1122.webp",
-            "size_chart_page": "",
-            "size_chart_image_type": "jpg",
-            "show_compare_color": true,
-            "show_compare_color_drop_drap": true,
-            "compare_layout": "1",
-            "spacing_top": 0,
-            "spacing_bottom": 22
-          }
-        },
         "4f95b592-8369-4ab0-b30d-24e463fb6890": {
           "type": "price",
           "settings": {
@@ -122,6 +107,21 @@
           "settings": {
             "spacing_top": 0,
             "spacing_bottom": 20
+          }
+        },
+        "perks_dJiaFf": {
+          "type": "perks",
+          "settings": {
+            "show_size_chart": true,
+            "size_chart_type": "custom_image",
+            "size_chart_image": "shopify://shop_images/Untitled-design-3_1024x1024_4590b886-a55e-4770-8c31-0887c4aa1122.webp",
+            "size_chart_page": "",
+            "size_chart_image_type": "jpg",
+            "show_compare_color": true,
+            "show_compare_color_drop_drap": true,
+            "compare_layout": "1",
+            "spacing_top": 0,
+            "spacing_bottom": 22
           }
         },
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34": {
@@ -336,9 +336,9 @@
         "metal_color_AWCzCV",
         "d98e243b-3682-495a-965a-1c7f7d460880",
         "metal_selector_FMJRHd",
-        "perks_dJiaFf",
         "4f95b592-8369-4ab0-b30d-24e463fb6890",
         "customization_property_V8DL9N",
+        "perks_dJiaFf",
         "f1b31d90-1e43-4948-9fe3-97ba43f6fb34",
         "10093fcf-2053-47e9-bedb-841bb0d046fa",
         "87197f5f-be0e-4b89-9270-62bf6917ebe7",

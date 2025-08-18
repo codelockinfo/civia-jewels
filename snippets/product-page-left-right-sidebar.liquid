@@ -1512,6 +1512,14 @@
                   <div>
                     {% render 'metal-color', product: product %}
                   </div>
+                {%- when 'metal-selector' -%}
+                  <div>
+                    {% render 'metal-selector', product: product %}
+                  </div>
+                {%- when 'ring-size-selector' -%}
+                  <div>
+                    {% render 'ring-size-selector', product: product %}
+                  </div>
                 {%- when 'trust_image' -%}
                   {%- liquid
                     assign show_trust_image = block.settings.show_trust_image

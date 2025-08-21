@@ -788,7 +788,7 @@
         "spacing_bottom": 0,
         "spacing_right": 0,
         "product_block_show": "4",
-        "button_text_slider": "",
+        "button_text_slider": "SHOP NOW",
         "button_link_slider": "shopify://collections/rose-gold",
         "button_width": 280,
         "btn_spacing_top": 49,
@@ -979,7 +979,9 @@
         "judge_me_reviews_review_widget_homepage_U7pmfg": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "product": "rose-gold-modern-tension-set-round-solitaire-wide-band-ring"
+            "product": "rose-gold-modern-tension-set-round-solitaire-wide-band-ring",
+            "review_data": "sample_data",
+            "max_width": 1200
           }
         }
       },

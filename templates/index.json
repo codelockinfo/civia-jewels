@@ -788,7 +788,7 @@
         "spacing_bottom": 0,
         "spacing_right": 0,
         "product_block_show": "4",
-        "button_text_slider": "SHOP NOW",
+        "button_text_slider": "",
         "button_link_slider": "shopify://collections/rose-gold",
         "button_width": 280,
         "btn_spacing_top": 49,

@@ -585,7 +585,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 10px; */
     width: 120px!important;
     margin: 0 auto!important;
     padding-left: 10px;
@@ -593,6 +592,9 @@
     border-radius: 6px;
     background-color: var(--bg-white);
 }
+    .product-block__collections{
+        margin-top: 10px; 
+    }
 </style>
 <div class="product-block section-block-{{section.id}}" style="--grid-gap: {{ grid_gap }}">
     {%- if block_title != blank -%}

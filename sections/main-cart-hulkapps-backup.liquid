@@ -141,7 +141,7 @@
                         endif
                       endif
                     %}
-                    <div data-hulkapps-lineitem 
+                    <div
                       class="cart-item"
                       data-item-row
                       {% if item.product.variants.size != 0 %}
@@ -230,7 +230,7 @@
                             <pre>{{ item.properties | json }}</pre>
 
                             {%- if item.properties.size != 0 -%}
-                              <dl  data-hulkapps-line-properties class="cart-item-properties definitionList">
+                              <dl class="cart-item-properties definitionList">
                                 {%- for property in item.properties -%}
                                   {%- assign property_first_char = property.first | slice: 0 -%}
                                   {%- if property.last != blank and property_first_char != '_' -%}
@@ -249,7 +249,6 @@
                                   {%- endif -%}
                                 {%- endfor -%}
                               </dl>
-<button type='button' style='display: none;' class='edit_cart_option btn btn--primary button' data-product_id='{{item.product_id}}' data-key='{{item.key}}' data-variant_id='{{item.variant_id}}' data-quantity='{{item.quantity}}'>Edit Options</button>
                             {%- endif -%}
                             {%- if item.selling_plan_allocation != null -%}
                               <p class="cart-item-allocation">{{ item.selling_plan_allocation.selling_plan.name }}</p>
@@ -276,12 +275,12 @@
                                   <dl class="cart-item__discounted-prices">
                                     <dt class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</dt>
                                     <dd>
-                                      <s  data-hulkapps-ci-price data-key='{{item.key}}' class="cart-item__old-price price price--end" data-item-original-price-display>
+                                      <s class="cart-item__old-price price price--end" data-item-original-price-display>
                                         {{- item.original_price | money -}}
                                       </s>
                                     </dd>
                                     <dt class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</dt>
-                                    <dd  data-hulkapps-ci-price data-key='{{item.key}}' class="price price--end" data-item-final-price-display>
+                                    <dd class="price price--end" data-item-final-price-display>
                                       {{ item.final_price | money }}
                                     </dd>
                                   </dl>
@@ -313,7 +312,7 @@
                                     </dd>
                                   </dl>
                                 {%- else -%}
-                                  <span  data-hulkapps-ci-price data-key='{{item.key}}' class="price price--end" data-item-final-price-display>
+                                  <span class="price price--end" data-item-final-price-display>
                                     {{- item.original_price | money -}}
                                   </span>
                                 {%- endif -%}
@@ -469,12 +468,12 @@
                             <dl class="cart-item__discounted-prices">
                               <dt class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</dt>
                               <dd>
-                                <s  data-hulkapps-ci-price data-key='{{item.key}}' class="cart-item__old-price price price--end" data-item-original-price-display>
+                                <s class="cart-item__old-price price price--end" data-item-original-price-display>
                                   {{- item.original_price | money -}}
                                 </s>
                               </dd>
                               <dt class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</dt>
-                              <dd  data-hulkapps-ci-price data-key='{{item.key}}' class="price price--end" data-item-final-price-display>
+                              <dd class="price price--end" data-item-final-price-display>
                                 {{ item.final_price | money }}
                               </dd>
                             </dl>
@@ -506,7 +505,7 @@
                               </dd>
                             </dl>
                           {%- else -%}
-                            <span  data-hulkapps-ci-price data-key='{{item.key}}' class="price price--end" data-item-final-price-display>
+                            <span class="price price--end" data-item-final-price-display>
                               {{- item.original_price | money -}}
                             </span>
                           {%- endif -%}
@@ -715,7 +714,7 @@
                       <span class="text">{{ 'general.cart.subtotal' | t }}</span>
                     </div>
                     <div class="cart-total-value">
-                      <span  data-hulkapps-cart-total class="text">{{ cart.original_total_price | money }}</span>
+                      <span class="text">{{ cart.original_total_price | money }}</span>
                     </div>
                   </li>
                   {%- if show_shipping_rate_calculator -%}
@@ -820,7 +819,7 @@
                       <span class="text">{{ 'general.cart.total' | t }}</span>
                     </div>
                     <div class="cart-total-value" data-cart-total-value="{{ cart.total_price }}">
-                      <span  data-hulkapps-cart-total class="text">{{ cart.total_price | money }}</span>
+                      <span class="text">{{ cart.total_price | money }}</span>
                     </div>
                   </li>
                   {%- if settings.show_shipping_note -%}
@@ -870,7 +869,7 @@
                         <span class="text">{{ 'general.cart.total' | t }}</span>
                       </div>
                       <div class="cart-total-value" data-cart-total-value="{{ cart.total_price }}">
-                        <span  data-hulkapps-cart-total class="text">{{ cart.total_price | money }}</span>
+                        <span class="text">{{ cart.total_price | money }}</span>
                       </div>
                     </li>
                   {%- endif -%}

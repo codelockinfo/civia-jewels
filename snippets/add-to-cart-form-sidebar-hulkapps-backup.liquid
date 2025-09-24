@@ -31,27 +31,12 @@
 >
   {%- if sold_out -%}
     {%- if settings.show_notify_form -%}
-      <a
-        class="button button-ATC is-notify-me"
-        href="{{ product.url }}"
-        data-btn-addToCart
-        {% if settings.product_card_layout == '08' %}
-          title="{{ 'products.product.out_of_stock' | t }}"
-        {% endif %}
-      >
-        {%- if settings.product_card_layout == '08' -%}
-          {% render 'icon-cart-08' %}
-        {%- else -%}
-          {{ 'notify_form.general.label' | t }}
-        {%- endif -%}
+      <a class="button button-ATC card-button is-notify-me" href="{{ product.url }}" data-btn-addToCart>
+        {{ 'notify_form.general.label' | t }}
       </a>
     {%- else -%}
-      <a class="button button-ATC" href="{{ product.url }}" disabled="disabled">
-        {%- if settings.product_card_layout == '08' -%}
-          {% render 'icon-cart-08' %}
-        {%- else -%}
-          {{ 'products.product.out_of_stock' | t }}
-        {%- endif -%}
+      <a class="button button-ATC card-button" href="{{ product.url }}" disabled="disabled">
+        {{ 'products.product.out_of_stock' | t }}
       </a>
     {%- endif -%}
   {%- else -%}
@@ -64,59 +49,35 @@
           <input type="hidden" name="id" value="{{ product.variants[0].id }}">
           <input type="hidden" name="quantity" value="1">
           <button
-            class="button button-ATC"
+            class="button button-ATC card-button"
             type="submit"
             data-form-id="#{{ id }}-{{ product.id }}-{{ sectionId }}"
             data-btn-addToCart
-            {% if settings.product_card_layout == '08' %}
-              title="{{ 'products.product.add_to_cart' | t }}"
-            {% endif %}
           >
             {%- unless settings.product_card_layout == '06' -%}
-              {%- if settings.product_card_layout == '08' -%}
-                {% render 'icon-cart-08' %}
-              {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
-              {%- endif -%}
+              {{ 'products.product.add_to_cart' | t }}
             {%- else -%}
               {{ 'products.product.select_options_plus' | t }}
             {%- endunless -%}
           </button>
         {%- else -%}
           <a
-            class="button button-ATC"
+            class="button button-ATC card-button"
             href="{{ product.url }}"
             data-quickshop-popup
             data-product-handle="{{ product.handle }}"
-            {% if settings.product_card_layout == '08' %}
-              title="{{ 'products.product.quick_shop' | t }}"
-            {% endif %}
           >
             {%- unless settings.product_card_layout == '06' -%}
-              {%- if settings.product_card_layout == '08' -%}
-                {% render 'icon-cart-08' %}
-              {%- else -%}
-                {{ 'products.product.quick_shop' | t }}
-              {%- endif -%}
+              {{ 'products.product.quick_shop' | t }}
             {%- else -%}
               {{ 'products.product.select_options_plus' | t }}
             {%- endunless -%}
           </a>
         {%- endif -%}
       {%- else -%}
-        <a
-          class="button button-ATC"
-          href="{{ product.url }}"
-          {% if settings.product_card_layout == '08' %}
-            title="{{ 'products.product.select_options' | t }}"
-          {% endif %}
-        >
+        <a class="button button-ATC card-button" href="{{ product.url }}">
           {%- unless settings.product_card_layout == '06' -%}
-            {%- if settings.product_card_layout == '08' -%}
-              {% render 'icon-cart-08' %}
-            {%- else -%}
-              {{ 'products.product.select_options' | t }}
-            {%- endif -%}
+            {{ 'products.product.select_options' | t }}
           {%- else -%}
             {{ 'products.product.select_options_plus' | t }}
           {%- endunless -%}
@@ -136,7 +97,7 @@
           data-btn-addToCart
           data-available="{{ allowOutStockSale }}"
           class="product-form__submit button button--primary an-{{ atc_animation }}{% if first_inventory_grid == 0 %} button-text-change{% else %}{% if show_subtotal_text %} button-text-change{% endif %}{% endif %}"
-          id="product-add-to-cart-{{ product.id }}"
+          id="product-add-to-cart"
         >
           {%- if first_inventory_grid > 0 -%}
             {%- if show_subtotal_text and subtotal_style == '2' -%}
@@ -144,21 +105,13 @@
               {{ 'products.product.sub_total' | t: value: subtotal }}
             {%- else -%}
               {%- unless settings.product_card_layout == '06' -%}
-                {%- if settings.product_card_layout == '08' -%}
-                  {% render 'icon-cart-08' %}
-                {%- else -%}
-                  {{ 'products.product.add_to_cart' | t }}
-                {%- endif -%}
+                {{ 'products.product.add_to_cart' | t }}
               {%- else -%}
                 {{ 'products.product.select_options_plus' | t }}
               {%- endunless -%}
             {%- endif -%}
           {%- else -%}
-            {%- if settings.product_card_layout == '08' -%}
-              {% render 'icon-cart-08' %}
-            {%- else -%}
-              {{ 'products.product.pre_order' | t }}
-            {%- endif -%}
+            {{ 'products.product.pre_order' | t }}
           {%- endif -%}
         </button>
       {%- else -%}
@@ -167,18 +120,14 @@
           name="add"
           data-btn-addToCart
           class="product-form__submit button button--secondary an-{{ atc_animation }}{% if show_subtotal_text %} button-text-change{% endif %}"
-          id="product-add-to-cart-{{ product.id }}"
+          id="product-add-to-cart"
         >
           {%- if show_subtotal_text and subtotal_style == '2' -%}
             {%- assign subtotal = subtotal | strip_html -%}
             {{ 'products.product.sub_total' | t: value: subtotal }}
           {%- else -%}
             {%- unless settings.product_card_layout == '06' -%}
-              {%- if settings.product_card_layout == '08' -%}
-                {% render 'icon-cart-08' %}
-              {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
-              {%- endif -%}
+              {{ 'products.product.add_to_cart' | t }}
             {%- else -%}
               {{ 'products.product.select_options_plus' | t }}
             {%- endunless -%}

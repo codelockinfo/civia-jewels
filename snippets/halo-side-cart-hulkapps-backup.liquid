@@ -38,7 +38,7 @@
                         endif 
                     endif
                 -%} 
-                <li  data-hulkapps-lineitem class="previewCartItem clearfix" data-item-row{% if settings.discount_calculator_free_shipping == 'setup_shipping_delivery' and item.product.gift_card? %} data-price-gift-card="{{ price_gift_card | times: item.quantity }}"{% endif %}>
+                <li class="previewCartItem clearfix" data-item-row{% if settings.discount_calculator_free_shipping == 'setup_shipping_delivery' and item.product.gift_card? %} data-price-gift-card="{{ price_gift_card | times: item.quantity }}"{% endif %}>
                     <a href="{{ item.url }}" class="previewCartItem-image">
                         <img srcset="{{ item.image | img_url: '110x' }}" src="{{ item.image | img_url: '110x' }}" width="110" height="{{ 110 | divided_by: item.image.aspect_ratio | round }}" alt="{{ item.title | escape }}" sizes="110px"{% if settings.enable_lazyload %} loading="lazy"{% endif %}>
                     </a>
@@ -71,7 +71,7 @@
                                 </div>
                             {%- endunless -%}
                         {%- endif -%}
-                        <dl  data-hulkapps-line-properties class="card-properties definitionList cart-item-properties">
+                        <dl class="card-properties definitionList cart-item-properties">
                             {%- if item.properties.size != 0 -%}
                                 {%- for property in item.properties -%}
                                     {%- assign property_first_char = property.first | slice: 0 -%}
@@ -92,7 +92,6 @@
                                 {%- endfor -%}
                             {%- endif -%}
                         </dl>
-<button type='button' style='display: none;' class='edit_cart_option btn btn--primary button' data-product_id='{{item.product_id}}' data-key='{{item.key}}' data-variant_id='{{item.variant_id}}' data-quantity='{{item.quantity}}'>Edit Options</button>
                         {%- if item.selling_plan_allocation != nil -%}
                             <p class="cart-item-allocation">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                         {%- endif -%}
@@ -119,10 +118,10 @@
                                     {%- assign current_variant = item.variant -%}
                                     {% if item.original_price != item.final_price %}
                                         <span class="previewCartItem-saving-price">
-                                            <s  data-hulkapps-ci-price data-key='{{item.key}}' class="before-discount-price" data-item-original-price-display>
+                                            <s class="before-discount-price" data-item-original-price-display>
                                                 {{ item.original_price | money }}
                                             </s>
-                                            <span  data-hulkapps-ci-price data-key='{{item.key}}' class="discounted-price" data-item-final-price-display>
+                                            <span class="discounted-price" data-item-final-price-display>
                                                 {{ item.final_price | money }}
                                             </span>
                                         </span>
@@ -136,7 +135,7 @@
                                             </span>
                                         </span>
                                     {% else %}  
-                                        <span  data-hulkapps-ci-price data-key='{{item.key}}' data-item-final-price-display>
+                                        <span data-item-final-price-display>
                                             {{ item.price | money }}
                                         </span>
                                     {% endif %}
@@ -375,7 +374,7 @@
                 <div class="previewCartTotals-label">
                     {{ 'sections.cart.subtotal' | t }}:
                 </div>
-                <div  data-hulkapps-cart-total class="previewCartTotals-value" data-cart-subtotal>
+                <div class="previewCartTotals-value" data-cart-subtotal>
                     {{ cart.original_total_price | money }}
                 </div>  
             </li>       
@@ -401,7 +400,7 @@
                 <div class="previewCartTotals-label">
                     {{ 'general.cart.total' | t }}
                 </div>  
-                <div  data-hulkapps-cart-total class="previewCartTotals-value" data-cart-total-value="{{ cart.total_price }}">
+                <div class="previewCartTotals-value" data-cart-total-value="{{ cart.total_price }}">
                     {{ cart.total_price | money }}
                 </div>
             </li>

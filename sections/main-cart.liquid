@@ -242,7 +242,18 @@
                                             {{- property.last | split: '/' | last -}}
                                           </a>
                                         {%- else -%}
-                                          {{ property.last }}
+                                          
+{% if property.last contains '/uploads/' %}
+	{% assign file_type = property.last | split: '.' | last | downcase %}
+	{% assign file_types = 'jpg,jpeg,webp,gif,png,apng,avif,svg,bmp,ico,tiff' | split: ',' %}
+	{% if file_types contains file_type %}
+		<div class="bcpo-cart-file"><img src="{{ property.last }}" style="max-width: 50px; height: auto;"></div>
+	{% else %}
+		<span class="bcpo-cart-file">Uploaded file</span>
+	{% endif %}
+{% else %}
+	{{ property.last }}
+{% endif %}
                                         {%- endif -%}
                                       </dd>
                                     </div>
@@ -277,12 +288,12 @@
                                     <dt class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</dt>
                                     <dd>
                                       <s  data-hulkapps-ci-price data-key='{{item.key}}' class="cart-item__old-price price price--end" data-item-original-price-display>
-                                        {{- item.original_price | money -}}
+                                        <span class="bcpo-cart-item-price" data-key="{{item.key}}"><span class="bcpo-cart-item-original-price" data-key="{{item.key}}">{{ item.original_price | money }}</span></span>
                                       </s>
                                     </dd>
                                     <dt class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</dt>
                                     <dd  data-hulkapps-ci-price data-key='{{item.key}}' class="price price--end" data-item-final-price-display>
-                                      {{ item.final_price | money }}
+                                      <span class="bcpo-cart-item-price" data-key="{{item.key}}">{{ item.final_price | money }}</span>
                                     </dd>
                                   </dl>
                                   {%- if item.variant.available and item.unit_price_measurement -%}
@@ -309,12 +320,12 @@
                                     </dd>
                                     <dt class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</dt>
                                     <dd class="price price--end" data-item-final-price-display>
-                                      {{ current_variant.price | money }}
+                                      <span class="bcpo-cart-item-price" data-key="{{item.key}}">{{ current_variant.price | money }}</span>
                                     </dd>
                                   </dl>
                                 {%- else -%}
                                   <span  data-hulkapps-ci-price data-key='{{item.key}}' class="price price--end" data-item-final-price-display>
-                                    {{- item.original_price | money -}}
+                                    <span class="bcpo-cart-item-price" data-key="{{item.key}}"><span class="bcpo-cart-item-original-price" data-key="{{item.key}}">{{ item.original_price | money }}</span></span>
                                   </span>
                                 {%- endif -%}
                               </div>
@@ -470,12 +481,12 @@
                               <dt class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</dt>
                               <dd>
                                 <s  data-hulkapps-ci-price data-key='{{item.key}}' class="cart-item__old-price price price--end" data-item-original-price-display>
-                                  {{- item.original_price | money -}}
+                                  <span class="bcpo-cart-item-price" data-key="{{item.key}}"><span class="bcpo-cart-item-original-price" data-key="{{item.key}}">{{ item.original_price | money }}</span></span>
                                 </s>
                               </dd>
                               <dt class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</dt>
                               <dd  data-hulkapps-ci-price data-key='{{item.key}}' class="price price--end" data-item-final-price-display>
-                                {{ item.final_price | money }}
+                                <span class="bcpo-cart-item-price" data-key="{{item.key}}">{{ item.final_price | money }}</span>
                               </dd>
                             </dl>
                             {%- if item.variant.available and item.unit_price_measurement -%}
@@ -502,12 +513,12 @@
                               </dd>
                               <dt class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</dt>
                               <dd class="price price--end" data-item-final-price-display>
-                                {{ current_variant.price | money }}
+                                <span class="bcpo-cart-item-price" data-key="{{item.key}}">{{ current_variant.price | money }}</span>
                               </dd>
                             </dl>
                           {%- else -%}
                             <span  data-hulkapps-ci-price data-key='{{item.key}}' class="price price--end" data-item-final-price-display>
-                              {{- item.original_price | money -}}
+                              <span class="bcpo-cart-item-price" data-key="{{item.key}}"><span class="bcpo-cart-item-original-price" data-key="{{item.key}}">{{ item.original_price | money }}</span></span>
                             </span>
                           {%- endif -%}
                         </div>
@@ -715,7 +726,7 @@
                       <span class="text">{{ 'general.cart.subtotal' | t }}</span>
                     </div>
                     <div class="cart-total-value">
-                      <span  data-hulkapps-cart-total class="text">{{ cart.original_total_price | money }}</span>
+                      <span  data-hulkapps-cart-total class="text"><span class="bcpo-cart-original-total">{{ cart.original_total_price | money }}</span></span>
                     </div>
                   </li>
                   {%- if show_shipping_rate_calculator -%}
@@ -820,7 +831,7 @@
                       <span class="text">{{ 'general.cart.total' | t }}</span>
                     </div>
                     <div class="cart-total-value" data-cart-total-value="{{ cart.total_price }}">
-                      <span  data-hulkapps-cart-total class="text">{{ cart.total_price | money }}</span>
+                      <span  data-hulkapps-cart-total class="text"><span class="bcpo-cart-original-total">{{ cart.total_price | money }}</span></span>
                     </div>
                   </li>
                   {%- if settings.show_shipping_note -%}
@@ -870,7 +881,7 @@
                         <span class="text">{{ 'general.cart.total' | t }}</span>
                       </div>
                       <div class="cart-total-value" data-cart-total-value="{{ cart.total_price }}">
-                        <span  data-hulkapps-cart-total class="text">{{ cart.total_price | money }}</span>
+                        <span  data-hulkapps-cart-total class="text"><span class="bcpo-cart-original-total">{{ cart.total_price | money }}</span></span>
                       </div>
                     </li>
                   {%- endif -%}
@@ -1329,3 +1340,4 @@
       color: #868686;
   }
 </style>
+<!-- bcpo done -->

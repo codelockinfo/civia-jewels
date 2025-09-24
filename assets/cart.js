@@ -64,6 +64,13 @@ class CartItems extends HTMLElement {
     }
 
     async handleToCheckoutPage(e) {
+		var boxes = document.querySelectorAll('.rterms-checkbox');
+        var oneChecked = false;
+        boxes.forEach(function (el) {
+          if (el.checked) oneChecked = true;
+        });
+        if (window.rterms && !oneChecked) return;
+		if (window.bcpo && bcpo.addedCartEvent) return;
         e.preventDefault()
 
         try {

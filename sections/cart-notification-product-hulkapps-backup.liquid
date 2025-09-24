@@ -1,6 +1,6 @@
 {%- if cart != empty -%}
   {%- for item in cart.items -%}
-    <div  data-hulkapps-lineitem id="cart-notification-product-{{ item.id }}">
+    <div id="cart-notification-product-{{ item.id }}">
       {% if item.image %}
         <img class="cart-notification-product__image"
           src="{{ item.image | img_url: '140x' }}"
